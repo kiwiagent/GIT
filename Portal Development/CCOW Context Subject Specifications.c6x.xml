@@ -442,6 +442,14 @@
 		<suffix-allowed>false</suffix-allowed>
 	</subject-item>
 	<subject-item>
+		<name-prefix>PatientDeathIndicator</name-prefix>
+		<case-sensitive>false</case-sensitive>
+		<data-type>ST</data-type>
+		<multi-valued>false</multi-valued>
+		<role>Co</role>
+		<suffix-allowed>false</suffix-allowed>
+	</subject-item>
+	<subject-item>
 		<name-prefix>PatientName</name-prefix>
 		<case-sensitive>false</case-sensitive>
 		<data-type>XPN</data-type>
@@ -701,6 +709,22 @@
 	<type>Id</type>
 </context-subject>
 <context-subject>
+	<name>[orionhealth.com]Assessment</name>
+	<parent>
+		<name>[orionhealth.com]ScreeningCandidate</name>
+	</parent>
+	<security-level>none</security-level>
+	<subject-item>
+		<name-prefix>AssessmentId</name-prefix>
+		<case-sensitive>false</case-sensitive>
+		<data-type>Integer</data-type>
+		<multi-valued>false</multi-valued>
+		<role>Id</role>
+		<suffix-allowed>false</suffix-allowed>
+	</subject-item>
+	<type>Id</type>
+</context-subject>
+<context-subject>
 	<name>[orionhealth.com]AuditEvent</name>
 	<security-level>none</security-level>
 	<subject-item>
@@ -765,6 +789,19 @@
 		<data-type>ST</data-type>
 		<multi-valued>false</multi-valued>
 		<role>Co</role>
+		<suffix-allowed>false</suffix-allowed>
+	</subject-item>
+	<type>Id</type>
+</context-subject>
+<context-subject>
+	<name>[orionhealth.com]CandidateNotification</name>
+	<security-level>none</security-level>
+	<subject-item>
+		<name-prefix>candidateNotificationId</name-prefix>
+		<case-sensitive>false</case-sensitive>
+		<data-type>Integer</data-type>
+		<multi-valued>false</multi-valued>
+		<role>Id</role>
 		<suffix-allowed>false</suffix-allowed>
 	</subject-item>
 	<type>Id</type>
@@ -1275,6 +1312,27 @@
 	<type>Id</type>
 </context-subject>
 <context-subject>
+	<name>[orionhealth.com]Practice</name>
+	<security-level>none</security-level>
+	<subject-item>
+		<name-prefix>Name</name-prefix>
+		<case-sensitive>false</case-sensitive>
+		<data-type>ST</data-type>
+		<multi-valued>false</multi-valued>
+		<role>Co</role>
+		<suffix-allowed>false</suffix-allowed>
+	</subject-item>
+	<subject-item>
+		<name-prefix>practiceId</name-prefix>
+		<case-sensitive>false</case-sensitive>
+		<data-type>Integer</data-type>
+		<multi-valued>false</multi-valued>
+		<role>Id</role>
+		<suffix-allowed>false</suffix-allowed>
+	</subject-item>
+	<type>Id</type>
+</context-subject>
+<context-subject>
 	<name>[orionhealth.com]PrivacyPolicy</name>
 	<parent>
 		<name>[orionhealth.com]ContextView</name>
@@ -1292,6 +1350,25 @@
 		<name-prefix>Name</name-prefix>
 		<case-sensitive>false</case-sensitive>
 		<data-type>ST</data-type>
+		<multi-valued>false</multi-valued>
+		<role>Id</role>
+		<suffix-allowed>false</suffix-allowed>
+	</subject-item>
+	<type>Id</type>
+</context-subject>
+<context-subject>
+	<name>[orionhealth.com]RadiologyReading</name>
+	<parent>
+		<name>[orionhealth.com]Screening</name>
+		<parent>
+			<name>[orionhealth.com]ScreeningCandidate</name>
+		</parent>
+	</parent>
+	<security-level>none</security-level>
+	<subject-item>
+		<name-prefix>RadiologyReadingId</name-prefix>
+		<case-sensitive>false</case-sensitive>
+		<data-type>Integer</data-type>
 		<multi-valued>false</multi-valued>
 		<role>Id</role>
 		<suffix-allowed>false</suffix-allowed>
@@ -1379,6 +1456,75 @@
 		<data-type>ST</data-type>
 		<multi-valued>false</multi-valued>
 		<role>Id</role>
+		<suffix-allowed>false</suffix-allowed>
+	</subject-item>
+	<type>Id</type>
+</context-subject>
+<context-subject>
+	<name>[orionhealth.com]Screening</name>
+	<parent>
+		<name>[orionhealth.com]ScreeningCandidate</name>
+	</parent>
+	<security-level>none</security-level>
+	<subject-item>
+		<name-prefix>ScreeningId</name-prefix>
+		<case-sensitive>false</case-sensitive>
+		<data-type>Integer</data-type>
+		<multi-valued>false</multi-valued>
+		<role>Id</role>
+		<suffix-allowed>false</suffix-allowed>
+	</subject-item>
+	<type>Id</type>
+</context-subject>
+<context-subject>
+	<name>[orionhealth.com]ScreeningCandidate</name>
+	<security-level>none</security-level>
+	<subject-item>
+		<name-prefix>DateTimeOfBirth</name-prefix>
+		<case-sensitive>false</case-sensitive>
+		<data-type>ST</data-type>
+		<multi-valued>false</multi-valued>
+		<role>Co</role>
+		<suffix-allowed>false</suffix-allowed>
+	</subject-item>
+	<subject-item>
+		<name-prefix>Exclusion</name-prefix>
+		<case-sensitive>false</case-sensitive>
+		<data-type>IS</data-type>
+		<multi-valued>false</multi-valued>
+		<role>Co</role>
+		<suffix-allowed>false</suffix-allowed>
+	</subject-item>
+	<subject-item>
+		<name-prefix>Name</name-prefix>
+		<case-sensitive>false</case-sensitive>
+		<data-type>XPN</data-type>
+		<multi-valued>false</multi-valued>
+		<role>Co</role>
+		<suffix-allowed>false</suffix-allowed>
+	</subject-item>
+	<subject-item>
+		<name-prefix>NationalIdNumber</name-prefix>
+		<case-sensitive>false</case-sensitive>
+		<data-type>ST</data-type>
+		<multi-valued>false</multi-valued>
+		<role>Id</role>
+		<suffix-allowed>false</suffix-allowed>
+	</subject-item>
+	<subject-item>
+		<name-prefix>ScreeningDate</name-prefix>
+		<case-sensitive>false</case-sensitive>
+		<data-type>ST</data-type>
+		<multi-valued>false</multi-valued>
+		<role>Co</role>
+		<suffix-allowed>false</suffix-allowed>
+	</subject-item>
+	<subject-item>
+		<name-prefix>Sex</name-prefix>
+		<case-sensitive>false</case-sensitive>
+		<data-type>IS</data-type>
+		<multi-valued>false</multi-valued>
+		<role>Co</role>
 		<suffix-allowed>false</suffix-allowed>
 	</subject-item>
 	<type>Id</type>

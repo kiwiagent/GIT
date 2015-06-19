@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <concerto version="portal-serialization/2.0">
 <menu>
-	<name>Forms</name>
+	<name>Clinical Documentation</name>
 	<index>0</index>
+	<description />
+	<menu-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Red Form Worklist</name>
+			<application>
+				<name>Soprano Clinical Documentation</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<system-object>false</system-object>
+</menu>
+<menu>
+	<name>Forms</name>
+	<index>1</index>
 	<description>Entry points for the Forms application.</description>
 	<menu-entry-point>
 		<index>0</index>
@@ -91,7 +110,7 @@
 </menu>
 <menu>
 	<name>Patients</name>
-	<index>1</index>
+	<index>2</index>
 	<description />
 	<menu-entry-point>
 		<index>0</index>
@@ -138,6 +157,20 @@
 	<menu-entry-point>
 		<index>3</index>
 		<entry-point>
+			<name>Recent Patients</name>
+			<application>
+				<name>Orion - Patient Searches &amp; Demographics</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>4</index>
+		<entry-point>
 			<name>Worklists</name>
 			<application>
 				<name>Orion - Worklists</name>
@@ -150,7 +183,7 @@
 		<width>600</width>
 	</menu-entry-point>
 	<menu-entry-point>
-		<index>4</index>
+		<index>5</index>
 		<entry-point>
 			<name>ReviewEDS</name>
 			<application>
@@ -164,7 +197,7 @@
 		<width>600</width>
 	</menu-entry-point>
 	<menu-entry-point>
-		<index>5</index>
+		<index>6</index>
 		<entry-point>
 			<name>ED Patient Search</name>
 			<application>
@@ -178,7 +211,7 @@
 		<width>600</width>
 	</menu-entry-point>
 	<menu-entry-point>
-		<index>6</index>
+		<index>7</index>
 		<entry-point>
 			<name>Recent Patients</name>
 			<application>
@@ -194,10 +227,10 @@
 </menu>
 <menu>
 	<name>Referrals</name>
-	<index>2</index>
+	<index>3</index>
 	<description>Referrals menu item</description>
 	<menu-entry-point>
-		<index>0</index>
+		<index>1</index>
 		<entry-point>
 			<name>Menu - All</name>
 			<application>
@@ -211,7 +244,7 @@
 		<width>600</width>
 	</menu-entry-point>
 	<menu-entry-point>
-		<index>1</index>
+		<index>2</index>
 		<entry-point>
 			<name>Menu - Awaiting Pre Reg (received)</name>
 			<application>
@@ -225,7 +258,7 @@
 		<width>600</width>
 	</menu-entry-point>
 	<menu-entry-point>
-		<index>2</index>
+		<index>3</index>
 		<entry-point>
 			<name>Menu - Awaiting Pre Reg (declined)</name>
 			<application>
@@ -239,7 +272,7 @@
 		<width>600</width>
 	</menu-entry-point>
 	<menu-entry-point>
-		<index>3</index>
+		<index>4</index>
 		<entry-point>
 			<name>Menu - Awaiting Reg (received)</name>
 			<application>
@@ -253,7 +286,7 @@
 		<width>600</width>
 	</menu-entry-point>
 	<menu-entry-point>
-		<index>4</index>
+		<index>5</index>
 		<entry-point>
 			<name>Menu - Awaiting Triage (registered)</name>
 			<application>
@@ -267,7 +300,7 @@
 		<width>600</width>
 	</menu-entry-point>
 	<menu-entry-point>
-		<index>5</index>
+		<index>6</index>
 		<entry-point>
 			<name>Menu - Awaiting Booking (triaged)</name>
 			<application>
@@ -281,7 +314,20 @@
 		<width>600</width>
 	</menu-entry-point>
 	<menu-entry-point>
-		<index>6</index>
+		<index>7</index>
+		<entry-point>
+			<name>Processed GP Referrals</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>9</index>
 		<entry-point>
 			<name>Menu - Returned (returned)</name>
 			<application>
@@ -295,7 +341,7 @@
 		<width>600</width>
 	</menu-entry-point>
 	<menu-entry-point>
-		<index>7</index>
+		<index>10</index>
 		<entry-point>
 			<name>Menu - Booked</name>
 			<application>
@@ -309,7 +355,7 @@
 		<width>600</width>
 	</menu-entry-point>
 	<menu-entry-point>
-		<index>8</index>
+		<index>11</index>
 		<entry-point>
 			<name>Menu - Completed</name>
 			<application>
@@ -323,7 +369,7 @@
 		<width>600</width>
 	</menu-entry-point>
 	<menu-entry-point>
-		<index>9</index>
+		<index>12</index>
 		<entry-point>
 			<name>Menu - Draft</name>
 			<application>
@@ -337,7 +383,7 @@
 		<width>600</width>
 	</menu-entry-point>
 	<menu-entry-point>
-		<index>10</index>
+		<index>13</index>
 		<entry-point>
 			<name>Rejected Referrals</name>
 			<application>
@@ -350,11 +396,500 @@
 		<open-type>normal</open-type>
 		<width>600</width>
 	</menu-entry-point>
+	<menu-entry-point>
+		<index>14</index>
+		<entry-point>
+			<name>Pending GP Referrals</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>15</index>
+		<entry-point>
+			<name>GP Referral Errors</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<system-object>false</system-object>
+</menu>
+<menu>
+	<name>Data Dictionary</name>
+	<index>4</index>
+	<description>Contains entry points for the Soprano Data Dictionary application.</description>
+	<menu-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Information Model Search</name>
+			<application>
+				<name>Soprano Data Dictionary</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>Add Information Model</name>
+			<application>
+				<name>Soprano Data Dictionary</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>2</index>
+		<entry-point>
+			<name>Concept Search</name>
+			<application>
+				<name>Soprano Data Dictionary</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<system-object>false</system-object>
+</menu>
+<menu>
+	<name>cOrders Configuration</name>
+	<index>5</index>
+	<description />
+	<menu-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Order Sets Configuration</name>
+			<application>
+				<name>Concerto Orders Administration</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>Laboratory Item Configuration</name>
+			<application>
+				<name>Concerto Orders Administration</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>2</index>
+		<entry-point>
+			<name>Subtype Configuration</name>
+			<application>
+				<name>Concerto Orders Administration</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>3</index>
+		<entry-point>
+			<name>Collection Method Configuration</name>
+			<application>
+				<name>Concerto Orders Administration</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>4</index>
+		<entry-point>
+			<name>Modality Configuration</name>
+			<application>
+				<name>Concerto Orders Administration</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>5</index>
+		<entry-point>
+			<name>Radiology Item Configuration</name>
+			<application>
+				<name>Concerto Orders Administration</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>6</index>
+		<entry-point>
+			<name>Additional Information Configuration</name>
+			<application>
+				<name>Concerto Orders Administration</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>7</index>
+		<entry-point>
+			<name>Reason Configuration</name>
+			<application>
+				<name>Concerto Orders Administration</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>8</index>
+		<entry-point>
+			<name>Bulk Upload</name>
+			<application>
+				<name>Concerto Orders Administration</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>9</index>
+		<entry-point>
+			<name>Infolet Configuration</name>
+			<application>
+				<name>Concerto Orders Administration</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>10</index>
+		<entry-point>
+			<name>Duplicate Period Configuration</name>
+			<application>
+				<name>Concerto Orders Administration</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>11</index>
+		<entry-point>
+			<name>Location Configuration</name>
+			<application>
+				<name>Concerto Orders Administration</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>12</index>
+		<entry-point>
+			<name>Catalogue Configuration</name>
+			<application>
+				<name>Concerto Orders Administration</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>13</index>
+		<entry-point>
+			<name>Supplementary Item Configuration</name>
+			<application>
+				<name>Concerto Orders Administration</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>14</index>
+		<entry-point>
+			<name>Supplementary Category Configuration</name>
+			<application>
+				<name>Concerto Orders Administration</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>15</index>
+		<entry-point>
+			<name>Coding System Configuration</name>
+			<application>
+				<name>Concerto Orders Administration</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>16</index>
+		<entry-point>
+			<name>Allied Item Configuration</name>
+			<application>
+				<name>Concerto Orders Administration</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>17</index>
+		<entry-point>
+			<name>Allied Subtype Configuration</name>
+			<application>
+				<name>Concerto Orders Administration</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>18</index>
+		<entry-point>
+			<name>Patient Class Configuration</name>
+			<application>
+				<name>Concerto Orders Administration</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<system-object>false</system-object>
+</menu>
+<menu>
+	<name>cWhiteboard Admin</name>
+	<index>6</index>
+	<description>Admin can view whiteboard facilities and access manager properties&#xD;
+Admin can view and access whiteboard properties</description>
+	<menu-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Facility Manager</name>
+			<application>
+				<name>cWhiteboard</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>0</height>
+		<open-type>normal</open-type>
+		<width>0</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>Integrated Managers</name>
+			<application>
+				<name>cWhiteboard</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>0</height>
+		<open-type>normal</open-type>
+		<width>0</width>
+	</menu-entry-point>
+	<system-object>false</system-object>
+</menu>
+<menu>
+	<name>cWhiteboard</name>
+	<index>7</index>
+	<menu-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Site Search</name>
+			<application>
+				<name>cWhiteboard</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>My Ward</name>
+			<application>
+				<name>cWhiteboard</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</menu-entry-point>
+	<system-object>false</system-object>
+</menu>
+<menu>
+	<name>Form Management</name>
+	<index>8</index>
+	<description>Contains entry points related to the management and maintenance of forms.</description>
+	<menu-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Edit Existing Form</name>
+			<application>
+				<name>Soprano Forms</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>Search For Information Model</name>
+			<application>
+				<name>Soprano Forms</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>2</index>
+		<entry-point>
+			<name>Search for Form to Copy</name>
+			<application>
+				<name>Soprano Forms</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<system-object>false</system-object>
+</menu>
+<menu>
+	<name>DMA Administration</name>
+	<index>9</index>
+	<description />
+	<menu-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Add New DMA</name>
+			<application>
+				<name>Healthcare pathways - WIC Form Admin</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>EP - DMA List</name>
+			<application>
+				<name>Healthcare pathways - WIC Form Admin</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>2</index>
+		<entry-point>
+			<name>Patient - WiC Daily Reporting</name>
+			<application>
+				<name>Healthcare pathways - WIC</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
 	<system-object>false</system-object>
 </menu>
 <menu>
 	<name>Worklists</name>
-	<index>3</index>
+	<index>10</index>
 	<description />
 	<menu-entry-point>
 		<index>0</index>
@@ -482,10 +1017,131 @@
 		<open-type>normal</open-type>
 		<width>600</width>
 	</menu-entry-point>
+	<menu-entry-point>
+		<index>9</index>
+		<entry-point>
+			<name>Blue Worklist</name>
+			<application>
+				<name>BreastScreening ACT</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>10</index>
+		<entry-point>
+			<name>Green Worklist</name>
+			<application>
+				<name>BreastScreening ACT</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>11</index>
+		<entry-point>
+			<name>Orange Worklist</name>
+			<application>
+				<name>BreastScreening ACT</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>12</index>
+		<entry-point>
+			<name>Purple Worklist</name>
+			<application>
+				<name>BreastScreening ACT</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>13</index>
+		<entry-point>
+			<name>Red Worklist</name>
+			<application>
+				<name>BreastScreening ACT</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>14</index>
+		<entry-point>
+			<name>Yellow Worklist</name>
+			<application>
+				<name>BreastScreening ACT</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+</menu>
+<menu>
+	<name>cOrders User Configuration</name>
+	<index>11</index>
+	<menu-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Proxy Order Configuration</name>
+			<application>
+				<name>Concerto Orders</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<system-object>false</system-object>
+</menu>
+<menu>
+	<name>Reporting</name>
+	<index>12</index>
+	<description />
+	<menu-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>SSRS</name>
+			<application>
+				<name>BreastScreening ACT</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>window</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<system-object>false</system-object>
 </menu>
 <menu>
 	<name>Medical Templates</name>
-	<index>4</index>
+	<index>13</index>
 	<description />
 	<menu-entry-point>
 		<index>0</index>
@@ -756,33 +1412,42 @@
 	<system-object>false</system-object>
 </menu>
 <menu>
-	<name>cWhiteboard Admin</name>
-	<index>5</index>
+	<name>Collections</name>
+	<index>14</index>
+	<description>Lab Specimen Collection</description>
 	<menu-entry-point>
 		<index>0</index>
 		<entry-point>
-			<name>Facility Manager</name>
+			<name>Phlebotomist Collections</name>
 			<application>
-				<name>cWhiteboard</name>
+				<name>Concerto Orders</name>
 			</application>
 			<secure-enabled>false</secure-enabled>
 		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
 	</menu-entry-point>
 	<menu-entry-point>
 		<index>1</index>
 		<entry-point>
-			<name>Integrated Managers</name>
+			<name>Other Collections</name>
 			<application>
-				<name>cWhiteboard</name>
+				<name>Concerto Orders</name>
 			</application>
 			<secure-enabled>false</secure-enabled>
 		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
 	</menu-entry-point>
 	<system-object>false</system-object>
 </menu>
 <menu>
 	<name>Document Capture</name>
-	<index>6</index>
+	<index>15</index>
 	<menu-entry-point>
 		<index>0</index>
 		<entry-point>
@@ -795,59 +1460,15 @@
 	</menu-entry-point>
 </menu>
 <menu>
-	<name>cWhiteboard</name>
-	<index>7</index>
+	<name>Forms Admin</name>
+	<index>16</index>
+	<description>Maintenance for Lookup List and Lookup Trees</description>
 	<menu-entry-point>
 		<index>0</index>
 		<entry-point>
-			<name>Site Search</name>
+			<name>Lookup List</name>
 			<application>
-				<name>cWhiteboard</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-	</menu-entry-point>
-	<menu-entry-point>
-		<index>1</index>
-		<entry-point>
-			<name>My Ward</name>
-			<application>
-				<name>cWhiteboard</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-	</menu-entry-point>
-	<system-object>false</system-object>
-</menu>
-<menu>
-	<name>Search</name>
-	<index>8</index>
-	<description />
-	<menu-entry-point>
-		<index>0</index>
-		<entry-point>
-			<name>Medical Templates Patient Search</name>
-			<application>
-				<name>Soprano Workflow Medical Templates</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<height>400</height>
-		<open-type>normal</open-type>
-		<width>600</width>
-	</menu-entry-point>
-	<system-object>false</system-object>
-</menu>
-<menu>
-	<name>DMA Administration</name>
-	<index>9</index>
-	<description />
-	<menu-entry-point>
-		<index>0</index>
-		<entry-point>
-			<name>Add New DMA</name>
-			<application>
-				<name>Healthcare pathways - WIC Form Admin</name>
+				<name>Forms Admin</name>
 			</application>
 			<secure-enabled>false</secure-enabled>
 		</entry-point>
@@ -859,23 +1480,9 @@
 	<menu-entry-point>
 		<index>1</index>
 		<entry-point>
-			<name>EP - DMA List</name>
+			<name>Lookup Tree</name>
 			<application>
-				<name>Healthcare pathways - WIC Form Admin</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>400</height>
-		<open-type>normal</open-type>
-		<width>600</width>
-	</menu-entry-point>
-	<menu-entry-point>
-		<index>2</index>
-		<entry-point>
-			<name>Patient - WiC Daily Reporting</name>
-			<application>
-				<name>Healthcare pathways - WIC</name>
+				<name>Forms Admin</name>
 			</application>
 			<secure-enabled>false</secure-enabled>
 		</entry-point>
@@ -887,7 +1494,7 @@
 </menu>
 <menu>
 	<name>Results Viewer</name>
-	<index>10</index>
+	<index>17</index>
 	<description>Contains the entry points for the cResults Application.</description>
 	<menu-entry-point>
 		<index>0</index>
@@ -906,31 +1513,394 @@
 </menu>
 <menu>
 	<name>Links</name>
-	<index>11</index>
+	<index>18</index>
 	<description>Links to external websites</description>
+	<menu-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Clinical Record Policy</name>
+			<application>
+				<name>ACT Applications</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>window</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>Confidentiality</name>
+			<application>
+				<name>ACT Applications</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>600</height>
+		<open-type>window</open-type>
+		<width>900</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>2</index>
+		<entry-point>
+			<name>Health Records (Privacy and Access) ACT 1997</name>
+			<application>
+				<name>ACT Applications</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>600</height>
+		<open-type>window</open-type>
+		<width>900</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>3</index>
+		<entry-point>
+			<name>TCH Abbreviations List</name>
+			<application>
+				<name>ACT Applications</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>600</height>
+		<open-type>window</open-type>
+		<width>900</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>4</index>
+		<entry-point>
+			<name>TCH OPD Clinic Phone and Fax Numbers</name>
+			<application>
+				<name>ACT Applications</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>960</height>
+		<open-type>window</open-type>
+		<width>1024</width>
+	</menu-entry-point>
 	<system-object>false</system-object>
 </menu>
 <menu>
 	<name>Applications Links</name>
-	<index>12</index>
+	<index>19</index>
 	<description>Link to TCH Applications</description>
+	<menu-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Portal Users Search</name>
+			<application>
+				<name>ACT Applications</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>Adverse Drug Reactions</name>
+			<application>
+				<name>ACT Applications</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>600</height>
+		<open-type>window</open-type>
+		<width>900</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>2</index>
+		<entry-point>
+			<name>Capital Pathology</name>
+			<application>
+				<name>Webster</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features>resizable=yes, status=yes, top=0, left=0</features>
+		<height>800</height>
+		<open-type>window</open-type>
+		<width>1280</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>3</index>
+		<entry-point>
+			<name>PRISM</name>
+			<application>
+				<name>PRISM</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>600</height>
+		<open-type>window</open-type>
+		<width>850</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>4</index>
+		<entry-point>
+			<name>PRISM Admin</name>
+			<application>
+				<name>PRISM</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>600</height>
+		<open-type>window</open-type>
+		<width>850</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>5</index>
+		<entry-point>
+			<name>RiskMan</name>
+			<application>
+				<name>Riskman</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features>resizable=yes, status=yes, top=0, left=0</features>
+		<height>800</height>
+		<open-type>window</open-type>
+		<width>1280</width>
+	</menu-entry-point>
 	<system-object>false</system-object>
 </menu>
 <menu>
 	<name>Library</name>
-	<index>13</index>
+	<index>20</index>
 	<description>List of links recommended by the ACT Library</description>
+	<menu-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Library</name>
+			<application>
+				<name>ACT Library</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>600</height>
+		<open-type>window</open-type>
+		<width>1000</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>UpToDate</name>
+			<application>
+				<name>ACT Library</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>600</height>
+		<open-type>window</open-type>
+		<width>1000</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>2</index>
+		<entry-point>
+			<name>Micromedex</name>
+			<application>
+				<name>ACT Library</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>960</height>
+		<open-type>window</open-type>
+		<width>1024</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>3</index>
+		<entry-point>
+			<name>MIMS</name>
+			<application>
+				<name>ACT Library</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>960</height>
+		<open-type>window</open-type>
+		<width>1024</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>4</index>
+		<entry-point>
+			<name>TG Online</name>
+			<application>
+				<name>ACT Library</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>960</height>
+		<open-type>window</open-type>
+		<width>1024</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>5</index>
+		<entry-point>
+			<name>AMH Children's Dosing Companion</name>
+			<application>
+				<name>ACT Library</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>960</height>
+		<open-type>window</open-type>
+		<width>1024</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>6</index>
+		<entry-point>
+			<name>Access Medicine - Drug Index</name>
+			<application>
+				<name>ACT Library</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>960</height>
+		<open-type>window</open-type>
+		<width>1024</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>7</index>
+		<entry-point>
+			<name>Australian Medicines Handbook</name>
+			<application>
+				<name>ACT Library</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>960</height>
+		<open-type>window</open-type>
+		<width>1024</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>8</index>
+		<entry-point>
+			<name>PubMed</name>
+			<application>
+				<name>ACT Library</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>600</height>
+		<open-type>window</open-type>
+		<width>1000</width>
+	</menu-entry-point>
 	<system-object>false</system-object>
 </menu>
 <menu>
 	<name>eReferrals</name>
-	<index>14</index>
+	<index>21</index>
 	<description />
+	<menu-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Referrals to be Registered</name>
+			<application>
+				<name>Soprano Referrals</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>Referrals to be Triaged</name>
+			<application>
+				<name>Soprano Referrals</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>2</index>
+		<entry-point>
+			<name>Referrals to be Booked</name>
+			<application>
+				<name>Soprano Referrals</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>3</index>
+		<entry-point>
+			<name>Returned Referrals</name>
+			<application>
+				<name>Soprano Referrals</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>4</index>
+		<entry-point>
+			<name>DNA Referrals</name>
+			<application>
+				<name>Soprano Referrals</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>5</index>
+		<entry-point>
+			<name>Search for eReferral</name>
+			<application>
+				<name>Soprano Referrals</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
 	<system-object>false</system-object>
 </menu>
 <menu>
 	<name>cViewer</name>
-	<index>15</index>
+	<index>22</index>
 	<description />
 	<menu-entry-point>
 		<index>0</index>
@@ -1065,35 +2035,851 @@
 	<system-object>false</system-object>
 </menu>
 <menu>
-	<name>Resources</name>
-	<index>16</index>
-	<description>Useful web resources for Community Health Intake users.</description>
+	<name>eOrders Searches</name>
+	<index>23</index>
+	<description />
 	<menu-entry-point>
 		<index>0</index>
 		<entry-point>
-			<name>Level 1 Flip Chart</name>
+			<name>Search - All Orders</name>
 			<application>
-				<name>Healthcare pathways - CCR Referrals</name>
+				<name>Concerto Orders</name>
 			</application>
 			<secure-enabled>false</secure-enabled>
 		</entry-point>
 		<features />
 		<height>400</height>
-		<open-type>window</open-type>
+		<open-type>normal</open-type>
 		<width>600</width>
 	</menu-entry-point>
 	<menu-entry-point>
 		<index>1</index>
 		<entry-point>
-			<name>Level 2 Flip Chart</name>
+			<name>Important Order Events</name>
 			<application>
-				<name>Healthcare pathways - CCR Referrals</name>
+				<name>Concerto Orders</name>
 			</application>
 			<secure-enabled>false</secure-enabled>
 		</entry-point>
 		<features />
 		<height>400</height>
-		<open-type>window</open-type>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>2</index>
+		<entry-point>
+			<name>My Recent Orders</name>
+			<application>
+				<name>Concerto Orders</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<system-object>false</system-object>
+</menu>
+<menu>
+	<name>Workflows</name>
+	<index>24</index>
+	<description />
+	<system-object>false</system-object>
+</menu>
+<menu>
+	<name>DM Search</name>
+	<index>25</index>
+	<description />
+	<menu-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>DM Providers</name>
+			<application>
+				<name>ACT Admin</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<system-object>false</system-object>
+</menu>
+<menu>
+	<name>CDR 6</name>
+	<index>26</index>
+	<description>CDR 6 Administration Pages</description>
+	<system-object>false</system-object>
+</menu>
+<menu>
+	<name>BIS Search</name>
+	<index>27</index>
+	<description>Applications for searching for contexts.;Applications for searching for contexts.</description>
+	<menu-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Provider Search</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>0</height>
+		<open-type>normal</open-type>
+		<width>0</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>Client Search - Redirector</name>
+			<application>
+				<name>BreastScreening ACT</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>2</index>
+		<entry-point>
+			<name>PCP Search</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>0</height>
+		<open-type>normal</open-type>
+		<width>0</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>3</index>
+		<entry-point>
+			<name>Practice Search</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>0</height>
+		<open-type>normal</open-type>
+		<width>0</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>4</index>
+		<entry-point>
+			<name>Pending Client Transfer Search</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>5</index>
+		<entry-point>
+			<name>Client Reconciliation</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<system-object>false</system-object>
+</menu>
+<menu>
+	<name>BreastScreening</name>
+	<index>28</index>
+	<description>HWL BreastScreening Programme</description>
+	<menu-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Workstation Setup</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>About</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>2</index>
+		<entry-point>
+			<name>Interval Cancer</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<open-type>normal</open-type>
+		<width>0</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>3</index>
+		<entry-point>
+			<name>BreastScreening Radiographer Homepage</name>
+			<application>
+				<name>BreastScreening ACT</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<system-object>false</system-object>
+</menu>
+<menu>
+	<name>Booking</name>
+	<index>29</index>
+	<description>Booking applications for HWL Breast Screening.</description>
+	<menu-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Follow Up</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>Appointments</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>2</index>
+		<entry-point>
+			<name>File Retrieval</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>3</index>
+		<entry-point>
+			<name>DNA Worklist</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>4</index>
+		<entry-point>
+			<name>Appointment Confirmation</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>5</index>
+		<entry-point>
+			<name>DNR Worklist</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>6</index>
+		<entry-point>
+			<name>Symptomatic Reminder Letters</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>7</index>
+		<entry-point>
+			<name>Pending Transcriptions</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<system-object>false</system-object>
+</menu>
+<menu>
+	<name>Reading</name>
+	<index>30</index>
+	<description>Applications for the Reading of Films</description>
+	<menu-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Read Films</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>Rad Review</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>2</index>
+		<entry-point>
+			<name>Radiology Readings</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>3</index>
+		<entry-point>
+			<name>Read History</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>4</index>
+		<entry-point>
+			<name>Mammogram QA</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>5</index>
+		<entry-point>
+			<name>Recall for Assessment Triage</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</menu-entry-point>
+	<system-object>false</system-object>
+</menu>
+<menu>
+	<name>Films</name>
+	<index>31</index>
+	<description>Tools for Administration of Films</description>
+	<menu-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Film Sorting</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>Film Scanning Details</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</menu-entry-point>
+	<system-object>false</system-object>
+</menu>
+<menu>
+	<name>Films/Files Queries</name>
+	<index>32</index>
+	<description>The Film\File Tracking module is for tracking the films and files for women enrolled in the BreastScreening service. Applications for querying on films and files.</description>
+	<menu-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Query/Cancel Request</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>NHI Enquiry</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</menu-entry-point>
+	<system-object>false</system-object>
+</menu>
+<menu>
+	<name>Film/File Tracking</name>
+	<index>33</index>
+	<menu-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Film/File Locations</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>File Location History</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>2</index>
+		<entry-point>
+			<name>File Relocation</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>3</index>
+		<entry-point>
+			<name>Container Search</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</menu-entry-point>
+	<system-object>false</system-object>
+</menu>
+<menu>
+	<name>Films/Files Sign-In/Sign-Out</name>
+	<index>34</index>
+	<description>The Film\File Tracking module is for tracking the films and files for women enrolled in the BreastScreening service. Applications for signing-in and signing-out films and files.</description>
+	<menu-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Sign In (External Location)</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>Sign In (by NHI)</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>2</index>
+		<entry-point>
+			<name>Sign Out</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>3</index>
+		<entry-point>
+			<name>Sign In (by Barcode)</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</menu-entry-point>
+	<system-object>false</system-object>
+</menu>
+<menu>
+	<name>Management</name>
+	<index>35</index>
+	<description>Tools for Managing the Breast Screening System</description>
+	<menu-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Areas</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<open-type>normal</open-type>
+		<width>0</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>Venues</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<open-type>normal</open-type>
+		<width>0</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>2</index>
+		<entry-point>
+			<name>Exam Codes</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<open-type>normal</open-type>
+		<width>0</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>3</index>
+		<entry-point>
+			<name>Laboratories</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<open-type>normal</open-type>
+		<width>0</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>4</index>
+		<entry-point>
+			<name>Regions</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<open-type>normal</open-type>
+		<width>0</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>5</index>
+		<entry-point>
+			<name>Exclusion Configuration</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<open-type>normal</open-type>
+		<width>0</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>6</index>
+		<entry-point>
+			<name>Note Categories</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>7</index>
+		<entry-point>
+			<name>Bulk GP Transfer</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>8</index>
+		<entry-point>
+			<name>Text Expansions</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>9</index>
+		<entry-point>
+			<name>Notification</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>10</index>
+		<entry-point>
+			<name>Alerts</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<open-type>normal</open-type>
+		<width>0</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>11</index>
+		<entry-point>
+			<name>Screening Machine Search</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<open-type>normal</open-type>
+		<width>0</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>12</index>
+		<entry-point>
+			<name>Service Providers</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<open-type>normal</open-type>
+		<width>0</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>13</index>
+		<entry-point>
+			<name>Wards</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<open-type>normal</open-type>
+		<width>0</width>
+	</menu-entry-point>
+	<system-object>false</system-object>
+</menu>
+<menu>
+	<name>Sessions</name>
+	<index>36</index>
+	<description>Session management utilities</description>
+	<menu-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Appointment Templates</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>Sessions</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>2</index>
+		<entry-point>
+			<name>Invitation Lists</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>3</index>
+		<entry-point>
+			<name>Invitation Rules</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>4</index>
+		<entry-point>
+			<name>Session Calendar</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<system-object>false</system-object>
+</menu>
+<menu>
+	<name>Audit Reports</name>
+	<index>37</index>
+	<description />
+	<menu-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>cBreastScreening Audit Log</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>Provider/Practice Changes</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<system-object>false</system-object>
+</menu>
+<menu>
+	<name>Tools</name>
+	<index>38</index>
+	<description>Breast Screening Administration Tools</description>
+	<menu-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Date of Definitive Diagnosis Synchronization</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<height>400</height>
+		<open-type>normal</open-type>
+		<width>600</width>
+	</menu-entry-point>
+	<menu-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>Letter Batch Import</name>
+			<application>
+				<name>cBreastScreening</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<height>400</height>
+		<open-type>normal</open-type>
 		<width>600</width>
 	</menu-entry-point>
 	<system-object>false</system-object>

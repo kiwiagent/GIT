@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <concerto version="portal-serialization/2.0">
 <account-policy>
+	<name>Admin Only Access</name>
+	<account-timeout>60</account-timeout>
+	<enabled>true</enabled>
+</account-policy>
+<account-policy>
 	<name>Default Policy</name>
 	<account-timeout>45</account-timeout>
 	<account-timeout-enabled>false</account-timeout-enabled>
 	<default>true</default>
 	<description>This default account policy is associated with every new user added to Concerto. There are no restrictions imposed on users associated with this policy.</description>
 	<enabled>true</enabled>
+	<login-timeframes-enabled>false</login-timeframes-enabled>
 </account-policy>
 <password-policy>
 	<name>Default Policy</name>

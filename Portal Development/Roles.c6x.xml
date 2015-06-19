@@ -7,6 +7,77 @@
 	<synchronise-ldap-membership>true</synchronise-ldap-membership>
 </role>
 <role>
+	<name>Apps_ClPtl_BSACTClerical_IAM_Health</name>
+	<description>Access to functionality required by the BSACT Clerical Staff</description>
+	<role-id>e8dc5c52-d2ca-40d2-b2d5-cac95b0160c8</role-id>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_BSACTClerical_IAM_Health</name>
+	<deleted>true</deleted>
+	<description>Access to functionality required by the BSACT Clerical Staff</description>
+	<role-id>ee780c7a-eb83-40cb-b3c1-dd3e4ba3e375</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_BSACTClinician_IAM_Health</name>
+	<description>Access to functionality required by the BSACT Clinicians</description>
+	<role-id>38113843-8369-47c4-971b-0f048f7eabfe</role-id>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_BSACTClinician_IAM_Health</name>
+	<deleted>true</deleted>
+	<description>Access to functionality required by the BSACT Clinicians</description>
+	<role-id>6cd8eb13-3c95-4290-8abb-97a5ce24f6f9</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_BSACTQualityMGR_IAM_Health</name>
+	<description>Access to functionality required by the BSACT Quality Managers</description>
+	<role-id>17a0e016-5c39-49a5-bb17-2bdd50f794b2</role-id>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_BSACTQualityMGR_IAM_Health</name>
+	<deleted>true</deleted>
+	<description>Access to functionality required by the BSACT Quality Managers</description>
+	<role-id>5125bb16-2c22-4158-b387-5483f066643c</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_BSACTRadiographer_IAM_Health</name>
+	<description>Access to functionality required by the BSACT Radiographers</description>
+	<role-id>89cbef36-4ec4-48c2-8fa2-012382e52580</role-id>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_BSACTRadiographer_IAM_Health</name>
+	<deleted>true</deleted>
+	<description>Access to functionality required by the BSACT Radiographers</description>
+	<role-id>a3093aa1-9b31-4b8d-baa1-232de79dfc30</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_BSACTRadiologist_IAM_Health</name>
+	<description>Access to functionality required by the BSACT Clinicians</description>
+	<role-id>a0789637-8196-4190-8eb4-4f145846adfb</role-id>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_BSACTSysAdmin_IAM_Health</name>
+	<description>Access to functionality required by the BSACT system administrators</description>
+	<role-id>f5f6e547-a27a-45ae-98c9-292069ac8b82</role-id>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_BSACTSysAdmin_IAM_Health</name>
+	<deleted>true</deleted>
+	<description>Access to functionality required by the BSACT system administrators</description>
+	<role-id>4527fd0a-2f02-4be7-a7cf-c366ba2f8470</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
 	<name>Apps_ClPtl_CHHSGeneral_IAM_Health</name>
 	<description>Access to baseline Portal functionality for CHHS users</description>
 	<role-id>df405dca-e74b-439d-a370-0105e0c7aa26</role-id>
@@ -21,13 +92,13 @@
 	<name>Apps_ClPtl_CHILevel2_IAM_Health</name>
 	<description>::: CCR ::: CHI Level 2</description>
 	<role-id>a74d182d-b849-424e-b584-608faa7482b7</role-id>
-	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
 </role>
 <role>
 	<name>Apps_ClPtl_CNTeamleader_IAM_Health</name>
 	<description>Team leaders</description>
 	<role-id>49be4d54-8073-4469-ad5f-cdce660caa5d</role-id>
-	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
 </role>
 <role>
 	<name>Apps_ClPtl_CalvaryGeneral_IAM_Health</name>
@@ -75,19 +146,19 @@
 	<name>Apps_ClPtl_CommunityAlliedHealth_IAM_Health</name>
 	<description>::: CCR :::</description>
 	<role-id>62d13684-2570-43ff-b3fe-1e8c0a2db339</role-id>
-	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
 </role>
 <role>
 	<name>Apps_ClPtl_CommunityClinician_IAM_Health</name>
 	<description>::: CCR :::</description>
 	<role-id>7c732503-0a9d-491a-a8d1-fed3c5b1275a</role-id>
-	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
 </role>
 <role>
 	<name>Apps_ClPtl_CommunityHealthCentreAdmin_IAM_Health</name>
 	<description>::: WiC ::: Clerical</description>
 	<role-id>3cd85b50-c62d-40f1-975a-8080409757b7</role-id>
-	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
 </role>
 <role>
 	<name>Apps_ClPtl_DrCHHS_IAM_Health</name>
@@ -105,7 +176,7 @@
 	<name>Apps_ClPtl_Intake_IAM_Health</name>
 	<description>Ambulatory Clerical</description>
 	<role-id>98fe6c63-b044-4466-80f4-81902e4636d8</role-id>
-	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
 </role>
 <role>
 	<name>Apps_ClPtl_MedStudentCHHS_IAM_Health</name>
@@ -117,7 +188,7 @@
 	<name>Apps_ClPtl_WiCNurse_IAM_Health</name>
 	<description>WiC Advance Practice Nurse</description>
 	<role-id>1bb7eabe-630a-498e-9b2c-ba7a19f04501</role-id>
-	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
 </role>
 <role>
 	<name>CCR_Clerical</name>
@@ -130,6 +201,49 @@
 	<name>ClPtl_Admin</name>
 	<description>Access to functionality required by the eHealth Support system administrators</description>
 	<role-id>61bde4f2-fd13-42a3-95f6-8b94443ea741</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_BSACTClerical</name>
+	<description>Access to functionality required by the BSACT Clerical Staff</description>
+	<role-id>068815ee-1a61-441f-8461-6298265df826</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_BSACTClinician</name>
+	<description>Access to functionality required by the BSACT Clinicians</description>
+	<role-id>9a90a4b2-fbe1-4f91-a9b0-10f3051a5637</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_BSACTQualityMGR</name>
+	<description>Access to functionality required by the BSACT Quality Managers</description>
+	<role-id>78f9e84d-3876-4967-af64-9a851566c7d0</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_BSACTRadiographer</name>
+	<description>Access to functionality required by the BSACT Clinicians</description>
+	<role-id>548bcb3d-6310-4007-88b1-c41e936724f8</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_BSACTRadiographer</name>
+	<deleted>true</deleted>
+	<description>Access to functionality required by the BSACT Radiographers</description>
+	<role-id>9c4d3632-6bee-4476-af17-8ebe2a481549</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_BSACTRadiologist</name>
+	<description>Access to functionality required by the BSACT Clinicians</description>
+	<role-id>bbc47182-0094-4e1d-aa2f-34b12a3696a3</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_BSACTSysAdmin</name>
+	<description>Access to functionality required by the BSACT system administrators</description>
+	<role-id>8d0bb2c7-6112-4021-bda0-73f08b28630a</role-id>
 	<synchronise-ldap-membership>false</synchronise-ldap-membership>
 </role>
 <role>
@@ -244,14 +358,14 @@
 </role>
 <role>
 	<name>ClPtl_Intake</name>
-	<description>::::CCR:::: Admin CHI intake.</description>
-	<role-id>80d6b9cf-9a44-45ee-a20f-3b10d1fef613</role-id>
+	<description>CHI Level 1 Users</description>
+	<role-id>f43366ee-8b1e-41c7-b92f-cda91a1f5cdd</role-id>
 	<synchronise-ldap-membership>false</synchronise-ldap-membership>
 </role>
 <role>
 	<name>ClPtl_Intake</name>
-	<description>CHI Level 1 Users</description>
-	<role-id>f43366ee-8b1e-41c7-b92f-cda91a1f5cdd</role-id>
+	<description>::::CCR:::: Admin CHI intake.</description>
+	<role-id>80d6b9cf-9a44-45ee-a20f-3b10d1fef613</role-id>
 	<synchronise-ldap-membership>false</synchronise-ldap-membership>
 </role>
 <role>
@@ -276,15 +390,15 @@
 <role>
 	<name>ClPtl_WiC_Admin</name>
 	<deleted>true</deleted>
-	<description>Walk-in-Centre admin</description>
-	<role-id>3c9a2e66-fa9e-40df-81cc-927ed9fb0bdd</role-id>
+	<description>Level 1 admin staff within CHI who process standard referrals only.</description>
+	<role-id>cbc88bf9-dde8-4251-a408-7c32b869ef6e</role-id>
 	<synchronise-ldap-membership>false</synchronise-ldap-membership>
 </role>
 <role>
 	<name>ClPtl_WiC_Admin</name>
 	<deleted>true</deleted>
-	<description>Level 1 admin staff within CHI who process standard referrals only.</description>
-	<role-id>cbc88bf9-dde8-4251-a408-7c32b869ef6e</role-id>
+	<description>Walk-in-Centre admin</description>
+	<role-id>3c9a2e66-fa9e-40df-81cc-927ed9fb0bdd</role-id>
 	<synchronise-ldap-membership>false</synchronise-ldap-membership>
 </role>
 <role>

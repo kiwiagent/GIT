@@ -1,3 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <concerto version="portal-serialization/2.0">
+<location>
+	<name>Mobile Unit</name>
+	<description>Mobile Breast Screening Clinic</description>
+	<system-object>false</system-object>
+</location>
 </concerto>
