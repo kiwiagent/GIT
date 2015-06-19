@@ -1,0 +1,478 @@
+com.orchestral.medman.api.codeset.DurationUnit,ORION,1,Day(s),,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.DurationUnit,ORION,7,Week(s),,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.DurationUnit,ORION,28,Month(s),,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.DurationUnit,ORION,365,Year(s),,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationForm,ORION,Tab,Tablet,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationForm,ORION,Cap,Capsule,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationForm,ORION,Inj,Injection,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationForm,ORION,Liq,Liquid,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationForm,ORION,Crm,Cream,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationForm,ORION,Inhaler,Inhaler,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationForm,ORION,Supp,Suppository,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationForm,ORION,Enema,Enema,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationForm,ORION,Pessary,Pessary,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationForm,ORION,Oint,Ointment,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationForm,ORION,Spray,Spray,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationForm,ORION,Drops,Drops,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationForm,ORION,Emul,Emulsion,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationForm,ORION,Lotion,Lotion,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationForm,ORION,Patch,Patch,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationForm,ORION,Soln,Solution,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationForm,ORION,Gel,Gel,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationForm,ORION,Linc,Linctus,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationForm,ORION,Amp,Ampoule,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationForm,ORION,Gran,Granules,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationForm,ORION,Syrup,Syrup,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationForm,ORION,Powder,Powder,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationForm,ORION,Oil,Oil,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationForm,ORION,Lozenge,Lozenge,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationForm,ORION,Sach,Sachet,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationForm,ORION,Tinc,Tincture,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationFrequency,ORION,bd,twice daily,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationFrequency,ORION,od,once daily,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationFrequency,ORION,once,as a single dose,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationFrequency,ORION,q1m,once a month,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationFrequency,ORION,q1w,once a week,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationFrequency,ORION,q4h,every four hours,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationFrequency,ORION,q6h,every six hours,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationFrequency,ORION,q8h,every eight hours,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationFrequency,ORION,qam,once daily in the morning,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationFrequency,ORION,qhs,once daily at bedtime,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationFrequency,ORION,qid,four times daily,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationFrequency,ORION,qod,every second day,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationFrequency,ORION,qpm,once daily in the evening,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationFrequency,ORION,tds,three times daily,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationFrequency,ORION,x5d,five times daily,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationRoute,ORION,PO,oral,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationRoute,ORION,epidural,epidural,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationRoute,ORION,inhale,inhale,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationRoute,ORION,intraarticular,intraarticular,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationRoute,ORION,IM,intramuscular,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationRoute,ORION,intrathecal,intrathecal,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationRoute,ORION,intranasal,intranasal,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationRoute,ORION,IV,intravenous,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationRoute,ORION,irrigation,irrigation,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationRoute,ORION,left,left,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationRoute,ORION,left and right,left and right,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationRoute,ORION,NEB,nebulised,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationRoute,ORION,NG,naso-gastric,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationRoute,ORION,PEG,PEG,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationRoute,ORION,PR,per rectum,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationRoute,ORION,PV,per vagina,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationRoute,ORION,PICC,PICC,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationRoute,ORION,right,right,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationRoute,ORION,subcut,subcutaneous,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationRoute,ORION,subling,sublingual,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationRoute,ORION,topical,topical,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationUnit,ORION,mg,milligram,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationUnit,ORION,g,gram,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationUnit,ORION,ml,millilitre,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationUnit,ORION,iu,international unit,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationUnit,ORION,µg,microgram,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationUnit,ORION,mmol,millimole,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationUnit,ORION,kg,kilogram,,FALSE,,,,FALSE
+com.orchestral.medman.api.codeset.MedicationUnit,ORION,u,unit,,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.CloseReason,Orion,content_missing,Content missing / blank / illegible,Content missing / blank / illegible,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.CloseReason,Orion,incomplete_patient_details,Incomplete patient details,Incomplete patient details,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.CloseReason,Orion,unavailable_specialist,Unavailable specialist selected,Unavailable specialist selected,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.CloseReason,Orion,unknown_clinician_service,Addressed to unknown clinician / service,Addressed to unknown clinician / service,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.CloseReason,Orion,clinician_service_unavailable,Clinician / Service unavailable,Clinician / Service unavailable,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.DeferReason,Orion,MedicallyNotReady,Patient Medically not ready (e.g. recovering from Surgery),Patient Medically not ready,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.DeferReason,Orion,FunctionallyNotReady,Patient Functionally not ready (e.g. leg in cast and cannot walk),Patient Functionally not ready,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.DeferReason,Orion,SociallyNotReady,Patient Socially not ready (e.g. on vacation or other),Patient Socially not ready,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.DeferReason,Orion,ProviderUnavailable,Provider Unavailable,Provider Unavailable,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ForwardReason,Orion,Referral Reassigned,Referral Reassigned,Referral Reassigned,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,PROVIDER,Provider,Provider,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,PATIENT,Patient,Patient,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,BOOKINGREASON,Booking Reason,Booking Reason,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,REJECTREASON,Reject Reason,Reject Reason,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,BOOKEDIN,Booked In,Booked In,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,CANCELREASON,Cancel Reason,Cancel Reason,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralPriority,Orion,1,1,1,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralPriority,Orion,2,2,2,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralPriority,Orion,2a,2a,2a,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralPriority,Orion,3,3,3,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,UNK,Unknown,Unknown,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Aboriginal Liaison Officer,ALO,Aboriginal Liaison Officer,Aboriginal Liaison Officer,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Aboriginal Liaison Officer Student,ALOS,Aboriginal Liaison Officer Student,Aboriginal Liaison Officer Student,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS ACAT Assessor,ACRSAA,ACRS ACAT Assessor,ACRS ACAT Assessor,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS ACTES,ACRES,ACRS ACTES,ACRS ACTES,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Aged Day Care Assistant,ACRADA,ACRS Aged Day Care Assistant,ACRS Aged Day Care Assistant,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Aged Day Care Coordinator,ACRADC,ACRS Aged Day Care Coordinator,ACRS Aged Day Care Coordinator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Allied Health Assistant,ACRAHA,ACRS Allied Health Assistant,ACRS Allied Health Assistant,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Care Coordinator,ACRSCC,ACRS Care Coordinator,ACRS Care Coordinator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Clinical Psychology,ACRSCP,ACRS Clinical Psychology,ACRS Clinical Psychology,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS CON,ACRCON,ACRS CON,ACRS CON,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Counselling,ACRSCOU,ACRS Counselling,ACRS Counselling,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Driver Trainer,ACRSD,ACRS Driver Trainer,ACRS Driver Trainer,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Exercise Physiology,ACRSEP,ACRS Exercise Physiology,ACRS Exercise Physiology,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Exercise Therapy,ACRSET,ACRS Exercise Therapy,ACRS Exercise Therapy,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Geriatric Medicine,ACRSGM,ACRS Geriatric Medicine,ACRS Geriatric Medicine,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Intake Officer,ACRSINT,ACRS Intake Officer,ACRS Intake Officer,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Neuropsychology,ACRSN,ACRS Neuropsychology,ACRS Neuropsychology,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Nurse Practitioner,ACRSNP,ACRS Nurse Practitioner,ACRS Nurse Practitioner,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Occupational Therapy,ACROT,ACRS Occupational Therapy,ACRS Occupational Therapy,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Occupational Therapy Assistant,ACROTA,ACRS Occupational Therapy Assistant,ACRS Occupational Therapy Assistant,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS OXY,ACROX,ACRS OXY,ACRS OXY,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Physiotherapy,ACRSPHY,ACRS Physiotherapy,ACRS Physiotherapy,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Physiotherapy Assistant,ACRSPA,ACRS Physiotherapy Assistant,ACRS Physiotherapy Assistant,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Physiotherapy Student,ACRSPS,ACRS Physiotherapy Student,ACRS Physiotherapy Student,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Prosthetist and Orthotist,ACRSPO,ACRS Prosthetist and Orthotist,ACRS Prosthetist and Orthotist,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS RACLN Coordinator,ACRSRAC,ACRS RACLN Coordinator,ACRS RACLN Coordinator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS RADAR,ACRRAD,ACRS RADAR,ACRS RADAR,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Registered Nurse,ACRSRN,ACRS Registered Nurse,ACRS Registered Nurse,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Registrar,ACRREG,ACRS Registrar,ACRS Registrar,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Rehab Coordinator,ACRSRCC,ACRS Rehab Coordinator,ACRS Rehab Coordinator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Social Work,ACRSSW,ACRS Social Work,ACRS Social Work,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Social Work Student,ACRSWS,ACRS Social Work Student,ACRS Social Work Student,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Speech Pathology,ACRSSP,ACRS Speech Pathology,ACRS Speech Pathology,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Speech Pathology Assistant,ACRASP,ACRS Speech Pathology Assistant,ACRS Speech Pathology Assistant,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Still Ticking Coordinator,ACRSTC,ACRS Still Ticking Coordinator,ACRS Still Ticking Coordinator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS SWAPS Senior,ACRSSS,ACRS SWAPS Senior,ACRS SWAPS Senior,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS SWAPS Technical Officer,ACRSST,ACRS SWAPS Technical Officer,ACRS SWAPS Technical Officer,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Teacher,ACRST,ACRS Teacher,ACRS Teacher,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Technical Officer,ACRSTO,ACRS Technical Officer,ACRS Technical Officer,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACRS Therapy Assistant,ACRSTA,ACRS Therapy Assistant,ACRS Therapy Assistant,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACTMH Enrolled Nurse,MHEN,ACTMH Enrolled Nurse,ACTMH Enrolled Nurse,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACTMH Occupational Therapist,MHOCC,ACTMH Occupational Therapist,ACTMH Occupational Therapist,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACTMH Psychiatry,MHPSY,ACTMH Psychiatry,ACTMH Psychiatry,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACTMH Psychiatry Registrar,MHPR,ACTMH Psychiatry Registrar,ACTMH Psychiatry Registrar,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACTMH Psychologist,MHPSC,ACTMH Psychologist,ACTMH Psychologist,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACTMH Recovery Support Officer,MHRSO,ACTMH Recovery Support Officer,ACTMH Recovery Support Officer,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACTMH Registered Nurse,MHRN,ACTMH Registered Nurse,ACTMH Registered Nurse,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ACTMH Social Work,MHSW,ACTMH Social Work,ACTMH Social Work,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Adolescents and Young Adults Nurse Care Coordinator,AYANCC,Adolescents and Young Adults Nurse Care Coordinator,Adolescents and Young Adults Nurse Care Coordinator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ADP Aqua,ADPAQU,ADP Aqua,ADP Aqua,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ADP Blue,ADPBLU,ADP Blue,ADP Blue,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ADP Gold,ADPGOL,ADP Gold,ADP Gold,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ADP Green,ADPGRE,ADP Green,ADP Green,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ADP Impact,ADPIMP,ADP Impact,ADP Impact,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ADP Interstate,ADPIN,ADP Interstate,ADP Interstate,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ADP Key Worker Program,ADPKWP,ADP Key Worker Program,ADP Key Worker Program,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ADP Navy,ADPNAV,ADP Navy,ADP Navy,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ADP Orange,ADPORA,ADP Orange,ADP Orange,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ADP Purple,ADPPUR,ADP Purple,ADP Purple,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ADP Red,ADPRED,ADP Red,ADP Red,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ADP Sexual Health,ADPSEX,ADP Sexual Health,ADP Sexual Health,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ADP Silver,ADPSIL,ADP Silver,ADP Silver,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ADP Violet,ADPVIO,ADP Violet,ADP Violet,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ADP Withdrawal Counselling,ADPWCO,ADP Withdrawal Counselling,ADP Withdrawal Counselling,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ADP Yellow,ADPYEL,ADP Yellow,ADP Yellow,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Anatomical Pathology,ANP,Anatomical Pathology,Anatomical Pathology,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Assistant in Nursing,AIN,Assistant in Nursing,Assistant in Nursing,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Audiologist,AUD,Audiologist,Audiologist,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Brain and CNS Cancer Nurse Care Co-ordinator,BCNSNCC,Brain and CNS Cancer Nurse Care Co-ordinator,Brain and CNS Cancer Nurse Care Co-ordinator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Breast Cancer Nurse Care Co-ordinator,BRNCC,Breast Cancer Nurse Care Co-ordinator,Breast Cancer Nurse Care Co-ordinator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Breast Care Nurse,BRE,Breast Care Nurse,Breast Care Nurse,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,BS BreastScreen,BSBRSC,BS BreastScreen,BS BreastScreen,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Cardiac Surgery,CTS,Cardiac Surgery,Cardiac Surgery,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Cardiology,CAR,Cardiology,Cardiology,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CC Academic Liaison Nurse,CCALN,CC Academic Liaison Nurse,CC Academic Liaison Nurse,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CC Allied Health Manager,ALLHM,CC Allied Health Manager,CC Allied Health Manager,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CC CNC - Chronic Conditions Coordinator,CNCCHC,CC CNC - Chronic Conditions Coordinator,CC CNC - Chronic Conditions Coordinator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CC CNC - Complex Care Coordinator,CNCCCC,CC CNC - Complex Care Coordinator,CC CNC - Complex Care Coordinator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CC CNC - Continence,CCCNC,CC CNC - Continence,CC CNC - Continence,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CC CNC - Post Acute,CCCNP,CC CNC - Post Acute,CC CNC - Post Acute,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CC CNC - Wounds,CNCWOU,CC CNC - Wounds,CC CNC - Wounds,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CC Community Nursing,CCCN,CC Community Nursing,CC Community Nursing,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CC Continence Physiotherapy,CONPHY,CC Continence Physiotherapy,CC Continence Physiotherapy,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CC Health Promotion Officer,CCHPO,CC Health Promotion Officer,CC Health Promotion Officer,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CC NP - Wounds,CCNPW,CC NP - Wounds,CC NP - Wounds,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CC Nurse Manager,CCNM,CC Nurse Manager,CC Nurse Manager,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CC Nutrition,CCNUT,CC Nutrition,CC Nutrition,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CC Occ Therapy Assistant,CCOTA,CC Occ Therapy Assistant,CC Occ Therapy Assistant,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CC Occupational Therapy,CCOT,CC Occupational Therapy,CC Occupational Therapy,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CC Physiotherapy,CCPHY,CC Physiotherapy,CC Physiotherapy,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CC Physiotherapy Assistant,CCPHYA,CC Physiotherapy Assistant,CC Physiotherapy Assistant,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CC Physiotherapy Student,CCPHYS,CC Physiotherapy Student,CC Physiotherapy Student,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CC Podiatry,CCPOD,CC Podiatry,CC Podiatry,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CC Podiatry Assistant,PODASS,CC Podiatry Assistant,CC Podiatry Assistant,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CC Social Work,CCSW,CC Social Work,CC Social Work,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CHP Medical Officer,CHPMO,CHP Medical Officer,CHP Medical Officer,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CHP Nursing,CHPNUR,CHP Nursing,CHP Nursing,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CHP Pharmacist,CHPPHA,CHP Pharmacist,CHP Pharmacist,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Chronic Disease Management,CDMGT,Chronic Disease Management,Chronic Disease Management,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Chronic Obstructive Pulmonary Disease,COPD,Chronic Obstructive Pulmonary Disease,Chronic Obstructive Pulmonary Disease,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Clinical Care Coordinator,CCPCCC,Clinical Care Coordinator,Clinical Care Coordinator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Clinical Nurse Consultant,CNC,Clinical Nurse Consultant,Clinical Nurse Consultant,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Clinical Pharmacology,CPH,Clinical Pharmacology,Clinical Pharmacology,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Clinical Trials Coordinator,CTP,Clinical Trials Coordinator,Clinical Trials Coordinator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CRP ELS,CRPELS,CRP ELS,CRP ELS,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Asthma Educator,CYWNAE,CYW Asthma Educator,CYW Asthma Educator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Audiometrist Nurse,CYWNAU,CYW Audiometrist Nurse,CYW Audiometrist Nurse,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Bosnian Interpreter,CYWIBO,CYW Bosnian Interpreter,CYW Bosnian Interpreter,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Cantonese Interpreter,CYWICA,CYW Cantonese Interpreter,CYW Cantonese Interpreter,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Care Coordinator,CYWCMA,CYW Care Coordinator,CYW Care Coordinator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW CARHU Medical Officer,CYWCMO,CYW CARHU Medical Officer,CYW CARHU Medical Officer,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW CARHU Paediatric Registrar,CYWCPR,CYW CARHU Paediatric Registrar,CYW CARHU Paediatric Registrar,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW CARHU Paediatrician,CYWCPA,CYW CARHU Paediatrician,CYW CARHU Paediatrician,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW CARHU Psychologist,CYWCPS,CYW CARHU Psychologist,CYW CARHU Psychologist,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW CARHU Social Worker,CYWCSW,CYW CARHU Social Worker,CYW CARHU Social Worker,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Child Medical Officer,CYWMED,CYW Child Medical Officer,CYW Child Medical Officer,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Complex Health,CYWCOH,CYW Complex Health,CYW Complex Health,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Croatian Interpreter,CYWICR,CYW Croatian Interpreter,CYW Croatian Interpreter,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW IMPACT Coordinator,CYWIMP,CYW IMPACT Coordinator,CYW IMPACT Coordinator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Mandarin Interpreter,CYWIMA,CYW Mandarin Interpreter,CYW Mandarin Interpreter,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Maternal and Child Health Nurse,CYWNMA,CYW Maternal and Child Health Nurse,CYW Maternal and Child Health Nurse,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Nutrition,CYWNUT,CYW Nutrition,CYW Nutrition,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Orthoptist,CYWORT,CYW Orthoptist,CYW Orthoptist,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Paediatric Registrar,CYWPAR,CYW Paediatric Registrar,CYW Paediatric Registrar,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Paediatrician,CYWPAE,CYW Paediatrician,CYW Paediatrician,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Physiotherapy,CYWPHY,CYW Physiotherapy,CYW Physiotherapy,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Psychologist,CYWPSY,CYW Psychologist,CYW Psychologist,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW QEII Enrolled Nurse,CYWQEN,CYW QEII Enrolled Nurse,CYW QEII Enrolled Nurse,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW QEII Registered Nurse,CYWQRN,CYW QEII Registered Nurse,CYW QEII Registered Nurse,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW School Nurse,CYWNSC,CYW School Nurse,CYW School Nurse,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW School Nurse Coordinator,CYWNSCO,CYW School Nurse Coordinator,CYW School Nurse Coordinator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW School Youth Health Nurse,CYWSYH,CYW School Youth Health Nurse,CYW School Youth Health Nurse,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Serbian Interpreter,CYWISE,CYW Serbian Interpreter,CYW Serbian Interpreter,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Social Worker,CYWSWO,CYW Social Worker,CYW Social Worker,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Spanish Interpreter,CYWIES,CYW Spanish Interpreter,CYW Spanish Interpreter,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Special School Nurse,CYWSPS,CYW Special School Nurse,CYW Special School Nurse,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Team Leader,CYWTLE,CYW Team Leader,CYW Team Leader,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Vietnamese Interpreter,CYWIVI,CYW Vietnamese Interpreter,CYW Vietnamese Interpreter,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Womens Health Counsellor,CYWWCO,CYW Womens Health Counsellor,CYW Womens Health Counsellor,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Womens Health Medical Officer,CYWWMO,CYW Womens Health Medical Officer,CYW Womens Health Medical Officer,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Womens Health Nurse,CYWNWH,CYW Womens Health Nurse,CYW Womens Health Nurse,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Womens Health Nurse Practitioner,CYWHNP,CYW Womens Health Nurse Practitioner,CYW Womens Health Nurse Practitioner,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CYW Womens Health Staff Specialist,CYWWSS,CYW Womens Health Staff Specialist,CYW Womens Health Staff Specialist,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Dental,DEN,Dental,Dental,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Diabetes Educator,DNE,Diabetes Educator,Diabetes Educator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Diabetes Nutrition,DNUT,Diabetes Nutrition,Diabetes Nutrition,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Diabetes Podiatry,DIAPOD,Diabetes Podiatry,Diabetes Podiatry,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Diabetes Social Worker,DIASW,Diabetes Social Worker,Diabetes Social Worker,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,"Ear, Nose and Throat",ENT,"Ear, Nose and Throat","Ear, Nose and Throat",FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Emergency Medicine,EME,Emergency Medicine,Emergency Medicine,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Endocrinology,END,Endocrinology,Endocrinology,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Endoscopy,ENDO,Endoscopy,Endoscopy,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Enrolled Nurse,EN,Enrolled Nurse,Enrolled Nurse,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Exercise Physiology,EXP,Exercise Physiology,Exercise Physiology,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Gastroenterology,GAS,Gastroenterology,Gastroenterology,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Gastrointestinal Cancer Nurse Care Co-ordinator,GACNCC,Gastrointestinal Cancer Nurse Care Co-ordinator,Gastrointestinal Cancer Nurse Care Co-ordinator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,General Medical Unit,GMU,General Medical Unit,General Medical Unit,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,General Medicine,G/M,General Medicine,General Medicine,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,General Practice,GENPRA,General Practice,General Practice,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,General Surgery,G/S,General Surgery,General Surgery,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Geriatric Medicine,GER,Geriatric Medicine,Geriatric Medicine,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Gynaecology Cancer Nurse Care Co-ordinator,GCNCC,Gynaecology Cancer Nurse Care Co-ordinator,Gynaecology Cancer Nurse Care Co-ordinator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Head & Neck Surgery,HNS,Head & Neck Surgery,Head & Neck Surgery,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Head and Neck Cancer Nurse Care Co-ordinator,HNCNCC,Head and Neck Cancer Nurse Care Co-ordinator,Head and Neck Cancer Nurse Care Co-ordinator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Heart Failure Nurse,HFN,Heart Failure Nurse,Heart Failure Nurse,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,IHCP Stoma/Wound Specialist,IHCPNSW,IHCP Stoma/Wound Specialist,IHCP Stoma/Wound Specialist,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Lung Cancer and Mesothelioma Nurse Care Co-ordinator,LCMNCC,Lung Cancer and Mesothelioma Nurse Care Co-ordinator,Lung Cancer and Mesothelioma Nurse Care Co-ordinator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Malignant Haematology Nurse Care Co-ordinator,MAHNCC,Malignant Haematology Nurse Care Co-ordinator,Malignant Haematology Nurse Care Co-ordinator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,MAPU,MAPU,MAPU,MAPU,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Melanoma Cancer Nurse Care Co-ordinator,MCNCC,Melanoma Cancer Nurse Care Co-ordinator,Melanoma Cancer Nurse Care Co-ordinator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Mental Health Nurse,MHNUR,Mental Health Nurse,Mental Health Nurse,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Neurology,NEU,Neurology,Neurology,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Nuclear Medicine,NUC,Nuclear Medicine,Nuclear Medicine,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Nurse Practitioner,NP,Nurse Practitioner,Nurse Practitioner,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Nutrition,NUT,Nutrition,Nutrition,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Nutrition Student,SNU,Nutrition Student,Nutrition Student,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Nutrition Technician,NTT,Nutrition Technician,Nutrition Technician,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Occupational Therapy,O/T,Occupational Therapy,Occupational Therapy,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Occupational Therapy Assistant,OTA,Occupational Therapy Assistant,Occupational Therapy Assistant,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Occupational Therapy Student,SOT,Occupational Therapy Student,Occupational Therapy Student,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Oncology,ONC,Oncology,Oncology,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Ophthalmology,OPH,Ophthalmology,Ophthalmology,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Oral Surgery,OSU,Oral Surgery,Oral Surgery,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Orthopaedic Surgery,ORT,Orthopaedic Surgery,Orthopaedic Surgery,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Pathology,PAT,Pathology,Pathology,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Physiotherapy,PHY,Physiotherapy,Physiotherapy,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Physiotherapy Assistant,PHA,Physiotherapy Assistant,Physiotherapy Assistant,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Physiotherapy Student,SPH,Physiotherapy Student,Physiotherapy Student,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Plastic Surgery,PLA,Plastic Surgery,Plastic Surgery,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Prostate Cancer Nurse Care Co-ordinator,PUCNCC,Prostate Cancer Nurse Care Co-ordinator,Prostate Cancer Nurse Care Co-ordinator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Psychiatry,PSY,Psychiatry,Psychiatry,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Psychology,PSC,Psychology,Psychology,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Psychology Student,SPS,Psychology Student,Psychology Student,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Public Health,PUB,Public Health,Public Health,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Radiation Oncology,ROC,Radiation Oncology,Radiation Oncology,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Radiology,RAD,Radiology,Radiology,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Registered Midwife,REGMWF,Registered Midwife,Registered Midwife,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Registered Nurse,RN,Registered Nurse,Registered Nurse,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Registrar,REG,Registrar,Registrar,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Rehabilitation,REH,Rehabilitation,Rehabilitation,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Respiratory,RES,Respiratory,Respiratory,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Respiratory and Sleep Medicine,RAS,Respiratory and Sleep Medicine,Respiratory and Sleep Medicine,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Sarcoma Nurse Care Co-ordinator,SNCC,Sarcoma Nurse Care Co-ordinator,Sarcoma Nurse Care Co-ordinator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Social Work,S/W,Social Work,Social Work,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Social Work Student,SSW,Social Work Student,Social Work Student,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Speech Pathology,SPE,Speech Pathology,Speech Pathology,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Speech Pathology Assistant,SPA,Speech Pathology Assistant,Speech Pathology Assistant,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Speech Pathology Student,SSP,Speech Pathology Student,Speech Pathology Student,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Thoracic Surgery,THO,Thoracic Surgery,Thoracic Surgery,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,TTCP Allied Health Assistant,TTCAHA,TTCP Allied Health Assistant,TTCP Allied Health Assistant,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,TTCP Allied Health Assistant Student,TTCAHAS,TTCP Allied Health Assistant Student,TTCP Allied Health Assistant Student,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,TTCP Coordinator,TTCPCO,TTCP Coordinator,TTCP Coordinator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,TTCP Dietician,TTCPDT,TTCP Dietician,TTCP Dietician,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,TTCP Occupational Therapy,TTCPOT,TTCP Occupational Therapy,TTCP Occupational Therapy,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,TTCP Physiotherapy,TTCPPT,TTCP Physiotherapy,TTCP Physiotherapy,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,TTCP Social Worker,TTCPSW,TTCP Social Worker,TTCP Social Worker,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Unknown,UNK,Unknown,Unknown,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Urology,URO,Urology,Urology,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Urology Nurse Care Coordinator,UNCC,Urology Nurse Care Coordinator,Urology Nurse Care Coordinator,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,Vascular,VAS,Vascular,Vascular,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,INT_CR_Source,?,Unknown,Unknown,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,code,?,Unknown,Unknown,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,MDTN,Disability North Multi-disciplinary Team,Disability North Multi-disciplinary Team,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,RCOMM,CRP Community Allied Health Team,CRP Community Allied Health Team,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,RREMT,CRP Remedial Therapy,CRP Remedial Therapy,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,RVOCR,CRP Vocational Rehab,CRP Vocational Rehab,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,RDARS,CRP Driver Rehab,CRP Driver Rehab,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,RPROR,CRP Prosthetic and Orthotic,CRP Prosthetic and Orthotic,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,RSWAP,CRP SWAPS,CRP SWAPS,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,RINLC,CRP Independent Living Centre,CRP Independent Living Centre,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,DISAC,Disability Accommodation Support,Disability Accommodation Support,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,RPCMP,CRP Comm Rehab Practitioner,CRP Comm Rehab Practitioner,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CYMIG,CYW Migrant Health,CYW Migrant Health,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CYWOM,CYW Womens Health,CYW Womens Health,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CYCAR,CYW CARHU Team,CYW CARHU Team,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CYQE2,CYW QE2 FC,CYW QE2 FC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,ADPG,ADP Gold,ADP Gold,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,ADPA,ADP Aqua,ADP Aqua,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,ADPBR,ADP Brown,ADP Brown,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,ADPS,ADP Silver,ADP Silver,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,ADPBL,ADP Blue,ADP Blue,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,ADPP,ADP Purple,ADP Purple,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,ADPN,ADP Navy,ADP Navy,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,ADPBZ,ADP Bronze,ADP Bronze,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,ADPR,ADP Red,ADP Red,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,ADPGR,ADP Green,ADP Green,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,ADPY,ADP Yellow,ADP Yellow,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,ADPO,ADP Orange,ADP Orange,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,ADPV,ADP Violet,ADP Violet,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,IHBUS,IHCP Bush Fire Recovery,IHCP Bush Fire Recovery,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,RPELS,CRP Equipment and Loans Service,CRP Equipment and Loans Service,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CYWAH,CYW Allied Health Team,CYW Allied Health Team,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,COAP,CRP COAP,CRP COAP,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCCNB,CC Community Nursing BHC,CC Community Nursing BHC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCCNC,CC Community Nursing CHC,CC Community Nursing CHC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCCNP,CC Community Nursing PHC,CC Community Nursing PHC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCCNT,CC Community Nursing THC,CC Community Nursing THC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCCNL,CC Community Nursing LINK,CC Community Nursing LINK,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCCNN,CC Community Nursing CNC,CC Community Nursing CNC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCPHB,CC Physiotherapy BHC,CC Physiotherapy BHC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCPHC,CC Physiotherapy CHC,CC Physiotherapy CHC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCPHD,CC Physiotherapy DHC,CC Physiotherapy DHC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCPHP,CC Physiotherapy PHC,CC Physiotherapy PHC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCPHT,CC Physiotherapy THC,CC Physiotherapy THC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCPDN,CC Physiotherapy Dom North,CC Physiotherapy Dom North,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCPDS,CC Physiotherapy Dom South,CC Physiotherapy Dom South,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCSWB,CC Social Work BHC,CC Social Work BHC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCSWC,CC Social Work CHC,CC Social Work CHC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCSWP,CC Social Work PHC,CC Social Work PHC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCSWT,CC Social Work THC,CC Social Work THC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCOTN,CC Occupational Therapy North,CC Occupational Therapy North,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCOTS,CC Occupational Therapy South,CC Occupational Therapy South,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCNUB,CC Nutrition BHC,CC Nutrition BHC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCNUC,CC Nutrition CHC,CC Nutrition CHC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCNUP,CC Nutrition PHC,CC Nutrition PHC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCNUT,CC Nutrition THC,CC Nutrition THC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCPOB,CC Podiatry BHC,CC Podiatry BHC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCPOC,CC Podiatry CHC,CC Podiatry CHC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCPOD,CC Podiatry DHC,CC Podiatry DHC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCPOP,CC Podiatry PHC,CC Podiatry PHC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCPOT,CC Podiatry THC,CC Podiatry THC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CYIMT,CYW IMPACT Team,CYW IMPACT Team,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CYCPC,CYW CPCHS,CYW CPCHS,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CYNNT,CYW North Nursing Team,CYW North Nursing Team,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CYSNT,CYW Southern Nursing Team,CYW Southern Nursing Team,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCCPS,CC Cancer Psychosocial,CC Cancer Psychosocial,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCMAN,CC Managers,CC Managers,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCPCC,CC Physiotherapy - Continence,CC Physiotherapy - Continence,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCORN,CC Occupational Therapy Rapid Response North,CC Occupational Therapy Rapid Response North,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCORS,CC Occupational Therapy - Rapid Response South,CC Occupational Therapy - Rapid Response South,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCPOF,CC Podiatry - Footsure,CC Podiatry - Footsure,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CYCNN,CYW Central Nursing Team,CYW Central Nursing Team,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CORHE,Corrections Health,Corrections Health,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCCAP,CC Community Nurse CAPAC,CC Community Nurse CAPAC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,ADPKW,ADP Key Worker Program,ADP Key Worker Program,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,ADPIM,ADP Impact,ADP Impact,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,ADPWC,ADP Withdrawal Counselling,ADP Withdrawal Counselling,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,ADPSX,ADP Sexual Health,ADP Sexual Health,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCPHG,CC Physiotherapy GHC,CC Physiotherapy GHC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCPOG,CC Podiatry GHC,CC Podiatry GHC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CCNUG,CC Nutrition GHC,CC Nutrition GHC,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,ADPINT,ADP Interstate,ADP Interstate,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CYGNT,CYW Gungahlin Nursing Team,CYW Gungahlin Nursing Team,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,WICN,WIC North,WIC North,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,WICS,WIC South,WIC South,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CRCPA,CRCS Psychology AYA,CRCS Psychology AYA,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CRCPT,CRCS Psychology TCH,CRCS Psychology TCH,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CANPS,CRCS Social Work TCH,CRCS Social Work TCH,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,CANCO,CRCS Counselling Community,CRCS Counselling Community,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,ACRSW,ACRS SWAPS,ACRS SWAPS,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,ReferralReceiver,ASDIA,AS Diabetes Team,AS Diabetes Team,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralReceiver,CC Community Nurse Student,CCCNS,CC Community Nurse Student,CC Community Nurse Student,FALSE,NULL,NULL,NULL,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralStatus,Orion,int_cr_complex,Registered,Registered,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralStatus,Orion,int_cr_forward,Awaiting Booking,Awaiting Booking,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralStatus,Orion,int_cr_callback,Call Back,Call Back,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralStatus,Orion,int_cr_inProgress,Awaiting Triage - In Progress,Awaiting Triage - In Progress,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralStatus,Orion,int_cr_transfer,Transferred,Transferred,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralStatus,Orion,int_cr_pathwayActive,Enrolled,Enrolled,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralStatus,Orion,int_cr_closed,Discharged,Discharged,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralStatus,Orion,int_cr_fax,Fax,Fax,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralStatus,Orion,int_cr_phone,Phone,Phone,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralStatus,Orion,int_cr_internal,Received,Received,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralStatus,Orion,int_cr_non_complex,Registered,Registered,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralStatus,Orion,int_cr_declined,Declined,Declined,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralStatus,Orion,int_cr_rejected,Returned,Returned,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralStatus,Orion,int_cr_suspended,Suspended,Suspended,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralStatus,Orion,int_cr_triage,Triage,Triage,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralStatus,Orion,int_cr_serviceTriage,Triaged,Triaged,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralStatus,Orion,int_cr_cancelled,Cancelled,Cancelled,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralStatus,Orion,int_cr_booked,Booked,Booked,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.ReferralStatus,Orion,int_cr_redirected,Redirected,Redirected,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.RequestInfoReason,Orion,MissingResults,Missing Results,Missing Results,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.RequestInfoReason,Orion,MissingReports,Missing Reports,Missing Reports,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.RequestInfoReason,Orion,MissingClinicalInfo,Missing Clinical Information,Missing Clinical Information,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.RequestInfoReason,Orion,MissingPatientInfo,Missing Patient Information,Missing Patient Information,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.RequestInfoReason,Orion,ClarificationRequired,Clarification Required,Clarification Required,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.RequestInfoReason,Orion,Other,Other,Other,FALSE,,,,FALSE
+com.orchestral.referrals.codeset.api_2_0.WorkflowReason,Orion,NOTREQUIRED,Appointment No Longer Required,Appointment No Longer Required,FALSE,com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,PROVIDER,FALSE
+com.orchestral.referrals.codeset.api_2_0.WorkflowReason,Orion,NOTMET,Clinical Requirements Not Met,Clinical Requirements Not Met,FALSE,com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,PROVIDER,FALSE
+com.orchestral.referrals.codeset.api_2_0.WorkflowReason,Orion,NOINTERPRETER,No Interpreter Available,No Interpreter Available,FALSE,com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,PROVIDER,FALSE
+com.orchestral.referrals.codeset.api_2_0.WorkflowReason,Orion,UNAVAILABLE,Unavailable,Unavailable,FALSE,com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,PROVIDER,FALSE
+com.orchestral.referrals.codeset.api_2_0.WorkflowReason,Orion,CANCELLATION,Late Cancellation,Late Cancellation,FALSE,com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,PATIENT,FALSE
+com.orchestral.referrals.codeset.api_2_0.WorkflowReason,Orion,TRANSPORT,Lack of Transportation,Lack of Transportation,FALSE,com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,PATIENT,FALSE
+com.orchestral.referrals.codeset.api_2_0.WorkflowReason,Orion,PERSONAL,Personal/Medical emergency/Hospitalized,Personal/Medical emergency/Hospitalized,FALSE,com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,PATIENT,FALSE
+com.orchestral.referrals.codeset.api_2_0.WorkflowReason,Orion,TOPOFWAITLIST,At top of waitlist,At top of waitlist,FALSE,com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,BOOKINGREASON,FALSE
+com.orchestral.referrals.codeset.api_2_0.WorkflowReason,Orion,MEDICALURGENT,Urgent booking for medical reasons,Urgent booking for medical reasons,FALSE,com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,BOOKINGREASON,FALSE
+com.orchestral.referrals.codeset.api_2_0.WorkflowReason,Orion,OTHERURGENT,Duplicate referral,Duplicate referral,FALSE,com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,REJECTREASON,FALSE
+com.orchestral.referrals.codeset.api_2_0.WorkflowReason,Orion,ACTPAS,ACTPAS Appointment Booked,ACTPAS Appointment Booked,FALSE,com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,BOOKEDIN,FALSE
+com.orchestral.referrals.codeset.api_2_0.WorkflowReason,Orion,ARIA,ARIA Appointment Booked,ARIA Appointment Booked,FALSE,com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,BOOKEDIN,FALSE
+com.orchestral.referrals.codeset.api_2_0.WorkflowReason,Orion,BIS,BIS Appointment Booked,BIS Appointment Booked,FALSE,com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,BOOKEDIN,FALSE
+com.orchestral.referrals.codeset.api_2_0.WorkflowReason,Orion,CHARM,CHARM Appointment Booked,CHARM Appointment Booked,FALSE,com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,BOOKEDIN,FALSE
+com.orchestral.referrals.codeset.api_2_0.WorkflowReason,Orion,SHIP,SHIP Appointment Booked,SHIP Appointment Booked,FALSE,com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,BOOKEDIN,FALSE
+com.orchestral.referrals.codeset.api_2_0.WorkflowReason,Orion,TITANIUM,TITANIUM Appointment Booked,TITANIUM Appointment Booked,FALSE,com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,BOOKEDIN,FALSE
+com.orchestral.referrals.codeset.api_2_0.WorkflowReason,Orion,NSP,Not specified,Not specified,FALSE,com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,CANCELREASON,FALSE
+com.orchestral.referrals.codeset.api_2_0.WorkflowReason,Orion,CNSFR,Eligibility criteria not met,Eligibility criteria not met,FALSE,com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,CANCELREASON,FALSE
+com.orchestral.referrals.codeset.api_2_0.WorkflowReason,Orion,CIDS,Change in delivery setting,Change in delivery setting,FALSE,com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,CANCELREASON,FALSE
+com.orchestral.referrals.codeset.api_2_0.WorkflowReason,Orion,CNHC,Appointment needs have changed,Appointment needs have changed,FALSE,com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,CANCELREASON,FALSE
+com.orchestral.referrals.codeset.api_2_0.WorkflowReason,Orion,NS,Multiple duplicate copies of the same referral have been received,Multiple duplicate copies of the same referral have been received,FALSE,com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,CANCELREASON,FALSE
+com.orchestral.referrals.codeset.api_2_0.WorkflowReason,Orion,CD,Patient / client deceased,Patient / client deceased,FALSE,com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,CANCELREASON,FALSE
+com.orchestral.referrals.codeset.api_2_0.WorkflowReason,Orion,OTHER,Other ,Other,FALSE,com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,CANCELREASON,FALSE
+com.orchestral.referrals.codeset.api_2_0.WorkflowReason,Orion,STDTB,Service not available,Service not available,FALSE,com.orchestral.referrals.codeset.api_2_0.ReasonType,Orion,CANCELREASON,FALSE
+com.orchestral.referrals.common.api_2_0.Acuity,OrionAcuity,CHISIMPLE,Simple,Simple,FALSE,com.orchestral.referrals.common.api_2_0.AcuityType,OrionAcuity,CHI,FALSE
+com.orchestral.referrals.common.api_2_0.Acuity,OrionAcuity,CHITRANSFER,Transfer (Complex),Transfer (Complex),FALSE,com.orchestral.referrals.common.api_2_0.AcuityType,OrionAcuity,CHI,FALSE
+com.orchestral.referrals.common.api_2_0.Acuity,OrionAcuity,CHICALLBACK,Callback (Complex),Callback (Complex),FALSE,com.orchestral.referrals.common.api_2_0.AcuityType,OrionAcuity,CHI,FALSE
+com.orchestral.referrals.common.api_2_0.AcuityType,OrionAcuity,CANCER,Cancer,Cancer,FALSE,,,,TRUE
+com.orchestral.referrals.common.api_2_0.AcuityType,OrionAcuity,HIPANDKNEE,Hip and Knee,Hip and Knee,FALSE,,,,TRUE
+com.orchestral.referrals.common.api_2_0.AcuityType,OrionAcuity,CHI,Community Health Intake,Community Health Intake,FALSE,,,,FALSE
+com.orchestral.referrals.common.codeset.api_3_0.ReferralSource,Orion,Internal,CHHS Referral,CHHS Referral,FALSE,,,,FALSE
+com.orchestral.referrals.common.codeset.api_3_0.ReferralSource,Orion,Fax,Fax,Fax,FALSE,,,,FALSE
+com.orchestral.referrals.common.codeset.api_3_0.RejectReferralReason,Orion,ContentMissingInfo,Content missing information,Content missing information,FALSE,,,,FALSE
+com.orchestral.referrals.common.codeset.api_3_0.RejectReferralReason,Orion,BlankDoc,Blank document received,Blank document received,FALSE,,,,FALSE
+com.orchestral.referrals.common.codeset.api_3_0.RejectReferralReason,Orion,ContentIllegible,Content illegible,Content illegible,FALSE,,,,FALSE
+com.orchestral.referrals.common.codeset.api_3_0.RejectReferralReason,Orion,InsufficientInfo,Insufficient information to contact source,Insufficient information to contact source,FALSE,,,,FALSE
+com.orchestral.referrals.common.codeset.api_3_0.RejectReferralReason,Orion,Other,Other - please specify,Other - please specify,FALSE,,,,FALSE
+com.orchestral.referrals.common.notes.api_2_0.NoteType,OrionNotes,AdminInfo,Administrative Information,Status Change,FALSE,,,,FALSE
+com.orchestral.referrals.common.notes.api_2_0.NoteType,OrionNotes,ClinicalInfo,Clinical Information,Clinical Information,FALSE,,,,FALSE
+com.orchestral.referrals.common.notes.api_2_0.NoteType,OrionNotes,GeneralInfo,General Information,General Information,FALSE,,,,FALSE
+com.orchestral.workflow.pathway.enrollment.api_3_1.DeactivateReasonCode,PathwayDeactivateReason,END,End of episode,End of episode,FALSE,,,,FALSE
+com.orchestral.workflow.pathway.enrollment.api_3_1.DeactivateReasonCode,PathwayDeactivateReason,WDN,Withdrawn,Withdrawn,FALSE,,,,FALSE
+com.orchestral.workflow.pathway.enrollment.api_3_1.DeactivateReasonCode,PathwayDeactivateReason,MOV,Moved,Moved,FALSE,,,,FALSE
+com.orchestral.workflow.pathway.enrollment.api_3_1.DeactivateReasonCode,PathwayDeactivateReason,DEC,Deceased,Deceased,FALSE,,,,FALSE
+com.orchestral.workflow.pathway.enrollment.api_3_1.DeactivateReasonCode,PathwayDeactivateReason,RES,Resolved,Resolved,FALSE,,,,FALSE
+com.orchestral.workflow.pathway.enrollment.api_3_1.DeactivateReasonCode,PathwayDeactivateReason,ERR,Enrolled in error,Enrolled in error,FALSE,,,,FALSE

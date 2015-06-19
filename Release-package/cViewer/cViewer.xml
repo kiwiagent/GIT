@@ -1,0 +1,1014 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CViewer>
+    <version>1.2.0</version>
+    <applicationVariable identity="b1f0b743-a557-4477-bff1-c5c3de3f8eb6">
+        <name>CommonWeb</name>
+        <value>common-7.3</value>
+    </applicationVariable>
+    <applicationVariable identity="293076ae-05de-434d-9bc0-442fe24f4005">
+        <name>ReferralsDatabase</name>
+        <value>jdbc:jtds:sqlserver://TSTSQL013vs.test.act.gov.au/OH_ACT_cViewerData</value>
+    </applicationVariable>
+    <applicationVariable identity="66acf4c3-9a83-466f-ad98-a2da83b6a6d5">
+        <name>ReferralsDatabaseUsername</name>
+        <value>orionportal</value>
+    </applicationVariable>
+    <applicationVariable identity="4513f548-9189-40b3-a9b7-170d5c0dc78f">
+        <name>ReferralsDatabasePassword</name>
+        <value>0r!0nP0rt@l</value>
+    </applicationVariable>
+    <applicationVariable identity="77316588-e198-423d-ac72-2610ca5ac687">
+        <name>CommunityDatabaseUsername</name>
+        <value>orionportal</value>
+    </applicationVariable>
+    <applicationVariable identity="d624e8d8-d7d6-4ab8-bb9b-a80a41029347">
+        <name>CommunityDatabase </name>
+        <value>jdbc:jtds:sqlserver://TSTSQL013vs.test.act.gov.au/OH_ACT_cViewerData</value>
+    </applicationVariable>
+    <applicationVariable identity="a5b50c59-0704-42cc-b33e-04bda8e266fd">
+        <name>CommunityDatabasePassword</name>
+        <value>0r!0nP0rt@l</value>
+    </applicationVariable>
+    <jdbcDataSource identity="ed5caec4-5f30-4765-871d-31d53b2b5fcc"
+        jdbcClass="56608191-b8e4-402d-bafe-c227fe866601" jdbcUrl="e78b36fd-eff6-4c64-bed6-d70b57c98cab">
+        <name>CHI Referral Data Source</name>
+        <cacheTime>0</cacheTime>
+        <username>&lt;%=AppVars.ReferralsDatabaseUsername%&gt;</username>
+        <password>&lt;%=AppVars.ReferralsDatabasePassword%&gt;</password>
+        <query xml:space="preserve">SELECT 1 AS [PlaceHolder]</query>
+        <collateMultipleRows>false</collateMultipleRows>
+        <preProcessor
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">ToXML</preProcessor>
+        <resultSetMethod
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">BINARY</resultSetMethod>
+    </jdbcDataSource>
+    <jdbcDataSource identity="6d6cfca5-c5c9-42ea-972d-59dcc810fa98"
+        jdbcClass="56608191-b8e4-402d-bafe-c227fe866601" jdbcUrl="4fad4e55-d1db-4d57-8b2b-0196e0277291">
+        <name>CCR - cRepository - Healthcare Patient Summary</name>
+        <cacheTime>0</cacheTime>
+        <username>orionportal</username>
+        <password>0r!0nP0rt@l</password>
+        <query xml:space="preserve">SELECT * FROM vw_ccr_event_summary	 	&#xd;
+WHERE patientId = '&lt;%=request.patientId%&gt;' --AND  pe.deactivationReasonId IS NULL&#xd;
+AND ID = '&lt;%=request.ID%&gt;' --AND  pe.deactivationReasonId IS NULL&#xd;
+ORDER BY resolutionTime DESC</query>
+        <collateMultipleRows>false</collateMultipleRows>
+        <preProcessor
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">ToXML</preProcessor>
+        <resultSetMethod
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">BINARY</resultSetMethod>
+    </jdbcDataSource>
+    <jdbcDataSource identity="4ad5b99f-1826-4044-a6e6-8194aaa1b94e"
+        jdbcClass="56608191-b8e4-402d-bafe-c227fe866601" jdbcUrl="007ca060-8fdc-402e-adad-6c3de4c74d47">
+        <name>CCR - cRepository Image Search</name>
+        <description>Image search for cRepository</description>
+        <cacheTime>0</cacheTime>
+        <username>orionportal</username>
+        <password>0r!0nP0rt@l</password>
+        <query xml:space="preserve">SELECT DISTINCT&#xd;
+  idNumber_9LV7R as 'PatientID',&#xd;
+  sD_userId_L2ZQP as 'user',&#xd;
+  document.documentid as 'documentId',&#xd;
+  uniqueId as 'uniqueId',&#xd;
+  'Wound Image' as 'FormTitle',&#xd;
+  CAST(dateSubmitted_L0HOZ AS smalldatetime) as 'date',  &#xd;
+  filename as 'filename',&#xd;
+  mimeTypeFk as 'Type',&#xd;
+  data as 'data'&#xd;
+&#xd;
+        FROM V_DOCUMENT document&#xd;
+      inner join v_AllDocumentIdentifier allDoc on allDoc.documentId = document.documentId&#xd;
+      inner join V2_DOCUMENTMETADATA_0Z14K metaData on metaData.documentId = document.documentId&#xd;
+      inner join V2_DCMMTDT_0Z14K_P_PTNID_6KYRZ metaData_patient on metaData_patient.V2_DOCUMENTMETADATA_0Z14K = metaData.V2_DOCUMENTMETADATA_0Z14K&#xd;
+      inner join v2_GBLrvwSmmrycmpnnt_83RT5 surgical on surgical.DOCUMENTID = allDoc.documentId&#xd;
+      inner join v2_CCRCNWndStInfTrmtSrgc_8M0$D surgicallink on surgicallink.documentid = surgical.documentId&#xd;
+      inner join v2_CCR#ITS_8M0$D_ActnLst_IYW3H surgwound ON surgicallink.v2_CCRCNWndStInfTrmtSrgc_8M0$D = surgwound.v2_CCRCNWndStInfTrmtSrgc_8M0$D  &#xd;
+      left outer join v2_GBLrSc_83RT5_atchm_HNKRDFH atchm ON surgical.v2_GBLrvwSmmrycmpnnt_83RT5 = surgical.v2_GBLrvwSmmrycmpnnt_83RT5&#xd;
+      left outer join [FAS_Attachment] fasAT ON fasAT.uniqueId = atchm.formsInternalId_MXZPJ        &#xd;
+      where filename is NOT NULL and idNumber_9LV7R = '&lt;%=request.getNodeValue("//PatientId")%&gt;'</query>
+        <collateMultipleRows>false</collateMultipleRows>
+        <preProcessor
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">ToXML</preProcessor>
+        <resultSetMethod
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">BINARY</resultSetMethod>
+    </jdbcDataSource>
+    <jdbcDataSource identity="a54a0351-86cd-4aa8-9c49-e50fb8e69276"
+        jdbcClass="56608191-b8e4-402d-bafe-c227fe866601" jdbcUrl="007ca060-8fdc-402e-adad-6c3de4c74d47">
+        <name>CCRImageDisplay</name>
+        <description>Display images from BLOB</description>
+        <cacheTime>0</cacheTime>
+        <username>orionportal</username>
+        <password>0r!0nP0rt@l</password>
+        <query xml:space="preserve">SELECT DISTINCT&#xd;
+     filename as name,&#xd;
+     data as value,&#xd;
+     mimeTypeFk as mimeType,&#xd;
+     uniqueId as 'uniqueId'&#xd;
+              &#xd;
+      FROM V_DOCUMENT document&#xd;
+      inner join v_AllDocumentIdentifier allDoc on allDoc.documentId = document.documentId&#xd;
+      inner join V2_DOCUMENTMETADATA_0Z14K metaData on metaData.documentId = document.documentId&#xd;
+      inner join V2_DCMMTDT_0Z14K_P_PTNID_6KYRZ metaData_patient on metaData_patient.V2_DOCUMENTMETADATA_0Z14K = metaData.V2_DOCUMENTMETADATA_0Z14K&#xd;
+      inner join v2_GBLrvwSmmrycmpnnt_83RT5 surgical on surgical.DOCUMENTID = allDoc.documentId&#xd;
+      inner join v2_CCRCNWndStInfTrmtSrgc_8M0$D surgicallink on surgicallink.documentid = surgical.documentId&#xd;
+      inner join v2_CCR#ITS_8M0$D_ActnLst_IYW3H surgwound ON surgicallink.v2_CCRCNWndStInfTrmtSrgc_8M0$D = surgwound.v2_CCRCNWndStInfTrmtSrgc_8M0$D  &#xd;
+      left outer join v2_GBLrSc_83RT5_atchm_HNKRDFH atchm ON surgical.v2_GBLrvwSmmrycmpnnt_83RT5 = surgical.v2_GBLrvwSmmrycmpnnt_83RT5&#xd;
+      left outer join [FAS_Attachment] fasAT ON fasAT.uniqueId = atchm.formsInternalId_MXZPJ &#xd;
+      WHERE uniqueId = '&lt;%=request.getNodeValue("//uniqueId")%&gt;'</query>
+        <collateMultipleRows>false</collateMultipleRows>
+        <preProcessor
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">NoProcessing</preProcessor>
+        <resultSetMethod
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">BINARY</resultSetMethod>
+    </jdbcDataSource>
+    <jdbcDataSource identity="bc0035a9-9a8c-4fe9-ac05-4166d808dfb6"
+        jdbcClass="56608191-b8e4-402d-bafe-c227fe866601" jdbcUrl="b5409ea0-36b7-436c-9b71-86909cafdeb2">
+        <name>WICPDFInNewWindowDatasource</name>
+        <cacheTime>0</cacheTime>
+        <username>OrionPortal</username>
+        <password>0r!0nP0rt@l</password>
+        <query xml:space="preserve">SELECT &#xd;
+ADMN.SDMAF_modelId_Z#STW AS modelID&#xd;
+,TPTL.TreatmentProtocolName_WSW2X&#xd;
+,TPTL.VersionDate_CV1UL AS VDate&#xd;
+,fasAT.filename as name&#xd;
+,'' as mimeType&#xd;
+,fasAT.uniqueId as 'uniqueId'&#xd;
+,fasAT.identifier AS 'Identifier'&#xd;
+,fasAT.data AS value&#xd;
+FROM v2_WICAdmnstrtnFrm_DWQIL ADMN&#xd;
+INNER JOIN v2_WICAdFr_DWQIL_TrtPrt_L9OVK TPTL ON ADMN.v2_WICAdmnstrtnFrm_DWQIL = TPTL.v2_WICAdmnstrtnFrm_DWQIL&#xd;
+JOIN v2_WICAdFr_DWQIL_atchm_HTVE2HH ATACH ON TPTL.v2_WICAdFr_DWQIL_TrtPrt_L9OVK = ATACH.v2_WICAdFr_DWQIL_TrtPrt_L9OVK AND ATACH.ordering = 0&#xd;
+INNER JOIN v2_DocumentMetaData_0Z14K META ON META.DOCUMENTID = ADMN.DOCUMENTID&#xd;
+INNER JOIN DocumentIdentifier DI  on DI.DOCUMENTID = META.DOCUMENTID&#xd;
+INNER JOIN v_Document FINFO ON FINFO.DocumentId = META.DOCUMENTID&#xd;
+left outer join [FAS_Attachment] fasAT ON fasAT.uniqueId = ATACH.formsInternalId_MXZPJ&#xd;
+WHERE fasAT.uniqueId = '&lt;%=request.getNodeValue("//DocumentId")%&gt;'</query>
+        <collateMultipleRows>false</collateMultipleRows>
+        <preProcessor
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">ToXML</preProcessor>
+        <resultSetMethod
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">BINARY</resultSetMethod>
+    </jdbcDataSource>
+    <jdbcDataSource identity="011d2039-7b72-4c45-aa64-37120409a3d4"
+        jdbcClass="56608191-b8e4-402d-bafe-c227fe866601" jdbcUrl="b5409ea0-36b7-436c-9b71-86909cafdeb2">
+        <name>WICPDFDataSource</name>
+        <cacheTime>0</cacheTime>
+        <username>OrionPortal</username>
+        <password>0r!0nP0rt@l</password>
+        <query xml:space="preserve">SELECT &#xd;
+ADMN.SDMAF_modelId_Z#STW AS modelID&#xd;
+,TPTL.TreatmentProtocolName_WSW2X&#xd;
+,TPTL.VersionDate_CV1UL AS VDate&#xd;
+,fasAT.filename as name&#xd;
+,'' as mimeType&#xd;
+,fasAT.uniqueId as 'uniqueId'&#xd;
+,fasAT.identifier AS 'Identifier'&#xd;
+,fasAT.data AS value&#xd;
+FROM v2_WICAdmnstrtnFrm_DWQIL ADMN&#xd;
+INNER JOIN v2_WICAdFr_DWQIL_TrtPrt_L9OVK TPTL ON ADMN.v2_WICAdmnstrtnFrm_DWQIL = TPTL.v2_WICAdmnstrtnFrm_DWQIL&#xd;
+JOIN v2_WICAdFr_DWQIL_atchm_HTVE2HH ATACH ON TPTL.v2_WICAdFr_DWQIL_TrtPrt_L9OVK = ATACH.v2_WICAdFr_DWQIL_TrtPrt_L9OVK AND ATACH.ordering = 0&#xd;
+INNER JOIN v2_DocumentMetaData_0Z14K META ON META.DOCUMENTID = ADMN.DOCUMENTID&#xd;
+INNER JOIN DocumentIdentifier DI  on DI.DOCUMENTID = META.DOCUMENTID&#xd;
+INNER JOIN v_Document FINFO ON FINFO.DocumentId = META.DOCUMENTID&#xd;
+left outer join [FAS_Attachment] fasAT ON fasAT.uniqueId = ATACH.formsInternalId_MXZPJ&#xd;
+WHERE fasAT.uniqueId = '&lt;%=request.getNodeValue("//DocumentId")%&gt;'</query>
+        <collateMultipleRows>false</collateMultipleRows>
+        <preProcessor
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">NoProcessing</preProcessor>
+        <resultSetMethod
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">BINARY</resultSetMethod>
+    </jdbcDataSource>
+    <jdbcClass identity="56608191-b8e4-402d-bafe-c227fe866601">
+        <value>net.sourceforge.jtds.jdbc.Driver</value>
+    </jdbcClass>
+    <jdbcClass identity="9e687f54-a64b-4432-93c5-355e8b368859">
+        <value>&lt;%=AppVars.CDRDatabase%&gt;</value>
+    </jdbcClass>
+    <jdbcClass identity="e37fd0f4-0b9c-4696-a47d-a266f10123bd">
+        <value>com.orionhealth.jdbc.integration.JdbcIntegrationDriver</value>
+    </jdbcClass>
+    <jdbcUrl identity="e78b36fd-eff6-4c64-bed6-d70b57c98cab">
+        <value>&lt;%=AppVars.ReferralsDatabase%&gt;</value>
+    </jdbcUrl>
+    <jdbcUrl identity="4fad4e55-d1db-4d57-8b2b-0196e0277291">
+        <value>jdbc:jtds:sqlserver://TSTSQL013vs:1433/OH_CM_custom</value>
+    </jdbcUrl>
+    <jdbcUrl identity="007ca060-8fdc-402e-adad-6c3de4c74d47">
+        <value>jdbc:jtds:sqlserver://TSTSQL013vs:1433/OH_CM_cRepository</value>
+    </jdbcUrl>
+    <jdbcUrl identity="b5409ea0-36b7-436c-9b71-86909cafdeb2">
+        <value>jdbc:jtds:sqlserver://TSTSQL013vs.test.act.gov.au:1433/OH_CM_cRepository</value>
+    </jdbcUrl>
+    <jdbcUrl identity="70a9ce09-b304-4840-94ba-9ca4a4650b65">
+        <value>&lt;%=AppVars.CDRDatabase%&gt;</value>
+    </jdbcUrl>
+    <jdbcUrl identity="4a46f146-d432-42cb-9923-e741aac56808">
+        <value>&lt;%=AppVars.CommunityDatabase%&gt;</value>
+    </jdbcUrl>
+    <jdbcUrl identity="468d828c-c119-4d24-b619-e6902803d9bb">
+        <value>&lt;%=AppVars.SDMDatabase%&gt;</value>
+    </jdbcUrl>
+    <jdbcUrl identity="567cc862-ed2d-43b1-a0e8-f6a7304315ee">
+        <value>jdbc:integration:E:/Orion Health/webservice-client/orchestral-web-service-client-4.7.0.final.jar/ws</value>
+    </jdbcUrl>
+    <jdbcUrl identity="313fec4b-728d-4e9a-be3d-bbdc51a38fcd">
+        <value>jdbc:integration:E:/Orion Health/webservice-client/orchestral-web-service-client-4.9.0.final.jar/ws</value>
+    </jdbcUrl>
+    <jdbcUrl identity="66dd5a6a-8037-4cb3-89d6-c78f8f94ffc2">
+        <value>jdbc:integration:E:/OrionHealth/webservice-client/orchestral-web-service-client-4.9.0.final.jar/ws</value>
+    </jdbcUrl>
+    <jdbcUrl identity="2ccf3f24-9e1e-4a80-8dc4-08afe6552e44">
+        <value>jdbc:jtds:sqlserver://&lt;%=AppVars.ReferralsDatabase%&gt;/OH_ACT_Referrals</value>
+    </jdbcUrl>
+    <jdbcUrl identity="a31cfed5-9c42-499c-96c1-25b3e6f225cf">
+        <value>jdbc:jtds:sqlserver://TSTSQL013vs.test.act.gov.au:1433/OH_ACT_Referrals</value>
+    </jdbcUrl>
+    <jdbcUrl identity="c7902eeb-5af4-4c14-8da0-185618c6e859">
+        <value>jdbc:jtds:sqlserver://TSTSQL013vs.test.act.gov.au:1433/OH_CM_cRepository</value>
+    </jdbcUrl>
+    <jdbcUrl identity="3dad687b-da8e-49de-a85c-be90c67d3c4c">
+        <value>jdbc:jtds:sqlserver://TSTSQL013vs:1433/OH_CM_clinical</value>
+    </jdbcUrl>
+    <jdbcUrl identity="00d24392-ae0e-47d7-a12d-21219ebb1731">
+        <value>jdbc:jtds:sqlserver://TSTSQL013vs:1433/OH_CM_cRepository</value>
+    </jdbcUrl>
+    <jdbcUrl identity="d86521b7-51ca-4d67-9a82-0a14b251ba5f">
+        <value>jdbc:jtds:sqlserver://TSTSQL013vs:1433/OH_CM_custom</value>
+    </jdbcUrl>
+    <jdbcUrl identity="c3cf7bbe-12fe-47e9-b727-af535c926b18">
+        <value>jdbc:jtds:sqlserver://TSTSQL013vs:1433/OH_CM_cViewer</value>
+    </jdbcUrl>
+    <jdbcUrl identity="b474d793-89b8-4273-87a1-f3df0d780039">
+        <value>jdbc:jtds:sqlserver://TSTSQL013vs:1433/OH_CM_cRepository</value>
+    </jdbcUrl>
+    <jdbcUrl identity="52bbc18b-2e10-45c8-8e41-e4c0de2a9c9b">
+        <value>P69377Intake_OH_CV_cViewer</value>
+    </jdbcUrl>
+    <mimeType identity="c3bc535f-29bc-429a-aaed-2fe9b34c7bfe">
+        <value>application/json</value>
+    </mimeType>
+    <mimeType identity="34c10796-cc18-4c43-8771-8a83ea5f6337">
+        <value>application/octet-string</value>
+    </mimeType>
+    <mimeType identity="985f86fd-8c99-40a3-a3af-114ef10ff4b8">
+        <value>application/pdf</value>
+    </mimeType>
+    <mimeType identity="849c9b1a-1c80-44ce-8493-24b608b8b95e">
+        <value>image/jpeg</value>
+    </mimeType>
+    <mimeType identity="e29c1fff-d06c-40d2-94fe-7f0c6d46c590">
+        <value>text/html</value>
+    </mimeType>
+    <filter identity="f2415a15-f866-4b67-a5d7-50e481a17916">
+        <name>RegisterAndOpenWound</name>
+        <body xml:space="preserve">&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"&gt;&#xd;
+&#xd;
+&lt;xsl:template match="/"&gt;&#xd;
+&lt;html&gt;&#xd;
+&#xd;
+&lt;head&gt;&#xd;
+&lt;title&gt;Create Request For Service&lt;/title&gt;&#xd;
+		&lt;script type="text/javascript" src="/modernizr/modernizr.js"&gt;&lt;/script&gt;&#xd;
+		&lt;link rel="stylesheet" type="text/css" href="/&lt;%=AppVars.CommonWeb%&gt;/assets/skins/hive/skin.css"&gt;&lt;/link&gt;&#xd;
+		&lt;script	type="text/javascript" src="/concerto/javascript/Concerto.js"&gt;&lt;/script&gt;&#xd;
+		&lt;script type="text/javascript" src="/yui-3.4/yui_config.js"&gt;&lt;/script&gt;&#xd;
+		&lt;script type="text/javascript" src="/yui-3.4/yui/yui.js"&gt;&lt;/script&gt;&#xd;
+		&lt;script	type="text/javascript" src="/yui-2.8/yahoo/yahoo.js"&gt;&lt;/script&gt;&#xd;
+		&lt;script	type="text/javascript" src="/yui-2.8/dom/dom.js"&gt;&lt;/script&gt;&#xd;
+		&lt;script	type="text/javascript" src="/yui-2.8/event/event.js"&gt;&lt;/script&gt;&#xd;
+		&lt;script	type="text/javascript" src="/yui-2.8/animation/animation.js"&gt;&lt;/script&gt;&#xd;
+		&lt;script type="text/javascript" src="/yui-2.8/connection/connection.js"&gt;&lt;/script&gt;&#xd;
+		&lt;script type="text/javascript" src="/yui-2.8/datasource/datasource.js"&gt;&lt;/script&gt;&#xd;
+		&lt;script type="text/javascript" src="/yui-2.8/element/element.js"&gt;&lt;/script&gt;&#xd;
+		&lt;script type="text/javascript" src="/yui-2.8/paginator/paginator.js"&gt;&lt;/script&gt;&#xd;
+		&lt;script type="text/javascript" src="/yui-2.8/button/button.js"&gt;&lt;/script&gt;&#xd;
+		&lt;script type="text/javascript" src="/yui-2.8/selector/selector.js"&gt;&lt;/script&gt;&#xd;
+		&lt;script type="text/javascript" src="/yui-2.8/datatable/datatable.js"&gt;&lt;/script&gt;&#xd;
+		&lt;script type="text/javascript" src="/&lt;%=AppVars.CommonWeb%&gt;/orchestral/orchestral.js"&gt;&lt;/script&gt;&#xd;
+		&lt;script type="text/javascript" src="/web/locale.js"&gt;&lt;/script&gt;&#xd;
+		&lt;script type="text/javascript" src="/&lt;%=AppVars.CommonWeb%&gt;/dom/dom.js"&gt;&lt;/script&gt;&#xd;
+		&lt;script type="text/javascript" src="/&lt;%=AppVars.CommonWeb%&gt;/form/form.js"&gt;&lt;/script&gt;&#xd;
+		&lt;script type="text/javascript" src="/&lt;%=AppVars.CommonWeb%&gt;/button/button.js"&gt;&lt;/script&gt;&#xd;
+		&lt;script type="text/javascript" src="/&lt;%=AppVars.CommonWeb%&gt;/button/button-aria.js"&gt;&lt;/script&gt;&#xd;
+		&lt;script type="text/javascript" src="/&lt;%=AppVars.CommonWeb%&gt;/datatable/datatable.js"&gt;&lt;/script&gt;&#xd;
+		&lt;script type="text/javascript" src="/&lt;%=AppVars.CommonWeb%&gt;/autorefresh/autorefresh.js" defer="defer"&gt;&lt;/script&gt;&#xd;
+		&lt;script type="text/javascript" src="/&lt;%=AppVars.CommonWeb%&gt;/datetime/datetime.js" defer="defer"&gt;&lt;/script&gt;&#xd;
+&lt;/head&gt;&#xd;
+&lt;body class="yui3-skin-sam"&gt;&#xd;
+&lt;script type="text/JavaScript"&gt;&#xd;
+YUI().use( 'io-base', 'json-parse', function(Y) { &#xd;
+&#xd;
+	var url = '/cViewer/process.action?name=JsonRegisterAndEnableServiceButton&amp;amp;urn=&lt;%=request.getNodeValue("//urn")%&gt;';&#xd;
+	var createButton = new ORCHESTRAL.widget.PrimaryButton('createButton');&#xd;
+	var patientRegisteredChecker;&#xd;
+	var patientExists = 0;&#xd;
+	var config = {&#xd;
+		method: 'GET',&#xd;
+		data: {},&#xd;
+		on: {&#xd;
+		success: function(id, response, args) {&#xd;
+			var jsonResponse = Y.JSON.parse(response.responseText);&#xd;
+			patientExists  = jsonResponse[0].PatientExists;&#xd;
+	&#xd;
+			if(patientExists == 1){&#xd;
+				patientRegisteredChecker.cancel();&#xd;
+				createButton.set('disabled', false);&#xd;
+				createButton.on('click', function() {createAndOpen()});&#xd;
+			}&#xd;
+		},&#xd;
+		failure: function(id, response, args) {}&#xd;
+		}&#xd;
+	};&#xd;
+	     &#xd;
+	var checkRegistration = function ( response ) {&#xd;
+		if(patientExists == 1){&#xd;
+			patientRegisteredChecker.cancel();&#xd;
+		} else {&#xd;
+			Y.io(url,config);&#xd;
+		}&#xd;
+	};&#xd;
+	patientRegisteredChecker = Y.later( 1000, createButton, checkRegistration, [{response:0}], true );	&#xd;
+	&#xd;
+	function createAndOpen() {&#xd;
+		var application = new Application("Soprano Disease Management", "Intake - Enroll and Create Request For Service");&#xd;
+        	concerto.openApplication(application);    &#xd;
+	}&#xd;
+});&#xd;
+&lt;/script&gt;&#xd;
+&lt;div id="buttonContainer" class="section"&gt;&#xd;
+&lt;input id="createButton" type="button" value="Create Service Request" disabled="true"/&gt;&#xd;
+&lt;/div&gt;&#xd;
+&lt;/body&gt;&#xd;
+&#xd;
+&#xd;
+&lt;/html&gt;&#xd;
+&#xd;
+&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;</body>
+        <filterType
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">XSLT</filterType>
+        <outputFormat
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">HTML</outputFormat>
+    </filter>
+    <filter identity="cbb1e185-0ea1-44ec-b9f4-4658f759ab22">
+        <name>ContextSwtichActpasCurrentPatient</name>
+        <body xml:space="preserve">&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"&gt;&#xd;
+&#xd;
+&lt;xsl:template match="/"&gt;&#xd;
+&lt;html&gt;&#xd;
+&lt;head&gt;&#xd;
+	&lt;title&gt;Work with the current patinet in ACTPAS&lt;/title&gt;&#xd;
+	&lt;link rel="stylesheet" type="text/css" href="/&lt;%=AppVars.CommonWeb%&gt;/assets/skins/hive/skin.css"&gt;&lt;/link&gt;&#xd;
+	&lt;script	type="text/javascript" src="/concerto/javascript/Concerto.js"&gt;&lt;/script&gt;&#xd;
+	&lt;script type="text/javascript" src="/resources/script/ContextSwitching.js"&gt;&lt;/script&gt;&#xd;
+&lt;/head&gt;&#xd;
+&lt;body class="yui3-skin-sam"&gt;&#xd;
+&lt;div id="buttonContainer" class="section"&gt;&#xd;
+&lt;ul&gt;&#xd;
+&lt;li id="edit"&gt;&lt;span class="icon-signoff"&gt;&lt;/span&gt;  &lt;a id="editPatient" href="#" onclick="switchToActpas('ContextEngine EditPatientRegistration');return false"&gt;Edit Patient Registration&lt;/a&gt;&lt;/li&gt;&#xd;
+&lt;li id="contact"&gt;&lt;span class="icon-assigned"&gt;&lt;/span&gt;  &lt;a href="#" onclick="switchToActpas('ContextEngine NewPlannedContact');return false"&gt;New Planned Contact&lt;/a&gt;&lt;/li&gt;&#xd;
+&lt;li id="search"&gt;&lt;span class="icon-search"&gt;&lt;/span&gt;  &lt;a href="#" onclick="switchToActpas('ContextEngine NewPatientRegistration');return false"&gt;New Patient Registration&lt;/a&gt;&lt;/li&gt;&#xd;
+&lt;li id="referrals"&gt;&lt;span class="icon-folder-open"&gt;&lt;/span&gt;  &lt;a href="#" onclick="switchToActpas('ContextEngine NewReferral');return false"&gt;New Referral&lt;/a&gt;&lt;/li&gt;&#xd;
+&lt;li id="apponitments"&gt;&lt;span class="OrchestralDatePicker" style="left:1px;margin-right:2px"&gt;&lt;/span&gt;  &lt;a href="#" onclick="switchToActpas('ContextEngine BookAppointment');return false"&gt;Book Appointment&lt;/a&gt;&lt;/li&gt;&#xd;
+&lt;/ul&gt;&#xd;
+&lt;/div&gt;&#xd;
+&lt;iframe style="display: none" name="form-target"&gt;&lt;/iframe&gt;&#xd;
+&lt;/body&gt;&#xd;
+&lt;/html&gt;&#xd;
+&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;</body>
+        <filterType
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">XSLT</filterType>
+        <outputFormat
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">HTML</outputFormat>
+    </filter>
+    <filter identity="d873a4ae-0d04-4710-9763-7def17a569ec">
+        <name>Referral Summary</name>
+        <description>The summary of the patient's journey through healthcare pathways</description>
+        <body xml:space="preserve">&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"&gt;&#xd;
+&#xd;
+&lt;xsl:template match="/"&gt;&#xd;
+&lt;html&gt;&#xd;
+	&lt;head&gt;&#xd;
+		&lt;title&gt;Referral Checklist&lt;/title&gt;&#xd;
+		&lt;meta content="text/html; charset=utf8" http-equiv="Content-Type" /&gt;&#xd;
+		&lt;meta content="Referral, checklist, css" name="Keywords" /&gt;&#xd;
+		&lt;meta content="Referralchecklist - Referral" name="Description" /&gt; &#xd;
+	&lt;/head&gt;&#xd;
+	&lt;body&gt;&#xd;
+	&lt;script src="/concerto/javascript/Concerto.js"&gt;&lt;/script&gt;&#xd;
+		&lt;script type="text/javascript"&gt;&#xd;
+		function openTheWindow( application, entrypoint ) {&#xd;
+		var application = new Application( application, entrypoint );&#xd;
+		concerto.openApplicationInWindow ( application,null,null,600,800);&#xd;
+		}&#xd;
+	&lt;/script&gt;&#xd;
+	&lt;style type="text/css"&gt;&#xd;
+body {&#xd;
+	background:#FFF;&#xd;
+	padding:0px;&#xd;
+	margin:0px;&#xd;
+}&#xd;
+#header {&#xd;
+	width:100%;&#xd;
+	text-align:center; &#xd;
+	font: normal 12px Arial, sans-serif; color: grey;&#xd;
+}&#xd;
+#header h1{&#xd;
+	font: bold 18px Arial, sans-serif; color: rgb(0, 105, 126);&#xd;
+	padding:5px;&#xd;
+	margin:0px;	&#xd;
+} &#xd;
+#block {&#xd;
+	padding: 0px 20px 0px 20px;&#xd;
+	font-family:Arial, sans-serif;font-size:12px;color: rgb(99, 99, 96);&#xd;
+}&#xd;
+#block h1{&#xd;
+	font: bold 14px Arial, sans-serif; color: rgb(0, 105, 126);	 &#xd;
+	border:1px solid rgb(218, 221, 228);&#xd;
+	padding:5px;&#xd;
+}&#xd;
+&#xd;
+#block p{&#xd;
+	font: normal 15px Arial, sans-serif; color: #000;  &#xd;
+} &#xd;
+#footer {&#xd;
+	border-top:1px solid #000;&#xd;
+	clear:both;&#xd;
+	font: normal 12px Arial, sans-serif; color: #000; &#xd;
+}&#xd;
+#footer p{&#xd;
+	text-align:center;&#xd;
+	padding:10px;&#xd;
+	margin:0px;&#xd;
+}&#xd;
+#footer a{&#xd;
+	font: normal 12px Arial, sans-serif; color: #333; &#xd;
+	text-decoration:none;&#xd;
+} &#xd;
+.tg  {border-collapse:collapse;border-spacing:0;table-layout:fixed; padding-left:100px}&#xd;
+.tg td{font-family:Arial, sans-serif;font-size:12px;color: rgb(99, 99, 96); padding:5px 2px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;} &#xd;
+.tg td ul li{ padding-bottom: 5px; }  &#xd;
+.sticky {&#xd;
+	background: url("other/sticker.png") top left;&#xd;
+	display: inline-block;&#xd;
+	margin-bottom: 15px;&#xd;
+	line-height: 1.4;&#xd;
+	margin-left: -2px;&#xd;
+}&#xd;
+table.ex1 {&#xd;
+    table-layout: auto; padding-left: 10px;&#xd;
+}&#xd;
+&lt;/style&gt;&#xd;
+		&lt;div id="header"&gt;&#xd;
+			&lt;h1&gt; &lt;/h1&gt;&#xd;
+		&lt;/div&gt; &#xd;
+&#xd;
+		&lt;div id="block"&gt;&#xd;
+			&lt;h1&gt;1. Enrollment Review&lt;/h1&gt; &#xd;
+			&lt;table class="tg"&gt;&#xd;
+		    &lt;col width="500px" /&gt;&#xd;
+		    &lt;col width="300px" /&gt; &#xd;
+				&lt;tr&gt;&#xd;
+					&lt;td&gt;  &#xd;
+&#xd;
+						&lt;span&gt;Currently enrolled on the following pathways: &#xd;
+							&lt;xsl:for-each select="/Results/Row[position()&amp;lt;=1]"&gt;  &lt;xsl:value-of select="Pathway"/&gt; &lt;xsl:text disable-output-escaping="yes"&gt;&lt;![CDATA[&amp;nbsp;]]&gt;&lt;/xsl:text&gt; &#xd;
+ 								&lt;xsl:choose&gt;&#xd;
+								    &lt;xsl:when test="Status != 'ENROLLED'"&gt;&#xd;
+&lt;span style="text-align:right; background-color: #d2d2cf; border-color: #636360; display: inline-block; vertical-align: baseline; zoom: 1; border-width: 1px; border-style: solid; border-radius: 3px; padding: 1px 6px; font-size: 10px; line-height: normal; font-weight: bold;text-align: center;text-transform: uppercase;color: #000000"&gt; Deactivated &lt;/span&gt;&#xd;
+								    &lt;/xsl:when&gt;&#xd;
+								    &lt;xsl:otherwise&gt; &lt;span style="text-align:right; background-color: #d8ead8; border-color: #007400; display: inline-block; vertical-align: baseline; zoom: 1; border-width: 1px; border-style: solid; border-radius: 3px; padding: 1px 6px; font-size: 10px; line-height: normal; font-weight: bold;text-align: center;text-transform: uppercase;color: #000"&gt;&#xd;
+								  Active &#xd;
+								 &lt;/span&gt;&#xd;
+								    &lt;/xsl:otherwise&gt;&#xd;
+								&lt;/xsl:choose&gt; &#xd;
+								&lt;!-- &lt;xsl:if test="position() != last()"&gt;, &lt;/xsl:if&gt; --&gt; &#xd;
+							&lt;/xsl:for-each&gt; &#xd;
+ 						&lt;/span&gt;&#xd;
+					&lt;/td&gt;&#xd;
+					&lt;td&gt;  &#xd;
+					&lt;/td&gt; &#xd;
+				&lt;/tr&gt; &#xd;
+			&lt;/table&gt; &#xd;
+		&lt;/div&gt;&#xd;
+		&lt;div id="block"&gt;&#xd;
+			&lt;h1&gt;2. Tasks Completed&lt;/h1&gt; &#xd;
+			&lt;span&gt;The following tasks were preformed during your last visit:&lt;/span&gt; &#xd;
+			&lt;table class="ex1"&gt;&#xd;
+		    &lt;col width="50px" /&gt;&#xd;
+		    &lt;col width="350px" /&gt;&#xd;
+		    &lt;col width="200px" /&gt; &#xd;
+		    &lt;col width="200px" /&gt; &#xd;
+		    &lt;col width="100px" /&gt; &#xd;
+				&lt;tr&gt;&#xd;
+					&lt;td&gt;  &lt;xsl:text disable-output-escaping="yes"&gt;&lt;![CDATA[&amp;nbsp;]]&gt;&lt;/xsl:text&gt; &#xd;
+					&lt;/td&gt;  &#xd;
+				&lt;/tr&gt;&#xd;
+&#xd;
+				&lt;tr&gt;&#xd;
+					&lt;td&gt;  &#xd;
+					&lt;/td&gt; &#xd;
+					&lt;td&gt; &lt;b&gt;Task &lt;/b&gt;&#xd;
+					&lt;/td&gt;&#xd;
+					&lt;td&gt;  &lt;b&gt;When&lt;/b&gt;&#xd;
+					&lt;/td&gt; &#xd;
+					&lt;td&gt;  &lt;b&gt;Assignee&lt;/b&gt;&#xd;
+					&lt;/td&gt; &#xd;
+					&lt;td&gt;  &lt;b&gt;Status&lt;/b&gt;&#xd;
+					&lt;/td&gt; &#xd;
+				&lt;/tr&gt;&#xd;
+				&lt;tr&gt; &#xd;
+					&lt;td&gt; &lt;xsl:text disable-output-escaping="yes"&gt;&lt;![CDATA[&amp;nbsp;]]&gt;&lt;/xsl:text&gt; &#xd;
+					&lt;/td&gt; &#xd;
+					&lt;td&gt; &#xd;
+						&lt;xsl:for-each  select="/Results/Row"&gt; &#xd;
+							&lt;xsl:choose&gt;&#xd;
+							    &lt;xsl:when test="formStatus = 'COMPLETED'  or formStatus = 'NEW'  "&gt;&#xd;
+									&lt;p&gt;&lt;xsl:value-of select="identifyingName"/&gt;&lt;/p&gt;&#xd;
+									&lt;xsl:if test="identifyingName = ''"&gt; &lt;xsl:text disable-output-escaping="yes"&gt;&lt;![CDATA[&amp;nbsp;]]&gt;&lt;/xsl:text&gt; &lt;/xsl:if&gt; &#xd;
+							    &lt;/xsl:when&gt; &#xd;
+							&lt;/xsl:choose&gt;   &#xd;
+						&lt;/xsl:for-each&gt;&#xd;
+					&lt;/td&gt;&#xd;
+					&lt;td&gt; &#xd;
+						&lt;xsl:for-each  select="/Results/Row"&gt; &#xd;
+							&lt;xsl:choose&gt;&#xd;
+							    &lt;xsl:when test="formStatus = 'COMPLETED' or formStatus = 'NEW'  "&gt;&#xd;
+									&lt;p&gt;&lt;xsl:value-of select="resolutionTime"/&gt;&lt;/p&gt;&#xd;
+									&lt;xsl:if test="resolutionTime = ''"&gt; &lt;xsl:text disable-output-escaping="yes"&gt;&lt;![CDATA[&amp;nbsp;]]&gt;&lt;/xsl:text&gt; &lt;/xsl:if&gt; &#xd;
+							    &lt;/xsl:when&gt; &#xd;
+							&lt;/xsl:choose&gt;     &#xd;
+						&lt;/xsl:for-each&gt;&#xd;
+					&lt;/td&gt; &#xd;
+					&lt;td&gt; &#xd;
+						&lt;xsl:for-each  select="/Results/Row"&gt; &#xd;
+							&lt;xsl:choose&gt;&#xd;
+							    &lt;xsl:when test="formStatus = 'COMPLETED' or formStatus = 'NEW'  "&gt;&#xd;
+									&lt;p&gt;&lt;xsl:value-of select="assignedTo"/&gt;&lt;/p&gt;&#xd;
+									&lt;xsl:if test="assignedTo = ''"&gt; &lt;xsl:text disable-output-escaping="yes"&gt;&lt;![CDATA[&amp;nbsp;]]&gt;&lt;/xsl:text&gt; &lt;/xsl:if&gt; &#xd;
+							    &lt;/xsl:when&gt; &#xd;
+							&lt;/xsl:choose&gt;       &#xd;
+						&lt;/xsl:for-each&gt;&#xd;
+					&lt;/td&gt; &#xd;
+					&lt;td&gt; &#xd;
+						&lt;xsl:for-each  select="/Results/Row"&gt; &#xd;
+							&lt;xsl:choose&gt;&#xd;
+							    &lt;xsl:when test="formStatus = 'COMPLETED' or formStatus = 'NEW'  "&gt;&#xd;
+									&lt;p&gt; &lt;span style="text-align:right; background-color: #d8ead8; border-color: #007400; display: inline-block; vertical-align: baseline; zoom: 1; border-width: 1px; border-style: solid; border-radius: 3px; padding: 1px 6px; font-size: 10px; line-height: normal; font-weight: bold;text-align: center;text-transform: uppercase;color: #000"&gt;&#xd;
+								  &lt;xsl:value-of select="formStatus"/&gt; &#xd;
+								 &lt;/span&gt;&lt;/p&gt;&#xd;
+									&lt;xsl:if test="formStatus = ''"&gt; &lt;xsl:text disable-output-escaping="yes"&gt;&lt;![CDATA[&amp;nbsp;]]&gt;&lt;/xsl:text&gt; &lt;/xsl:if&gt; &#xd;
+							    &lt;/xsl:when&gt; &#xd;
+							&lt;/xsl:choose&gt;    &#xd;
+						&lt;/xsl:for-each&gt;&#xd;
+					&lt;/td&gt; &#xd;
+				&lt;/tr&gt;&#xd;
+			&lt;/table&gt; &#xd;
+		&lt;/div&gt;&#xd;
+		&lt;div id="block"&gt;&#xd;
+			&lt;h1&gt;3. Past Activity &lt;/h1&gt; &#xd;
+			&lt;span&gt;The following tasks were preformed during your last visit:&lt;/span&gt; &#xd;
+			&lt;table class="ex1"&gt;&#xd;
+		    &lt;col width="50px" /&gt;&#xd;
+		    &lt;col width="350px" /&gt;&#xd;
+		    &lt;col width="200px" /&gt; &#xd;
+		    &lt;col width="200px" /&gt; &#xd;
+		    &lt;col width="100px" /&gt; &#xd;
+				&lt;tr&gt;&#xd;
+					&lt;td&gt;  &lt;xsl:text disable-output-escaping="yes"&gt;&lt;![CDATA[&amp;nbsp;]]&gt;&lt;/xsl:text&gt; &#xd;
+					&lt;/td&gt;  &#xd;
+				&lt;/tr&gt;&#xd;
+&#xd;
+				&lt;tr&gt;&#xd;
+					&lt;td&gt;  &#xd;
+					&lt;/td&gt; &#xd;
+					&lt;td&gt; &lt;b&gt;Task &lt;/b&gt;&#xd;
+					&lt;/td&gt;&#xd;
+					&lt;td&gt;  &lt;b&gt;When&lt;/b&gt;&#xd;
+					&lt;/td&gt; &#xd;
+					&lt;td&gt;  &lt;b&gt;Assignee&lt;/b&gt;&#xd;
+					&lt;/td&gt; &#xd;
+					&lt;td&gt;  &lt;b&gt;Status&lt;/b&gt;&#xd;
+					&lt;/td&gt; &#xd;
+				&lt;/tr&gt;&#xd;
+				&lt;tr&gt; &#xd;
+					&lt;td&gt; &lt;xsl:text disable-output-escaping="yes"&gt;&lt;![CDATA[&amp;nbsp;]]&gt;&lt;/xsl:text&gt; &#xd;
+					&lt;/td&gt; &#xd;
+					&lt;td&gt; &#xd;
+						&lt;xsl:for-each  select="/Results/Row"&gt; &#xd;
+							&lt;xsl:choose&gt;&#xd;
+							    &lt;xsl:when test="formStatus != 'COMPLETED' and formStatus != 'NEW' "&gt;&#xd;
+									&lt;p&gt;&lt;xsl:value-of select="identifyingName"/&gt;&lt;/p&gt;&#xd;
+									&lt;xsl:if test="identifyingName = ''"&gt; &lt;xsl:text disable-output-escaping="yes"&gt;&lt;![CDATA[&amp;nbsp;]]&gt;&lt;/xsl:text&gt; &lt;/xsl:if&gt; &#xd;
+							    &lt;/xsl:when&gt; &#xd;
+							&lt;/xsl:choose&gt;   &#xd;
+						&lt;/xsl:for-each&gt;&#xd;
+					&lt;/td&gt;&#xd;
+					&lt;td&gt; &#xd;
+						&lt;xsl:for-each  select="/Results/Row"&gt; &#xd;
+							&lt;xsl:choose&gt;&#xd;
+							    &lt;xsl:when test="formStatus != 'COMPLETED'  and formStatus != 'NEW'"&gt;&#xd;
+									&lt;p&gt;&lt;xsl:value-of select="resolutionTime"/&gt;&lt;/p&gt;&#xd;
+									&lt;xsl:if test="resolutionTime = ''"&gt; &lt;xsl:text disable-output-escaping="yes"&gt;&lt;![CDATA[&amp;nbsp;]]&gt;&lt;/xsl:text&gt; &lt;/xsl:if&gt; &#xd;
+							    &lt;/xsl:when&gt; &#xd;
+							&lt;/xsl:choose&gt;     &#xd;
+						&lt;/xsl:for-each&gt;&#xd;
+					&lt;/td&gt; &#xd;
+					&lt;td&gt; &#xd;
+						&lt;xsl:for-each  select="/Results/Row"&gt; &#xd;
+							&lt;xsl:choose&gt;&#xd;
+							    &lt;xsl:when test="formStatus != 'COMPLETED' and formStatus != 'NEW' "&gt;&#xd;
+									&lt;p&gt;&lt;xsl:value-of select="assignedTo"/&gt;&lt;/p&gt;&#xd;
+									&lt;xsl:if test="assignedTo = ''"&gt; &lt;xsl:text disable-output-escaping="yes"&gt;&lt;![CDATA[&amp;nbsp;]]&gt;&lt;/xsl:text&gt; &lt;/xsl:if&gt; &#xd;
+							    &lt;/xsl:when&gt; &#xd;
+							&lt;/xsl:choose&gt;       &#xd;
+						&lt;/xsl:for-each&gt;&#xd;
+					&lt;/td&gt; &#xd;
+					&lt;td&gt; &#xd;
+						&lt;xsl:for-each  select="/Results/Row"&gt; &#xd;
+							&lt;xsl:choose&gt;&#xd;
+							    &lt;xsl:when test="formStatus != 'COMPLETED' and formStatus != 'NEW' "&gt;&#xd;
+									&lt;p&gt; &lt;span style="text-align:right; background-color: #d8e7f2; border-color: #0062ae; display: inline-block; vertical-align: baseline; zoom: 1; border-width: 1px; border-style: solid; border-radius: 3px; padding: 1px 6px; font-size: 10px; line-height: normal; font-weight: bold;text-align: center;text-transform: uppercase;color: #000"&gt;&#xd;
+								  &lt;xsl:value-of select="formStatus"/&gt; &#xd;
+								 &lt;/span&gt;&lt;/p&gt;&#xd;
+									&lt;xsl:if test="formStatus = ''"&gt; &lt;xsl:text disable-output-escaping="yes"&gt;&lt;![CDATA[&amp;nbsp;]]&gt;&lt;/xsl:text&gt; &lt;/xsl:if&gt; &#xd;
+							    &lt;/xsl:when&gt; &#xd;
+							&lt;/xsl:choose&gt;    &#xd;
+						&lt;/xsl:for-each&gt;&#xd;
+					&lt;/td&gt; &#xd;
+				&lt;/tr&gt;&#xd;
+			&lt;/table&gt; &#xd;
+		&lt;/div&gt;&#xd;
+		&lt;div id="block"&gt;&#xd;
+			&lt;h1&gt;4. Global Forms &lt;/h1&gt; &#xd;
+			&lt;span&gt;The following tasks were preformed during your last visit:&lt;/span&gt; &#xd;
+			&lt;table class="ex1"&gt;&#xd;
+		    &lt;col width="50px" /&gt;&#xd;
+		    &lt;col width="350px" /&gt;&#xd;
+		    &lt;col width="200px" /&gt; &#xd;
+		    &lt;col width="200px" /&gt; &#xd;
+		    &lt;col width="100px" /&gt; &#xd;
+				&lt;tr&gt;&#xd;
+					&lt;td&gt;  &lt;xsl:text disable-output-escaping="yes"&gt;&lt;![CDATA[&amp;nbsp;]]&gt;&lt;/xsl:text&gt; &#xd;
+					&lt;/td&gt;  &#xd;
+				&lt;/tr&gt;&#xd;
+&#xd;
+				&lt;tr&gt;&#xd;
+					&lt;td&gt;  &#xd;
+					&lt;/td&gt; &#xd;
+					&lt;td&gt; &lt;b&gt;Task &lt;/b&gt;&#xd;
+					&lt;/td&gt;&#xd;
+					&lt;td&gt;  &lt;b&gt;When&lt;/b&gt;&#xd;
+					&lt;/td&gt; &#xd;
+					&lt;td&gt;  &lt;b&gt;Assignee&lt;/b&gt;&#xd;
+					&lt;/td&gt; &#xd;
+					&lt;td&gt;  &lt;b&gt;Status&lt;/b&gt;&#xd;
+					&lt;/td&gt; &#xd;
+				&lt;/tr&gt;&#xd;
+				&lt;tr&gt; &#xd;
+					&lt;td&gt; &lt;xsl:text disable-output-escaping="yes"&gt;&lt;![CDATA[&amp;nbsp;]]&gt;&lt;/xsl:text&gt; &#xd;
+					&lt;/td&gt; &#xd;
+					&lt;td&gt; &#xd;
+						&lt;xsl:for-each  select="/Results/Row"&gt; &#xd;
+							&lt;xsl:choose&gt;&#xd;
+							    &lt;xsl:when test="identifyingName = 'Waterlow Assessment' or identifyingName = 'HACC Assessment' or identifyingName = 'Off Campus / Home Visit Pre-Assessment' or identifyingName = 'Manual Handling Assessment' "&gt;&#xd;
+									&lt;p&gt;&lt;xsl:value-of select="identifyingName"/&gt;&lt;/p&gt;&#xd;
+									&lt;xsl:if test="identifyingName = ''"&gt; &lt;xsl:text disable-output-escaping="yes"&gt;&lt;![CDATA[&amp;nbsp;]]&gt;&lt;/xsl:text&gt; &lt;/xsl:if&gt; &#xd;
+							    &lt;/xsl:when&gt; &#xd;
+							&lt;/xsl:choose&gt;   &#xd;
+						&lt;/xsl:for-each&gt;&#xd;
+					&lt;/td&gt;&#xd;
+					&lt;td&gt; &#xd;
+						&lt;xsl:for-each  select="/Results/Row"&gt; &#xd;
+							&lt;xsl:choose&gt;&#xd;
+							    &lt;xsl:when test="identifyingName = 'Waterlow Assessment' or identifyingName = 'HACC Assessment' or identifyingName = 'Off Campus / Home Visit Pre-Assessment' or identifyingName = 'Manual Handling Assessment' "&gt;&#xd;
+									&lt;p&gt;&lt;xsl:value-of select="resolutionTime"/&gt;&lt;/p&gt;&#xd;
+									&lt;xsl:if test="resolutionTime = ''"&gt; &lt;xsl:text disable-output-escaping="yes"&gt;&lt;![CDATA[&amp;nbsp;]]&gt;&lt;/xsl:text&gt; &lt;/xsl:if&gt; &#xd;
+							    &lt;/xsl:when&gt; &#xd;
+							&lt;/xsl:choose&gt;     &#xd;
+						&lt;/xsl:for-each&gt;&#xd;
+					&lt;/td&gt; &#xd;
+					&lt;td&gt; &#xd;
+						&lt;xsl:for-each  select="/Results/Row"&gt; &#xd;
+							&lt;xsl:choose&gt;&#xd;
+							    &lt;xsl:when test="identifyingName = 'Waterlow Assessment' or identifyingName = 'HACC Assessment' or identifyingName = 'Off Campus / Home Visit Pre-Assessment' or identifyingName = 'Manual Handling Assessment' "&gt;&#xd;
+									&lt;p&gt;&lt;xsl:value-of select="assignedTo"/&gt;&lt;/p&gt;&#xd;
+									&lt;xsl:if test="assignedTo = ''"&gt; &lt;xsl:text disable-output-escaping="yes"&gt;&lt;![CDATA[&amp;nbsp;]]&gt;&lt;/xsl:text&gt; &lt;/xsl:if&gt; &#xd;
+							    &lt;/xsl:when&gt; &#xd;
+							&lt;/xsl:choose&gt;       &#xd;
+						&lt;/xsl:for-each&gt;&#xd;
+					&lt;/td&gt; &#xd;
+					&lt;td&gt; &#xd;
+						&lt;xsl:for-each  select="/Results/Row"&gt; &#xd;
+							&lt;xsl:choose&gt;&#xd;
+							    &lt;xsl:when test="identifyingName = 'Waterlow Assessment' or identifyingName = 'HACC Assessment' or identifyingName = 'Off Campus / Home Visit Pre-Assessment' or identifyingName = 'Manual Handling Assessment' "&gt;&#xd;
+									&lt;p&gt; &lt;span style="text-align:right; background-color: #d8e7f2; border-color: #0062ae; display: inline-block; vertical-align: baseline; zoom: 1; border-width: 1px; border-style: solid; border-radius: 3px; padding: 1px 6px; font-size: 10px; line-height: normal; font-weight: bold;text-align: center;text-transform: uppercase;color: #000"&gt;&#xd;
+								  &lt;xsl:value-of select="formStatus"/&gt; &#xd;
+								 &lt;/span&gt;&lt;/p&gt;&#xd;
+									&lt;xsl:if test="formStatus = ''"&gt; &lt;xsl:text disable-output-escaping="yes"&gt;&lt;![CDATA[&amp;nbsp;]]&gt;&lt;/xsl:text&gt; &lt;/xsl:if&gt; &#xd;
+							    &lt;/xsl:when&gt; &#xd;
+							&lt;/xsl:choose&gt;    &#xd;
+						&lt;/xsl:for-each&gt;&#xd;
+					&lt;/td&gt; &#xd;
+				&lt;/tr&gt;&#xd;
+			&lt;/table&gt;&#xd;
+		&lt;/div&gt;&#xd;
+		&lt;div id="block"&gt;&#xd;
+			&lt;h1&gt;5. Consent&lt;/h1&gt; &#xd;
+			&lt;table class="tg"&gt;&#xd;
+		    &lt;col width="500px" /&gt;&#xd;
+		    &lt;col width="300px" /&gt;&#xd;
+				&lt;tr&gt;&#xd;
+					&lt;td&gt; &#xd;
+						&lt;ul&gt;&#xd;
+							&lt;li&gt;Involve your client, ensure they are informed and gain consent to share their health information&lt;/li&gt;&#xd;
+							&lt;li&gt;Relevant documentation can be found by the links provided&lt;/li&gt; &#xd;
+						&lt;/ul&gt;&#xd;
+					&lt;/td&gt;&#xd;
+					&lt;td&gt; &#xd;
+						&lt;ul&gt; &#xd;
+							&lt;li&gt;&lt;a href="javascript:openTheWindow( 'Healthcare pathways - CCR', 'Assessments Search EP' );"&gt;Consent documentation&lt;/a&gt;&lt;/li&gt; &#xd;
+						&lt;/ul&gt;&#xd;
+					&lt;/td&gt; &#xd;
+				&lt;/tr&gt;&#xd;
+			&lt;/table&gt; &#xd;
+		&lt;/div&gt;&#xd;
+		&lt;div id="block"&gt;&#xd;
+			&lt;h1&gt;6. Complete Duration of Care &lt;/h1&gt; &#xd;
+			&lt;table class="tg"&gt;&#xd;
+		    &lt;col width="500px" /&gt;&#xd;
+		    &lt;col width="300px" /&gt;&#xd;
+				&lt;tr&gt;&#xd;
+					&lt;td&gt; &#xd;
+						&lt;ul&gt;&#xd;
+							&lt;li&gt;List of all the patients duration of care and pathway enrolments&lt;/li&gt; &#xd;
+						&lt;/ul&gt;&#xd;
+						&lt;ul&gt;&#xd;
+							&lt;li&gt;Completed duration of care episodes&lt;/li&gt; &#xd;
+							&lt;ul&gt;&#xd;
+								&lt;li&gt;&lt;a href="javascript:openTheWindow( 'Healthcare pathways - CCR', 'Assessments Search EP' );"&gt;Physiotherapy pathway - Enrolled by Act Clinician on 27-Mar-2014 &lt;div class="ccm-status-badge ohp-success-badge"&gt;Active&lt;/div&gt;&lt;/a&gt;&lt;/li&gt;  &#xd;
+							&lt;/ul&gt;&#xd;
+						&lt;/ul&gt;&#xd;
+&#xd;
+						&lt;ul&gt;&#xd;
+							&lt;li&gt;Historical list of durations&lt;/li&gt; &#xd;
+							&lt;ul&gt;&#xd;
+								&lt;li&gt;&lt;a href="javascript:openTheWindow( 'Healthcare pathways - CCR', 'Add New Document Search' );"&gt;Occupational therapy pathway&lt;/a&gt;&lt;/li&gt;  &#xd;
+								&lt;li&gt;&lt;a href="javascript:openTheWindow( 'Healthcare pathways - CCR', 'Add New Document Search' );"&gt;Appointment Pathway&lt;/a&gt;&lt;/li&gt;   &#xd;
+							&lt;/ul&gt;&#xd;
+						&lt;/ul&gt;&#xd;
+					&lt;/td&gt;&#xd;
+					&lt;td&gt; &#xd;
+						&lt;ul&gt; &#xd;
+							&lt;li&gt;&lt;a href="javascript:openTheWindow( 'Task List', 'Pathway Enrollment' );"&gt;Patient Pathways&lt;/a&gt;&lt;/li&gt; &#xd;
+						&lt;/ul&gt;&#xd;
+					&lt;/td&gt; &#xd;
+				&lt;/tr&gt;&#xd;
+			&lt;/table&gt; &#xd;
+		&lt;/div&gt;&#xd;
+	&lt;/body&gt;&#xd;
+&lt;/html&gt;&#xd;
+&#xd;
+&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;</body>
+        <filterType
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">XSLT</filterType>
+        <outputFormat
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">HTML</outputFormat>
+    </filter>
+    <filter identity="f6581e8a-8d0a-4c4c-8c2a-9abddc70f3c2">
+        <name>CCR Image Search Filter</name>
+        <description>HTML formating for image results</description>
+        <body xml:space="preserve">&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"&gt;&#xd;
+&lt;xsl:template match="/"&gt;&#xd;
+&lt;xsl:choose&gt;&#xd;
+&lt;xsl:when test="count(Results/Row) = 0"&gt;&#xd;
+&lt;html&gt;&#xd;
+  &lt;style type="text/css"&gt;&#xd;
+    BODY {&#xd;
+    padding:1em;&#xd;
+    font: 15px arial,sans-serif;&#xd;
+    background-color:#f5f5f5;&#xd;
+    }&#xd;
+    DIV.document {&#xd;
+    background-color:#FFF;&#xd;
+    padding:10px;&#xd;
+        margin:20px;&#xd;
+    border:1px dashed #999;&#xd;
+    }&#xd;
+    table {&#xd;
+    border-collapse: collapse;&#xd;
+    }&#xd;
+    td, th {&#xd;
+    border: 1px solid #999;&#xd;
+    font: 15px arial,sans-serif;&#xd;
+    color=#313130;&#xd;
+    padding: 2rem;&#xd;
+    text-align: left;       &#xd;
+    }&#xd;
+    h3 {&#xd;
+    color=#00697F&#xd;
+    }&#xd;
+   &lt;/style&gt;&#xd;
+     &#xd;
+&lt;head&gt;&#xd;
+    &lt;title&gt;Previous Wounds&lt;/title&gt;&#xd;
+&lt;/head&gt;&#xd;
+&lt;body&gt;&#xd;
+&lt;div class="document"&gt;&#xd;
+&lt;h3&gt;No images found for this patient.&lt;/h3&gt;&#xd;
+&lt;/div&gt;&#xd;
+&lt;/body&gt;&#xd;
+&lt;/html&gt;&#xd;
+&lt;/xsl:when&gt;&#xd;
+&lt;xsl:otherwise&gt;&#xd;
+&lt;script&gt;&#xd;
+    function previewUrl(url,target){&#xd;
+        //use timeout mousehover fires several times&#xd;
+        clearTimeout(window.ht);&#xd;
+        window.ht = setTimeout(function(){&#xd;
+            var div = document.getElementById(target);&#xd;
+            div.innerHTML = '&lt;iframe style="width:100%;height:100%;" frameborder="0" src="' + url + '" /&gt;';&#xd;
+        },20);      &#xd;
+    }   &#xd;
+&lt;/script&gt;&#xd;
+ &lt;html&gt;&#xd;
+  &lt;style type="text/css"&gt;&#xd;
+    BODY {&#xd;
+    padding:1em;&#xd;
+    font: 15px arial,sans-serif;&#xd;
+    background-color:#f5f5f5;&#xd;
+    }&#xd;
+    DIV.document {&#xd;
+    background-color:#FFF;&#xd;
+    padding:10px;&#xd;
+        margin:20px;&#xd;
+    border:1px dashed #999;&#xd;
+    }&#xd;
+    table {&#xd;
+    border-collapse: collapse;&#xd;
+    }&#xd;
+    td, th {&#xd;
+    border: 1px solid #999;&#xd;
+    font: 15px arial,sans-serif;&#xd;
+    color=#313130;&#xd;
+    padding: 2rem;&#xd;
+    text-align: left;       &#xd;
+    }&#xd;
+    h3 {&#xd;
+    color=#00697F&#xd;
+    }&#xd;
+   &lt;/style&gt;&#xd;
+     &#xd;
+&lt;head&gt;&#xd;
+    &lt;title&gt;Previous Wounds&lt;/title&gt;&#xd;
+&lt;/head&gt;&#xd;
+&lt;body&gt;&#xd;
+&lt;div class="document"&gt;&#xd;
+&lt;h3&gt;Previous Wounds&lt;/h3&gt;&#xd;
+      &lt;table&gt;&#xd;
+      &lt;tr bgcolor="#f8f8f6"&gt;&#xd;
+        &lt;th style="text-align:left"&gt;&lt;b&gt;Added by&lt;/b&gt;&lt;/th&gt;&#xd;
+        &lt;th style="text-align:left"&gt;&lt;b&gt;Date&lt;/b&gt;&lt;/th&gt;&#xd;
+        &lt;th style="text-align:left"&gt;&lt;b&gt;Form Submitted&lt;/b&gt; &lt;/th&gt;&#xd;
+    &lt;th style="text-align:left"&gt;&lt;b&gt;Filename&lt;/b&gt;&lt;/th&gt;&#xd;
+    &lt;th style="text-align:left"&gt;&lt;b&gt;Preview&lt;/b&gt;&lt;/th&gt;&#xd;
+    &lt;th style="text-align:left"&gt;&lt;b&gt;Download&lt;/b&gt;&lt;/th&gt;&#xd;
+      &lt;/tr&gt;&#xd;
+      &lt;xsl:for-each select="Results/Row"&gt;&#xd;
+          &lt;tr&gt;&#xd;
+        &lt;td&gt;&lt;xsl:value-of select="user"/&gt;&lt;/td&gt;&#xd;
+        &lt;td&gt;&lt;xsl:value-of select="date"/&gt;&lt;/td&gt;&#xd;
+        &lt;td&gt;&lt;xsl:value-of select="FormTitle"/&gt;&lt;/td&gt;&#xd;
+        &lt;td&gt;&lt;xsl:value-of select="filename"/&gt;&lt;/td&gt;&#xd;
+        &lt;td&gt; &lt;a href="http://devapp058vs.test.act.gov.au/cViewer/process.action?name=CCRImageDisplay&amp;amp;uniqueId={uniqueId}" onmouseover="previewUrl(this.href,'ImagePreview')" onclick="return false;" &gt;Preview&lt;/a&gt;&lt;/td&gt;&#xd;
+        &lt;td&gt; &lt;a href="http://devapp058vs.test.act.gov.au/cViewer/process.action?name=CCRImageDisplay&amp;amp;uniqueId={uniqueId}" &gt;Download&lt;/a&gt;&lt;/td&gt;&#xd;
+      &lt;/tr&gt;&#xd;
+      &lt;/xsl:for-each&gt;&#xd;
+    &lt;/table&gt;&#xd;
+    &lt;div id="ImagePreview" style="width:600px;height:400px;border:0px;"&gt;&lt;/div&gt;&#xd;
+   &lt;/div&gt;&#xd;
+  &lt;/body&gt;&#xd;
+  &lt;/html&gt;&#xd;
+   &lt;/xsl:otherwise&gt;&#xd;
+       &lt;/xsl:choose&gt;&#xd;
+  &lt;/xsl:template&gt;&#xd;
+&lt;/xsl:stylesheet&gt;</body>
+        <filterType
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">XSLT</filterType>
+        <outputFormat
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">HTML</outputFormat>
+    </filter>
+    <filter identity="906e0eaf-4de2-4121-aca4-2dc7a1c70b8d">
+        <name>WIC PDF In New Window</name>
+        <body xml:space="preserve">&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"&gt;&#xd;
+&#xd;
+&lt;xsl:template match="/"&gt;&#xd;
+&lt;html&gt;&#xd;
+&#xd;
+&lt;head&gt;&#xd;
+&#xd;
+&lt;/head&gt;&#xd;
+&#xd;
+&lt;body&gt;&#xd;
+&#xd;
+&lt;iframe src="/cViewer/process.action?name=OpenWICPdf&amp;amp;DocumentId=&lt;%=request.getNodeValue("//DocumentId")%&gt;" style="width:100%; height:98%;"&gt;&lt;/iframe&gt;&#xd;
+&#xd;
+&#xd;
+&#xd;
+&lt;/body&gt;&#xd;
+&#xd;
+&#xd;
+&lt;/html&gt;&#xd;
+&#xd;
+&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;</body>
+        <filterType
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">XSLT</filterType>
+        <outputFormat
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">HTML</outputFormat>
+    </filter>
+    <filterOrder identity="908afda2-79a3-4178-911b-84618f083c20"
+        filter="cbb1e185-0ea1-44ec-b9f4-4658f759ab22" configFilterOrderId="26639f76-37b2-4888-8856-b2ad3819e37e"/>
+    <filterOrder identity="6d4b6f76-f3c2-485a-a989-0fe125357f59"
+        filter="f6581e8a-8d0a-4c4c-8c2a-9abddc70f3c2" configFilterOrderId="5becd290-d0ef-437a-bdea-ca4682e78db1"/>
+    <filterOrder identity="2e846e19-2033-435a-87c9-89c33bdad254"
+        filter="906e0eaf-4de2-4121-aca4-2dc7a1c70b8d" configFilterOrderId="445732ec-cc71-4a2d-a6a8-253deca9a7de"/>
+    <filterOrderPk identity="26639f76-37b2-4888-8856-b2ad3819e37e" cViewerConfig="5a4aede1-3e71-45f2-939c-8e4886b35504">
+        <sortOrder>0</sortOrder>
+    </filterOrderPk>
+    <filterOrderPk identity="5becd290-d0ef-437a-bdea-ca4682e78db1" cViewerConfig="ca83df5a-870d-49a4-9760-022e75bdab92">
+        <sortOrder>0</sortOrder>
+    </filterOrderPk>
+    <filterOrderPk identity="445732ec-cc71-4a2d-a6a8-253deca9a7de" cViewerConfig="c7d420bf-820c-4731-ae3d-726709ca5323">
+        <sortOrder>0</sortOrder>
+    </filterOrderPk>
+    <configuration identity="5a4aede1-3e71-45f2-939c-8e4886b35504"
+        dataSource="ed5caec4-5f30-4765-871d-31d53b2b5fcc" defaultMIMEType="e29c1fff-d06c-40d2-94fe-7f0c6d46c590">
+        <name>ContextSwtichActpasCurrentPatient</name>
+        <acceptUnencryptedRequest>false</acceptUnencryptedRequest>
+        <multipart>false</multipart>
+        <filters identity="908afda2-79a3-4178-911b-84618f083c20"
+            filter="cbb1e185-0ea1-44ec-b9f4-4658f759ab22" configFilterOrderId="26639f76-37b2-4888-8856-b2ad3819e37e"/>
+    </configuration>
+    <configuration identity="ca83df5a-870d-49a4-9760-022e75bdab92"
+        dataSource="4ad5b99f-1826-4044-a6e6-8194aaa1b94e" defaultMIMEType="e29c1fff-d06c-40d2-94fe-7f0c6d46c590">
+        <name>CCRImageSearch</name>
+        <description>Search for images</description>
+        <acceptUnencryptedRequest>true</acceptUnencryptedRequest>
+        <multipart>false</multipart>
+        <filters identity="6d4b6f76-f3c2-485a-a989-0fe125357f59"
+            filter="f6581e8a-8d0a-4c4c-8c2a-9abddc70f3c2" configFilterOrderId="5becd290-d0ef-437a-bdea-ca4682e78db1"/>
+    </configuration>
+    <configuration identity="300241cc-b282-4ef1-8468-0c783550ccd4"
+        dataSource="a54a0351-86cd-4aa8-9c49-e50fb8e69276" defaultMIMEType="849c9b1a-1c80-44ce-8493-24b608b8b95e">
+        <name>CCRImageDisplay</name>
+        <description>Display Image in FAS_Attachment table</description>
+        <acceptUnencryptedRequest>true</acceptUnencryptedRequest>
+        <multipart>false</multipart>
+    </configuration>
+    <configuration identity="c7d420bf-820c-4731-ae3d-726709ca5323"
+        dataSource="bc0035a9-9a8c-4fe9-ac05-4166d808dfb6" defaultMIMEType="e29c1fff-d06c-40d2-94fe-7f0c6d46c590">
+        <name>OpenWICPdfInNewWindow</name>
+        <description>Opens up the Intake CDR document with the id. Uses a filter to ensure the document is provided in a frame for when opening in a new window</description>
+        <acceptUnencryptedRequest>false</acceptUnencryptedRequest>
+        <multipart>false</multipart>
+        <filters identity="2e846e19-2033-435a-87c9-89c33bdad254"
+            filter="906e0eaf-4de2-4121-aca4-2dc7a1c70b8d" configFilterOrderId="445732ec-cc71-4a2d-a6a8-253deca9a7de"/>
+    </configuration>
+    <configuration identity="69628041-c616-49b7-bb5c-f539af69335e"
+        dataSource="011d2039-7b72-4c45-aa64-37120409a3d4" defaultMIMEType="985f86fd-8c99-40a3-a3af-114ef10ff4b8">
+        <name>OpenWICPdf</name>
+        <description>Opens up the WiC PDF document with the id.</description>
+        <acceptUnencryptedRequest>true</acceptUnencryptedRequest>
+        <multipart>false</multipart>
+    </configuration>
+</CViewer>
