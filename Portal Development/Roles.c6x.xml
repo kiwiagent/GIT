@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concerto version="portal-serialization/2.0">
+<role>
+	<name>Apps_ClPtl_Admin_IAM_Health</name>
+	<description>Access to functionality required by the eHealth Support system administrators</description>
+	<role-id>79ddda77-dbbb-40e2-bc63-b3361cf06723</role-id>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_CHHSGeneral_IAM_Health</name>
+	<description>Access to baseline Portal functionality for CHHS users</description>
+	<role-id>df405dca-e74b-439d-a370-0105e0c7aa26</role-id>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_CHILevel1_IAM_Health</name>
+	<deleted>true</deleted>
+	<role-id>7f9c0288-e537-4747-b863-bc16e33a033c</role-id>
+</role>
+<role>
+	<name>Apps_ClPtl_CHILevel2_IAM_Health</name>
+	<description>::: CCR ::: CHI Level 2</description>
+	<role-id>a74d182d-b849-424e-b584-608faa7482b7</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_CNTeamleader_IAM_Health</name>
+	<description>Team leaders</description>
+	<role-id>49be4d54-8073-4469-ad5f-cdce660caa5d</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_CalvaryGeneral_IAM_Health</name>
+	<description>Access to baseline Portal functionality for Calvary users</description>
+	<role-id>448c9d36-7c9b-45b5-9581-d88f2260b575</role-id>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_ClericalCHHS_IAM_Health</name>
+	<description>Read only access for clerical staff required for the management of referrals and appointments</description>
+	<role-id>ee57ccc7-c0c6-49d2-b54a-cbaa2771c05c</role-id>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_ClericalCalvary_IAM_Health</name>
+	<description>Access to baseline Portal functionality</description>
+	<role-id>d1161bad-0aaa-4eec-8b7f-a5e0b8900f01</role-id>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_ClinicianCHHS_IAM_Health</name>
+	<description>For nursing or allied health staff working at Canberra Hospital and Health Services.  Read only access to discharge summaries, eReferrals, results and orders</description>
+	<role-id>9b3ffdb5-d49e-4cc9-8000-4375f8e68f99</role-id>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_ClinicianCalvary_IAM_Health</name>
+	<description>For nursing or allied health staff working at Calvary Hospital.  Read only access to discharge summaries, eReferrals and results.</description>
+	<role-id>7c58ab5d-d95d-4126-ac3a-fc389625dbe6</role-id>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_ClnPhrmCHHS_IAM_Health</name>
+	<description>For pharmacists working at Canberra Hospital and Health Services.  Read only access to discharge summaries</description>
+	<role-id>1ec6dfda-553a-46fa-88ad-1697f133afdf</role-id>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_ClnPhrmCalvary_IAM_Health</name>
+	<description>For pharmacists working at the Calvary Hospital.  Read only access to discharge summaries</description>
+	<role-id>27b80918-a6aa-469b-855d-8cac578e2317</role-id>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_CommunityAlliedHealth_IAM_Health</name>
+	<description>::: CCR :::</description>
+	<role-id>62d13684-2570-43ff-b3fe-1e8c0a2db339</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_CommunityClinician_IAM_Health</name>
+	<description>::: CCR :::</description>
+	<role-id>7c732503-0a9d-491a-a8d1-fed3c5b1275a</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_CommunityHealthCentreAdmin_IAM_Health</name>
+	<description>::: WiC ::: Clerical</description>
+	<role-id>3cd85b50-c62d-40f1-975a-8080409757b7</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_DrCHHS_IAM_Health</name>
+	<description>For doctors working at the Canberra Hospital and Health Services.  Write and print discharge summaries,  eReferral amend and Orders access</description>
+	<role-id>46bf30ab-b731-4292-aaeb-b0cf8cd11cb7</role-id>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_DrCalvary_IAM_Health</name>
+	<description>For doctors working at the Calvary Hospital.  Discharge Summary write and print access for Calvary episodes.</description>
+	<role-id>81af8ff8-f9c8-4fb2-a12c-64f317f5864c</role-id>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_Intake_IAM_Health</name>
+	<description>Ambulatory Clerical</description>
+	<role-id>98fe6c63-b044-4466-80f4-81902e4636d8</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_MedStudentCHHS_IAM_Health</name>
+	<description>For final year medical students working at Canberra Hospital and Health Services.  Read only access.</description>
+	<role-id>9eb903bf-fec7-4734-9cab-7958d2c5a6d3</role-id>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Apps_ClPtl_WiCNurse_IAM_Health</name>
+	<description>WiC Advance Practice Nurse</description>
+	<role-id>1bb7eabe-630a-498e-9b2c-ba7a19f04501</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>CCR_Clerical</name>
+	<deleted>true</deleted>
+	<description>Read only access for clerical staff required for the management of referrals and appointments</description>
+	<role-id>34bf9f65-3406-4fbd-a6fa-e35f79043120</role-id>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_Admin</name>
+	<description>Access to functionality required by the eHealth Support system administrators</description>
+	<role-id>61bde4f2-fd13-42a3-95f6-8b94443ea741</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_CHHSGeneral</name>
+	<description>Access to baseline Portal functionality for CHHS users</description>
+	<role-id>0a0f6318-95c0-4394-bfd2-ab35952870e0</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_CHI Level 1</name>
+	<deleted>true</deleted>
+	<description>Level 1 admin staff within CHI who process standard referrals only.</description>
+	<role-id>d320af6f-e94f-458c-9121-7c72b9e520d5</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_CHILevel2</name>
+	<description>CHI Level 2 Users</description>
+	<role-id>9539c3b2-b2c3-4fa0-a8e0-f73ec026e98a</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_CNTeamleader</name>
+	<description>Community Nursing Team Lead</description>
+	<role-id>1f753182-1e64-4892-a760-54afd9501a91</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_CalvaryGeneral</name>
+	<description>Access to baseline Portal functionality for Calvary users</description>
+	<role-id>6efbfefb-713b-46bf-a351-8e062810f638</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_ClericalCHHS</name>
+	<description>Read only access for clerical staff required for the management of referrals and appointments</description>
+	<role-id>5e8cff0c-9292-4535-b0e9-83706356011f</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_ClericalCalvary</name>
+	<description>Access to baseline Portal functionality</description>
+	<role-id>209557c3-b018-4e26-9851-3c50ff04b400</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_ClinicianCHHS</name>
+	<description>For nursing or allied health staff working at Canberra Hospital and Health Services.  Read only access to discharge summaries, eReferrals, results and orders</description>
+	<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_ClinicianCalvary</name>
+	<description>For nursing or allied health staff working at Calvary Hospital.  Read only access to discharge summaries, eReferrals and results.</description>
+	<role-id>bec0adb9-9923-4650-813e-cb7bc3e1bca6</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_ClnPhrmCHHS</name>
+	<description>For pharmacists working at Canberra Hospital and Health Services.  Read only access to discharge summaries</description>
+	<role-id>2102d7f7-2ef3-4066-abf6-15b140772919</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_ClnPhrmCalvary</name>
+	<description>For pharmacists working at the Calvary Hospital.  Read only access to discharge summaries</description>
+	<role-id>0f62c137-a797-4223-95af-f139444b99a3</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_Community Service</name>
+	<deleted>true</deleted>
+	<description>For Community Clinic Clinicians</description>
+	<role-id>4e644ea1-09f8-42cf-9593-d7ab271077ff</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_Community Teamleader</name>
+	<deleted>true</deleted>
+	<role-id>f8e561c0-f647-4c7e-a8d4-bbafe6746eb6</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_CommunityAlliedHealth</name>
+	<description>This will be expanded in release 2 or later</description>
+	<role-id>4ef3f6c1-724a-4bd6-948e-260dfb460b69</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_CommunityClinician</name>
+	<description>Community Nurse</description>
+	<role-id>6ebe0377-cac8-4436-89f8-1acd9600d780</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_CommunityHealthCentreAdmin</name>
+	<description>Health Centre Clerical</description>
+	<role-id>715d1b86-9206-47b5-84a1-669d6c3531ad</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_DrCHHS</name>
+	<description>For doctors working at the Canberra Hospital and Health Services.  Write and print discharge summaries,  eReferral amend and Orders access</description>
+	<role-id>9302b542-405e-4447-9b9d-e13fd6eb91cd</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_DrCalvary</name>
+	<description>For doctors working at the Calvary Hospital.  Discharge Summary write and print access for Calvary episodes.</description>
+	<role-id>a6def1c7-ee0b-4767-9760-0acdf1f9f501</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_Intake</name>
+	<description>::::CCR:::: Admin CHI intake.</description>
+	<role-id>80d6b9cf-9a44-45ee-a20f-3b10d1fef613</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_Intake</name>
+	<description>CHI Level 1 Users</description>
+	<role-id>f43366ee-8b1e-41c7-b92f-cda91a1f5cdd</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_MedStudentCHHS</name>
+	<description>For final year medical students working at Canberra Hospital and Health Services.  Read only access.</description>
+	<role-id>4320d602-4357-4b7d-a046-67708905bb4b</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_WiC</name>
+	<deleted>true</deleted>
+	<description>For Community Clinic Clinicians</description>
+	<role-id>ffe9d265-c8c9-401e-9069-6585c5e1a428</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_WiCNurse</name>
+	<description>WiC Nurse Practioner</description>
+	<role-id>e5cd0fa7-bdf2-428c-87d4-b5f3b96319d2</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_WiC_Admin</name>
+	<deleted>true</deleted>
+	<description>Walk-in-Centre admin</description>
+	<role-id>3c9a2e66-fa9e-40df-81cc-927ed9fb0bdd</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_WiC_Admin</name>
+	<deleted>true</deleted>
+	<description>Level 1 admin staff within CHI who process standard referrals only.</description>
+	<role-id>cbc88bf9-dde8-4251-a408-7c32b869ef6e</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>ClPtl_WiC_Whitboard</name>
+	<deleted>true</deleted>
+	<description>For WiC Users to access Whiteboard</description>
+	<role-id>a494ce6a-18b6-44ea-ba59-61ce3f6e6f37</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Test_RS</name>
+	<deleted>true</deleted>
+	<role-id>95433038-8979-4c89-b167-0ba9856988ce</role-id>
+</role>
+<role>
+	<name>Test_RS</name>
+	<deleted>true</deleted>
+	<role-id>c1037ffc-7575-4a23-ac84-dc1cbae5837e</role-id>
+	<synchronise-ldap-membership>true</synchronise-ldap-membership>
+</role>
+<role>
+	<name>Tester</name>
+	<deleted>true</deleted>
+	<role-id>f1133d45-0c4a-4d1c-a875-4c60fe6c0e6a</role-id>
+</role>
+<role>
+	<name>WIC_Test_Role</name>
+	<deleted>true</deleted>
+	<description>Level 1 admin staff within CHI who process standard referrals only.</description>
+	<role-id>4a3215f5-2ae4-407a-9c90-46d3679b2f00</role-id>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+</role>
+</concerto>

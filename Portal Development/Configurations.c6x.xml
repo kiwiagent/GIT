@@ -1,0 +1,1818 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concerto version="portal-serialization/2.0">
+<configuration>
+	<name>DEFAULT</name>
+	<property>
+		<name>ccow.clientDownloadEnable</name>
+		<property-value>
+			<value>false</value>
+		</property-value>
+	</property>
+	<property>
+		<name>ccow.clientDownloadUrl</name>
+		<property-value>
+			<value>classes/ConcertoCCOWClientComponents.exe</value>
+		</property-value>
+	</property>
+	<property>
+		<name>ccow.enableIntegration</name>
+		<property-value>
+			<value>false</value>
+		</property-value>
+	</property>
+	<property>
+		<name>ccow.enableUserLink</name>
+		<property-value>
+			<value>true</value>
+		</property-value>
+	</property>
+	<property>
+		<name>ccow.settingDescriptiveData</name>
+		<property-value>
+			<value>false</value>
+		</property-value>
+	</property>
+	<property>
+		<name>ccow.timeoutAction</name>
+		<property-value>
+			<value>concertoOnly</value>
+		</property-value>
+	</property>
+	<property>
+		<name>datasources.jdbcDrivers</name>
+		<property-value>
+			<value>oracle.jdbc.OracleDriver</value>
+		</property-value>
+		<property-value>
+			<value>net.sourceforge.jtds.jdbc.Driver</value>
+		</property-value>
+		<property-value>
+			<value>com.orchestral.jdbc.hl7.JdbcHl7Driver</value>
+		</property-value>
+	</property>
+	<property>
+		<name>disclaimer.disclaimerSelectionRule</name>
+		<property-value>
+			<value />
+		</property-value>
+	</property>
+	<property>
+		<name>disclaimer.disclaimers</name>
+	</property>
+	<property>
+		<name>documentView.markDocumentAsReadDelay</name>
+		<property-value>
+			<value>3000</value>
+		</property-value>
+	</property>
+	<property>
+		<name>general.allowArbitraryPrivacyOverride</name>
+		<property-value>
+			<value>false</value>
+		</property-value>
+	</property>
+	<property>
+		<name>general.allowTimeZoneCustomisation</name>
+		<property-value>
+			<value>false</value>
+		</property-value>
+	</property>
+	<property>
+		<name>general.allowUserHomePageCustomisation</name>
+		<property-value>
+			<value>true</value>
+		</property-value>
+	</property>
+	<property>
+		<name>general.allowUserSwitching</name>
+		<property-value>
+			<value>false</value>
+		</property-value>
+	</property>
+	<property>
+		<name>general.concertoTitle</name>
+		<property-value>
+			<value>Clinical Portal - &lt;%=User.getAttribute("Full Name")%&gt;</value>
+		</property-value>
+	</property>
+	<property>
+		<name>general.defaultAllowedUserAgents</name>
+		<property-value>
+			<value>IE</value>
+		</property-value>
+		<property-value>
+			<value>Firefox</value>
+		</property-value>
+		<property-value>
+			<value>iPad</value>
+		</property-value>
+	</property>
+	<property>
+		<name>general.defaultHomePageApplicationName</name>
+		<property-value>
+			<value>Orion - Homepage</value>
+		</property-value>
+	</property>
+	<property>
+		<name>general.defaultHomePageEntryPointName</name>
+		<property-value>
+			<value>Homepage</value>
+		</property-value>
+	</property>
+	<property>
+		<name>general.defaultTimeZone</name>
+		<property-value>
+			<value>Australia/Canberra</value>
+		</property-value>
+	</property>
+	<property>
+		<name>general.enableDocumentCapture</name>
+		<property-value>
+			<value>false</value>
+		</property-value>
+	</property>
+	<property>
+		<name>general.helpPopupHeight</name>
+		<property-value>
+			<value>400</value>
+		</property-value>
+	</property>
+	<property>
+		<name>general.helpPopupWidth</name>
+		<property-value>
+			<value>600</value>
+		</property-value>
+	</property>
+	<property>
+		<name>general.menuBarLogoUrl</name>
+		<property-value>
+			<value />
+		</property-value>
+	</property>
+	<property>
+		<name>general.menuBarUserIdTooltip</name>
+		<property-value>
+			<value>&lt;%=User.getAttribute("Full Name")%&gt;</value>
+		</property-value>
+	</property>
+	<property>
+		<name>general.overrideReasons</name>
+	</property>
+	<property>
+		<name>general.showVersionInformation</name>
+		<property-value>
+			<value>true</value>
+		</property-value>
+	</property>
+	<property>
+		<name>general.supportLink</name>
+		<property-value>
+			<value>mailto:concertosupport@act.gov.au</value>
+		</property-value>
+	</property>
+	<property>
+		<name>ldap.enableIntegration</name>
+		<property-value>
+			<value>false</value>
+		</property-value>
+	</property>
+	<property>
+		<name>ldap.enableSsl</name>
+		<property-value>
+			<value>true</value>
+		</property-value>
+	</property>
+	<property>
+		<name>ldap.groupIdAttribute</name>
+		<property-value>
+			<value />
+		</property-value>
+	</property>
+	<property>
+		<name>ldap.groupMemberOfAttribute</name>
+		<property-value>
+			<value />
+		</property-value>
+	</property>
+	<property>
+		<name>ldap.groupMembersAttribute</name>
+		<property-value>
+			<value />
+		</property-value>
+	</property>
+	<property>
+		<name>ldap.groupObjectClass</name>
+		<property-value>
+			<value />
+		</property-value>
+	</property>
+	<property>
+		<name>ldap.groupSearchBase</name>
+		<property-value>
+			<value />
+		</property-value>
+	</property>
+	<property>
+		<name>ldap.loginDn</name>
+		<property-value>
+			<value>SVC_Orion</value>
+		</property-value>
+	</property>
+	<property>
+		<name>ldap.loginPassword</name>
+		<property-value>
+			<value>P@ssw0rd</value>
+		</property-value>
+	</property>
+	<property>
+		<name>ldap.roleIdAttribute</name>
+		<property-value>
+			<value>cn</value>
+		</property-value>
+	</property>
+	<property>
+		<name>ldap.roleMemberOfAttribute</name>
+		<property-value>
+			<value>memberOf</value>
+		</property-value>
+	</property>
+	<property>
+		<name>ldap.roleMembersAttribute</name>
+		<property-value>
+			<value />
+		</property-value>
+	</property>
+	<property>
+		<name>ldap.roleObjectClass</name>
+		<property-value>
+			<value />
+		</property-value>
+	</property>
+	<property>
+		<name>ldap.roleSearchBase</name>
+		<property-value>
+			<value>DC=dev,DC=act,DC=gov,DC=au</value>
+		</property-value>
+	</property>
+	<property>
+		<name>ldap.schemaDn</name>
+		<property-value>
+			<value />
+		</property-value>
+	</property>
+	<property>
+		<name>ldap.serverName</name>
+		<property-value>
+			<value>dummyldap</value>
+		</property-value>
+	</property>
+	<property>
+		<name>ldap.serverPort</name>
+		<property-value>
+			<value>633</value>
+		</property-value>
+	</property>
+	<property>
+		<name>ldap.userGroupMemberOfAttribute</name>
+		<property-value>
+			<value />
+		</property-value>
+	</property>
+	<property>
+		<name>ldap.userIdAttribute</name>
+		<property-value>
+			<value>sAMAccountName</value>
+		</property-value>
+	</property>
+	<property>
+		<name>ldap.userObjectClass</name>
+		<property-value>
+			<value />
+		</property-value>
+	</property>
+	<property>
+		<name>ldap.userObjectClassEnabled</name>
+		<property-value>
+			<value>false</value>
+		</property-value>
+	</property>
+	<property>
+		<name>ldap.userRoleMemberOfAttribute</name>
+		<property-value>
+			<value>memberOf</value>
+		</property-value>
+	</property>
+	<property>
+		<name>ldap.userSearchBase</name>
+		<property-value>
+			<value>OU=Users,OU=Health,DC=dev,DC=act,DC=gov,DC=au</value>
+		</property-value>
+	</property>
+	<property>
+		<name>ldap.userSearchFilter</name>
+		<property-value>
+			<value>(&amp;(objectClass=user)(|(memberOf:1.2.840.113556.1.4.1941:=CN=Apps_ClPtl_Users,OU=APPLICATION GROUPS,OU=SOFTWARE,OU=Resources,OU=WHoG,DC=dev,DC=act,DC=gov,DC=au)))</value>
+		</property-value>
+	</property>
+	<property>
+		<name>loginPage.customHtml</name>
+		<property-value>
+			<value>&lt;h1 style="color:red; font-style:bold" &gt;You are in 057&lt;br/&gt;Release v0.0.7&lt;/h1&gt;&#xD;
+&lt;style type="text/css"&gt;&#xD;
+&#xD;
+a{  &#xD;
+&#xD;
+      font-family:Arial, &#xD;
+&#xD;
+      sans-serif;&#xD;
+&#xD;
+      font-size:13px;&#xD;
+&#xD;
+      color: rgb(99, 99, 96);  &#xD;
+&#xD;
+      overflow:hidden;&#xD;
+&#xD;
+      word-break:normal; text-decoration:none&#xD;
+&#xD;
+}  &#xD;
+&#xD;
+a:link {color:black;}    /* unvisited link */&#xD;
+&#xD;
+a:visited {color:#084B8A;} /* visited link */&#xD;
+&#xD;
+a:hover {color:#DF01D7;}   /* mouse over link */&#xD;
+&#xD;
+a:active {color:#0000FF;}  /* selected link */&#xD;
+&#xD;
+&#xD;
+&#xD;
+&lt;/style&gt;&#xD;
+&#xD;
+&#xD;
+&#xD;
+&lt;script type="text/javascript"&gt; &#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+function loadjscssfile(filename, filetype){&#xD;
+&#xD;
+ if (filetype=="js"){ //if filename is a external JavaScript file&#xD;
+&#xD;
+  var fileref=document.createElement('script')&#xD;
+&#xD;
+  fileref.setAttribute("type","text/javascript")&#xD;
+&#xD;
+  fileref.setAttribute("src", filename)&#xD;
+&#xD;
+ }&#xD;
+&#xD;
+ else if (filetype=="css"){ //if filename is an external CSS file&#xD;
+&#xD;
+  var fileref=document.createElement("link")&#xD;
+&#xD;
+  fileref.setAttribute("rel", "stylesheet")&#xD;
+&#xD;
+  fileref.setAttribute("type", "text/css")&#xD;
+&#xD;
+  fileref.setAttribute("href", filename)&#xD;
+&#xD;
+ }&#xD;
+&#xD;
+ if (typeof fileref!="undefined")&#xD;
+&#xD;
+  document.getElementsByTagName("head")[0].appendChild(fileref)&#xD;
+&#xD;
+}&#xD;
+&#xD;
+&#xD;
+&#xD;
+loadjscssfile("/resources/images/concertocustomlogin/css/template.css", "css");&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+document.getElementById("Logo").setAttribute("style","margin-top:10px;");&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&lt;/script&gt;&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&lt;!-- BEGIN#MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##--&gt;&#xD;
+&#xD;
+&#xD;
+&#xD;
+&lt;script type="text/javascript"&gt;&#xD;
+&#xD;
+&#xD;
+&#xD;
+&lt;!-- &#xD;
+&#xD;
+&#xD;
+&#xD;
+// Global variables here. DO NOT MODIFY. ------------&#xD;
+&#xD;
+&#xD;
+&#xD;
+var message ="";&#xD;
+&#xD;
+var activemessage = new Array(11);&#xD;
+&#xD;
+var pe = "&lt;/p&gt;";&#xD;
+&#xD;
+var pb = "&lt;p id=\""+ colour + "\"&gt;";&#xD;
+&#xD;
+var colour = "black";&#xD;
+&#xD;
+&#xD;
+&#xD;
+// #########################################################################################################&#xD;
+&#xD;
+// Set message to true to make it visible otherwise set it to false.&#xD;
+&#xD;
+&#xD;
+&#xD;
+     activemessage[0] = false; // Concerto Normal Message Top&#xD;
+&#xD;
+     activemessage[1] = false; // Concerto e-Referrals having an issue&#xD;
+&#xD;
+     activemessage[2] = false; // Concerto Unavailability 1&#xD;
+&#xD;
+     activemessage[3] = false; // Patient Handover Functionality&#xD;
+&#xD;
+     activemessage[4] = false; // Discharge Summary Script Issue&#xD;
+&#xD;
+     activemessage[5] = false; // Discharge Summaries Application Technical Issue&#xD;
+&#xD;
+     activemessage[6] = false; // Concerto Now Available for Use&#xD;
+&#xD;
+     activemessage[7] = false;  // Concerto Unavailability 2&#xD;
+&#xD;
+     activemessage[8] = false; // Concerto Custom Message 1&#xD;
+&#xD;
+     activemessage[9] = false; // Concerto Custom Message 2&#xD;
+&#xD;
+     activemessage[10] = true; // Concerto Normal Message Bottom&#xD;
+&#xD;
+&#xD;
+&#xD;
+//#########################################################################################################&#xD;
+&#xD;
+&#xD;
+&#xD;
+// Inside message variable, "pb" means paragraph begin and "pe" means paragraph end. &#xD;
+&#xD;
+// You need to add backslash symbol ( \ ) when using double quotes ( " )  inside message variable. Example: \"&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+//* ###################### Message 00 Begin: To display message below, you need to have two slash symbols at the beginning of this line otherwise make it one slash. ######################&#xD;
+&#xD;
+&#xD;
+&#xD;
+if (activemessage[0] == true) {&#xD;
+&#xD;
+&#xD;
+&#xD;
+     // This changes the colour of the message.  Options are blue, red, and black only.  --------------------------------------&#xD;
+&#xD;
+     colour = "blue";&#xD;
+&#xD;
+&#xD;
+&#xD;
+     pb = "&lt;p id=\""+ colour + "\"&gt;";&#xD;
+&#xD;
+&#xD;
+&#xD;
+         message = message + pb + "For support, please contact &lt;br/&gt; e-Health Support on (02)620-55064 &lt;br /&gt; or via email on &lt;br /&gt;" + &#xD;
+&#xD;
+               "&lt;iframe src=\"/resources/images/concertocustomlogin/email.html\" width=\"231\" height=\"22\" allowTransparency=\"true\" frameBorder=\"0\"&gt; &lt;/iframe&gt;  " + pe;&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+}            &#xD;
+&#xD;
+&#xD;
+&#xD;
+// ======================= Message End: ================================================================================================================================================= */&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+//* ###################### Message 01 Begin: To display message below, you need to have two slash symbols at the beginning of this line otherwise make it one slash. ######################&#xD;
+&#xD;
+&#xD;
+&#xD;
+if (activemessage[1] == true) {&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+     // This changes the colour of the message.  Options are blue, red, and black only.&#xD;
+&#xD;
+     colour = "red";&#xD;
+&#xD;
+&#xD;
+&#xD;
+     pb = "&lt;p id=\""+ colour + "\"&gt;";&#xD;
+&#xD;
+&#xD;
+&#xD;
+     message =  pb + " The &lt;em&gt; Concerto e-Referrals &lt;/em&gt; application is experiencing some technical difficulties and is currently unavailable. The issue is being investigated. " + pe +&#xD;
+&#xD;
+                pb + " We apologise for any inconvenience." + pe;&#xD;
+&#xD;
+&#xD;
+&#xD;
+}&#xD;
+&#xD;
+&#xD;
+&#xD;
+// ======================= Message End: ================================================================================================================================================= */&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+//* ###################### Message 02 Begin: To display message below, you need to have two slash symbols at the beginning of this line otherwise make it one slash. ######################&#xD;
+&#xD;
+&#xD;
+&#xD;
+if (activemessage[2] == true) {&#xD;
+&#xD;
+&#xD;
+&#xD;
+     // This changes the colour of the message.  Options are blue, red, and black only.  --------------------------------------&#xD;
+&#xD;
+     colour = "red";&#xD;
+&#xD;
+&#xD;
+&#xD;
+     pb = "&lt;p id=\""+ colour + "\"&gt;";&#xD;
+&#xD;
+&#xD;
+&#xD;
+     message = message + pb + &#xD;
+&#xD;
+         "The Concerto Portal will be unavailable between 7:00 PM and 8:00 PM tonight (01/02/2012) for system maintenance." + pe +&#xD;
+&#xD;
+               pb + "Please do not use the system during this time." + pe + pb + "We apologise for any inconvenience." +  pe;&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+}            &#xD;
+&#xD;
+&#xD;
+&#xD;
+// ======================= Message End: ================================================================================================================================================= */&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+//* ###################### Message 03 Begin: To display message below, you need to have two slash symbols at the beginning of this line otherwise make it one slash. ######################&#xD;
+&#xD;
+&#xD;
+&#xD;
+if (activemessage[3] == true) {&#xD;
+&#xD;
+&#xD;
+&#xD;
+     // This changes the colour of the message.  Options are blue, red, and black only.  --------------------------------------&#xD;
+&#xD;
+     colour = "black";&#xD;
+&#xD;
+&#xD;
+&#xD;
+     pb = "&lt;p id=\""+ colour + "\"&gt;";&#xD;
+&#xD;
+&#xD;
+&#xD;
+     message = message + pb + &#xD;
+&#xD;
+&#xD;
+&#xD;
+         "New patient handover functionality will be released shortly. For more information &lt;a href=\"../quickstart/Patient Handover summary of functions.htm\" target=self&gt; click here. &lt;/a&gt;" + &#xD;
+&#xD;
+&#xD;
+&#xD;
+         pe;&#xD;
+&#xD;
+&#xD;
+&#xD;
+}&#xD;
+&#xD;
+&#xD;
+&#xD;
+// ======================= Message End: ================================================================================================================================================= */&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+//* ######################  Message 04 Begin: To display message below, you need to have two slash symbols at the beginning of this line otherwise make it one slash. ######################&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+if (activemessage[4] == true) {&#xD;
+&#xD;
+&#xD;
+&#xD;
+     // This changes the colour of the message.  Options are blue, red, and black only.  --------------------------------------&#xD;
+&#xD;
+     colour = "red";&#xD;
+&#xD;
+&#xD;
+&#xD;
+     pb = "&lt;p id=\""+ colour + "\"&gt;";&#xD;
+&#xD;
+&#xD;
+&#xD;
+     message = message + pb + &#xD;
+&#xD;
+&#xD;
+&#xD;
+         "&lt;em&gt; DISCHARGE SUMMARY SCRIPT ISSUE: &lt;/em&gt;  &lt;a href=\"/quickstart/Important.htm\" target=new&gt; Click Here &lt;/a&gt;" + &#xD;
+&#xD;
+&#xD;
+&#xD;
+         pe;&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+}&#xD;
+&#xD;
+&#xD;
+&#xD;
+// ======================= Message End: ================================================================================================================================================= */&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+//* ######################  Message 05 Begin: To display message below, you need to have two slash symbols at the beginning of this line otherwise make it one slash. ######################&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+if (activemessage[5] == true) {&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+     // This changes the colour of the message.  Options are blue, red, and black only.  --------------------------------------&#xD;
+&#xD;
+     colour = "black";&#xD;
+&#xD;
+&#xD;
+&#xD;
+     pb = "&lt;p id=\""+ colour + "\"&gt;";&#xD;
+&#xD;
+&#xD;
+&#xD;
+     message = message + pb + &#xD;
+&#xD;
+&#xD;
+&#xD;
+         "Message 5" + &#xD;
+&#xD;
+&#xD;
+&#xD;
+         pe;&#xD;
+&#xD;
+&#xD;
+&#xD;
+}&#xD;
+&#xD;
+&#xD;
+&#xD;
+// ======================= Message End: ================================================================================================================================================= */&#xD;
+&#xD;
+&#xD;
+&#xD;
+//* ######################  Message 06 Begin: To display message below, you need to have two slash symbols at the beginning of this line otherwise make it one slash. ######################&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+if (activemessage[6] == true) {&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+     // This changes the colour of the message.  Options are blue, red, and black only.  --------------------------------------&#xD;
+&#xD;
+     colour = "blue";&#xD;
+&#xD;
+&#xD;
+&#xD;
+     pb = "&lt;p id=\""+ colour + "\"&gt;";&#xD;
+&#xD;
+&#xD;
+&#xD;
+     message = message + pb + &#xD;
+&#xD;
+&#xD;
+&#xD;
+         "Concerto is now available for use." + &#xD;
+&#xD;
+&#xD;
+&#xD;
+         pe;&#xD;
+&#xD;
+&#xD;
+&#xD;
+}&#xD;
+&#xD;
+&#xD;
+&#xD;
+// ======================= Message End: ================================================================================================================================================= */&#xD;
+&#xD;
+&#xD;
+&#xD;
+//* ######################  Message 07 Begin: To display message below, you need to have two slash symbols at the beginning of this line otherwise make it one slash. ######################&#xD;
+&#xD;
+&#xD;
+&#xD;
+if (activemessage[7] == true) {&#xD;
+&#xD;
+&#xD;
+&#xD;
+     // This changes the colour of the message.  Options are blue, red, and black only.  --------------------------------------&#xD;
+&#xD;
+     colour = "red";&#xD;
+&#xD;
+&#xD;
+&#xD;
+     pb = "&lt;p id=\""+ colour + "\"&gt;";&#xD;
+&#xD;
+&#xD;
+&#xD;
+     message = message + pb + &#xD;
+&#xD;
+&#xD;
+&#xD;
+         "Concerto will be unavailable for 15mins at 2:30pm today." + pe + pb +&#xD;
+&#xD;
+         "We apologise for any inconvenience." + &#xD;
+&#xD;
+         pe;&#xD;
+&#xD;
+&#xD;
+&#xD;
+}&#xD;
+&#xD;
+&#xD;
+&#xD;
+// ======================= Message End: ================================================================================================================================================= */&#xD;
+&#xD;
+&#xD;
+&#xD;
+//* ######################  Message 08 Begin: To display message below, you need to have two slash symbols at the beginning of this line otherwise make it one slash. ######################&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+if (activemessage[8] == true) {&#xD;
+&#xD;
+&#xD;
+&#xD;
+     // This changes the colour of the message.  Options are blue, red, and black only.  --------------------------------------&#xD;
+&#xD;
+     colour = "black";&#xD;
+&#xD;
+&#xD;
+&#xD;
+     pb = "&lt;p id=\""+ colour + "\"&gt;";&#xD;
+&#xD;
+&#xD;
+&#xD;
+     message = message + pb + &#xD;
+&#xD;
+&#xD;
+&#xD;
+         "Concerto Custom Message 8" + &#xD;
+&#xD;
+&#xD;
+&#xD;
+         pe;&#xD;
+&#xD;
+&#xD;
+&#xD;
+}&#xD;
+&#xD;
+&#xD;
+&#xD;
+// ======================= Message End: ================================================================================================================================================= */&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+//* ######################  Message 09 Begin: To display message below, you need to have two slash symbols at the beginning of this line otherwise make it one slash. ######################&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+if (activemessage[9] == true) {&#xD;
+&#xD;
+&#xD;
+&#xD;
+     // This changes the colour of the message.  Options are blue, red, and black only.  --------------------------------------&#xD;
+&#xD;
+     colour = "black";&#xD;
+&#xD;
+&#xD;
+&#xD;
+     pb = "&lt;p id=\""+ colour + "\"&gt;";&#xD;
+&#xD;
+&#xD;
+&#xD;
+     message = message + pb + &#xD;
+&#xD;
+&#xD;
+&#xD;
+         "Custom Message 9" + &#xD;
+&#xD;
+&#xD;
+&#xD;
+         pe;&#xD;
+&#xD;
+&#xD;
+&#xD;
+}&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+// ======================= Message End: ================================================================================================================================================= */&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+//* ######################  Message 10 Begin: To display message below, you need to have two slash symbols at the beginning of this line otherwise make it one slash. ######################&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+if (activemessage[10] == true) {&#xD;
+&#xD;
+&#xD;
+&#xD;
+     // This changes the colour of the message.  Options are blue, red, and black only.  --------------------------------------&#xD;
+&#xD;
+     colour = "blue";&#xD;
+&#xD;
+&#xD;
+&#xD;
+     pb = "&lt;p id=\""+ colour + "\"&gt;";&#xD;
+&#xD;
+&#xD;
+&#xD;
+         //message = message + pb + "For support, please contact &lt;br/&gt; e-Health Support on (02)620-55064 &lt;br /&gt; or via email on &lt;br /&gt;" + &#xD;
+&#xD;
+         //      "&lt;a href=\"mailto:e-health.support@act.gov.au\" target=\"_blank\" &gt;e-health.support@act.gov.au&lt;/a&gt;" + pe;&#xD;
+&#xD;
+&#xD;
+&#xD;
+         message = message + pb + "For support, please contact &lt;br/&gt; e-Health Support on (02)620-55064 &lt;br /&gt; or via email on &lt;br /&gt;" + &#xD;
+&#xD;
+               "&lt;iframe src=\"/resources/images/concertocustomlogin/email.html\" width=\"231\" height=\"22\" allowTransparency=\"true\" frameBorder=\"0\"&gt; &lt;/iframe&gt;  " + pe;&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+}&#xD;
+&#xD;
+&#xD;
+&#xD;
+// ======================= Message End: ================================================================================================================================================= */&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+//--&gt;&#xD;
+&#xD;
+&#xD;
+&#xD;
+&lt;/script&gt;&#xD;
+&#xD;
+&#xD;
+&#xD;
+&lt;!-- END ##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##MESSAGES##--&gt;&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&lt;div id="page"&gt;&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&lt;div class="post"&gt;&#xD;
+&#xD;
+&#xD;
+&#xD;
+         &lt;h2&gt;Important&lt;/h2&gt;&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+    &lt;script type="text/javascript"&gt;&#xD;
+&#xD;
+&#xD;
+&#xD;
+      document.write(message);&#xD;
+&#xD;
+&#xD;
+&#xD;
+    &lt;/script&gt;&#xD;
+&#xD;
+&#xD;
+&#xD;
+    &lt;p id="black"&gt; You are currently using the &lt;em&gt;Clinical Portal 7 TRAIN version&lt;/em&gt;.&lt;/p&gt;&#xD;
+&#xD;
+&#xD;
+&#xD;
+&lt;/div&gt; &lt;!-- end of post --&gt;&#xD;
+&#xD;
+    &#xD;
+&#xD;
+&#xD;
+&#xD;
+  &lt;div id="sidebar"&gt;  &#xD;
+&#xD;
+   &lt;h2&gt; Quick Links &lt;/h2&gt;&#xD;
+&#xD;
+     &lt;ul&gt;&#xD;
+&#xD;
+    &lt;li&gt; &lt;a href="http://directory/" target="_blank"&gt; ACT Health Staff Directory &lt;/a&gt; &lt;/li&gt;&#xD;
+&#xD;
+    &lt;li&gt; &lt;a href="http://acthealth/c/HealthIntranet" target="_blank"&gt; ACT Health Intranet &lt;/a&gt; &lt;/li&gt;&#xD;
+&#xD;
+              &lt;li&gt; &lt;a href="http://prdwww02/calvaryIntranet.htm" target="_blank"&gt; Calvary Health Care Intranet &lt;/a&gt; &lt;/li&gt;&#xD;
+&#xD;
+        &lt;li&gt; &lt;a href="http://www.calvary-act.com.au/" target="_blank"&gt; Calvary Health Care Website &lt;/a&gt; &lt;/li&gt;&#xD;
+&#xD;
+    &lt;/ul&gt;&#xD;
+&#xD;
+  &#xD;
+&#xD;
+  &lt;/div&gt; &#xD;
+&#xD;
+&#xD;
+&#xD;
+  &lt;div class="c1"&gt; &amp;nbsp;&lt;/div&gt;&#xD;
+&#xD;
+&#xD;
+&#xD;
+  &#xD;
+&#xD;
+&#xD;
+&#xD;
+&lt;div align="center"&gt;&#xD;
+&#xD;
+  &lt;table align="center"&gt;&#xD;
+&#xD;
+  &lt;tr&gt;&#xD;
+&#xD;
+    &lt;td style="text-align:center;vertical-align:top;border-right:1px solid lightgrey;padding: 0 10px;"&gt;&#xD;
+&#xD;
+      &lt;a href="javascript:login('Carlie.Maxwell', 'c@nb3rr@')" &gt;Carlie Maxwell&lt;br/&gt;(CHI 1)&lt;/a&gt;&lt;br/&gt; &lt;/td&gt;&#xD;
+&#xD;
+    &lt;td style="text-align:center;vertical-align:top;border-right:1px solid lightgrey;padding: 0 10px;"&gt;&#xD;
+&#xD;
+      &lt;a href="javascript:login('Sammie.Jenkins', 'c@nb3rr@')" &gt;Sammie Jenkins&lt;br/&gt;(CHI2)&lt;/a&gt;&lt;br/&gt;&#xD;
+&#xD;
+    &lt;/td&gt;&#xD;
+&#xD;
+     &lt;td style="text-align:center;vertical-align:top;border-right:1px solid lightgrey;padding: 0 10px;"&gt;&#xD;
+&#xD;
+      &lt;a href="javascript:login('Dominique.Jose', 'c@nb3rr@')" &gt;Dominique Jose&lt;br/&gt;(CHI Service)&lt;/a&gt;&lt;br/&gt;&#xD;
+&#xD;
+    &lt;/td&gt;&#xD;
+&#xD;
+  &lt;td style="text-align:center;vertical-align:top;border-right:1px solid lightgrey;padding: 0 10px;"&gt;&#xD;
+&#xD;
+      &lt;a href="javascript:login('Edith.Minnie', 'c@nb3rr@')" &gt;Edith Minnie&lt;br/&gt;(ACT CC Teamleader)&lt;/a&gt;&lt;br/&gt; &#xD;
+&#xD;
+    &lt;/td&gt;&#xD;
+&#xD;
+    &lt;td style="text-align:center;vertical-align:top;border-right:1px solid lightgrey;padding: 0 10px;"&gt;&#xD;
+&#xD;
+      &lt;a href="javascript:login('Kit.Blur', 'c@nb3rr@')" &gt;Kit Blur&lt;br/&gt;(ACT CC Nurse)&lt;/a&gt;&lt;br/&gt;&#xD;
+&#xD;
+    &lt;/td&gt;&#xD;
+&#xD;
+    &lt;td style="text-align:center;vertical-align:top;border-right:1px solid lightgrey;padding: 0 10px;"&gt;&#xD;
+&#xD;
+      &lt;a href="javascript:login('Bobbie.Samper', 'c@nb3rr@')" &gt;Bobbie Samper&lt;br/&gt;(ACT CC Nutrition)&lt;/a&gt;&lt;br/&gt;&#xD;
+&#xD;
+    &lt;/td&gt;&#xD;
+&#xD;
+    &lt;td style="text-align:center;vertical-align:top;border-right:1px solid lightgrey;padding: 0 10px;"&gt;&#xD;
+&#xD;
+      &lt;a href="javascript:login('Aaron.Mansell', 'c@nb3rr@')" &gt;Aaron Mansell&lt;br/&gt;(ACT CC Physio)&lt;/a&gt;&lt;br/&gt;&#xD;
+&#xD;
+    &lt;/td&gt;&#xD;
+&#xD;
+&#xD;
+  &lt;/tr&gt;&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+  &lt;/table&gt;&#xD;
+&#xD;
+&#xD;
+&#xD;
+  &lt;table align="center"&gt;&#xD;
+&#xD;
+  &lt;tr&gt;&#xD;
+&#xD;
+&#xD;
+    &lt;td style="text-align:center;vertical-align:top;border-right:1px solid lightgrey;padding: 0 10px;"&gt;&#xD;
+ &#xD;
+&#xD;
+    &lt;/td&gt;&#xD;
+&#xD;
+     &lt;td style="text-align:center;vertical-align:top;border-right:1px solid lightgrey;padding: 0 10px;"&gt;&#xD;
+&#xD;
+      &lt;a href="javascript:login('wic_1', 'wic_1')" &gt;WiC_1&lt;/a&gt;&lt;br/&gt;&#xD;
+&#xD;
+    &lt;/td&gt;&#xD;
+    &lt;td style="text-align:center;vertical-align:top;border-right:1px solid lightgrey;padding: 0 10px;"&gt;&#xD;
+&#xD;
+      &lt;a href="javascript:login('wic_admin', 'wic_admin')" &gt;wic_admin&lt;/a&gt;&lt;br/&gt;&#xD;
+&#xD;
+    &lt;/td&gt;&#xD;
+&#xD;
+&#xD;
+    &lt;td style="text-align:center;vertical-align:top;border-right:1px solid lightgrey;padding: 0 10px;"&gt;&#xD;
+&#xD;
+      &lt;a href="javascript:login('admin', 'c@nb3rr@')" &gt;Administrator&lt;/a&gt;&lt;br/&gt;&#xD;
+&#xD;
+    &lt;/td&gt;&#xD;
+&#xD;
+&#xD;
+&#xD;
+  &lt;/table&gt;&#xD;
+&#xD;
+&#xD;
+&#xD;
+  &lt;/div&gt;&#xD;
+&#xD;
+  &#xD;
+&#xD;
+  &lt;div id="footer"&gt;&#xD;
+&#xD;
+    &lt;p&gt;Copyright &lt;a onclick="forgotPassword();return false" href="#"&gt;&amp;copy;&lt;/a&gt;  ACT Health Directorate. All rights reserved.&lt;/p&gt;&#xD;
+&#xD;
+  &#xD;
+&#xD;
+  &lt;/div&gt;&lt;!-- end #footer --&gt;&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&lt;/div&gt; &lt;!-- End of page --&gt;&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&lt;script type="text/javascript"&gt;&#xD;
+&#xD;
+&#xD;
+&#xD;
+function login (user, pass){&#xD;
+&#xD;
+  document.getElementById('UserId').value = user;&#xD;
+&#xD;
+  document.getElementById('Password').value = pass;&#xD;
+&#xD;
+  document.getElementById('Submit').click();&#xD;
+&#xD;
+}&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+// Forget password javascript code here&#xD;
+&#xD;
+&#xD;
+&#xD;
+function toggle(div_id) {&#xD;
+&#xD;
+  var el = document.getElementById(div_id);&#xD;
+&#xD;
+  if ( el.style.display == 'none' ) { el.style.display = 'block';}&#xD;
+&#xD;
+  else {el.style.display = 'none';}&#xD;
+&#xD;
+}&#xD;
+&#xD;
+function blanket_size(popUpDivVar) {&#xD;
+&#xD;
+  if (typeof window.innerWidth != 'undefined') {&#xD;
+&#xD;
+    viewportheight = window.innerHeight;&#xD;
+&#xD;
+  } else {&#xD;
+&#xD;
+    viewportheight = document.documentElement.clientHeight;&#xD;
+&#xD;
+  }&#xD;
+&#xD;
+  if ((viewportheight &gt; document.body.parentNode.scrollHeight) &amp;&amp; (viewportheight &gt; document.body.parentNode.clientHeight)) {&#xD;
+&#xD;
+    blanket_height = viewportheight;&#xD;
+&#xD;
+  } else {&#xD;
+&#xD;
+    if (document.body.parentNode.clientHeight &gt; document.body.parentNode.scrollHeight) {&#xD;
+&#xD;
+      blanket_height = document.body.parentNode.clientHeight;&#xD;
+&#xD;
+    } else {&#xD;
+&#xD;
+      blanket_height = document.body.parentNode.scrollHeight;&#xD;
+&#xD;
+    }&#xD;
+&#xD;
+  }&#xD;
+&#xD;
+  var blanket = document.getElementById('blanket');&#xD;
+&#xD;
+  blanket.style.height = blanket_height + 'px';&#xD;
+&#xD;
+  var popUpDiv = document.getElementById(popUpDivVar);&#xD;
+&#xD;
+  popUpDiv_height=blanket_height/2-200;//100 is half popup's height&#xD;
+&#xD;
+  popUpDiv.style.top = popUpDiv_height + 'px';&#xD;
+&#xD;
+}&#xD;
+&#xD;
+function window_pos(popUpDivVar) {&#xD;
+&#xD;
+  if (typeof window.innerWidth != 'undefined') {&#xD;
+&#xD;
+    viewportwidth = window.innerHeight;&#xD;
+&#xD;
+  } else {&#xD;
+&#xD;
+    viewportwidth = document.documentElement.clientHeight;&#xD;
+&#xD;
+  }&#xD;
+&#xD;
+  if ((viewportwidth &gt; document.body.parentNode.scrollWidth) &amp;&amp; (viewportwidth &gt; document.body.parentNode.clientWidth)) {&#xD;
+&#xD;
+    window_width = viewportwidth;&#xD;
+&#xD;
+  } else {&#xD;
+&#xD;
+    if (document.body.parentNode.clientWidth &gt; document.body.parentNode.scrollWidth) {&#xD;
+&#xD;
+      window_width = document.body.parentNode.clientWidth;&#xD;
+&#xD;
+    } else {&#xD;
+&#xD;
+      window_width = document.body.parentNode.scrollWidth;&#xD;
+&#xD;
+    }&#xD;
+&#xD;
+  }&#xD;
+&#xD;
+  var popUpDiv = document.getElementById(popUpDivVar);&#xD;
+&#xD;
+  window_width=window_width/2-250;//250 is half popup's width&#xD;
+&#xD;
+  popUpDiv.style.left = window_width + 'px';&#xD;
+&#xD;
+}&#xD;
+&#xD;
+function popup(windowname) {&#xD;
+&#xD;
+  blanket_size(windowname);&#xD;
+&#xD;
+  window_pos(windowname);&#xD;
+&#xD;
+  toggle('blanket');&#xD;
+&#xD;
+  toggle(windowname);   &#xD;
+&#xD;
+}&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+function addNewLink(newtext)&#xD;
+&#xD;
+{&#xD;
+&#xD;
+  var newAnchor = document.createElement("div");&#xD;
+&#xD;
+  newAnchor.innerHTML = newtext;&#xD;
+&#xD;
+  document.getElementsByTagName("FORM")[0].appendChild(newAnchor);&#xD;
+&#xD;
+}&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+document.getElementsByTagName("TBODY")[0].removeChild(document.getElementsByTagName("TR")[2]);&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+// Update the popup messages here. ---------&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+var popupMessage = "&lt;p&gt; Questions regarding ACTGov login issues and password resets can be directed to the SSICT Helpdesk by email on &lt;em&gt; ICT.ServiceDesk@act.gov.au &lt;/em&gt; or by calling &lt;em&gt; x75555&lt;/em&gt;. &lt;/p&gt;" +&#xD;
+&#xD;
+             "&lt;p&gt; For support regarding Clinical Portal login issues and password resets please contact the eHealth Support team by dialing &lt;em&gt;x55064&lt;/em&gt; or via email on &lt;em&gt;e-Health.Support@act.gov.au&lt;/em&gt;. &lt;/p&gt;";&#xD;
+&#xD;
+&#xD;
+&#xD;
+var popupMessageLinkText = "Having trouble logging in?";&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+// Update the popup messages end. -----------&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+var strOthers = "&lt;div style=\"display: none;\" id=\"blanket\"&gt; &lt;/div&gt; &lt;div style=\"display: none;\" id=\"popUpDiv\"&gt; &lt;a onclick=\"popup('popUpDiv')\" href=\"#\"&gt;" +   &#xD;
+&#xD;
+            "&lt;img alt=\"\" src=\"/resources/images/concertocustomlogin/images/close.jpg\" style=\"border:0\" /&gt; &lt;/a&gt; &lt;br /&gt; &lt;div class=\"popup\"&gt;" +&#xD;
+&#xD;
+              "&lt;h3&gt;" + popupMessageLinkText  + "&lt;/h3&gt;" +&#xD;
+&#xD;
+              popupMessage +&#xD;
+&#xD;
+              "&lt;/div&gt; &lt;/div&gt;" +&#xD;
+&#xD;
+        "&lt;div style=\"text-align:center\"&gt;  &lt;a onclick=\"popup('popUpDiv')\" href=\"#\"&gt;" + popupMessageLinkText  + "&lt;/a&gt; &lt;/div&gt;";&#xD;
+&#xD;
+&#xD;
+&#xD;
+          &#xD;
+&#xD;
+addNewLink(strOthers);&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&#xD;
+&lt;/script&gt;</value>
+		</property-value>
+	</property>
+	<property>
+		<name>loginPage.logoUrl</name>
+		<property-value>
+			<value>/resources/images/concertocustomlogin/images/concerto_welcome.png</value>
+		</property-value>
+	</property>
+	<property>
+		<name>loginPage.title</name>
+		<property-value>
+			<value>Login to Clinical Portal</value>
+		</property-value>
+	</property>
+	<property>
+		<name>logoutDialog.enable</name>
+		<property-value>
+			<value>false</value>
+		</property-value>
+	</property>
+	<property>
+		<name>logoutDialog.height</name>
+		<property-value>
+			<value>400</value>
+		</property-value>
+	</property>
+	<property>
+		<name>logoutDialog.url</name>
+		<property-value>
+			<value />
+		</property-value>
+	</property>
+	<property>
+		<name>logoutDialog.width</name>
+		<property-value>
+			<value>600</value>
+		</property-value>
+	</property>
+	<property>
+		<name>mail.privacyOverrideFormat</name>
+		<property-value>
+			<value>text/html</value>
+		</property-value>
+	</property>
+	<property>
+		<name>mail.privacyOverrideFrom</name>
+		<property-value>
+			<value>concertosupport@act.gov.au</value>
+		</property-value>
+	</property>
+	<property>
+		<name>mail.privacyOverrideFromDisplayName</name>
+		<property-value>
+			<value>Concerto Support</value>
+		</property-value>
+	</property>
+	<property>
+		<name>mail.privacyOverrideSubject</name>
+		<property-value>
+			<value>Concerto: Privacy Override</value>
+		</property-value>
+	</property>
+	<property>
+		<name>mail.privacyOverrideTemplate</name>
+		<property-value>
+			<value>&lt;P&gt;This is an automatically generated notification.&lt;/P&gt;&#xD;
+&lt;P&gt;&#xD;
+    Concerto user '&lt;%=(html)Event.userID%&gt;' has performed a privacy override to access information&#xD;
+    &lt;%if event.contextViewName%&gt;&#xD;
+        about the &lt;%=(html)event.contextViewName.toLowerCase()%&gt; with the following identifiers:&#xD;
+        &lt;UL&gt;&#xD;
+            &lt;%for each identifier in event.identifiers%&gt;&#xD;
+                &lt;LI&gt;&lt;%=(html)identifier.name%&gt;: &lt;%=(html)identifier.value%&gt;&#xD;
+            &lt;%end for%&gt;&#xD;
+        &lt;/UL&gt;&#xD;
+    &lt;%else%&gt;&#xD;
+        in the search '&lt;%=(html)event.searchName%&gt;'.&#xD;
+    &lt;%end if%&gt;&#xD;
+&lt;/P&gt;&#xD;
+&lt;P&gt;The reason supplied for the override was: &lt;%=(html)event.overrideReason%&gt;&lt;/P&gt;&#xD;
+&lt;P&gt;&#xD;
+    &lt;%if event.entryPointName%&gt;&#xD;
+        The user is currently viewing '&lt;%=(html)event.entryPointName%&gt;' from application '&lt;%=(html)event.applicationName%&gt;'.&#xD;
+    &lt;%else%&gt;&#xD;
+        The user is not currently viewing an application.&#xD;
+    &lt;%end if%&gt;&#xD;
+&lt;/P&gt;&#xD;
+&lt;P&gt;This override was performed from terminal &lt;%=(html)event.terminalID%&gt;.&lt;/P&gt;&#xD;
+&lt;P&gt;--&lt;BR&gt;Concerto Server&lt;/P&gt;</value>
+		</property-value>
+	</property>
+	<property>
+		<name>mail.privacyOverrideTo</name>
+		<property-value>
+			<value>concertosupport@act.gov.au</value>
+		</property-value>
+	</property>
+	<property>
+		<name>mail.smtpServer</name>
+		<property-value>
+			<value>mail</value>
+		</property-value>
+	</property>
+	<property>
+		<name>mail.userOverrideFrom</name>
+		<property-value>
+			<value>$SUPPORT_EMAIL$</value>
+		</property-value>
+	</property>
+	<property>
+		<name>mail.userOverrideFromDisplayName</name>
+		<property-value>
+			<value>Hospital Administrator</value>
+		</property-value>
+	</property>
+	<property>
+		<name>mail.userOverrideSubject</name>
+		<property-value>
+			<value>Concerto: User Override</value>
+		</property-value>
+	</property>
+	<property>
+		<name>mail.userOverrideTo</name>
+		<property-value>
+			<value>$SUPPORT_EMAIL$</value>
+		</property-value>
+	</property>
+	<property>
+		<name>mail.userSearchApplicationName</name>
+		<property-value>
+			<value>Concerto</value>
+		</property-value>
+	</property>
+	<property>
+		<name>mail.userSearchEntryPointName</name>
+		<property-value>
+			<value>Mail Search</value>
+		</property-value>
+	</property>
+	<property>
+		<name>mail.userSearchPopupHeight</name>
+		<property-value>
+			<value>400</value>
+		</property-value>
+	</property>
+	<property>
+		<name>mail.userSearchPopupWidth</name>
+		<property-value>
+			<value>550</value>
+		</property-value>
+	</property>
+	<property>
+		<name>messaging.createReplyForwardEnabled</name>
+		<property-value>
+			<value>true</value>
+		</property-value>
+	</property>
+	<property>
+		<name>messaging.enabled</name>
+		<property-value>
+			<value>true</value>
+		</property-value>
+	</property>
+	<property>
+		<name>messaging.notificationAction</name>
+		<property-value>
+			<value>limitedPeriod</value>
+		</property-value>
+	</property>
+	<property>
+		<name>messaging.notificationPeriod</name>
+		<property-value>
+			<value>10</value>
+		</property-value>
+	</property>
+	<property>
+		<name>messaging.readReceiptsEnabled</name>
+		<property-value>
+			<value>false</value>
+		</property-value>
+	</property>
+	<property>
+		<name>messaging.receivedMessageListPageSize</name>
+		<property-value>
+			<value>50</value>
+		</property-value>
+	</property>
+	<property>
+		<name>messaging.userSearchApplicationName</name>
+		<property-value>
+			<value>User Messaging</value>
+		</property-value>
+	</property>
+	<property>
+		<name>messaging.userSearchEntryPointName</name>
+		<property-value>
+			<value>Public Users</value>
+		</property-value>
+	</property>
+	<property>
+		<name>messaging.userSearchPopupHeight</name>
+		<property-value>
+			<value>460</value>
+		</property-value>
+	</property>
+	<property>
+		<name>messaging.userSearchPopupWidth</name>
+		<property-value>
+			<value>510</value>
+		</property-value>
+	</property>
+	<property>
+		<name>privacy.accessLevelCachePeriod</name>
+		<property-value>
+			<value>15</value>
+		</property-value>
+	</property>
+	<property>
+		<name>privacy.creatingRelationshipsOnFlyAllowed</name>
+		<property-value>
+			<value>false</value>
+		</property-value>
+	</property>
+	<property>
+		<name>privacy.displayOmittedEntitiesMessage</name>
+		<property-value>
+			<value>false</value>
+		</property-value>
+	</property>
+	<property>
+		<name>privacy.enableAccessLevelCaching</name>
+		<property-value>
+			<value>true</value>
+		</property-value>
+	</property>
+	<property>
+		<name>privacy.openTheSealTimeoutPeriod</name>
+		<property-value>
+			<value>1</value>
+		</property-value>
+	</property>
+	<property>
+		<name>privacy.openTheSealTimeoutUnit</name>
+		<property-value>
+			<value>10</value>
+		</property-value>
+	</property>
+	<property>
+		<name>privacy.relationshipDetailsUserSearchApplicationName</name>
+		<property-value>
+			<value>Concerto</value>
+		</property-value>
+	</property>
+	<property>
+		<name>privacy.relationshipDetailsUserSearchEntryPointName</name>
+		<property-value>
+			<value>User Popup Search</value>
+		</property-value>
+	</property>
+	<property>
+		<name>privacy.relationshipDetailsUserSearchPopupHeight</name>
+		<property-value>
+			<value>400</value>
+		</property-value>
+	</property>
+	<property>
+		<name>privacy.relationshipDetailsUserSearchPopupWidth</name>
+		<property-value>
+			<value>550</value>
+		</property-value>
+	</property>
+	<property>
+		<name>restui.patientPortal.contextView</name>
+		<property-value>
+			<value>Patient Portal Patient</value>
+		</property-value>
+	</property>
+	<property>
+		<name>restui.providerPortal.contextView</name>
+		<property-value>
+			<value>Patient</value>
+		</property-value>
+	</property>
+	<property>
+		<name>security.allowNTPasswordChange</name>
+		<property-value>
+			<value>false</value>
+		</property-value>
+	</property>
+	<property>
+		<name>security.allowPasswordGeneration</name>
+		<property-value>
+			<value>false</value>
+		</property-value>
+	</property>
+	<property>
+		<name>security.allowPasswordReset</name>
+		<property-value>
+			<value>true</value>
+		</property-value>
+	</property>
+	<property>
+		<name>security.autoLogin</name>
+		<property-value>
+			<value>false</value>
+		</property-value>
+	</property>
+	<property>
+		<name>security.autoUserAccountCreation</name>
+		<property-value>
+			<value>true</value>
+		</property-value>
+	</property>
+	<property>
+		<name>security.clientTimeoutAlert</name>
+		<property-value>
+			<value>20000</value>
+		</property-value>
+	</property>
+	<property>
+		<name>security.clientTimeoutWarning</name>
+		<property-value>
+			<value>60000</value>
+		</property-value>
+	</property>
+	<property>
+		<name>security.concerto3Compatible</name>
+		<property-value>
+			<value>false</value>
+		</property-value>
+	</property>
+	<property>
+		<name>security.defaultClientTimeout</name>
+		<property-value>
+			<value>1800000</value>
+		</property-value>
+	</property>
+	<property>
+		<name>security.defaultNTDomain</name>
+		<property-value>
+			<value />
+		</property-value>
+	</property>
+	<property>
+		<name>security.defaultPasswordAuthentication</name>
+		<property-value>
+			<value>External</value>
+		</property-value>
+	</property>
+	<property>
+		<name>security.enableExternalAuditing</name>
+		<property-value>
+			<value>false</value>
+		</property-value>
+	</property>
+	<property>
+		<name>security.enableGlobalInactivityTimeout</name>
+		<property-value>
+			<value>false</value>
+		</property-value>
+	</property>
+	<property>
+		<name>security.enableUserConfigurableTimeout</name>
+		<property-value>
+			<value>true</value>
+		</property-value>
+	</property>
+	<property>
+		<name>security.encryptedRequestsValidityPeriod</name>
+		<property-value>
+			<value>30</value>
+		</property-value>
+	</property>
+	<property>
+		<name>security.externalAuthenticatorType</name>
+		<property-value>
+			<value />
+		</property-value>
+	</property>
+	<property>
+		<name>security.passwordGeneratorClassName</name>
+		<property-value>
+			<value>com.concerto.security.DefaultPasswordGenerator</value>
+		</property-value>
+	</property>
+	<property>
+		<name>security.passwordResetEmailTemplate</name>
+		<property-value>
+			<value>Hello &lt;%=User.getAttribute("Users", "Full Name")%&gt;&#xD;
+&#xD;
+To reset your Concerto password visit the link below.&#xD;
+&#xD;
+&lt;%=resetLink%&gt;&#xD;
+&#xD;
+If clicking on the link does not work, copy and paste it into a new web browser window instead.&#xD;
+&#xD;
+If you did not request to change your password, please contact the help desk immediately at &lt;%=supportLink%&gt;.&#xD;
+&#xD;
+NOTE: This message was sent from an unmonitored email address. Replies sent to this address will not be answered.</value>
+		</property-value>
+	</property>
+	<property>
+		<name>security.passwordResetFrom</name>
+		<property-value>
+			<value>concertosupport@act.gov.au</value>
+		</property-value>
+	</property>
+	<property>
+		<name>security.passwordResetQuestions</name>
+		<property-value>
+			<value>What is your maternal grandfather's first name?</value>
+		</property-value>
+		<property-value>
+			<value>In what city was your mother born?</value>
+		</property-value>
+		<property-value>
+			<value>What was your childhood best friend's first name?</value>
+		</property-value>
+		<property-value>
+			<value>Who was your favorite teacher?</value>
+		</property-value>
+		<property-value>
+			<value>In what city was your father born?</value>
+		</property-value>
+		<property-value>
+			<value>What was the name of your first pet?</value>
+		</property-value>
+		<property-value>
+			<value>What is the name of the hospital in which you were born?</value>
+		</property-value>
+		<property-value>
+			<value>What is your maternal grandmother's first name?</value>
+		</property-value>
+	</property>
+	<property>
+		<name>security.passwordResetSubject</name>
+		<property-value>
+			<value>Reset your Concerto password</value>
+		</property-value>
+	</property>
+	<property>
+		<name>security.passwordStrengthValidatorClassName</name>
+		<property-value>
+			<value />
+		</property-value>
+	</property>
+	<property>
+		<name>security.sessionTimeout</name>
+		<property-value>
+			<value>180000</value>
+		</property-value>
+	</property>
+	<property>
+		<name>security.userOverrideInactivityTimeout</name>
+		<property-value>
+			<value>180000</value>
+		</property-value>
+	</property>
+	<property>
+		<name>userFeedback.enabled</name>
+		<property-value>
+			<value>false</value>
+		</property-value>
+	</property>
+</configuration>
+<worklist-driver>
+	<name>XML Worklist Driver</name>
+	<class-name>com.concerto.worklist.driver.XmlWorklistDriver</class-name>
+	<worklist-driver-parameter>
+		<name>url</name>
+		<value>http://localhost</value>
+	</worklist-driver-parameter>
+</worklist-driver>
+</concerto>

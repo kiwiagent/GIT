@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concerto version="portal-serialization/2.0">
+<information-type>
+	<name>Default</name>
+	<code>Default</code>
+	<description>This information type is used to tag information that will not be tagged with any other information types.</description>
+</information-type>
+<information-type>
+	<name>Document Security</name>
+	<code>Document Security</code>
+	<description>Information type that is used to define the level of access to a document created with a given form.</description>
+</information-type>
+<information-type>
+	<name>Form Design</name>
+	<code>Form Design</code>
+	<description>Information Type that is used to define the access level that the user has when designing a form.</description>
+</information-type>
+<information-type>
+	<name>Form Security</name>
+	<code>Form Security</code>
+	<description>Information type that is used to determine whether the user is able to configure the security policy for the form.</description>
+</information-type>
+</concerto>

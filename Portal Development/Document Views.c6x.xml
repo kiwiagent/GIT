@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concerto version="portal-serialization/2.0">
+<document-view>
+	<name>ACTPAS Integration View</name>
+	<cache-enabled>false</cache-enabled>
+	<default-grouping>category</default-grouping>
+	<description>Document Repository to consolidate the iPM web services related functions for testing</description>
+	<display-date-filter>true</display-date-filter>
+	<display-importance-flag>true</display-importance-flag>
+	<display-sign-off-flag>true</display-sign-off-flag>
+	<display-text-filter>true</display-text-filter>
+	<display-view-by-category>true</display-view-by-category>
+	<summary-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>ACTPAS Outpatient Appointments</name>
+			<application>
+				<name>iPM Web Services Integration</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<summary-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>Create/Link  ACTPAS OP Referral</name>
+			<application>
+				<name>iPM Web Services Integration</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<timeout>5000</timeout>
+	<track-read-documents>false</track-read-documents>
+</document-view>
+<document-view>
+	<name>Clinical Documents</name>
+	<cache-enabled>false</cache-enabled>
+	<default-grouping />
+	<description>Default Clinical Document Viewer View that can be used to obtain the clinical documents for a patient.</description>
+	<display-importance-flag>true</display-importance-flag>
+	<display-sign-off-flag>true</display-sign-off-flag>
+	<document-repository>
+		<name>ACT eReferral Repository</name>
+		<access-controller />
+		<application>
+			<name>Soprano Referrals</name>
+		</application>
+	</document-repository>
+	<document-repository>
+		<name>Captured Documents</name>
+		<access-controller />
+		<application>
+			<name>Document Capture</name>
+		</application>
+	</document-repository>
+	<document-repository>
+		<name>Prescription</name>
+		<access-controller />
+		<application>
+			<name>Medication Management</name>
+		</application>
+	</document-repository>
+	<summary-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Dynamic Patient Summary</name>
+			<application>
+				<name>Medical Applications Portal</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<summary-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>New Referral</name>
+			<application>
+				<name>Soprano Referrals</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<timeout>3000</timeout>
+	<track-read-documents>false</track-read-documents>
+</document-view>
+<document-view>
+	<name>Clinical Documents (Legacy)</name>
+	<description>Legacy Clinical Document Viewer View that can be used to obtain the clinical documents for a patient.</description>
+	<display-importance-flag>true</display-importance-flag>
+	<display-sign-off-flag>true</display-sign-off-flag>
+	<summary-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Dynamic Patient Summary</name>
+			<application>
+				<name>Medical Applications Portal</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<timeout>3000</timeout>
+</document-view>
+<document-view>
+	<name>Community</name>
+	<cache-enabled>false</cache-enabled>
+	<custom-attribute>
+		<name>Pathway</name>
+		<grouping-allowed>false</grouping-allowed>
+	</custom-attribute>
+	<custom-attribute>
+		<name>Patient ID</name>
+		<grouping-allowed>false</grouping-allowed>
+	</custom-attribute>
+	<custom-attribute>
+		<name>Priority</name>
+		<grouping-allowed>true</grouping-allowed>
+	</custom-attribute>
+	<custom-attribute>
+		<name>Referral ID</name>
+		<grouping-allowed>true</grouping-allowed>
+	</custom-attribute>
+	<custom-attribute>
+		<name>documentID</name>
+		<grouping-allowed>false</grouping-allowed>
+	</custom-attribute>
+	<custom-attribute>
+		<name>documentId</name>
+	</custom-attribute>
+	<custom-attribute>
+		<name>status</name>
+		<grouping-allowed>true</grouping-allowed>
+	</custom-attribute>
+	<default-grouping>category</default-grouping>
+	<description>::: CCR Community Document view ::: All things community related.</description>
+	<display-date-filter>true</display-date-filter>
+	<display-importance-flag>true</display-importance-flag>
+	<display-sign-off-flag>true</display-sign-off-flag>
+	<display-text-filter>true</display-text-filter>
+	<display-view-by-category>true</display-view-by-category>
+	<document-repository>
+		<name>All Form Documents</name>
+		<access-controller />
+		<application>
+			<name>Healthcare pathways - CCR Searches</name>
+		</application>
+	</document-repository>
+	<document-repository>
+		<name>Discharge Summary</name>
+		<access-controller />
+		<application>
+			<name>Orion - Discharge Summary Document Repository</name>
+		</application>
+	</document-repository>
+	<document-repository>
+		<name>Event Status - Community</name>
+		<access-controller />
+		<application>
+			<name>Healthcare pathways - CCR</name>
+		</application>
+	</document-repository>
+	<document-repository>
+		<name>Event Summary - CCR WIC</name>
+		<access-controller />
+		<application>
+			<name>Healthcare pathways - CCR</name>
+		</application>
+	</document-repository>
+	<document-repository>
+		<name>Numeric Laboratory Reports</name>
+		<access-controller />
+		<application>
+			<name>Orion - Clinical Data Repository</name>
+		</application>
+	</document-repository>
+	<document-repository>
+		<name>Radiology Reports</name>
+		<access-controller />
+		<application>
+			<name>Orion - Clinical Data Repository</name>
+		</application>
+	</document-repository>
+	<document-repository>
+		<name>Referrals Repository - Drafts</name>
+		<access-controller />
+		<application>
+			<name>Healthcare pathways - CCR Referrals</name>
+		</application>
+	</document-repository>
+	<document-repository>
+		<name>Referrals Repository - EoC</name>
+		<access-controller />
+		<application>
+			<name>Healthcare pathways - CCR Referrals</name>
+		</application>
+	</document-repository>
+	<document-repository>
+		<name>Text Laboratory Reports</name>
+		<access-controller />
+		<application>
+			<name>Orion - Clinical Data Repository</name>
+		</application>
+	</document-repository>
+	<summary-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>CDV_Patient Overview</name>
+			<application>
+				<name>Healthcare pathways - CCR</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<summary-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>CDV_CCR Patient Summary</name>
+			<application>
+				<name>Healthcare pathways - CCR</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<summary-entry-point>
+		<index>2</index>
+		<entry-point>
+			<name>CCR ACTPAS - Allergies &amp; Alerts</name>
+			<application>
+				<name>Healthcare pathways - CCR ACTPAS</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<summary-entry-point>
+		<index>3</index>
+		<entry-point>
+			<name>CDV_Referrals</name>
+			<application>
+				<name>Healthcare pathways - CCR</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<summary-entry-point>
+		<index>4</index>
+		<entry-point>
+			<name>CDV_Assessments (context)</name>
+			<application>
+				<name>Healthcare pathways - CCR</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<summary-entry-point>
+		<index>5</index>
+		<entry-point>
+			<name>CDV_Progress_Notes (context)</name>
+			<application>
+				<name>Healthcare pathways - CCR</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<summary-entry-point>
+		<index>6</index>
+		<entry-point>
+			<name>CDV_Patient Care Plan (context)</name>
+			<application>
+				<name>Healthcare pathways - CCR</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<summary-entry-point>
+		<index>7</index>
+		<entry-point>
+			<name>CDV_Correspondence</name>
+			<application>
+				<name>Healthcare pathways - CCR</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<summary-entry-point>
+		<index>8</index>
+		<entry-point>
+			<name>CCR Vital Signs EWS Flow Sheet</name>
+			<application>
+				<name>cResults</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<timeout>50000</timeout>
+	<track-read-documents>true</track-read-documents>
+</document-view>
+<document-view>
+	<name>Community Patient Summary</name>
+	<cache-enabled>true</cache-enabled>
+	<custom-attribute>
+		<name>Pathway</name>
+		<grouping-allowed>false</grouping-allowed>
+	</custom-attribute>
+	<custom-attribute>
+		<name>documentID</name>
+		<grouping-allowed>false</grouping-allowed>
+	</custom-attribute>
+	<custom-attribute>
+		<name>documentId</name>
+	</custom-attribute>
+	<custom-attribute>
+		<name>status</name>
+		<grouping-allowed>false</grouping-allowed>
+	</custom-attribute>
+	<default-grouping>category</default-grouping>
+	<description>::: CCR Community Document view Patient Admin Summary Only :::</description>
+	<display-date-filter>true</display-date-filter>
+	<display-importance-flag>true</display-importance-flag>
+	<display-sign-off-flag>true</display-sign-off-flag>
+	<display-text-filter>true</display-text-filter>
+	<display-view-by-category>true</display-view-by-category>
+	<document-repository>
+		<name>All Form Documents</name>
+		<access-controller />
+		<application>
+			<name>Healthcare pathways - CCR Searches</name>
+		</application>
+	</document-repository>
+	<document-repository>
+		<name>Discharge Summary</name>
+		<access-controller />
+		<application>
+			<name>Orion - Discharge Summary Document Repository</name>
+		</application>
+	</document-repository>
+	<document-repository>
+		<name>Event Status - Community</name>
+		<access-controller />
+		<application>
+			<name>Healthcare pathways - CCR</name>
+		</application>
+	</document-repository>
+	<document-repository>
+		<name>Event Summary - CCR WIC</name>
+		<access-controller />
+		<application>
+			<name>Healthcare pathways - CCR</name>
+		</application>
+	</document-repository>
+	<document-repository>
+		<name>Numeric Laboratory Reports</name>
+		<access-controller />
+		<application>
+			<name>Orion - Clinical Data Repository</name>
+		</application>
+	</document-repository>
+	<document-repository>
+		<name>Radiology Reports</name>
+		<access-controller />
+		<application>
+			<name>Orion - Clinical Data Repository</name>
+		</application>
+	</document-repository>
+	<document-repository>
+		<name>Referrals Repository - Drafts</name>
+		<access-controller />
+		<application>
+			<name>Healthcare pathways - CCR Referrals</name>
+		</application>
+	</document-repository>
+	<document-repository>
+		<name>Referrals Repository - EoC</name>
+		<access-controller />
+		<application>
+			<name>Healthcare pathways - CCR Referrals</name>
+		</application>
+	</document-repository>
+	<document-repository>
+		<name>Text Laboratory Reports</name>
+		<access-controller />
+		<application>
+			<name>Orion - Clinical Data Repository</name>
+		</application>
+	</document-repository>
+	<summary-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>CDV_CCR Patient Summary</name>
+			<application>
+				<name>Healthcare pathways - CCR</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<summary-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>CDV_Patient Overview</name>
+			<application>
+				<name>Healthcare pathways - CCR</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<summary-entry-point>
+		<index>2</index>
+		<entry-point>
+			<name>CCR ACTPAS - Allergies &amp; Alerts</name>
+			<application>
+				<name>Healthcare pathways - CCR ACTPAS</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<summary-entry-point>
+		<index>3</index>
+		<entry-point>
+			<name>CDV_Referrals</name>
+			<application>
+				<name>Healthcare pathways - CCR</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<summary-entry-point>
+		<index>4</index>
+		<entry-point>
+			<name>CDV_Assessments (context)</name>
+			<application>
+				<name>Healthcare pathways - CCR</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<summary-entry-point>
+		<index>5</index>
+		<entry-point>
+			<name>CDV_Progress_Notes (context)</name>
+			<application>
+				<name>Healthcare pathways - CCR</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<summary-entry-point>
+		<index>6</index>
+		<entry-point>
+			<name>CDV_Patient Care Plan (context)</name>
+			<application>
+				<name>Healthcare pathways - CCR</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<summary-entry-point>
+		<index>7</index>
+		<entry-point>
+			<name>CDV_Correspondence</name>
+			<application>
+				<name>Healthcare pathways - CCR</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<summary-entry-point>
+		<index>8</index>
+		<entry-point>
+			<name>CCR Vital Signs EWS Flow Sheet</name>
+			<application>
+				<name>cResults</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<timeout>50000</timeout>
+	<track-read-documents>true</track-read-documents>
+</document-view>
+<document-view>
+	<name>Document View</name>
+	<cache-enabled>false</cache-enabled>
+	<custom-attribute>
+		<name>Clinical Notes</name>
+		<grouping-allowed>false</grouping-allowed>
+	</custom-attribute>
+	<custom-attribute>
+		<name>Facility</name>
+		<grouping-allowed>false</grouping-allowed>
+	</custom-attribute>
+	<custom-attribute>
+		<name>Referring</name>
+		<grouping-allowed>true</grouping-allowed>
+	</custom-attribute>
+	<default-grouping>category</default-grouping>
+	<description />
+	<display-date-filter>true</display-date-filter>
+	<display-importance-flag>false</display-importance-flag>
+	<display-sign-off-flag>false</display-sign-off-flag>
+	<display-text-filter>true</display-text-filter>
+	<display-view-by-category>true</display-view-by-category>
+	<document-repository>
+		<name>ACT eReferral Repository</name>
+		<access-controller />
+		<application>
+			<name>Soprano Referrals</name>
+		</application>
+	</document-repository>
+	<document-repository>
+		<name>Discharge Summary</name>
+		<access-controller />
+		<application>
+			<name>Orion - Discharge Summary Document Repository</name>
+		</application>
+	</document-repository>
+	<document-repository>
+		<name>Numeric Laboratory Reports</name>
+		<access-controller />
+		<application>
+			<name>Orion - Clinical Data Repository</name>
+		</application>
+	</document-repository>
+	<document-repository>
+		<name>Radiology Reports</name>
+		<access-controller />
+		<application>
+			<name>Orion - Clinical Data Repository</name>
+		</application>
+	</document-repository>
+	<document-repository>
+		<name>Text Laboratory Reports</name>
+		<access-controller />
+		<application>
+			<name>Orion - Clinical Data Repository</name>
+		</application>
+	</document-repository>
+	<summary-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Patient Summary</name>
+			<application>
+				<name>Orion - Dynamic Patient Summary</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<summary-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>Episode Summary</name>
+			<application>
+				<name>Episode Summary</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<summary-entry-point>
+		<index>2</index>
+		<entry-point>
+			<name>New Referral</name>
+			<application>
+				<name>Soprano Referrals</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<summary-entry-point>
+		<index>3</index>
+		<entry-point>
+			<name>Schedule Summary</name>
+			<application>
+				<name>Schedule Summary</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</summary-entry-point>
+	<timeout>100000</timeout>
+	<track-read-documents>true</track-read-documents>
+</document-view>
+<document-view>
+	<name>PCEHR Documents View</name>
+	<custom-attribute>
+		<name>Clinical Speciality</name>
+		<grouping-allowed>false</grouping-allowed>
+	</custom-attribute>
+	<custom-attribute>
+		<name>Creation Date</name>
+		<grouping-allowed>false</grouping-allowed>
+	</custom-attribute>
+	<custom-attribute>
+		<name>Document Type</name>
+		<grouping-allowed>true</grouping-allowed>
+	</custom-attribute>
+	<custom-attribute>
+		<name>Facility Type</name>
+		<grouping-allowed>false</grouping-allowed>
+	</custom-attribute>
+	<default-grouping>category</default-grouping>
+	<description>PCEHR Documents View</description>
+	<display-date-filter>true</display-date-filter>
+	<display-importance-flag>false</display-importance-flag>
+	<display-sign-off-flag>false</display-sign-off-flag>
+	<display-text-filter>true</display-text-filter>
+	<display-view-by-category>true</display-view-by-category>
+	<timeout>120000</timeout>
+	<track-read-documents>false</track-read-documents>
+</document-view>
+<document-view>
+	<name>Patient History</name>
+	<cache-enabled>false</cache-enabled>
+	<custom-attribute>
+		<name>Encounter</name>
+		<grouping-allowed>true</grouping-allowed>
+	</custom-attribute>
+	<custom-attribute>
+		<name>Facility</name>
+		<grouping-allowed>true</grouping-allowed>
+	</custom-attribute>
+	<custom-attribute>
+		<name>Modality</name>
+		<grouping-allowed>false</grouping-allowed>
+	</custom-attribute>
+	<custom-attribute>
+		<name>Title</name>
+		<grouping-allowed>false</grouping-allowed>
+	</custom-attribute>
+	<default-grouping>category</default-grouping>
+	<description>Patient History</description>
+	<display-date-filter>true</display-date-filter>
+	<display-importance-flag>true</display-importance-flag>
+	<display-sign-off-flag>true</display-sign-off-flag>
+	<display-text-filter>true</display-text-filter>
+	<display-view-by-category>true</display-view-by-category>
+	<timeout>5000</timeout>
+	<track-read-documents>false</track-read-documents>
+</document-view>
+<document-view>
+	<name>Referrals</name>
+	<cache-enabled>false</cache-enabled>
+	<default-grouping>category</default-grouping>
+	<description>Managment screen for CHI users. Allows CHI users to manage incoming electronic referrals and link them to patients.</description>
+	<display-date-filter>true</display-date-filter>
+	<display-importance-flag>true</display-importance-flag>
+	<display-sign-off-flag>true</display-sign-off-flag>
+	<display-text-filter>true</display-text-filter>
+	<display-view-by-category>true</display-view-by-category>
+	<timeout>5000</timeout>
+	<track-read-documents>false</track-read-documents>
+</document-view>
+<document-view>
+	<name>Results Viewer</name>
+	<description>Example document repository for laboratory and radiology reports. Two repository types are supported; Laboratory and Radiology.</description>
+	<timeout>30000</timeout>
+	<track-read-documents>true</track-read-documents>
+</document-view>
+</concerto>

@@ -1,0 +1,2979 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concerto version="portal-serialization/2.0">
+<portal-page>
+	<name>Administrator Homepage</name>
+	<description />
+	<node>
+		<first>false</first>
+		<first-node>
+			<first>true</first>
+			<portal-page-windowlet>
+				<portal-page>
+					<name>Administrator Homepage</name>
+				</portal-page>
+				<windowlet>
+					<name>Quicklinks</name>
+					<application>
+						<name>ACT Admin</name>
+					</application>
+				</windowlet>
+			</portal-page-windowlet>
+			<terminal>true</terminal>
+		</first-node>
+		<layout>horizontal</layout>
+		<second-node>
+			<first>false</first>
+			<portal-page-windowlet>
+				<portal-page>
+					<name>Administrator Homepage</name>
+				</portal-page>
+				<windowlet>
+					<name>Active Users</name>
+					<application>
+						<name>ACT Admin</name>
+					</application>
+				</windowlet>
+			</portal-page-windowlet>
+			<terminal>true</terminal>
+		</second-node>
+		<terminal>false</terminal>
+	</node>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Active Users</name>
+			<application>
+				<name>ACT Admin</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Quicklinks</name>
+			<application>
+				<name>ACT Admin</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<user-configurable>false</user-configurable>
+</portal-page>
+<portal-page>
+	<name>CCR CHI1 Home Page</name>
+	<description>:::: CHI Level 1 :::: Homepage - for final layout</description>
+	<node>
+		<first>false</first>
+		<first-node>
+			<first>true</first>
+			<first-node>
+				<first>true</first>
+				<first-node>
+					<first>true</first>
+					<first-node>
+						<first>true</first>
+						<portal-page-windowlet>
+							<portal-page>
+								<name>CCR CHI1 Home Page</name>
+							</portal-page>
+							<windowlet>
+								<name>Awaiting Pre-Registration (Received)</name>
+								<application>
+									<name>Healthcare pathways - CCR Referrals</name>
+								</application>
+							</windowlet>
+						</portal-page-windowlet>
+						<terminal>true</terminal>
+					</first-node>
+					<layout>horizontal</layout>
+					<second-node>
+						<first>false</first>
+						<portal-page-windowlet>
+							<portal-page>
+								<name>CCR CHI1 Home Page</name>
+							</portal-page>
+							<windowlet>
+								<name>Awaiting Pre-Registration (Declined)</name>
+								<application>
+									<name>Healthcare pathways - CCR Referrals</name>
+								</application>
+							</windowlet>
+						</portal-page-windowlet>
+						<terminal>true</terminal>
+					</second-node>
+					<terminal>false</terminal>
+				</first-node>
+				<layout>horizontal</layout>
+				<second-node>
+					<first>false</first>
+					<portal-page-windowlet>
+						<portal-page>
+							<name>CCR CHI1 Home Page</name>
+						</portal-page>
+						<windowlet>
+							<name>Awaiting Registration</name>
+							<application>
+								<name>Healthcare pathways - CCR Referrals</name>
+							</application>
+						</windowlet>
+					</portal-page-windowlet>
+					<terminal>true</terminal>
+				</second-node>
+				<terminal>false</terminal>
+			</first-node>
+			<layout>horizontal</layout>
+			<second-node>
+				<first>false</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>CCR CHI1 Home Page</name>
+					</portal-page>
+					<windowlet>
+						<name>Awaiting Triage</name>
+						<application>
+							<name>Healthcare pathways - CCR Referrals</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</second-node>
+			<terminal>false</terminal>
+		</first-node>
+		<layout>horizontal</layout>
+		<second-node>
+			<first>false</first>
+			<first-node>
+				<first>true</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>CCR CHI1 Home Page</name>
+					</portal-page>
+					<windowlet>
+						<name>Awaiting Triage (Transferred)</name>
+						<application>
+							<name>Healthcare pathways - CCR Referrals</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</first-node>
+			<layout>horizontal</layout>
+			<second-node>
+				<first>false</first>
+				<first-node>
+					<first>true</first>
+					<portal-page-windowlet>
+						<portal-page>
+							<name>CCR CHI1 Home Page</name>
+						</portal-page>
+						<windowlet>
+							<name>Awaiting Triage (Call Back)</name>
+							<application>
+								<name>Healthcare pathways - CCR Referrals</name>
+							</application>
+						</windowlet>
+					</portal-page-windowlet>
+					<terminal>true</terminal>
+				</first-node>
+				<layout>horizontal</layout>
+				<second-node>
+					<first>false</first>
+					<first-node>
+						<first>true</first>
+						<portal-page-windowlet>
+							<portal-page>
+								<name>CCR CHI1 Home Page</name>
+							</portal-page>
+							<windowlet>
+								<name>Awaiting Booking</name>
+								<application>
+									<name>Healthcare pathways - CCR Referrals</name>
+								</application>
+							</windowlet>
+						</portal-page-windowlet>
+						<terminal>true</terminal>
+					</first-node>
+					<layout>horizontal</layout>
+					<second-node>
+						<first>false</first>
+						<portal-page-windowlet>
+							<portal-page>
+								<name>CCR CHI1 Home Page</name>
+							</portal-page>
+							<windowlet>
+								<name>Recent Patients</name>
+								<application>
+									<name>Medical Applications Portal</name>
+								</application>
+							</windowlet>
+						</portal-page-windowlet>
+						<terminal>true</terminal>
+					</second-node>
+					<terminal>false</terminal>
+				</second-node>
+				<terminal>false</terminal>
+			</second-node>
+			<terminal>false</terminal>
+		</second-node>
+		<terminal>false</terminal>
+	</node>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Awaiting Booking</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Awaiting Pre-Registration (Declined)</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Awaiting Pre-Registration (Received)</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Awaiting Registration</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Awaiting Triage</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Awaiting Triage (Call Back)</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Awaiting Triage (Transferred)</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Completed</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Enrolled</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Pending Referrals</name>
+			<application>
+				<name>Referral Request</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Recent Patients</name>
+			<application>
+				<name>Medical Applications Portal</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<user-configurable>false</user-configurable>
+</portal-page>
+<portal-page>
+	<name>CCR CHI2 Home Page</name>
+	<description>:::: CHI Level 2 :::: Homepage - for final layout</description>
+	<node>
+		<first>false</first>
+		<first-node>
+			<first>true</first>
+			<first-node>
+				<first>true</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>CCR CHI2 Home Page</name>
+					</portal-page>
+					<windowlet>
+						<name>Awaiting Pre-Registration (Received)</name>
+						<application>
+							<name>Healthcare pathways - CCR Referrals</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</first-node>
+			<layout>horizontal</layout>
+			<second-node>
+				<first>false</first>
+				<first-node>
+					<first>true</first>
+					<portal-page-windowlet>
+						<portal-page>
+							<name>CCR CHI2 Home Page</name>
+						</portal-page>
+						<windowlet>
+							<name>Awaiting Registration</name>
+							<application>
+								<name>Healthcare pathways - CCR Referrals</name>
+							</application>
+						</windowlet>
+					</portal-page-windowlet>
+					<terminal>true</terminal>
+				</first-node>
+				<layout>horizontal</layout>
+				<second-node>
+					<first>false</first>
+					<portal-page-windowlet>
+						<portal-page>
+							<name>CCR CHI2 Home Page</name>
+						</portal-page>
+						<windowlet>
+							<name>Awaiting Triage</name>
+							<application>
+								<name>Healthcare pathways - CCR Referrals</name>
+							</application>
+						</windowlet>
+					</portal-page-windowlet>
+					<terminal>true</terminal>
+				</second-node>
+				<terminal>false</terminal>
+			</second-node>
+			<terminal>false</terminal>
+		</first-node>
+		<layout>horizontal</layout>
+		<second-node>
+			<first>false</first>
+			<first-node>
+				<first>true</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>CCR CHI2 Home Page</name>
+					</portal-page>
+					<windowlet>
+						<name>Awaiting Triage (Transferred)</name>
+						<application>
+							<name>Healthcare pathways - CCR Referrals</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</first-node>
+			<layout>horizontal</layout>
+			<second-node>
+				<first>false</first>
+				<first-node>
+					<first>true</first>
+					<first-node>
+						<first>true</first>
+						<portal-page-windowlet>
+							<portal-page>
+								<name>CCR CHI2 Home Page</name>
+							</portal-page>
+							<windowlet>
+								<name>Awaiting Triage (Call Back)</name>
+								<application>
+									<name>Healthcare pathways - CCR Referrals</name>
+								</application>
+							</windowlet>
+						</portal-page-windowlet>
+						<terminal>true</terminal>
+					</first-node>
+					<layout>horizontal</layout>
+					<second-node>
+						<first>false</first>
+						<portal-page-windowlet>
+							<portal-page>
+								<name>CCR CHI2 Home Page</name>
+							</portal-page>
+							<windowlet>
+								<name>Awaiting Booking</name>
+								<application>
+									<name>Healthcare pathways - CCR Referrals</name>
+								</application>
+							</windowlet>
+						</portal-page-windowlet>
+						<terminal>true</terminal>
+					</second-node>
+					<terminal>false</terminal>
+				</first-node>
+				<layout>horizontal</layout>
+				<second-node>
+					<first>false</first>
+					<portal-page-windowlet>
+						<portal-page>
+							<name>CCR CHI2 Home Page</name>
+						</portal-page>
+						<windowlet>
+							<name>Recent Patients</name>
+							<application>
+								<name>Medical Applications Portal</name>
+							</application>
+						</windowlet>
+					</portal-page-windowlet>
+					<terminal>true</terminal>
+				</second-node>
+				<terminal>false</terminal>
+			</second-node>
+			<terminal>false</terminal>
+		</second-node>
+		<terminal>false</terminal>
+	</node>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Awaiting Booking</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Awaiting Pre-Registration (Declined)</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Awaiting Pre-Registration (Received)</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Awaiting Registration</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Awaiting Triage</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Awaiting Triage (Call Back)</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Awaiting Triage (Transferred)</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Completed</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Enrolled</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Recent Patients</name>
+			<application>
+				<name>Medical Applications Portal</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<user-configurable>false</user-configurable>
+</portal-page>
+<portal-page>
+	<name>CCR Community Clinician Homepage</name>
+	<description>:::: CCR :::: Community Clinician Homepage</description>
+	<node>
+		<first>false</first>
+		<first-node>
+			<first>true</first>
+			<portal-page-windowlet>
+				<portal-page>
+					<name>CCR Community Clinician Homepage</name>
+				</portal-page>
+				<windowlet>
+					<name>My Appointments Booked (ACTPAS)</name>
+					<application>
+						<name>Healthcare pathways - CCR ACTPAS</name>
+					</application>
+				</windowlet>
+			</portal-page-windowlet>
+			<terminal>true</terminal>
+		</first-node>
+		<layout>horizontal</layout>
+		<second-node>
+			<first>false</first>
+			<first-node>
+				<first>true</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>CCR Community Clinician Homepage</name>
+					</portal-page>
+					<windowlet>
+						<name>My Contacts (ACTPAS)</name>
+						<application>
+							<name>Healthcare pathways - CCR ACTPAS</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</first-node>
+			<layout>horizontal</layout>
+			<second-node>
+				<first>false</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>CCR Community Clinician Homepage</name>
+					</portal-page>
+					<windowlet>
+						<name>Recent Patients</name>
+						<application>
+							<name>Medical Applications Portal</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</second-node>
+			<terminal>false</terminal>
+		</second-node>
+		<terminal>false</terminal>
+	</node>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>My Appointments Booked (ACTPAS)</name>
+			<application>
+				<name>Healthcare pathways - CCR ACTPAS</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>My Contacts (ACTPAS)</name>
+			<application>
+				<name>Healthcare pathways - CCR ACTPAS</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Recent Patients</name>
+			<application>
+				<name>Medical Applications Portal</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<user-configurable>false</user-configurable>
+</portal-page>
+<portal-page>
+	<name>CCR Service Home Page</name>
+	<description>:::: CHI Services :::: Homepage - for final layout</description>
+	<node>
+		<first>false</first>
+		<first-node>
+			<first>true</first>
+			<portal-page-windowlet>
+				<portal-page>
+					<name>CCR Service Home Page</name>
+				</portal-page>
+				<windowlet>
+					<name>My Appointments Booked (ACTPAS)</name>
+					<application>
+						<name>Healthcare pathways - CCR ACTPAS</name>
+					</application>
+				</windowlet>
+			</portal-page-windowlet>
+			<terminal>true</terminal>
+		</first-node>
+		<layout>horizontal</layout>
+		<second-node>
+			<first>false</first>
+			<first-node>
+				<first>true</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>CCR Service Home Page</name>
+					</portal-page>
+					<windowlet>
+						<name>My Contacts (ACTPAS)</name>
+						<application>
+							<name>Healthcare pathways - CCR ACTPAS</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</first-node>
+			<layout>horizontal</layout>
+			<second-node>
+				<first>false</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>CCR Service Home Page</name>
+					</portal-page>
+					<windowlet>
+						<name>Recent Patients</name>
+						<application>
+							<name>Medical Applications Portal</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</second-node>
+			<terminal>false</terminal>
+		</second-node>
+		<terminal>false</terminal>
+	</node>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Awaiting Booking</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Awaiting Review</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Enrolled</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>My Appointments Booked (ACTPAS)</name>
+			<application>
+				<name>Healthcare pathways - CCR ACTPAS</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>My Contacts (ACTPAS)</name>
+			<application>
+				<name>Healthcare pathways - CCR ACTPAS</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Recent Patients</name>
+			<application>
+				<name>Medical Applications Portal</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Referrals (ACTPAS)</name>
+			<application>
+				<name>Healthcare pathways - CCR ACTPAS</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<user-configurable>false</user-configurable>
+</portal-page>
+<portal-page>
+	<name>CCR Teamleader Home Page</name>
+	<description>:::: CCR Teamleader :::: Home Page</description>
+	<node>
+		<first>false</first>
+		<first-node>
+			<first>true</first>
+			<portal-page-windowlet>
+				<portal-page>
+					<name>CCR Teamleader Home Page</name>
+				</portal-page>
+				<windowlet>
+					<name>Referrals (Speciality/Staff team)</name>
+					<application>
+						<name>Healthcare pathways - CCR Referrals</name>
+					</application>
+				</windowlet>
+			</portal-page-windowlet>
+			<terminal>true</terminal>
+		</first-node>
+		<layout>horizontal</layout>
+		<portal-page-windowlet>
+			<portal-page>
+				<name>CCR Teamleader Home Page</name>
+			</portal-page>
+			<windowlet>
+				<name>Awaiting Booking</name>
+				<application>
+					<name>Healthcare pathways - CCR Referrals</name>
+				</application>
+			</windowlet>
+		</portal-page-windowlet>
+		<second-node>
+			<first>false</first>
+			<first-node>
+				<first>true</first>
+				<first-node>
+					<first>true</first>
+					<portal-page-windowlet>
+						<portal-page>
+							<name>CCR Teamleader Home Page</name>
+						</portal-page>
+						<windowlet>
+							<name>Appointments Booked Homepage</name>
+							<application>
+								<name>Healthcare pathways - CCR ACTPAS</name>
+							</application>
+						</windowlet>
+					</portal-page-windowlet>
+					<terminal>true</terminal>
+				</first-node>
+				<layout>horizontal</layout>
+				<second-node>
+					<first>false</first>
+					<portal-page-windowlet>
+						<portal-page>
+							<name>CCR Teamleader Home Page</name>
+						</portal-page>
+						<windowlet>
+							<name>My Contacts (ACTPAS)</name>
+							<application>
+								<name>Healthcare pathways - CCR ACTPAS</name>
+							</application>
+						</windowlet>
+					</portal-page-windowlet>
+					<terminal>true</terminal>
+				</second-node>
+				<terminal>false</terminal>
+			</first-node>
+			<layout>horizontal</layout>
+			<second-node>
+				<first>false</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>CCR Teamleader Home Page</name>
+					</portal-page>
+					<windowlet>
+						<name>Recent Patients</name>
+						<application>
+							<name>Medical Applications Portal</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</second-node>
+			<terminal>false</terminal>
+		</second-node>
+		<terminal>false</terminal>
+	</node>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Appointments Booked Homepage</name>
+			<application>
+				<name>Healthcare pathways - CCR ACTPAS</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Awaiting Booking</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Awaiting Review</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Enrolled</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>My Contacts (ACTPAS)</name>
+			<application>
+				<name>Healthcare pathways - CCR ACTPAS</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Recent Patients</name>
+			<application>
+				<name>Medical Applications Portal</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Referrals</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Referrals (Speciality/Staff team)</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<user-configurable>false</user-configurable>
+</portal-page>
+<portal-page>
+	<name>Clerical Homepage</name>
+	<description>:::: WiC :::: WiC Admin Home Page</description>
+	<node>
+		<first>false</first>
+		<first-node>
+			<first>true</first>
+			<first-node>
+				<first>true</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>Clerical Homepage</name>
+					</portal-page>
+					<windowlet>
+						<name>Awaiting Pre-Registration</name>
+						<application>
+							<name>Healthcare pathways - CCR Referrals</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</first-node>
+			<layout>horizontal</layout>
+			<second-node>
+				<first>false</first>
+				<first-node>
+					<first>true</first>
+					<portal-page-windowlet>
+						<portal-page>
+							<name>Clerical Homepage</name>
+						</portal-page>
+						<windowlet>
+							<name>Awaiting Registration</name>
+							<application>
+								<name>Healthcare pathways - CCR Referrals</name>
+							</application>
+						</windowlet>
+					</portal-page-windowlet>
+					<terminal>true</terminal>
+				</first-node>
+				<layout>horizontal</layout>
+				<second-node>
+					<first>false</first>
+					<portal-page-windowlet>
+						<portal-page>
+							<name>Clerical Homepage</name>
+						</portal-page>
+						<windowlet>
+							<name>Awaiting Booking</name>
+							<application>
+								<name>Healthcare pathways - CCR Referrals</name>
+							</application>
+						</windowlet>
+					</portal-page-windowlet>
+					<terminal>true</terminal>
+				</second-node>
+				<terminal>false</terminal>
+			</second-node>
+			<terminal>false</terminal>
+		</first-node>
+		<layout>horizontal</layout>
+		<portal-page-windowlet>
+			<portal-page>
+				<name>Clerical Homepage</name>
+			</portal-page>
+			<windowlet>
+				<name>Recent Patients</name>
+				<application>
+					<name>Medical Applications Portal</name>
+				</application>
+			</windowlet>
+		</portal-page-windowlet>
+		<second-node>
+			<first>false</first>
+			<portal-page-windowlet>
+				<portal-page>
+					<name>Clerical Homepage</name>
+				</portal-page>
+				<windowlet>
+					<name>Recent Patients</name>
+					<application>
+						<name>Medical Applications Portal</name>
+					</application>
+				</windowlet>
+			</portal-page-windowlet>
+			<terminal>true</terminal>
+		</second-node>
+		<terminal>false</terminal>
+	</node>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Awaiting Booking</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Awaiting Pre-Registration</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Awaiting Registration</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Recent Patients</name>
+			<application>
+				<name>Medical Applications Portal</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<user-configurable>false</user-configurable>
+</portal-page>
+<portal-page>
+	<name>Clinician Homepage</name>
+	<description />
+	<node>
+		<first>false</first>
+		<first-node>
+			<first>true</first>
+			<first-node>
+				<first>true</first>
+				<first-node>
+					<first>true</first>
+					<portal-page-windowlet>
+						<portal-page>
+							<name>Clinician Homepage</name>
+						</portal-page>
+						<windowlet>
+							<name>My Inpatients</name>
+							<application>
+								<name>Orion - Clinician Homepage</name>
+							</application>
+						</windowlet>
+					</portal-page-windowlet>
+					<terminal>true</terminal>
+				</first-node>
+				<layout>horizontal</layout>
+				<second-node>
+					<first>false</first>
+					<portal-page-windowlet>
+						<portal-page>
+							<name>Clinician Homepage</name>
+						</portal-page>
+						<windowlet>
+							<name>My Worklist</name>
+							<application>
+								<name>Orion - Clinician Homepage</name>
+							</application>
+						</windowlet>
+					</portal-page-windowlet>
+					<terminal>true</terminal>
+				</second-node>
+				<terminal>false</terminal>
+			</first-node>
+			<layout>horizontal</layout>
+			<second-node>
+				<first>false</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>Clinician Homepage</name>
+					</portal-page>
+					<windowlet>
+						<name>Received Messages</name>
+						<application>
+							<name>Orion - Clinician Homepage</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</second-node>
+			<terminal>false</terminal>
+		</first-node>
+		<layout>horizontal</layout>
+		<second-node>
+			<first>false</first>
+			<portal-page-windowlet>
+				<portal-page>
+					<name>Clinician Homepage</name>
+				</portal-page>
+				<windowlet>
+					<name>Recent Patients</name>
+					<application>
+						<name>Orion - Clinician Homepage</name>
+					</application>
+				</windowlet>
+			</portal-page-windowlet>
+			<terminal>true</terminal>
+		</second-node>
+		<terminal>false</terminal>
+	</node>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>My Inpatients</name>
+			<application>
+				<name>Orion - Clinician Homepage</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>My Worklist</name>
+			<application>
+				<name>Orion - Clinician Homepage</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Received Messages</name>
+			<application>
+				<name>Orion - Clinician Homepage</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Recent Patients</name>
+			<application>
+				<name>Orion - Clinician Homepage</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<user-configurable>false</user-configurable>
+</portal-page>
+<portal-page>
+	<name>Community Appointment Context Switch</name>
+	<description>:::: CCR :::: Appointment and Context Switch components</description>
+	<node>
+		<first>false</first>
+		<first-node>
+			<first>true</first>
+			<first-node>
+				<first>true</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>Community Appointment Context Switch</name>
+					</portal-page>
+					<windowlet>
+						<name>My Appointments Booked (ACTPAS)</name>
+						<application>
+							<name>Healthcare pathways - CCR ACTPAS</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</first-node>
+			<layout>horizontal</layout>
+			<second-node>
+				<first>false</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>Community Appointment Context Switch</name>
+					</portal-page>
+					<windowlet>
+						<name>My Contacts (ACTPAS)</name>
+						<application>
+							<name>Healthcare pathways - CCR ACTPAS</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</second-node>
+			<terminal>false</terminal>
+		</first-node>
+		<layout>vertical</layout>
+		<second-node>
+			<first>false</first>
+			<portal-page-windowlet>
+				<portal-page>
+					<name>Community Appointment Context Switch</name>
+				</portal-page>
+				<windowlet>
+					<name>ACTPAS</name>
+					<application>
+						<name>Healthcare pathways - CCR ACTPAS</name>
+					</application>
+				</windowlet>
+			</portal-page-windowlet>
+			<terminal>true</terminal>
+		</second-node>
+		<terminal>false</terminal>
+	</node>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>ACTPAS</name>
+			<application>
+				<name>Healthcare pathways - CCR ACTPAS</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>My Appointments Booked (ACTPAS)</name>
+			<application>
+				<name>Healthcare pathways - CCR ACTPAS</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>My Contacts (ACTPAS)</name>
+			<application>
+				<name>Healthcare pathways - CCR ACTPAS</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<user-configurable>false</user-configurable>
+</portal-page>
+<portal-page>
+	<name>Community Clinician Homepage</name>
+	<description>REMOVE</description>
+	<node>
+		<terminal>true</terminal>
+	</node>
+	<user-configurable>false</user-configurable>
+</portal-page>
+<portal-page>
+	<name>Community Correspondence</name>
+	<description>:::: CCR :::: Correspondence</description>
+	<node>
+		<first>false</first>
+		<first-node>
+			<first>true</first>
+			<portal-page-windowlet>
+				<portal-page>
+					<name>Community Correspondence</name>
+				</portal-page>
+				<windowlet>
+					<name>Event Status Update</name>
+					<application>
+						<name>Healthcare pathways - CCR Referrals</name>
+					</application>
+				</windowlet>
+			</portal-page-windowlet>
+			<terminal>true</terminal>
+		</first-node>
+		<layout>horizontal</layout>
+		<portal-page-windowlet>
+			<portal-page>
+				<name>Community Correspondence</name>
+			</portal-page>
+			<windowlet>
+				<name>Event Status Update</name>
+				<application>
+					<name>Healthcare pathways - CCR Referrals</name>
+				</application>
+			</windowlet>
+		</portal-page-windowlet>
+		<second-node>
+			<first>false</first>
+			<portal-page-windowlet>
+				<portal-page>
+					<name>Community Correspondence</name>
+				</portal-page>
+				<windowlet>
+					<name>Event Summary</name>
+					<application>
+						<name>Healthcare pathways - CCR Referrals</name>
+					</application>
+				</windowlet>
+			</portal-page-windowlet>
+			<terminal>true</terminal>
+		</second-node>
+		<terminal>false</terminal>
+	</node>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Event Status Update</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Event Summary</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<user-configurable>false</user-configurable>
+</portal-page>
+<portal-page>
+	<name>Community Demographic Context Switch</name>
+	<description>:::: CCR ::::  This holds the Demographic and ACTPAS context switch windowlet.</description>
+	<node>
+		<first>false</first>
+		<first-node>
+			<first>true</first>
+			<portal-page-windowlet>
+				<portal-page>
+					<name>Community Demographic Context Switch</name>
+				</portal-page>
+				<windowlet>
+					<name>Patient Demographics</name>
+					<application>
+						<name>Context Switching</name>
+					</application>
+				</windowlet>
+			</portal-page-windowlet>
+			<terminal>true</terminal>
+		</first-node>
+		<layout>vertical</layout>
+		<second-node>
+			<first>false</first>
+			<portal-page-windowlet>
+				<portal-page>
+					<name>Community Demographic Context Switch</name>
+				</portal-page>
+				<windowlet>
+					<name>ACTPAS</name>
+					<application>
+						<name>Healthcare pathways - CCR ACTPAS</name>
+					</application>
+				</windowlet>
+			</portal-page-windowlet>
+			<terminal>true</terminal>
+		</second-node>
+		<terminal>false</terminal>
+	</node>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>ACTPAS</name>
+			<application>
+				<name>Healthcare pathways - CCR ACTPAS</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Demographics</name>
+			<application>
+				<name>Orion - Dynamic Patient Summary</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Patient Demographics</name>
+			<application>
+				<name>Context Switching</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<user-configurable>false</user-configurable>
+</portal-page>
+<portal-page>
+	<name>Community Patient Overview</name>
+	<description>:::: CCR Patient Profile :::: Patient overview and the entry point into a patient profile view that everyone in Community can view and update.</description>
+	<node>
+		<first>false</first>
+		<first-node>
+			<first>true</first>
+			<portal-page-windowlet>
+				<portal-page>
+					<name>Community Patient Overview</name>
+				</portal-page>
+				<windowlet>
+					<name>Pathway Enrolments</name>
+					<application>
+						<name>Healthcare pathways - CCR Searches</name>
+					</application>
+				</windowlet>
+			</portal-page-windowlet>
+			<terminal>true</terminal>
+		</first-node>
+		<layout>horizontal</layout>
+		<portal-page-windowlet>
+			<portal-page>
+				<name>Community Patient Overview</name>
+			</portal-page>
+			<windowlet>
+				<name>Pathway Enrolments</name>
+				<application>
+					<name>Healthcare pathways - CCR Searches</name>
+				</application>
+			</windowlet>
+		</portal-page-windowlet>
+		<second-node>
+			<first>false</first>
+			<first-node>
+				<first>true</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>Community Patient Overview</name>
+					</portal-page>
+					<windowlet>
+						<name>Referrals</name>
+						<application>
+							<name>Healthcare pathways - CCR Referrals</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</first-node>
+			<layout>horizontal</layout>
+			<second-node>
+				<first>false</first>
+				<first-node>
+					<first>true</first>
+					<portal-page-windowlet>
+						<portal-page>
+							<name>Community Patient Overview</name>
+						</portal-page>
+						<windowlet>
+							<name>Vital Signs and Observations</name>
+							<application>
+								<name>Healthcare pathways - CCR Searches</name>
+							</application>
+						</windowlet>
+					</portal-page-windowlet>
+					<terminal>true</terminal>
+				</first-node>
+				<layout>horizontal</layout>
+				<second-node>
+					<first>false</first>
+					<first-node>
+						<first>true</first>
+						<portal-page-windowlet>
+							<portal-page>
+								<name>Community Patient Overview</name>
+							</portal-page>
+							<windowlet>
+								<name>Adverse Reactions &amp; Alerts</name>
+								<application>
+									<name>Healthcare pathways - CCR ACTPAS</name>
+								</application>
+							</windowlet>
+						</portal-page-windowlet>
+						<terminal>true</terminal>
+					</first-node>
+					<layout>horizontal</layout>
+					<second-node>
+						<first>false</first>
+						<first-node>
+							<first>true</first>
+							<portal-page-windowlet>
+								<portal-page>
+									<name>Community Patient Overview</name>
+								</portal-page>
+								<windowlet>
+									<name>Medications</name>
+									<application>
+										<name>Healthcare pathways - CCR Searches</name>
+									</application>
+								</windowlet>
+							</portal-page-windowlet>
+							<terminal>true</terminal>
+						</first-node>
+						<layout>horizontal</layout>
+						<second-node>
+							<first>false</first>
+							<first-node>
+								<first>true</first>
+								<portal-page-windowlet>
+									<portal-page>
+										<name>Community Patient Overview</name>
+									</portal-page>
+									<windowlet>
+										<name>Medication Orders</name>
+										<application>
+											<name>Healthcare pathways - CCR Searches</name>
+										</application>
+									</windowlet>
+								</portal-page-windowlet>
+								<terminal>true</terminal>
+							</first-node>
+							<layout>horizontal</layout>
+							<second-node>
+								<first>false</first>
+								<first-node>
+									<first>true</first>
+									<portal-page-windowlet>
+										<portal-page>
+											<name>Community Patient Overview</name>
+										</portal-page>
+										<windowlet>
+											<name>Administered Medications</name>
+											<application>
+												<name>Healthcare pathways - CCR Searches</name>
+											</application>
+										</windowlet>
+									</portal-page-windowlet>
+									<terminal>true</terminal>
+								</first-node>
+								<layout>horizontal</layout>
+								<second-node>
+									<first>false</first>
+									<first-node>
+										<first>true</first>
+										<portal-page-windowlet>
+											<portal-page>
+												<name>Community Patient Overview</name>
+											</portal-page>
+											<windowlet>
+												<name>Immunisations</name>
+												<application>
+													<name>Healthcare pathways - CCR Searches</name>
+												</application>
+											</windowlet>
+										</portal-page-windowlet>
+										<terminal>true</terminal>
+									</first-node>
+									<layout>horizontal</layout>
+									<second-node>
+										<first>false</first>
+										<first-node>
+											<first>true</first>
+											<portal-page-windowlet>
+												<portal-page>
+													<name>Community Patient Overview</name>
+												</portal-page>
+												<windowlet>
+													<name>Treatment Orders</name>
+													<application>
+														<name>Healthcare pathways - CCR Searches</name>
+													</application>
+												</windowlet>
+											</portal-page-windowlet>
+											<terminal>true</terminal>
+										</first-node>
+										<layout>horizontal</layout>
+										<second-node>
+											<first>false</first>
+											<first-node>
+												<first>true</first>
+												<portal-page-windowlet>
+													<portal-page>
+														<name>Community Patient Overview</name>
+													</portal-page>
+													<windowlet>
+														<name>Medical History</name>
+														<application>
+															<name>Healthcare pathways - CCR Searches</name>
+														</application>
+													</windowlet>
+												</portal-page-windowlet>
+												<terminal>true</terminal>
+											</first-node>
+											<layout>horizontal</layout>
+											<second-node>
+												<first>false</first>
+												<first-node>
+													<first>true</first>
+													<portal-page-windowlet>
+														<portal-page>
+															<name>Community Patient Overview</name>
+														</portal-page>
+														<windowlet>
+															<name>Surgical History</name>
+															<application>
+																<name>Healthcare pathways - CCR Searches</name>
+															</application>
+														</windowlet>
+													</portal-page-windowlet>
+													<terminal>true</terminal>
+												</first-node>
+												<layout>horizontal</layout>
+												<second-node>
+													<first>false</first>
+													<first-node>
+														<first>true</first>
+														<portal-page-windowlet>
+															<portal-page>
+																<name>Community Patient Overview</name>
+															</portal-page>
+															<windowlet>
+																<name>Obstetric History</name>
+																<application>
+																	<name>Healthcare pathways - CCR Searches</name>
+																</application>
+															</windowlet>
+														</portal-page-windowlet>
+														<terminal>true</terminal>
+													</first-node>
+													<layout>horizontal</layout>
+													<second-node>
+														<first>false</first>
+														<first-node>
+															<first>true</first>
+															<portal-page-windowlet>
+																<portal-page>
+																	<name>Community Patient Overview</name>
+																</portal-page>
+																<windowlet>
+																	<name>Social History</name>
+																	<application>
+																		<name>Healthcare pathways - CCR Searches</name>
+																	</application>
+																</windowlet>
+															</portal-page-windowlet>
+															<terminal>true</terminal>
+														</first-node>
+														<layout>horizontal</layout>
+														<second-node>
+															<first>false</first>
+															<first-node>
+																<first>true</first>
+																<portal-page-windowlet>
+																	<portal-page>
+																		<name>Community Patient Overview</name>
+																	</portal-page>
+																	<windowlet>
+																		<name>Lifestyle Factors</name>
+																		<application>
+																			<name>Healthcare pathways - CCR Searches</name>
+																		</application>
+																	</windowlet>
+																</portal-page-windowlet>
+																<terminal>true</terminal>
+															</first-node>
+															<layout>horizontal</layout>
+															<second-node>
+																<first>false</first>
+																<first-node>
+																	<first>true</first>
+																	<portal-page-windowlet>
+																		<portal-page>
+																			<name>Community Patient Overview</name>
+																		</portal-page>
+																		<windowlet>
+																			<name>Progress Notes</name>
+																			<application>
+																				<name>Healthcare pathways - CCR Searches</name>
+																			</application>
+																		</windowlet>
+																	</portal-page-windowlet>
+																	<terminal>true</terminal>
+																</first-node>
+																<layout>horizontal</layout>
+																<second-node>
+																	<first>false</first>
+																	<portal-page-windowlet>
+																		<portal-page>
+																			<name>Community Patient Overview</name>
+																		</portal-page>
+																		<windowlet>
+																			<name>Global Forms</name>
+																			<application>
+																				<name>Healthcare pathways - CCR Searches</name>
+																			</application>
+																		</windowlet>
+																	</portal-page-windowlet>
+																	<terminal>true</terminal>
+																</second-node>
+																<terminal>false</terminal>
+															</second-node>
+															<terminal>false</terminal>
+														</second-node>
+														<terminal>false</terminal>
+													</second-node>
+													<terminal>false</terminal>
+												</second-node>
+												<terminal>false</terminal>
+											</second-node>
+											<terminal>false</terminal>
+										</second-node>
+										<terminal>false</terminal>
+									</second-node>
+									<terminal>false</terminal>
+								</second-node>
+								<terminal>false</terminal>
+							</second-node>
+							<terminal>false</terminal>
+						</second-node>
+						<terminal>false</terminal>
+					</second-node>
+					<terminal>false</terminal>
+				</second-node>
+				<terminal>false</terminal>
+			</second-node>
+			<terminal>false</terminal>
+		</second-node>
+		<terminal>false</terminal>
+	</node>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Administered Medications</name>
+			<application>
+				<name>Healthcare pathways - CCR Searches</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Adverse Reactions &amp; Alerts</name>
+			<application>
+				<name>Healthcare pathways - CCR ACTPAS</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Global Forms</name>
+			<application>
+				<name>Healthcare pathways - CCR Searches</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Immunisations</name>
+			<application>
+				<name>Healthcare pathways - CCR Searches</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Lifestyle Factors</name>
+			<application>
+				<name>Healthcare pathways - CCR Searches</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Medical History</name>
+			<application>
+				<name>Healthcare pathways - CCR Searches</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Medication Orders</name>
+			<application>
+				<name>Healthcare pathways - CCR Searches</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Medications</name>
+			<application>
+				<name>Healthcare pathways - CCR Searches</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Obstetric History</name>
+			<application>
+				<name>Healthcare pathways - CCR Searches</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Pathway Enrolments</name>
+			<application>
+				<name>Healthcare pathways - CCR Searches</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Progress Notes</name>
+			<application>
+				<name>Healthcare pathways - CCR Searches</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Referrals</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Social History</name>
+			<application>
+				<name>Healthcare pathways - CCR Searches</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Surgical History</name>
+			<application>
+				<name>Healthcare pathways - CCR Searches</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Treatment Orders</name>
+			<application>
+				<name>Healthcare pathways - CCR Searches</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Vital Signs and Observations</name>
+			<application>
+				<name>Healthcare pathways - CCR Searches</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<user-configurable>false</user-configurable>
+</portal-page>
+<portal-page>
+	<name>Community Patient Summary</name>
+	<description>:::: Patient Summary Admin :::: Patient summary of encounters / appointments and bookings</description>
+	<node>
+		<first>false</first>
+		<first-node>
+			<first>true</first>
+			<first-node>
+				<first>true</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>Community Patient Summary</name>
+					</portal-page>
+					<windowlet>
+						<name>Patient Demographics</name>
+						<application>
+							<name>Context Switching</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</first-node>
+			<layout>horizontal</layout>
+			<second-node>
+				<first>false</first>
+				<first-node>
+					<first>true</first>
+					<portal-page-windowlet>
+						<portal-page>
+							<name>Community Patient Summary</name>
+						</portal-page>
+						<windowlet>
+							<name>ACTPAS</name>
+							<application>
+								<name>Healthcare pathways - CCR ACTPAS</name>
+							</application>
+						</windowlet>
+					</portal-page-windowlet>
+					<terminal>true</terminal>
+				</first-node>
+				<layout>horizontal</layout>
+				<second-node>
+					<first>false</first>
+					<first-node>
+						<first>true</first>
+						<portal-page-windowlet>
+							<portal-page>
+								<name>Community Patient Summary</name>
+							</portal-page>
+							<windowlet>
+								<name>Referrals</name>
+								<application>
+									<name>Healthcare pathways - CCR Referrals</name>
+								</application>
+							</windowlet>
+						</portal-page-windowlet>
+						<terminal>true</terminal>
+					</first-node>
+					<layout>horizontal</layout>
+					<second-node>
+						<first>false</first>
+						<portal-page-windowlet>
+							<portal-page>
+								<name>Community Patient Summary</name>
+							</portal-page>
+							<windowlet>
+								<name>Referrals (ACTPAS)</name>
+								<application>
+									<name>Healthcare pathways - CCR ACTPAS</name>
+								</application>
+							</windowlet>
+						</portal-page-windowlet>
+						<terminal>true</terminal>
+					</second-node>
+					<terminal>false</terminal>
+				</second-node>
+				<terminal>false</terminal>
+			</second-node>
+			<terminal>false</terminal>
+		</first-node>
+		<layout>horizontal</layout>
+		<second-node>
+			<first>false</first>
+			<first-node>
+				<first>true</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>Community Patient Summary</name>
+					</portal-page>
+					<windowlet>
+						<name>My Appointments Booked (ACTPAS)</name>
+						<application>
+							<name>Healthcare pathways - CCR ACTPAS</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</first-node>
+			<layout>horizontal</layout>
+			<second-node>
+				<first>false</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>Community Patient Summary</name>
+					</portal-page>
+					<windowlet>
+						<name>My Contacts (ACTPAS)</name>
+						<application>
+							<name>Healthcare pathways - CCR ACTPAS</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</second-node>
+			<terminal>false</terminal>
+		</second-node>
+		<terminal>false</terminal>
+	</node>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>ACTPAS</name>
+			<application>
+				<name>Healthcare pathways - CCR ACTPAS</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Allergies &amp; Alerts</name>
+			<application>
+				<name>Orion - Dynamic Patient Summary</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Encounter History</name>
+			<application>
+				<name>Orion - Dynamic Patient Summary</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Future Appointments</name>
+			<application>
+				<name>Orion - Dynamic Patient Summary</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>My Appointments Booked (ACTPAS)</name>
+			<application>
+				<name>Healthcare pathways - CCR ACTPAS</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>My Contacts (ACTPAS)</name>
+			<application>
+				<name>Healthcare pathways - CCR ACTPAS</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Patient Demographics</name>
+			<application>
+				<name>Context Switching</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Patient Enrollment</name>
+			<application>
+				<name>Task List</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Patient Profile Check</name>
+			<application>
+				<name>Healthcare pathways - CCR</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Referrals</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Referrals (ACTPAS)</name>
+			<application>
+				<name>Healthcare pathways - CCR ACTPAS</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<user-configurable>false</user-configurable>
+</portal-page>
+<portal-page>
+	<name>Community Referrals Overview</name>
+	<description>::::Referrals Overview::::</description>
+	<node>
+		<first>false</first>
+		<first-node>
+			<first>true</first>
+			<portal-page-windowlet>
+				<portal-page>
+					<name>Community Referrals Overview</name>
+				</portal-page>
+				<windowlet>
+					<name>Referrals</name>
+					<application>
+						<name>Healthcare pathways - CCR Referrals</name>
+					</application>
+				</windowlet>
+			</portal-page-windowlet>
+			<terminal>true</terminal>
+		</first-node>
+		<layout>horizontal</layout>
+		<second-node>
+			<first>false</first>
+			<first-node>
+				<first>true</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>Community Referrals Overview</name>
+					</portal-page>
+					<windowlet>
+						<name>Closed</name>
+						<application>
+							<name>Healthcare pathways - CCR Referrals</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</first-node>
+			<layout>horizontal</layout>
+			<second-node>
+				<first>false</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>Community Referrals Overview</name>
+					</portal-page>
+					<windowlet>
+						<name>Pending Referrals</name>
+						<application>
+							<name>Referral Request</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</second-node>
+			<terminal>false</terminal>
+		</second-node>
+		<terminal>false</terminal>
+	</node>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Closed</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Pending Referrals</name>
+			<application>
+				<name>Referral Request</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Referrals</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<user-configurable>false</user-configurable>
+</portal-page>
+<portal-page>
+	<name>Community Team Lead Home Page</name>
+	<description />
+	<node>
+		<first>false</first>
+		<first-node>
+			<first>true</first>
+			<first-node>
+				<first>true</first>
+				<terminal>true</terminal>
+			</first-node>
+			<layout>horizontal</layout>
+			<second-node>
+				<first>false</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>Community Team Lead Home Page</name>
+					</portal-page>
+					<windowlet>
+						<name>Current Task List</name>
+						<application>
+							<name>Soprano Disease Management</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</second-node>
+			<terminal>false</terminal>
+		</first-node>
+		<layout>horizontal</layout>
+		<second-node>
+			<first>false</first>
+			<portal-page-windowlet>
+				<portal-page>
+					<name>Community Team Lead Home Page</name>
+				</portal-page>
+				<windowlet>
+					<name>Received Messages</name>
+					<application>
+						<name>User Messaging</name>
+					</application>
+				</windowlet>
+			</portal-page-windowlet>
+			<terminal>true</terminal>
+		</second-node>
+		<terminal>false</terminal>
+	</node>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Current Task List</name>
+			<application>
+				<name>Soprano Disease Management</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Received Messages</name>
+			<application>
+				<name>User Messaging</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<user-configurable>false</user-configurable>
+</portal-page>
+<portal-page>
+	<name>Community Wound Assessment</name>
+	<description />
+	<node>
+		<first>false</first>
+		<first-node>
+			<first>true</first>
+			<portal-page-windowlet>
+				<portal-page>
+					<name>Community Wound Assessment</name>
+				</portal-page>
+				<windowlet>
+					<name>Wound Observations</name>
+					<application>
+						<name>Healthcare pathways - CCR</name>
+					</application>
+				</windowlet>
+			</portal-page-windowlet>
+			<terminal>true</terminal>
+		</first-node>
+		<layout>horizontal</layout>
+		<portal-page-windowlet>
+			<portal-page>
+				<name>Community Wound Assessment</name>
+			</portal-page>
+			<windowlet>
+				<name>Wound Observations</name>
+				<application>
+					<name>Healthcare pathways - CCR</name>
+				</application>
+			</windowlet>
+		</portal-page-windowlet>
+		<second-node>
+			<first>false</first>
+			<portal-page-windowlet>
+				<portal-page>
+					<name>Community Wound Assessment</name>
+				</portal-page>
+				<windowlet>
+					<name>Wounds</name>
+					<application>
+						<name>Healthcare pathways - CCR</name>
+					</application>
+				</windowlet>
+			</portal-page-windowlet>
+			<terminal>true</terminal>
+		</second-node>
+		<terminal>false</terminal>
+	</node>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Wound Observations</name>
+			<application>
+				<name>Healthcare pathways - CCR</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Wounds</name>
+			<application>
+				<name>Healthcare pathways - CCR</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<user-configurable>false</user-configurable>
+</portal-page>
+<portal-page>
+	<name>Communtiy Health Centre Admin</name>
+	<description>Community Health Centre Admin Home Page</description>
+	<node>
+		<first>false</first>
+		<portal-page-windowlet>
+			<portal-page>
+				<name>Communtiy Health Centre Admin</name>
+			</portal-page>
+			<windowlet>
+				<name>Demographics</name>
+				<application>
+					<name>Orion - Dynamic Patient Summary</name>
+				</application>
+			</windowlet>
+		</portal-page-windowlet>
+		<terminal>true</terminal>
+	</node>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Awaiting Booking</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Demographics</name>
+			<application>
+				<name>Orion - Dynamic Patient Summary</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Enrolled</name>
+			<application>
+				<name>Healthcare pathways - CCR Referrals</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<user-configurable>true</user-configurable>
+</portal-page>
+<portal-page>
+	<name>Dynamic Patient Summary</name>
+	<description />
+	<node>
+		<first>false</first>
+		<first-node>
+			<first>true</first>
+			<first-node>
+				<first>true</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>Dynamic Patient Summary</name>
+					</portal-page>
+					<windowlet>
+						<name>Demographics</name>
+						<application>
+							<name>Orion - Dynamic Patient Summary</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</first-node>
+			<layout>horizontal</layout>
+			<second-node>
+				<first>false</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>Dynamic Patient Summary</name>
+					</portal-page>
+					<windowlet>
+						<name>Allergies &amp; Alerts</name>
+						<application>
+							<name>Orion - Dynamic Patient Summary</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</second-node>
+			<terminal>false</terminal>
+		</first-node>
+		<layout>horizontal</layout>
+		<second-node>
+			<first>false</first>
+			<first-node>
+				<first>true</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>Dynamic Patient Summary</name>
+					</portal-page>
+					<windowlet>
+						<name>Encounter History</name>
+						<application>
+							<name>Orion - Dynamic Patient Summary</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</first-node>
+			<layout>horizontal</layout>
+			<second-node>
+				<first>false</first>
+				<first-node>
+					<first>true</first>
+					<portal-page-windowlet>
+						<portal-page>
+							<name>Dynamic Patient Summary</name>
+						</portal-page>
+						<windowlet>
+							<name>Emergency Encounter History</name>
+							<application>
+								<name>Orion - Dynamic Patient Summary</name>
+							</application>
+						</windowlet>
+					</portal-page-windowlet>
+					<terminal>true</terminal>
+				</first-node>
+				<layout>horizontal</layout>
+				<second-node>
+					<first>false</first>
+					<portal-page-windowlet>
+						<portal-page>
+							<name>Dynamic Patient Summary</name>
+						</portal-page>
+						<windowlet>
+							<name>Future Appointments</name>
+							<application>
+								<name>Orion - Dynamic Patient Summary</name>
+							</application>
+						</windowlet>
+					</portal-page-windowlet>
+					<terminal>true</terminal>
+				</second-node>
+				<terminal>false</terminal>
+			</second-node>
+			<terminal>false</terminal>
+		</second-node>
+		<terminal>false</terminal>
+	</node>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Allergies &amp; Alerts</name>
+			<application>
+				<name>Orion - Dynamic Patient Summary</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Demographics</name>
+			<application>
+				<name>Orion - Dynamic Patient Summary</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Dynamic Patient Summary Welcome</name>
+			<application>
+				<name>Medical Applications Portal</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Emergency Encounter History</name>
+			<application>
+				<name>Orion - Dynamic Patient Summary</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Encounter History</name>
+			<application>
+				<name>Orion - Dynamic Patient Summary</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Future Appointments</name>
+			<application>
+				<name>Orion - Dynamic Patient Summary</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Outstanding Orders</name>
+			<application>
+				<name>Concerto Orders</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Patient Details</name>
+			<application>
+				<name>Medical Applications Portal</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Radiology Orders with Image</name>
+			<application>
+				<name>Concerto Orders</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Tests Collected in last 24 hours</name>
+			<application>
+				<name>Concerto Orders</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<user-configurable>false</user-configurable>
+</portal-page>
+<portal-page>
+	<name>Orders Clinician Home Page</name>
+	<description>Home page to be used for pilot group involved with orders production implementation. This is a workaround to avoid the permissions denied messgae being displayed on Users Home pages that dont have access. This is a copy of Clinician Homepage. When all clincians require access this home page should be removed and Clincian Homepage will be updated to include the orders windowlets.</description>
+	<node>
+		<first>false</first>
+		<first-node>
+			<first>true</first>
+			<portal-page-windowlet>
+				<portal-page>
+					<name>Orders Clinician Home Page</name>
+				</portal-page>
+				<windowlet>
+					<name>My Inpatients</name>
+					<application>
+						<name>Orion - Clinician Homepage</name>
+					</application>
+				</windowlet>
+			</portal-page-windowlet>
+			<terminal>true</terminal>
+		</first-node>
+		<layout>horizontal</layout>
+		<second-node>
+			<first>false</first>
+			<first-node>
+				<first>true</first>
+				<first-node>
+					<first>true</first>
+					<portal-page-windowlet>
+						<portal-page>
+							<name>Orders Clinician Home Page</name>
+						</portal-page>
+						<windowlet>
+							<name>My Recent Orders</name>
+							<application>
+								<name>Concerto Orders</name>
+							</application>
+						</windowlet>
+					</portal-page-windowlet>
+					<terminal>true</terminal>
+				</first-node>
+				<layout>horizontal</layout>
+				<second-node>
+					<first>false</first>
+					<first-node>
+						<first>true</first>
+						<first-node>
+							<first>true</first>
+							<portal-page-windowlet>
+								<portal-page>
+									<name>Orders Clinician Home Page</name>
+								</portal-page>
+								<windowlet>
+									<name>My Important Order Events</name>
+									<application>
+										<name>Concerto Orders</name>
+									</application>
+								</windowlet>
+							</portal-page-windowlet>
+							<terminal>true</terminal>
+						</first-node>
+						<layout>horizontal</layout>
+						<second-node>
+							<first>false</first>
+							<portal-page-windowlet>
+								<portal-page>
+									<name>Orders Clinician Home Page</name>
+								</portal-page>
+								<windowlet>
+									<name>My Outpatients for  Today</name>
+									<application>
+										<name>Orion - Clinician Homepage</name>
+									</application>
+								</windowlet>
+							</portal-page-windowlet>
+							<terminal>true</terminal>
+						</second-node>
+						<terminal>false</terminal>
+					</first-node>
+					<layout>horizontal</layout>
+					<second-node>
+						<first>false</first>
+						<first-node>
+							<first>true</first>
+							<portal-page-windowlet>
+								<portal-page>
+									<name>Orders Clinician Home Page</name>
+								</portal-page>
+								<windowlet>
+									<name>My Worklist</name>
+									<application>
+										<name>Orion - Clinician Homepage</name>
+									</application>
+								</windowlet>
+							</portal-page-windowlet>
+							<terminal>true</terminal>
+						</first-node>
+						<layout>vertical</layout>
+						<second-node>
+							<first>false</first>
+							<portal-page-windowlet>
+								<portal-page>
+									<name>Orders Clinician Home Page</name>
+								</portal-page>
+								<windowlet>
+									<name>Orange</name>
+									<application>
+										<name>Medical Applications Portal</name>
+									</application>
+								</windowlet>
+							</portal-page-windowlet>
+							<terminal>true</terminal>
+						</second-node>
+						<terminal>false</terminal>
+					</second-node>
+					<terminal>false</terminal>
+				</second-node>
+				<terminal>false</terminal>
+			</first-node>
+			<layout>horizontal</layout>
+			<second-node>
+				<first>false</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>Orders Clinician Home Page</name>
+					</portal-page>
+					<windowlet>
+						<name>Recent Patients</name>
+						<application>
+							<name>Medical Applications Portal</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</second-node>
+			<terminal>false</terminal>
+		</second-node>
+		<terminal>false</terminal>
+	</node>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>My Important Order Events</name>
+			<application>
+				<name>Concerto Orders</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>My Inpatients</name>
+			<application>
+				<name>Orion - Clinician Homepage</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>My Outpatients for  Today</name>
+			<application>
+				<name>Orion - Clinician Homepage</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>My Recent Orders</name>
+			<application>
+				<name>Concerto Orders</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>My Worklist</name>
+			<application>
+				<name>Orion - Clinician Homepage</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Orange</name>
+			<application>
+				<name>Medical Applications Portal</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Received Messages</name>
+			<application>
+				<name>User Messaging</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Recent Patients</name>
+			<application>
+				<name>Medical Applications Portal</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<user-configurable>false</user-configurable>
+</portal-page>
+<portal-page>
+	<name>Orders Patient Summary</name>
+	<description />
+	<node>
+		<first>false</first>
+		<first-node>
+			<first>true</first>
+			<portal-page-windowlet>
+				<portal-page>
+					<name>Orders Patient Summary</name>
+				</portal-page>
+				<windowlet>
+					<name>Demographics</name>
+					<application>
+						<name>Orion - Dynamic Patient Summary</name>
+					</application>
+				</windowlet>
+			</portal-page-windowlet>
+			<terminal>true</terminal>
+		</first-node>
+		<layout>horizontal</layout>
+		<second-node>
+			<first>false</first>
+			<first-node>
+				<first>true</first>
+				<terminal>true</terminal>
+			</first-node>
+			<layout>horizontal</layout>
+			<second-node>
+				<first>false</first>
+				<first-node>
+					<first>true</first>
+					<terminal>true</terminal>
+				</first-node>
+				<layout>horizontal</layout>
+				<second-node>
+					<first>false</first>
+					<first-node>
+						<first>true</first>
+						<terminal>true</terminal>
+					</first-node>
+					<layout>horizontal</layout>
+					<second-node>
+						<first>false</first>
+						<terminal>true</terminal>
+					</second-node>
+					<terminal>false</terminal>
+				</second-node>
+				<terminal>false</terminal>
+			</second-node>
+			<terminal>false</terminal>
+		</second-node>
+		<terminal>false</terminal>
+	</node>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Cancelled Orders</name>
+			<application>
+				<name>Concerto Orders</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Completed Orders</name>
+			<application>
+				<name>Concerto Orders</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Demographics</name>
+			<application>
+				<name>Orion - Dynamic Patient Summary</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Outstanding Orders</name>
+			<application>
+				<name>Concerto Orders</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Radiology Cancelled Procedures</name>
+			<application>
+				<name>Concerto Orders</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Radiology Completed Procedures</name>
+			<application>
+				<name>Concerto Orders</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Radiology Scheduled Procedures</name>
+			<application>
+				<name>Concerto Orders</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<user-configurable>false</user-configurable>
+</portal-page>
+<portal-page>
+	<name>Pharmacy Homepage</name>
+	<description />
+	<node>
+		<first>false</first>
+		<first-node>
+			<first>true</first>
+			<portal-page-windowlet>
+				<portal-page>
+					<name>Pharmacy Homepage</name>
+				</portal-page>
+				<windowlet>
+					<name>My Inpatients</name>
+					<application>
+						<name>Orion - Pharmacy Homepage</name>
+					</application>
+				</windowlet>
+			</portal-page-windowlet>
+			<terminal>true</terminal>
+		</first-node>
+		<layout>horizontal</layout>
+		<second-node>
+			<first>false</first>
+			<portal-page-windowlet>
+				<portal-page>
+					<name>Pharmacy Homepage</name>
+				</portal-page>
+				<windowlet>
+					<name>Hospital-wide Patients with No MRF</name>
+					<application>
+						<name>Orion - Pharmacy Homepage</name>
+					</application>
+				</windowlet>
+			</portal-page-windowlet>
+			<terminal>true</terminal>
+		</second-node>
+		<terminal>false</terminal>
+	</node>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Hospital-wide Patients with No MRF</name>
+			<application>
+				<name>Orion - Pharmacy Homepage</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>My Inpatients</name>
+			<application>
+				<name>Orion - Pharmacy Homepage</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<user-configurable>false</user-configurable>
+</portal-page>
+<portal-page>
+	<name>Schedule Summary</name>
+	<description>Portal Page to display Patient Schedule Summary</description>
+	<node>
+		<first>false</first>
+		<first-node>
+			<first>true</first>
+			<first-node>
+				<first>true</first>
+				<first-node>
+					<first>true</first>
+					<portal-page-windowlet>
+						<portal-page>
+							<name>Schedule Summary</name>
+						</portal-page>
+						<windowlet>
+							<name>Medical Imaging Appointments</name>
+							<application>
+								<name>Schedule Summary</name>
+							</application>
+						</windowlet>
+					</portal-page-windowlet>
+					<terminal>true</terminal>
+				</first-node>
+				<layout>horizontal</layout>
+				<second-node>
+					<first>false</first>
+					<portal-page-windowlet>
+						<portal-page>
+							<name>Schedule Summary</name>
+						</portal-page>
+						<windowlet>
+							<name>Operating Theatre Booking</name>
+							<application>
+								<name>Schedule Summary</name>
+							</application>
+						</windowlet>
+					</portal-page-windowlet>
+					<terminal>true</terminal>
+				</second-node>
+				<terminal>false</terminal>
+			</first-node>
+			<layout>horizontal</layout>
+			<second-node>
+				<first>false</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>Schedule Summary</name>
+					</portal-page>
+					<windowlet>
+						<name>Outpatient Appointments</name>
+						<application>
+							<name>Schedule Summary</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</second-node>
+			<terminal>false</terminal>
+		</first-node>
+		<layout>horizontal</layout>
+		<second-node>
+			<first>false</first>
+			<portal-page-windowlet>
+				<portal-page>
+					<name>Schedule Summary</name>
+				</portal-page>
+				<windowlet>
+					<name>Surgical Waitlist</name>
+					<application>
+						<name>Schedule Summary</name>
+					</application>
+				</windowlet>
+			</portal-page-windowlet>
+			<terminal>true</terminal>
+		</second-node>
+		<terminal>false</terminal>
+	</node>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Medical Imaging Appointments</name>
+			<application>
+				<name>Schedule Summary</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Operating Theatre Booking</name>
+			<application>
+				<name>Schedule Summary</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Outpatient Appointments</name>
+			<application>
+				<name>Schedule Summary</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Surgical Waitlist</name>
+			<application>
+				<name>Schedule Summary</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<user-configurable>false</user-configurable>
+</portal-page>
+<portal-page>
+	<name>WiC Nursing Home Page</name>
+	<description>:::WiC::: WiC Nursing Home Page</description>
+	<node>
+		<first>false</first>
+		<first-node>
+			<first>true</first>
+			<portal-page-windowlet>
+				<portal-page>
+					<name>WiC Nursing Home Page</name>
+				</portal-page>
+				<windowlet>
+					<name>Whiteboard</name>
+					<application>
+						<name>cWhiteboard</name>
+					</application>
+				</windowlet>
+			</portal-page-windowlet>
+			<terminal>true</terminal>
+		</first-node>
+		<layout>horizontal</layout>
+		<portal-page-windowlet>
+			<portal-page>
+				<name>WiC Nursing Home Page</name>
+			</portal-page>
+			<windowlet>
+				<name>Whiteboard</name>
+				<application>
+					<name>cWhiteboard</name>
+				</application>
+			</windowlet>
+		</portal-page-windowlet>
+		<second-node>
+			<first>false</first>
+			<terminal>true</terminal>
+		</second-node>
+		<terminal>false</terminal>
+	</node>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Whiteboard</name>
+			<application>
+				<name>cWhiteboard</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<user-configurable>false</user-configurable>
+</portal-page>
+</concerto>

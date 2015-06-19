@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concerto version="portal-serialization/2.0">
+<account-policy>
+	<name>Default Policy</name>
+	<account-timeout>45</account-timeout>
+	<account-timeout-enabled>false</account-timeout-enabled>
+	<default>true</default>
+	<description>This default account policy is associated with every new user added to Concerto. There are no restrictions imposed on users associated with this policy.</description>
+	<enabled>true</enabled>
+</account-policy>
+<password-policy>
+	<name>Default Policy</name>
+	<account-lockout-enabled>false</account-lockout-enabled>
+	<account-lockout-forever>false</account-lockout-forever>
+	<account-lockout-time>30</account-lockout-time>
+	<bad-login-count-reset-time>30</bad-login-count-reset-time>
+	<default>false</default>
+	<description>This default password policy is associated with every new user added to Concerto. There are no password restrictions imposed on users associated with this policy.</description>
+	<enabled>true</enabled>
+	<max-bad-login-count>5</max-bad-login-count>
+	<max-password-age>90</max-password-age>
+	<max-password-age-enabled>false</max-password-age-enabled>
+	<min-password-age>90</min-password-age>
+	<min-password-age-enabled>false</min-password-age-enabled>
+	<min-password-length>6</min-password-length>
+	<min-password-length-enabled>false</min-password-length-enabled>
+	<password-history-length>6</password-history-length>
+	<password-strength-check-enabled>false</password-strength-check-enabled>
+</password-policy>
+<password-policy>
+	<name>tough</name>
+	<account-lockout-enabled>true</account-lockout-enabled>
+	<account-lockout-forever>false</account-lockout-forever>
+	<account-lockout-time>1</account-lockout-time>
+	<bad-login-count-reset-time>2</bad-login-count-reset-time>
+	<default>true</default>
+	<description>password settings as seen suitable</description>
+	<enabled>true</enabled>
+	<max-bad-login-count>3</max-bad-login-count>
+	<max-password-age>45</max-password-age>
+	<max-password-age-enabled>true</max-password-age-enabled>
+	<min-password-age>1</min-password-age>
+	<min-password-age-enabled>false</min-password-age-enabled>
+	<min-password-length>8</min-password-length>
+	<min-password-length-enabled>true</min-password-length-enabled>
+	<password-history-enabled>true</password-history-enabled>
+	<password-history-length>5</password-history-length>
+	<password-strength-check-enabled>false</password-strength-check-enabled>
+</password-policy>
+</concerto>

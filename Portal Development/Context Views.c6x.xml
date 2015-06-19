@@ -1,0 +1,2252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concerto version="portal-serialization/2.0">
+<context-view>
+	<name>Concerto Worklist</name>
+	<concise-format />
+	<description>Worklist</description>
+	<enable-history>false</enable-history>
+	<enable-privacy-policies>false</enable-privacy-policies>
+	<format>&lt;%=(html)DisplayName%&gt;</format>
+	<history-print-disclaimer-enabled>false</history-print-disclaimer-enabled>
+	<history-print-stylesheet />
+	<history-printing-enabled>false</history-printing-enabled>
+	<subject-of-interest>
+		<name>[orionhealth.com]Worklist</name>
+		<required>false</required>
+	</subject-of-interest>
+	<system-object>false</system-object>
+	<use-custom-entity-break-seal-page>false</use-custom-entity-break-seal-page>
+	<work-list-type>
+		<name>Blue</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Blue</display-name>
+		<enabled>true</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Green</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Green</display-name>
+		<enabled>true</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Orange</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Orange</display-name>
+		<enabled>true</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Purple</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Purple</display-name>
+		<enabled>true</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Red</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Red</display-name>
+		<enabled>true</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Yellow</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Yellow</display-name>
+		<enabled>true</enabled>
+	</work-list-type>
+	<worklist-print-disclaimer-enabled>false</worklist-print-disclaimer-enabled>
+	<worklist-print-stylesheet />
+	<worklist-printing-enabled>false</worklist-printing-enabled>
+</context-view>
+<context-view>
+	<name>Form</name>
+	<allowed-information-type>
+		<code>Document Security</code>
+	</allowed-information-type>
+	<allowed-information-type>
+		<code>Form Design</code>
+	</allowed-information-type>
+	<allowed-information-type>
+		<code>Form Security</code>
+	</allowed-information-type>
+	<concise-format>&lt;%=FormName%&gt; Form</concise-format>
+	<context-view-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Form Maintenance</name>
+			<application>
+				<name>Soprano Forms</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>View Form Documents</name>
+			<application>
+				<name>Soprano Clinical Documentation</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>2</index>
+		<entry-point>
+			<name>Form Query</name>
+			<application>
+				<name>Soprano Clinical Documentation</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<custom-break-the-privacy-seal-url />
+	<data-appender-configuration>
+		<name>Concerto Groups</name>
+		<class-name>com.concerto.contextview.ConcertoGroupAppender</class-name>
+		<data-appender-entry>
+			<data-type>4</data-type>
+			<default-value />
+			<input-type>Drop Down List</input-type>
+			<key>Concerto user's group memberships</key>
+			<parameter-string>&lt;%exec config.setAdvanced(true)%&gt;&lt;%for each group in Concerto.groups%&gt;&lt;%exec config.setOption( group.name, "" )%&gt;&lt;%end for%&gt;</parameter-string>
+		</data-appender-entry>
+		<data-appender-parameter>
+			<name>key</name>
+			<value>Concerto user's group memberships</value>
+		</data-appender-parameter>
+	</data-appender-configuration>
+	<data-appender-configuration>
+		<name>Concerto Locations</name>
+		<class-name>com.concerto.contextview.ConcertoLocationAppender</class-name>
+		<data-appender-entry>
+			<data-type>4</data-type>
+			<default-value />
+			<input-type>Drop Down List</input-type>
+			<key>Concerto user's locations</key>
+			<parameter-string>&lt;%exec config.setAdvanced(true)%&gt;&lt;%for each location in Concerto.locations%&gt;&lt;%exec config.setOption( location.name, "" )%&gt;&lt;%end for%&gt;</parameter-string>
+		</data-appender-entry>
+		<data-appender-parameter>
+			<name>key</name>
+			<value>Concerto user's locations</value>
+		</data-appender-parameter>
+	</data-appender-configuration>
+	<data-appender-configuration>
+		<name>Concerto Relationships</name>
+		<class-name>com.concerto.contextview.ConcertoRelationshipAppender</class-name>
+		<data-appender-entry>
+			<data-type>4</data-type>
+			<default-value />
+			<input-type>Drop Down List</input-type>
+			<key>Concerto user's relationship to form</key>
+			<parameter-string>&lt;%exec config.setAdvanced(true)%&gt;&lt;%for each relationshipType in Concerto.getContextView("Form").relationshipTypes%&gt;&lt;%exec config.setOption(relationshipType.name, "")%&gt;&lt;%end for%&gt;</parameter-string>
+		</data-appender-entry>
+		<data-appender-parameter>
+			<name>key</name>
+			<value>Concerto user's relationship to form</value>
+		</data-appender-parameter>
+	</data-appender-configuration>
+	<data-appender-configuration>
+		<name>Concerto User</name>
+		<class-name>com.concerto.contextview.ConcertoUserAppender</class-name>
+		<data-appender-entry>
+			<data-type>1</data-type>
+			<default-value />
+			<input-type>Popup Search</input-type>
+			<key>Concerto user</key>
+			<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setApplicationName("Concerto")%&gt;&lt;%exec config.setEntryPointName("User Popup Search")%&gt;&lt;%exec config.setReturnValueName("User.Id.UserId")%&gt;&lt;%exec config.setDisplayValueName("User.Co.FullName")%&gt;</parameter-string>
+		</data-appender-entry>
+		<data-appender-parameter>
+			<name>key</name>
+			<value>Concerto user</value>
+		</data-appender-parameter>
+	</data-appender-configuration>
+	<description>Displays information about a clinical Form.</description>
+	<enable-history>true</enable-history>
+	<enable-privacy-policies>false</enable-privacy-policies>
+	<entity-access-policy>
+		<name>Personal</name>
+		<default>true</default>
+		<description>Documents created using a personal form can only be viewed by the form owner. Any further access to documents needs to be granted by the form owner. Personal forms do not appear in any search results.</description>
+		<entity-access-rule>
+			<index>0</index>
+			<access-level>400</access-level>
+			<entity-access-condition>
+				<index>0</index>
+				<condition-id>5f0c4914-2860-11b2-aaa4-9071fb327e11</condition-id>
+				<data-appender-entry>
+					<data-appender-configuration>
+						<name>Concerto Groups</name>
+						<context-view>
+							<name>Form</name>
+						</context-view>
+					</data-appender-configuration>
+					<key>Concerto user's group memberships</key>
+				</data-appender-entry>
+				<entity-access-cond-input-value>
+					<key>__empty__</key>
+					<value>Forms Administrators</value>
+				</entity-access-cond-input-value>
+				<internal-value>Forms Administrators</internal-value>
+				<operator>1</operator>
+			</entity-access-condition>
+			<rule-id>5f0b5874-2860-11b2-aaa4-9071fb327e11</rule-id>
+		</entity-access-rule>
+		<entity-access-rule>
+			<index>1</index>
+			<access-level>400</access-level>
+			<entity-access-condition>
+				<index>0</index>
+				<condition-id>f527a16a-2869-11b2-8ed2-be7d857e983c</condition-id>
+				<data-appender-entry>
+					<data-appender-configuration>
+						<name>Concerto Groups</name>
+						<context-view>
+							<name>Form</name>
+						</context-view>
+					</data-appender-configuration>
+					<key>Concerto user's group memberships</key>
+				</data-appender-entry>
+				<entity-access-cond-input-value>
+					<key>__empty__</key>
+					<value>Forms Maintainers</value>
+				</entity-access-cond-input-value>
+				<internal-value>Forms Maintainers</internal-value>
+				<operator>1</operator>
+			</entity-access-condition>
+			<rule-id>f526b174-2869-11b2-8ed2-be7d857e983c</rule-id>
+		</entity-access-rule>
+		<entity-access-rule>
+			<index>2</index>
+			<access-level>400</access-level>
+			<entity-access-condition>
+				<index>0</index>
+				<condition-id>5f0e4f16-2860-11b2-aaa4-9071fb327e11</condition-id>
+				<data-appender-entry>
+					<data-appender-configuration>
+						<name>Concerto Relationships</name>
+						<context-view>
+							<name>Form</name>
+						</context-view>
+					</data-appender-configuration>
+					<key>Concerto user's relationship to form</key>
+				</data-appender-entry>
+				<entity-access-cond-input-value>
+					<key>__empty__</key>
+					<value>Document Writer</value>
+				</entity-access-cond-input-value>
+				<internal-value>Document Writer</internal-value>
+				<operator>1</operator>
+			</entity-access-condition>
+			<rule-id>5f0d4580-2860-11b2-aaa4-9071fb327e11</rule-id>
+		</entity-access-rule>
+		<entity-access-rule>
+			<index>3</index>
+			<access-level>400</access-level>
+			<entity-access-condition>
+				<index>0</index>
+				<condition-id>f99e7bba-2869-11b2-8ed2-be7d857e983c</condition-id>
+				<data-appender-entry>
+					<data-appender-configuration>
+						<name>Concerto Relationships</name>
+						<context-view>
+							<name>Form</name>
+						</context-view>
+					</data-appender-configuration>
+					<key>Concerto user's relationship to form</key>
+				</data-appender-entry>
+				<entity-access-cond-input-value>
+					<key>__empty__</key>
+					<value>Document Reader</value>
+				</entity-access-cond-input-value>
+				<internal-value>Document Reader</internal-value>
+				<operator>1</operator>
+			</entity-access-condition>
+			<rule-id>f99cfe70-2869-11b2-8ed2-be7d857e983c</rule-id>
+		</entity-access-rule>
+		<entity-access-rule>
+			<index>4</index>
+			<access-level>100</access-level>
+			<rule-id>d1409ef8-282a-11b2-a388-78c657fd0673</rule-id>
+		</entity-access-rule>
+		<error>false</error>
+	</entity-access-policy>
+	<entity-access-policy>
+		<name>Private</name>
+		<default>false</default>
+		<description>Documents created using a private form can only be viewed by the form owner. Any further access to documents needs to be granted by the form owner. Private forms are displayed in search results.</description>
+		<entity-access-rule>
+			<index>0</index>
+			<access-level>400</access-level>
+			<entity-access-condition>
+				<index>0</index>
+				<condition-id>fd30089e-2863-11b2-8bcb-bd2c2f40837f</condition-id>
+				<data-appender-entry>
+					<data-appender-configuration>
+						<name>Concerto Groups</name>
+						<context-view>
+							<name>Form</name>
+						</context-view>
+					</data-appender-configuration>
+					<key>Concerto user's group memberships</key>
+				</data-appender-entry>
+				<entity-access-cond-input-value>
+					<key>__empty__</key>
+					<value>Forms Administrators</value>
+				</entity-access-cond-input-value>
+				<internal-value>Forms Administrators</internal-value>
+				<operator>1</operator>
+			</entity-access-condition>
+			<rule-id>fd2e3e10-2863-11b2-8bcb-bd2c2f40837f</rule-id>
+		</entity-access-rule>
+		<entity-access-rule>
+			<index>1</index>
+			<access-level>400</access-level>
+			<entity-access-condition>
+				<index>0</index>
+				<condition-id>fb43411c-2869-11b2-8ed2-be7d857e983c</condition-id>
+				<data-appender-entry>
+					<data-appender-configuration>
+						<name>Concerto Groups</name>
+						<context-view>
+							<name>Form</name>
+						</context-view>
+					</data-appender-configuration>
+					<key>Concerto user's group memberships</key>
+				</data-appender-entry>
+				<entity-access-cond-input-value>
+					<key>__empty__</key>
+					<value>Forms Maintainers</value>
+				</entity-access-cond-input-value>
+				<internal-value>Forms Maintainers</internal-value>
+				<operator>1</operator>
+			</entity-access-condition>
+			<rule-id>fb3fd52c-2869-11b2-8ed2-be7d857e983c</rule-id>
+		</entity-access-rule>
+		<entity-access-rule>
+			<index>2</index>
+			<access-level>400</access-level>
+			<entity-access-condition>
+				<index>0</index>
+				<condition-id>f9aacafa-2869-11b2-8ed2-be7d857e983c</condition-id>
+				<data-appender-entry>
+					<data-appender-configuration>
+						<name>Concerto Relationships</name>
+						<context-view>
+							<name>Form</name>
+						</context-view>
+					</data-appender-configuration>
+					<key>Concerto user's relationship to form</key>
+				</data-appender-entry>
+				<entity-access-cond-input-value>
+					<key>__empty__</key>
+					<value>Document Writer</value>
+				</entity-access-cond-input-value>
+				<internal-value>Document Writer</internal-value>
+				<operator>1</operator>
+			</entity-access-condition>
+			<rule-id>f9a99a5e-2869-11b2-8ed2-be7d857e983c</rule-id>
+		</entity-access-rule>
+		<entity-access-rule>
+			<index>3</index>
+			<access-level>400</access-level>
+			<entity-access-condition>
+				<index>0</index>
+				<condition-id>f9a6fa1a-2869-11b2-8ed2-be7d857e983c</condition-id>
+				<data-appender-entry>
+					<data-appender-configuration>
+						<name>Concerto Relationships</name>
+						<context-view>
+							<name>Form</name>
+						</context-view>
+					</data-appender-configuration>
+					<key>Concerto user's relationship to form</key>
+				</data-appender-entry>
+				<entity-access-cond-input-value>
+					<key>__empty__</key>
+					<value>Document Reader</value>
+				</entity-access-cond-input-value>
+				<internal-value>Document Reader</internal-value>
+				<operator>1</operator>
+			</entity-access-condition>
+			<rule-id>f9a6018c-2869-11b2-8ed2-be7d857e983c</rule-id>
+		</entity-access-rule>
+		<entity-access-rule>
+			<index>4</index>
+			<access-level>200</access-level>
+			<rule-id>f5f7d3c8-2862-11b2-83b6-47867cdd3fd7</rule-id>
+		</entity-access-rule>
+		<error>true</error>
+	</entity-access-policy>
+	<entity-access-policy>
+		<name>Public</name>
+		<default>false</default>
+		<description>Documents created using a public form can be viewed by all users. Any further permissions need to be granted by the form owner.</description>
+		<entity-access-rule>
+			<index>0</index>
+			<access-level>400</access-level>
+			<rule-id>902852d6-2860-11b2-83b6-47867cdd3fd7</rule-id>
+		</entity-access-rule>
+		<error>false</error>
+	</entity-access-policy>
+	<entity-policy-selector-configuration>
+		<name>Forms</name>
+		<index>0</index>
+		<class-name>com.concerto.contextview.EntityPolicySelector</class-name>
+	</entity-policy-selector-configuration>
+	<format>&lt;%if Request.getServletPath().endsWith("WorkLists.htm") &#xD;
+    || Request.getServletPath().endsWith("History.htm")%&gt;&#xD;
+  &lt;%var inList = true%&gt;&#xD;
+&lt;%end if%&gt;&#xD;
+&lt;%if Request.patientInContext = "true"%&gt;&#xD;
+  &lt;%var patientInContext = true%&gt;&#xD;
+&lt;%end if%&gt;&#xD;
+&lt;%if inList%&gt;&#xD;
+  &lt;script&gt;&#xD;
+    function openAppInFormContext(applicationName, entryPointName, formName, formDescription, informationModelConceptId) {&#xD;
+      var app = new Application(applicationName, entryPointName);&#xD;
+      var context = new Context("Form");&#xD;
+      context.put("Form.Id.FormName", formName);&#xD;
+      context.put("Form.Co.Description", formDescription);&#xD;
+      context.put("Form.Co.InformationModelConceptId", informationModelConceptId);&#xD;
+      context.setApplication(app);&#xD;
+      concerto.setContext(context);&#xD;
+    }&#xD;
+    function openFormApp(applicationName, entryPointName, formName) {&#xD;
+      var app = new Application(applicationName, entryPointName);&#xD;
+      app.addQueryParameter("formName", formName);&#xD;
+      concerto.openApplication(app);&#xD;
+    }&#xD;
+    function viewInfoModel(event, informationModelConceptId) {&#xD;
+      var e = event || window.event;&#xD;
+      if (e.stopPropagation) e.stopPropagation();&#xD;
+      e.cancelBubble = true;&#xD;
+      var app = new Application("Soprano Data Dictionary", "View Information Model");&#xD;
+      app.addQueryParameter("informationModelConceptId", informationModelConceptId);&#xD;
+      concerto.openApplication(app);&#xD;
+    }&#xD;
+    function viewDocuments(event, formName, formDescription, informationModelConceptId) {&#xD;
+      var e = event || window.event;&#xD;
+      if (e.stopPropagation) e.stopPropagation();&#xD;
+      e.cancelBubble = true;&#xD;
+&lt;%if patientInContext%&gt;&#xD;
+      openFormApp("Soprano Clinical Documentation", "View Patient Documents", formName);&#xD;
+&lt;%else%&gt;&#xD;
+      openAppInFormContext("Soprano Clinical Documentation", "View Patient Documents", formName, formDescription, informationModelConceptId);&#xD;
+&lt;%end if%&gt;&#xD;
+    }&#xD;
+    function openFormQuery(event, formName, formDescription, informationModelConceptId) {&#xD;
+      var e = event || window.event;&#xD;
+      if (e.stopPropagation) e.stopPropagation();&#xD;
+      e.cancelBubble = true;&#xD;
+&lt;%if patientInContext%&gt;&#xD;
+      openFormApp("Soprano Clinical Documentation", "Form Query", formName);&#xD;
+&lt;%else%&gt;&#xD;
+      openAppInFormContext("Soprano Clinical Documentation", "Form Query", formName, formDescription, informationModelConceptId);&#xD;
+&lt;%end if%&gt;&#xD;
+    }&#xD;
+    function openFormMaintenance(event, formName, formDescription, informationModelConceptId) {&#xD;
+      var e = event || window.event;&#xD;
+      if (e.stopPropagation) e.stopPropagation();&#xD;
+      e.cancelBubble = true;&#xD;
+      openAppInFormContext("Soprano Forms", "Form Maintenance", formName, formDescription, informationModelConceptId);&#xD;
+	}&#xD;
+  &lt;/script&gt;&#xD;
+  &lt;div style="width: 100%; vertical-align: middle; height: 100%"&#xD;
+    onclick="viewDocuments(event, '&lt;%=(js)FormName%&gt;', '&lt;%=(js)Description%&gt;', &#xD;
+      '&lt;%=(js)InformationModelConceptId%&gt;')"&gt;&#xD;
+    &lt;span style="float: left"&gt;&#xD;
+      &lt;b&gt;&lt;%=FormName%&gt;&lt;/b&gt; &lt;%=Description%&gt; &lt;small&gt;&lt;a href="#" &#xD;
+        onclick="viewInfoModel(event, '&lt;%=(js)InformationModelConceptId%&gt;')"&gt;Show more...&lt;/a&gt;&lt;/small&gt;&#xD;
+    &lt;/span&gt;&#xD;
+    &lt;span style="float: right"&gt;&#xD;
+      &lt;a onclick="openFormQuery(event, '&lt;%=(js)FormName%&gt;', '&lt;%=(js)Description%&gt;', '&lt;%=(js)InformationModelConceptId%&gt;')"&gt;&lt;img&#xD;
+	    src="/concerto/icons/XP%20Style/business%20and%20data/data/data/data_scroll.gif" alt="Form Query"&gt;&lt;/a&gt;&#xD;
+&lt;%if User.isMemberOf("Forms Maintainers")%&gt;&#xD;
+      &lt;a onclick="openFormMaintenance(event, '&lt;%=(js)FormName%&gt;', '&lt;%=(js)Description%&gt;', '&lt;%=(js)InformationModelConceptId%&gt;')"&gt;&lt;img&#xD;
+	    src="/concerto/icons/XP%20Style/business%20and%20data/data/data/data_table.gif" alt="Form Maintenance"&gt;&lt;/a&gt;&#xD;
+&lt;%end if%&gt;&#xD;
+    &lt;/span&gt;&#xD;
+  &lt;/div&gt;&#xD;
+&lt;%else%&gt;&#xD;
+  &lt;b style="font-size: large"&gt;&lt;%=FormName%&gt; Form&lt;/b&gt;. &lt;small&gt;The list of documents is not the complete clinical record.&lt;/small&gt;&#xD;
+&lt;%end if%&gt;</format>
+	<history-print-disclaimer-enabled>false</history-print-disclaimer-enabled>
+	<history-print-stylesheet />
+	<history-printing-enabled>false</history-printing-enabled>
+	<information-access-policy>
+		<name>Access Code</name>
+		<default>false</default>
+		<description />
+		<error>false</error>
+	</information-access-policy>
+	<information-access-policy>
+		<name>Default</name>
+		<default>true</default>
+		<description>The default container that is used for configuring both Document and Form level security.</description>
+		<error>true</error>
+		<information-access-rule>
+			<index>0</index>
+			<access-level>2040</access-level>
+			<information-access-condition>
+				<index>0</index>
+				<condition-id>2bf9493c-2860-11b2-aaa4-9071fb327e11</condition-id>
+				<data-appender-entry>
+					<data-appender-configuration>
+						<name>Concerto Relationships</name>
+						<context-view>
+							<name>Form</name>
+						</context-view>
+					</data-appender-configuration>
+					<key>Concerto user's relationship to form</key>
+				</data-appender-entry>
+				<info-access-cond-input-value>
+					<key>__empty__</key>
+					<value>Document Writer</value>
+				</info-access-cond-input-value>
+				<internal-value>Document Writer</internal-value>
+				<operator>1</operator>
+			</information-access-condition>
+			<information-type>
+				<code>Document Security</code>
+			</information-type>
+			<rule-id>2bf74b32-2860-11b2-aaa4-9071fb327e11</rule-id>
+		</information-access-rule>
+		<information-access-rule>
+			<index>0</index>
+			<access-level>2110</access-level>
+			<information-access-condition>
+				<index>0</index>
+				<condition-id>28beda24-2861-11b2-83b6-47867cdd3fd7</condition-id>
+				<data-appender-entry>
+					<data-appender-configuration>
+						<name>Concerto Groups</name>
+						<context-view>
+							<name>Form</name>
+						</context-view>
+					</data-appender-configuration>
+					<key>Concerto user's group memberships</key>
+				</data-appender-entry>
+				<info-access-cond-input-value>
+					<key>__empty__</key>
+					<value>Forms Administrators</value>
+				</info-access-cond-input-value>
+				<internal-value>Forms Administrators</internal-value>
+				<operator>1</operator>
+			</information-access-condition>
+			<information-type>
+				<code>Form Design</code>
+			</information-type>
+			<rule-id>28bcff74-2861-11b2-83b6-47867cdd3fd7</rule-id>
+		</information-access-rule>
+		<information-access-rule>
+			<index>0</index>
+			<access-level>2220</access-level>
+			<information-access-condition>
+				<index>0</index>
+				<condition-id>28d38384-2861-11b2-83b6-47867cdd3fd7</condition-id>
+				<data-appender-entry>
+					<data-appender-configuration>
+						<name>Concerto Groups</name>
+						<context-view>
+							<name>Form</name>
+						</context-view>
+					</data-appender-configuration>
+					<key>Concerto user's group memberships</key>
+				</data-appender-entry>
+				<info-access-cond-input-value>
+					<key>__empty__</key>
+					<value>Forms Administrators</value>
+				</info-access-cond-input-value>
+				<internal-value>Forms Administrators</internal-value>
+				<operator>1</operator>
+			</information-access-condition>
+			<information-type>
+				<code>Form Security</code>
+			</information-type>
+			<rule-id>28d26382-2861-11b2-83b6-47867cdd3fd7</rule-id>
+		</information-access-rule>
+		<information-access-rule>
+			<index>1</index>
+			<access-level>2140</access-level>
+			<information-access-condition>
+				<index>0</index>
+				<condition-id>aacba55a-2830-11b2-ae94-2a28901a6f04</condition-id>
+				<data-appender-entry>
+					<data-appender-configuration>
+						<name>Concerto Relationships</name>
+						<context-view>
+							<name>Form</name>
+						</context-view>
+					</data-appender-configuration>
+					<key>Concerto user's relationship to form</key>
+				</data-appender-entry>
+				<info-access-cond-input-value>
+					<key>__empty__</key>
+					<value>Form Owner</value>
+				</info-access-cond-input-value>
+				<internal-value>Form Owner</internal-value>
+				<operator>1</operator>
+			</information-access-condition>
+			<information-type>
+				<code>Form Design</code>
+			</information-type>
+			<rule-id>aac90278-2830-11b2-ae94-2a28901a6f04</rule-id>
+		</information-access-rule>
+		<information-access-rule>
+			<index>1</index>
+			<access-level>2210</access-level>
+			<information-access-condition>
+				<index>0</index>
+				<condition-id>aad08c82-2830-11b2-ae94-2a28901a6f04</condition-id>
+				<data-appender-entry>
+					<data-appender-configuration>
+						<name>Concerto Relationships</name>
+						<context-view>
+							<name>Form</name>
+						</context-view>
+					</data-appender-configuration>
+					<key>Concerto user's relationship to form</key>
+				</data-appender-entry>
+				<info-access-cond-input-value>
+					<key>__empty__</key>
+					<value>Form Owner</value>
+				</info-access-cond-input-value>
+				<internal-value>Form Owner</internal-value>
+				<operator>1</operator>
+			</information-access-condition>
+			<information-type>
+				<code>Form Security</code>
+			</information-type>
+			<rule-id>aacf827e-2830-11b2-ae94-2a28901a6f04</rule-id>
+		</information-access-rule>
+		<information-access-rule>
+			<index>1</index>
+			<access-level>2030</access-level>
+			<information-access-condition>
+				<index>0</index>
+				<condition-id>28b2538a-2861-11b2-83b6-47867cdd3fd7</condition-id>
+				<data-appender-entry>
+					<data-appender-configuration>
+						<name>Concerto Relationships</name>
+						<context-view>
+							<name>Form</name>
+						</context-view>
+					</data-appender-configuration>
+					<key>Concerto user's relationship to form</key>
+				</data-appender-entry>
+				<info-access-cond-input-value>
+					<key>__empty__</key>
+					<value>Document Writer</value>
+				</info-access-cond-input-value>
+				<internal-value>Document Writer</internal-value>
+				<operator>1</operator>
+			</information-access-condition>
+			<information-type>
+				<code>Document Security</code>
+			</information-type>
+			<rule-id>28b111fa-2861-11b2-83b6-47867cdd3fd7</rule-id>
+		</information-access-rule>
+		<information-access-rule>
+			<index>2</index>
+			<access-level>2000</access-level>
+			<information-access-condition>
+				<index>0</index>
+				<condition-id>289f0096-2861-11b2-83b6-47867cdd3fd7</condition-id>
+				<data-appender-entry>
+					<data-appender-configuration>
+						<name>Concerto Groups</name>
+						<context-view>
+							<name>Form</name>
+						</context-view>
+					</data-appender-configuration>
+					<key>Concerto user's group memberships</key>
+				</data-appender-entry>
+				<info-access-cond-input-value>
+					<key>__empty__</key>
+					<value>Forms Administrators</value>
+				</info-access-cond-input-value>
+				<internal-value>Forms Administrators</internal-value>
+				<operator>1</operator>
+			</information-access-condition>
+			<information-type>
+				<code>Document Security</code>
+			</information-type>
+			<rule-id>289dc51e-2861-11b2-83b6-47867cdd3fd7</rule-id>
+		</information-access-rule>
+		<information-access-rule>
+			<index>2</index>
+			<access-level>2130</access-level>
+			<information-access-condition>
+				<index>0</index>
+				<condition-id>28c454c2-2861-11b2-83b6-47867cdd3fd7</condition-id>
+				<data-appender-entry>
+					<data-appender-configuration>
+						<name>Concerto Relationships</name>
+						<context-view>
+							<name>Form</name>
+						</context-view>
+					</data-appender-configuration>
+					<key>Concerto user's relationship to form</key>
+				</data-appender-entry>
+				<info-access-cond-input-value>
+					<key>__empty__</key>
+					<value>Form Writer</value>
+				</info-access-cond-input-value>
+				<internal-value>Form Writer</internal-value>
+				<operator>1</operator>
+			</information-access-condition>
+			<information-type>
+				<code>Form Design</code>
+			</information-type>
+			<rule-id>28c33312-2861-11b2-83b6-47867cdd3fd7</rule-id>
+		</information-access-rule>
+		<information-access-rule>
+			<index>2</index>
+			<access-level>2200</access-level>
+			<information-type>
+				<code>Form Security</code>
+			</information-type>
+			<rule-id>28d4d7fc-2861-11b2-83b6-47867cdd3fd7</rule-id>
+		</information-access-rule>
+		<information-access-rule>
+			<index>3</index>
+			<access-level>2010</access-level>
+			<information-type>
+				<code>Document Security</code>
+			</information-type>
+			<rule-id>28a63668-2861-11b2-83b6-47867cdd3fd7</rule-id>
+		</information-access-rule>
+		<information-access-rule>
+			<index>3</index>
+			<access-level>2110</access-level>
+			<information-access-condition>
+				<index>0</index>
+				<condition-id>28f4c062-2861-11b2-83b6-47867cdd3fd7</condition-id>
+				<data-appender-entry>
+					<data-appender-configuration>
+						<name>Concerto Relationships</name>
+						<context-view>
+							<name>Form</name>
+						</context-view>
+					</data-appender-configuration>
+					<key>Concerto user's relationship to form</key>
+				</data-appender-entry>
+				<info-access-cond-input-value>
+					<key>__empty__</key>
+					<value>Form Reader</value>
+				</info-access-cond-input-value>
+				<internal-value>Form Reader</internal-value>
+				<operator>1</operator>
+			</information-access-condition>
+			<information-type>
+				<code>Form Design</code>
+			</information-type>
+			<rule-id>28f314ba-2861-11b2-83b6-47867cdd3fd7</rule-id>
+		</information-access-rule>
+		<information-access-rule>
+			<index>4</index>
+			<access-level>2100</access-level>
+			<information-type>
+				<code>Form Design</code>
+			</information-type>
+			<rule-id>28c73f48-2861-11b2-83b6-47867cdd3fd7</rule-id>
+		</information-access-rule>
+	</information-access-policy>
+	<information-policy-selector-configuration>
+		<name>Forms</name>
+		<index>0</index>
+		<class-name>com.concerto.contextview.InformationPolicySelector</class-name>
+	</information-policy-selector-configuration>
+	<relationship-type>
+		<name>Document Administrator</name>
+	</relationship-type>
+	<relationship-type>
+		<name>Document Reader</name>
+	</relationship-type>
+	<relationship-type>
+		<name>Document Writer</name>
+	</relationship-type>
+	<relationship-type>
+		<name>Form Owner</name>
+	</relationship-type>
+	<relationship-type>
+		<name>Form Reader</name>
+	</relationship-type>
+	<relationship-type>
+		<name>Form Writer</name>
+	</relationship-type>
+	<subject-of-interest>
+		<name>[orionhealth.com]Form</name>
+		<required>true</required>
+	</subject-of-interest>
+	<system-object>false</system-object>
+	<unique-identifier>
+		<name-prefix>FormName</name-prefix>
+		<descriptor>orionhealth.com</descriptor>
+		<qualified-name>[orionhealth.com]Form.Id.[orionhealth.com]FormName</qualified-name>
+		<role>Id</role>
+		<subject-descriptor>orionhealth.com</subject-descriptor>
+		<subject-name>Form</subject-name>
+	</unique-identifier>
+	<use-custom-entity-break-seal-page>false</use-custom-entity-break-seal-page>
+	<work-list-type>
+		<name>Blue</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Blue Form Worklist</display-name>
+		<enabled>false</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Green</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Green</display-name>
+		<enabled>false</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Orange</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Orange</display-name>
+		<enabled>false</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Purple</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Purple</display-name>
+		<enabled>false</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Red</name>
+		<auto-populated>false</auto-populated>
+		<display-name>My Forms</display-name>
+		<enabled>true</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Yellow</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Yellow Form Worklist</display-name>
+		<enabled>false</enabled>
+	</work-list-type>
+	<worklist-print-disclaimer-enabled>false</worklist-print-disclaimer-enabled>
+	<worklist-print-stylesheet />
+	<worklist-printing-enabled>false</worklist-printing-enabled>
+</context-view>
+<context-view>
+	<name>Patient</name>
+	<concise-format>&lt;%if MRN%&gt;&lt;%=MRN%&gt;&lt;%end if%&gt;&lt;%=PatientName.familyName.toString().toUpperCase()%&gt;, &lt;%=PatientName.givenName%&gt; &lt;%=PatientName.middleInitialOrName%&gt;</concise-format>
+	<context-view-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>CCR DR Dynamic Patient Summary (Admin View)</name>
+			<application>
+				<name>Healthcare pathways - CCR</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>Dynamic Patient Summary</name>
+			<application>
+				<name>Orion - Dynamic Patient Summary</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>2</index>
+		<entry-point>
+			<name>CCR Patient Profile</name>
+			<application>
+				<name>Healthcare pathways - CCR</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>3</index>
+		<entry-point>
+			<name>Patient Task List</name>
+			<application>
+				<name>Task List</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>4</index>
+		<entry-point>
+			<name>New Internal Referral Request</name>
+			<application>
+				<name>Referral Request</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>5</index>
+		<entry-point>
+			<name>Clinical Documents</name>
+			<application>
+				<name>Medical Applications Portal</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>6</index>
+		<entry-point>
+			<name>Place Diagnostics Order</name>
+			<application>
+				<name>Concerto Orders</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>7</index>
+		<entry-point>
+			<name>Episode List</name>
+			<application>
+				<name>Soprano Workflow Medical Templates</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>8</index>
+		<entry-point>
+			<name>Orders Summary</name>
+			<application>
+				<name>Concerto Orders</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>9</index>
+		<entry-point>
+			<name>Manage Circle of Care Relationships</name>
+			<application>
+				<name>Patient Portal for Providers</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>10</index>
+		<entry-point>
+			<name>Invite User</name>
+			<application>
+				<name>Patient Portal for Providers</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>11</index>
+		<entry-point>
+			<name>PCEHR Document View</name>
+			<application>
+				<name>PCEHR</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<custom-break-the-privacy-seal-url />
+	<data-appender-configuration>
+		<name>Concerto Groups</name>
+		<class-name>com.concerto.contextview.ConcertoGroupAppender</class-name>
+		<data-appender-entry>
+			<data-type>4</data-type>
+			<default-value />
+			<input-type>Drop Down List</input-type>
+			<key>Concerto user's group memberships</key>
+			<parameter-string>&lt;%exec config.setAdvanced(true)%&gt;&lt;%for each group in Concerto.groups%&gt;&lt;%exec config.setOption( group.name, "" )%&gt;&lt;%end for%&gt;</parameter-string>
+		</data-appender-entry>
+		<data-appender-parameter>
+			<name>key</name>
+			<value>Concerto user's group memberships</value>
+		</data-appender-parameter>
+	</data-appender-configuration>
+	<data-appender-configuration>
+		<name>Concerto Locations</name>
+		<class-name>com.concerto.contextview.ConcertoLocationAppender</class-name>
+		<data-appender-entry>
+			<data-type>4</data-type>
+			<default-value />
+			<input-type>Drop Down List</input-type>
+			<key>Concerto user's locations</key>
+			<parameter-string>&lt;%exec config.setAdvanced(true)%&gt;&lt;%for each location in Concerto.locations%&gt;&lt;%exec config.setOption( location.name, "" )%&gt;&lt;%end for%&gt;</parameter-string>
+		</data-appender-entry>
+		<data-appender-parameter>
+			<name>key</name>
+			<value>Concerto user's locations</value>
+		</data-appender-parameter>
+	</data-appender-configuration>
+	<data-appender-configuration>
+		<name>Concerto Relationships</name>
+		<class-name>com.concerto.contextview.ConcertoRelationshipAppender</class-name>
+		<data-appender-entry>
+			<data-type>4</data-type>
+			<default-value />
+			<input-type>Drop Down List</input-type>
+			<key>Concerto user's relationship to patient</key>
+			<parameter-string>&lt;%exec config.setAdvanced(true)%&gt;&lt;%for each relationshipType in Concerto.getContextView( "Patient" ).relationshipTypes%&gt;&lt;%exec config.setOption( relationshipType.name, "" )%&gt;&lt;%end for%&gt;</parameter-string>
+		</data-appender-entry>
+		<data-appender-parameter>
+			<name>key</name>
+			<value>Concerto user's relationship to patient</value>
+		</data-appender-parameter>
+	</data-appender-configuration>
+	<data-appender-configuration>
+		<name>Concerto Roles</name>
+		<class-name>com.concerto.contextview.ConcertoRoleAppender</class-name>
+		<data-appender-entry>
+			<data-type>4</data-type>
+			<input-type>Drop Down List</input-type>
+			<key>Concerto user's role memberships</key>
+			<parameter-string>&lt;%exec config.setAdvanced(true)%&gt;&lt;%for each role in Concerto.roles%&gt;&lt;%exec config.setOption( role.name, "" )%&gt;&lt;%end for%&gt;</parameter-string>
+		</data-appender-entry>
+		<data-appender-parameter>
+			<name>key</name>
+			<value>Concerto user's role memberships</value>
+		</data-appender-parameter>
+	</data-appender-configuration>
+	<data-appender-configuration>
+		<name>Concerto User</name>
+		<class-name>com.concerto.contextview.ConcertoUserAppender</class-name>
+		<data-appender-entry>
+			<data-type>1</data-type>
+			<default-value />
+			<input-type>Popup Search</input-type>
+			<key>Concerto user</key>
+			<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setApplicationName("Concerto")%&gt;&lt;%exec config.setEntryPointName("User Popup Search")%&gt;&lt;%exec config.setReturnValueName("[orionhealth.com]User.Id.UserId")%&gt;&lt;%exec config.setDisplayValueName("[orionhealth.com]User.Co.FullName")%&gt;</parameter-string>
+		</data-appender-entry>
+		<data-appender-parameter>
+			<name>key</name>
+			<value>Concerto user</value>
+		</data-appender-parameter>
+	</data-appender-configuration>
+	<description>Displays information from the standard [hl7.org] "Patient" and, if available, "Encounter" context subjects.&#xD;
+Displays the first available identifier out of the Medical Record Number (MRN), Master Patient Index (MPI), National Id Number or Alternate Identifier. If a site-defined suffix is used then the Context Format may need to be modified to display this identifier. Following the identifier, the patients family name is displayed in capitals and then the given name in normal case. The patient's middle initials or name are omitted. The Sex and Age of the patient is displayed in a compact format (Sex/Age).&#xD;
+Information about the class of the patient (Emergency, Inpatient, Outpatient, Preadmit, Recurring, Obstetrics) is then displayed. The servicing facility location description is also displayed if available. If there is no discharge date then that patient's assigned location description is displayed.&#xD;
+Finally, the admit and discharge dates are displayed. If these are the same then only one date is displayed. If there is an admission date but no discharge date then "current" is used.&#xD;
+Two favourite context lists are set up, one for recent patients that the user has accessed, and one that the user can add or remove selected patients to.&#xD;
+Applications with entry points that open in a patient context should be made available from this context view. In general, this includes Concerto's Clincial Document Viewer.</description>
+	<enable-history>true</enable-history>
+	<enable-privacy-policies>false</enable-privacy-policies>
+	<entity-access-policy>
+		<name>Default</name>
+		<default>true</default>
+		<description>This is the default patient access policy</description>
+		<error>false</error>
+	</entity-access-policy>
+	<entity-access-policy>
+		<name>Error</name>
+		<default>false</default>
+		<description>This is the patient access error policy. If an error occurs when attempting to evaluate the access a user has to a patient then this policy will be applied.&#xD;
+&#xD;
+If an error occurs while evaluating the access level allowed by this policy, an error will be returned to the user and they won't be able to access any patient information. It is recommended that you only reason against data gathered from the preconfigured Concerto data appenders in the rule conditions in this policy.</description>
+		<error>true</error>
+	</entity-access-policy>
+	<entity-policy-selector-configuration>
+		<name>Concerto patient policy selector</name>
+		<index>0</index>
+		<class-name>com.concerto.contextview.EntityPolicySelector</class-name>
+	</entity-policy-selector-configuration>
+	<format>&lt;B&gt;&#xD;
+&lt;%if MRN%&gt;&#xD;
+  &lt;%=(html)MRN%&gt;&#xD;
+&lt;%elseif MPI%&gt;&#xD;
+  &lt;%=(html)MPI%&gt;&#xD;
+&lt;%elseif NationalIdNumber%&gt;&#xD;
+  &lt;%=(html)NationalIdNumber%&gt;&#xD;
+&lt;%elseif Alternate%&gt;&#xD;
+  &lt;%=(html)Alternate%&gt;&#xD;
+&lt;%end if%&gt;&#xD;
+&lt;/B&gt;&#xD;
+&lt;%=(html)PatientName.familyName.toString().toUpperCase()%&gt;,&#xD;
+&lt;%=(html)PatientName.givenName%&gt;&#xD;
+&lt;%=(html)PatientName.middleInitialOrName%&gt;&#xD;
+&lt;small&gt;&#xD;
+&lt;%if Sex &lt;&gt; "" || DateTimeOfBirth &lt;&gt; ""%&gt;&#xD;
+ &lt;%=(html)DateFormat.format(DateTimeOfBirth, "dd/MM/yyyy")%&gt;&#xD;
+(&lt;%=AgeFormat.format(DateTimeOfBirth)%&gt;) &lt;%if Sex%&gt;&lt;%=(html)Sex%&gt; &lt;%end if%&gt;&#xD;
+&lt;%end if%&gt;&#xD;
+&lt;/small&gt;</format>
+	<history-print-disclaimer-enabled>false</history-print-disclaimer-enabled>
+	<history-print-stylesheet />
+	<history-printing-enabled>false</history-printing-enabled>
+	<information-access-policy>
+		<name>Default</name>
+		<default>true</default>
+		<description>This is the default information access policy</description>
+		<error>false</error>
+	</information-access-policy>
+	<information-access-policy>
+		<name>Error</name>
+		<default>false</default>
+		<description>This is the information access error policy. If an error occurs when attempting to evaluate the access a user has to a patient's information then this policy will be applied.&#xD;
+&#xD;
+If an error occurs while evaluating the access level allowed by this policy, an error will be returned to the user and they won't be able to access any patient information. It is recommended that you only reason against data gathered from the preconfigured Concerto data appenders in the rule conditions in this policy.</description>
+		<error>true</error>
+	</information-access-policy>
+	<information-policy-selector-configuration>
+		<name>Concerto information policy selector</name>
+		<index>0</index>
+		<class-name>com.concerto.contextview.InformationPolicySelector</class-name>
+	</information-policy-selector-configuration>
+	<subject-of-interest>
+		<name>Document</name>
+		<required>false</required>
+	</subject-of-interest>
+	<subject-of-interest>
+		<name>Encounter</name>
+		<required>false</required>
+	</subject-of-interest>
+	<subject-of-interest>
+		<name>PCEHR</name>
+		<required>false</required>
+	</subject-of-interest>
+	<subject-of-interest>
+		<name>Patient</name>
+		<required>true</required>
+	</subject-of-interest>
+	<subject-of-interest>
+		<name>[orionhealth.com]ContextSubject</name>
+		<required>false</required>
+	</subject-of-interest>
+	<subject-of-interest>
+		<name>[orionhealth.com]Referral</name>
+		<required>false</required>
+	</subject-of-interest>
+	<subject-of-interest>
+		<name>[orionhealth.com]ReferralRequest</name>
+		<required>false</required>
+	</subject-of-interest>
+	<unique-identifier>
+		<name-prefix>MRN</name-prefix>
+		<descriptor>hl7.org</descriptor>
+		<qualified-name>[hl7.org]Patient.Id.[hl7.org]MRN</qualified-name>
+		<role>Id</role>
+		<subject-descriptor>hl7.org</subject-descriptor>
+		<subject-name>Patient</subject-name>
+	</unique-identifier>
+	<use-custom-entity-break-seal-page>false</use-custom-entity-break-seal-page>
+	<work-list-type>
+		<name>Blue</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Blue</display-name>
+		<enabled>true</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Green</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Green</display-name>
+		<enabled>true</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Orange</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Orange</display-name>
+		<enabled>true</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Purple</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Purple</display-name>
+		<enabled>true</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Red</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Red</display-name>
+		<enabled>true</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Yellow</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Yellow</display-name>
+		<enabled>true</enabled>
+	</work-list-type>
+	<worklist-column>
+		<index>0</index>
+		<column-heading>URN</column-heading>
+		<display-format>&lt;%=(html)value%&gt;</display-format>
+		<required>false</required>
+		<subject-item-name>
+			<name-prefix>MRN</name-prefix>
+			<descriptor>hl7.org</descriptor>
+			<qualified-name>[hl7.org]Patient.Id.[hl7.org]MRN</qualified-name>
+			<role>Id</role>
+			<subject-descriptor>hl7.org</subject-descriptor>
+			<subject-name>Patient</subject-name>
+		</subject-item-name>
+	</worklist-column>
+	<worklist-column>
+		<index>1</index>
+		<column-heading>Name</column-heading>
+		<display-format>&lt;%=value.familyName.toString().toUpperCase()%&gt;,&#xD;
+&lt;%=value.givenName%&gt;</display-format>
+		<required>false</required>
+		<subject-item-name>
+			<name-prefix>PatientName</name-prefix>
+			<descriptor>hl7.org</descriptor>
+			<qualified-name>[hl7.org]Patient.Co.[hl7.org]PatientName</qualified-name>
+			<role>Co</role>
+			<subject-descriptor>hl7.org</subject-descriptor>
+			<subject-name>Patient</subject-name>
+		</subject-item-name>
+	</worklist-column>
+	<worklist-column>
+		<index>2</index>
+		<column-heading>Sex</column-heading>
+		<display-format>&lt;%=(html)value%&gt;</display-format>
+		<required>false</required>
+		<subject-item-name>
+			<name-prefix>Sex</name-prefix>
+			<descriptor>hl7.org</descriptor>
+			<qualified-name>[hl7.org]Patient.Co.[hl7.org]Sex</qualified-name>
+			<role>Co</role>
+			<subject-descriptor>hl7.org</subject-descriptor>
+			<subject-name>Patient</subject-name>
+		</subject-item-name>
+	</worklist-column>
+	<worklist-column>
+		<index>3</index>
+		<column-heading>Age</column-heading>
+		<display-format>&lt;%=(html)AgeFormat.format(value)%&gt;</display-format>
+		<required>false</required>
+		<subject-item-name>
+			<name-prefix>DateTimeOfBirth</name-prefix>
+			<descriptor>hl7.org</descriptor>
+			<qualified-name>[hl7.org]Patient.Co.[hl7.org]DateTimeOfBirth</qualified-name>
+			<role>Co</role>
+			<subject-descriptor>hl7.org</subject-descriptor>
+			<subject-name>Patient</subject-name>
+		</subject-item-name>
+	</worklist-column>
+	<worklist-column>
+		<index>4</index>
+		<column-heading>Facility</column-heading>
+		<display-format>&lt;%if value.toString().trim().equals("ACTCC")%&gt;&#xD;
+ACT Health Public&#xD;
+&lt;%elseif value.toString().trim().equals("CHCACT")%&gt;&#xD;
+Calvary Health Care&#xD;
+&lt;%elseif value.toString().trim().equals("DHHCC")%&gt;&#xD;
+ACT Health&#xD;
+&lt;%else%&gt;&#xD;
+&lt;%=value%&gt;&#xD;
+&lt;%end if%&gt;</display-format>
+		<required>false</required>
+		<subject-item-name>
+			<name-prefix>Facility</name-prefix>
+			<descriptor>hl7.org</descriptor>
+			<qualified-name>[hl7.org]Patient.Id.[hl7.org]Facility</qualified-name>
+			<role>Id</role>
+			<subject-descriptor>hl7.org</subject-descriptor>
+			<subject-name>Patient</subject-name>
+		</subject-item-name>
+	</worklist-column>
+	<worklist-print-disclaimer-enabled>false</worklist-print-disclaimer-enabled>
+	<worklist-print-stylesheet />
+	<worklist-printing-enabled>false</worklist-printing-enabled>
+</context-view>
+<context-view>
+	<name>Provider</name>
+	<context-view-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Provider Details</name>
+			<application>
+				<name>Soprano Disease Management</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+	</context-view-entry-point>
+	<subject-of-interest>
+		<name>Provider</name>
+		<required>true</required>
+	</subject-of-interest>
+	<work-list-type>
+		<name>Blue</name>
+	</work-list-type>
+	<work-list-type>
+		<name>Green</name>
+	</work-list-type>
+	<work-list-type>
+		<name>Orange</name>
+	</work-list-type>
+	<work-list-type>
+		<name>Purple</name>
+	</work-list-type>
+	<work-list-type>
+		<name>Red</name>
+	</work-list-type>
+	<work-list-type>
+		<name>Yellow</name>
+	</work-list-type>
+</context-view>
+<context-view>
+	<name>Referral</name>
+	<concise-format>&lt;%=MRN%&gt; &lt;%=PatientName.familyName.toString().toUpperCase()%&gt;, &lt;%=PatientName.givenName%&gt; &lt;%=PatientName.middleInitialOrName%&gt;</concise-format>
+	<context-view-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>CCR DR Referral Context</name>
+			<application>
+				<name>Healthcare pathways - CCR</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>CCR DR Dynamic Patient Summary (Admin View)</name>
+			<application>
+				<name>Healthcare pathways - CCR</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>2</index>
+		<entry-point>
+			<name>CCR Patient Profile</name>
+			<application>
+				<name>Healthcare pathways - CCR</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>3</index>
+		<entry-point>
+			<name>Patient Task List</name>
+			<application>
+				<name>Task List</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>4</index>
+		<entry-point>
+			<name>New Internal Referral Request</name>
+			<application>
+				<name>Referral Request</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>5</index>
+		<entry-point>
+			<name>Place Diagnostics Order</name>
+			<application>
+				<name>Concerto Orders</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<description>::: CCR ::: Referral context.</description>
+	<enable-history>true</enable-history>
+	<enable-privacy-policies>false</enable-privacy-policies>
+	<format>&lt;B&gt;&#xD;
+&lt;%if MRN%&gt;&#xD;
+  &lt;%=(html)MRN%&gt;&#xD;
+&lt;%elseif MPI%&gt;&#xD;
+  &lt;%=(html)MPI%&gt;&#xD;
+&lt;%elseif NationalIdNumber%&gt;&#xD;
+  &lt;%=(html)NationalIdNumber%&gt;&#xD;
+&lt;%elseif Alternate%&gt;&#xD;
+  &lt;%=(html)Alternate%&gt;&#xD;
+&#xD;
+&lt;%end if%&gt;&#xD;
+&lt;/B&gt;&#xD;
+&lt;%=(html)PatientName.familyName.toString().toUpperCase()%&gt;,&#xD;
+&lt;%=(html)PatientName.givenName%&gt;&#xD;
+&lt;%=(html)PatientName.middleInitialOrName%&gt;&#xD;
+&lt;small&gt;&#xD;
+&lt;%if Sex &lt;&gt; "" || DateTimeOfBirth &lt;&gt; ""%&gt;&#xD;
+ &lt;%=(html)DateFormat.format(DateTimeOfBirth, "dd/MM/yyyy")%&gt;&#xD;
+(&lt;%=AgeFormat.format(DateTimeOfBirth)%&gt;) &lt;%if Sex%&gt;&lt;%=(html)Sex%&gt; &lt;%end if%&gt;&#xD;
+&lt;%end if%&gt;&#xD;
+&lt;/small&gt;</format>
+	<history-print-disclaimer-enabled>false</history-print-disclaimer-enabled>
+	<history-print-stylesheet />
+	<history-printing-enabled>false</history-printing-enabled>
+	<subject-of-interest>
+		<name>Patient</name>
+		<required>true</required>
+	</subject-of-interest>
+	<subject-of-interest>
+		<name>[orionhealth.com]Referral</name>
+		<required>true</required>
+	</subject-of-interest>
+	<subject-of-interest>
+		<name>[orionhealth.com]ReferralRequest</name>
+		<required>false</required>
+	</subject-of-interest>
+	<system-object>false</system-object>
+	<unique-identifier>
+		<name-prefix>MRN</name-prefix>
+		<descriptor>hl7.org</descriptor>
+		<qualified-name>[hl7.org]Patient.Id.[hl7.org]MRN</qualified-name>
+		<role>Id</role>
+		<subject-descriptor>hl7.org</subject-descriptor>
+		<subject-name>Patient</subject-name>
+	</unique-identifier>
+	<use-custom-entity-break-seal-page>false</use-custom-entity-break-seal-page>
+	<work-list-type>
+		<name>Blue</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Blue</display-name>
+		<enabled>true</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Green</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Green</display-name>
+		<enabled>true</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Orange</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Orange</display-name>
+		<enabled>true</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Purple</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Purple</display-name>
+		<enabled>true</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Red</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Red</display-name>
+		<enabled>true</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Yellow</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Yellow</display-name>
+		<enabled>true</enabled>
+	</work-list-type>
+	<worklist-column>
+		<index>0</index>
+		<column-heading>URN</column-heading>
+		<display-format>&lt;%=(html)value%&gt;</display-format>
+		<required>false</required>
+		<subject-item-name>
+			<name-prefix>MRN</name-prefix>
+			<descriptor>hl7.org</descriptor>
+			<qualified-name>[hl7.org]Patient.Id.[hl7.org]MRN</qualified-name>
+			<role>Id</role>
+			<subject-descriptor>hl7.org</subject-descriptor>
+			<subject-name>Patient</subject-name>
+		</subject-item-name>
+	</worklist-column>
+	<worklist-column>
+		<index>1</index>
+		<column-heading>Name</column-heading>
+		<display-format>&lt;%=value.familyName.toString().toUpperCase()%&gt;,&#xD;
+&lt;%=value.givenName%&gt;</display-format>
+		<required>false</required>
+		<subject-item-name>
+			<name-prefix>PatientName</name-prefix>
+			<descriptor>hl7.org</descriptor>
+			<qualified-name>[hl7.org]Patient.Co.[hl7.org]PatientName</qualified-name>
+			<role>Co</role>
+			<subject-descriptor>hl7.org</subject-descriptor>
+			<subject-name>Patient</subject-name>
+		</subject-item-name>
+	</worklist-column>
+	<worklist-column>
+		<index>2</index>
+		<column-heading>Sex</column-heading>
+		<display-format>&lt;%=(html)value%&gt;</display-format>
+		<required>false</required>
+		<subject-item-name>
+			<name-prefix>Sex</name-prefix>
+			<descriptor>hl7.org</descriptor>
+			<qualified-name>[hl7.org]Patient.Co.[hl7.org]Sex</qualified-name>
+			<role>Co</role>
+			<subject-descriptor>hl7.org</subject-descriptor>
+			<subject-name>Patient</subject-name>
+		</subject-item-name>
+	</worklist-column>
+	<worklist-column>
+		<index>3</index>
+		<column-heading>Age</column-heading>
+		<display-format>&lt;%=(html)AgeFormat.format(value)%&gt;</display-format>
+		<required>false</required>
+		<subject-item-name>
+			<name-prefix>DateTimeOfBirth</name-prefix>
+			<descriptor>hl7.org</descriptor>
+			<qualified-name>[hl7.org]Patient.Co.[hl7.org]DateTimeOfBirth</qualified-name>
+			<role>Co</role>
+			<subject-descriptor>hl7.org</subject-descriptor>
+			<subject-name>Patient</subject-name>
+		</subject-item-name>
+	</worklist-column>
+	<worklist-column>
+		<index>4</index>
+		<column-heading>Facility</column-heading>
+		<display-format>&lt;%if value.toString().trim().equals("ACTCC")%&gt;&#xD;
+ACT Health Public&#xD;
+&lt;%elseif value.toString().trim().equals("CHCACT")%&gt;&#xD;
+Calvary Health Care&#xD;
+&lt;%elseif value.toString().trim().equals("DHHCC")%&gt;&#xD;
+ACT Health&#xD;
+&lt;%else%&gt;&#xD;
+&lt;%=value%&gt;&#xD;
+&lt;%end if%&gt;</display-format>
+		<required>false</required>
+		<subject-item-name>
+			<name-prefix>Facility</name-prefix>
+			<descriptor>hl7.org</descriptor>
+			<qualified-name>[hl7.org]Patient.Id.[hl7.org]Facility</qualified-name>
+			<role>Id</role>
+			<subject-descriptor>hl7.org</subject-descriptor>
+			<subject-name>Patient</subject-name>
+		</subject-item-name>
+	</worklist-column>
+	<worklist-print-disclaimer-enabled>false</worklist-print-disclaimer-enabled>
+	<worklist-print-stylesheet />
+	<worklist-printing-enabled>false</worklist-printing-enabled>
+</context-view>
+<context-view>
+	<name>ReviewEDS Patient</name>
+	<concise-format>&lt;%if MRN%&gt;&lt;%=MRN%&gt;&lt;%end if%&gt;&lt;%=PatientName.familyName.toString().toUpperCase()%&gt;, &lt;%=PatientName.givenName%&gt; &lt;%=PatientName.middleInitialOrName%&gt;</concise-format>
+	<context-view-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>CCR DR Dynamic Patient Summary (Admin View)</name>
+			<application>
+				<name>Healthcare pathways - CCR</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>1</index>
+		<entry-point>
+			<name>Dynamic Patient Summary</name>
+			<application>
+				<name>Orion - Dynamic Patient Summary</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>2</index>
+		<entry-point>
+			<name>CCR Patient Profile</name>
+			<application>
+				<name>Healthcare pathways - CCR</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>3</index>
+		<entry-point>
+			<name>Patient Task List</name>
+			<application>
+				<name>Task List</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>4</index>
+		<entry-point>
+			<name>New Internal Referral Request</name>
+			<application>
+				<name>Referral Request</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>5</index>
+		<entry-point>
+			<name>Clinical Documents</name>
+			<application>
+				<name>Medical Applications Portal</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>6</index>
+		<entry-point>
+			<name>Place Diagnostics Order</name>
+			<application>
+				<name>Concerto Orders</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>7</index>
+		<entry-point>
+			<name>Episode List</name>
+			<application>
+				<name>Soprano Workflow Medical Templates</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>8</index>
+		<entry-point>
+			<name>Orders Summary</name>
+			<application>
+				<name>Concerto Orders</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>9</index>
+		<entry-point>
+			<name>Manage Circle of Care Relationships</name>
+			<application>
+				<name>Patient Portal for Providers</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>10</index>
+		<entry-point>
+			<name>Invite User</name>
+			<application>
+				<name>Patient Portal for Providers</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>11</index>
+		<entry-point>
+			<name>PCEHR Document View</name>
+			<application>
+				<name>PCEHR</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<custom-break-the-privacy-seal-url />
+	<data-appender-configuration>
+		<name>Concerto Groups</name>
+		<class-name>com.concerto.contextview.ConcertoGroupAppender</class-name>
+		<data-appender-entry>
+			<data-type>4</data-type>
+			<default-value />
+			<input-type>Drop Down List</input-type>
+			<key>Concerto user's group memberships</key>
+			<parameter-string>&lt;%exec config.setAdvanced(true)%&gt;&lt;%for each group in Concerto.groups%&gt;&lt;%exec config.setOption( group.name, "" )%&gt;&lt;%end for%&gt;</parameter-string>
+		</data-appender-entry>
+		<data-appender-parameter>
+			<name>key</name>
+			<value>Concerto user's group memberships</value>
+		</data-appender-parameter>
+	</data-appender-configuration>
+	<data-appender-configuration>
+		<name>Concerto Locations</name>
+		<class-name>com.concerto.contextview.ConcertoLocationAppender</class-name>
+		<data-appender-entry>
+			<data-type>4</data-type>
+			<default-value />
+			<input-type>Drop Down List</input-type>
+			<key>Concerto user's locations</key>
+			<parameter-string>&lt;%exec config.setAdvanced(true)%&gt;&lt;%for each location in Concerto.locations%&gt;&lt;%exec config.setOption( location.name, "" )%&gt;&lt;%end for%&gt;</parameter-string>
+		</data-appender-entry>
+		<data-appender-parameter>
+			<name>key</name>
+			<value>Concerto user's locations</value>
+		</data-appender-parameter>
+	</data-appender-configuration>
+	<data-appender-configuration>
+		<name>Concerto Relationships</name>
+		<class-name>com.concerto.contextview.ConcertoRelationshipAppender</class-name>
+		<data-appender-entry>
+			<data-type>4</data-type>
+			<default-value />
+			<input-type>Drop Down List</input-type>
+			<key>Concerto user's relationship to patient</key>
+			<parameter-string>&lt;%exec config.setAdvanced(true)%&gt;&lt;%for each relationshipType in Concerto.getContextView( "Patient" ).relationshipTypes%&gt;&lt;%exec config.setOption( relationshipType.name, "" )%&gt;&lt;%end for%&gt;</parameter-string>
+		</data-appender-entry>
+		<data-appender-parameter>
+			<name>key</name>
+			<value>Concerto user's relationship to patient</value>
+		</data-appender-parameter>
+	</data-appender-configuration>
+	<data-appender-configuration>
+		<name>Concerto Roles</name>
+		<class-name>com.concerto.contextview.ConcertoRoleAppender</class-name>
+		<data-appender-entry>
+			<data-type>4</data-type>
+			<input-type>Drop Down List</input-type>
+			<key>Concerto user's role memberships</key>
+			<parameter-string>&lt;%exec config.setAdvanced(true)%&gt;&lt;%for each role in Concerto.roles%&gt;&lt;%exec config.setOption( role.name, "" )%&gt;&lt;%end for%&gt;</parameter-string>
+		</data-appender-entry>
+		<data-appender-parameter>
+			<name>key</name>
+			<value>Concerto user's role memberships</value>
+		</data-appender-parameter>
+	</data-appender-configuration>
+	<data-appender-configuration>
+		<name>Concerto User</name>
+		<class-name>com.concerto.contextview.ConcertoUserAppender</class-name>
+		<data-appender-entry>
+			<data-type>1</data-type>
+			<default-value />
+			<input-type>Popup Search</input-type>
+			<key>Concerto user</key>
+			<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setApplicationName("Concerto")%&gt;&lt;%exec config.setEntryPointName("User Popup Search")%&gt;&lt;%exec config.setReturnValueName("[orionhealth.com]User.Id.UserId")%&gt;&lt;%exec config.setDisplayValueName("[orionhealth.com]User.Co.FullName")%&gt;</parameter-string>
+		</data-appender-entry>
+		<data-appender-parameter>
+			<name>key</name>
+			<value>Concerto user</value>
+		</data-appender-parameter>
+	</data-appender-configuration>
+	<description>Displays information from the standard [hl7.org] "Patient" and, if available, "Encounter" context subjects.&#xD;
+Displays the first available identifier out of the Medical Record Number (MRN), Master Patient Index (MPI), National Id Number or Alternate Identifier. If a site-defined suffix is used then the Context Format may need to be modified to display this identifier. Following the identifier, the patients family name is displayed in capitals and then the given name in normal case. The patient's middle initials or name are omitted. The Sex and Age of the patient is displayed in a compact format (Sex/Age).&#xD;
+Information about the class of the patient (Emergency, Inpatient, Outpatient, Preadmit, Recurring, Obstetrics) is then displayed. The servicing facility location description is also displayed if available. If there is no discharge date then that patient's assigned location description is displayed.&#xD;
+Finally, the admit and discharge dates are displayed. If these are the same then only one date is displayed. If there is an admission date but no discharge date then "current" is used.&#xD;
+Two favourite context lists are set up, one for recent patients that the user has accessed, and one that the user can add or remove selected patients to.&#xD;
+Applications with entry points that open in a patient context should be made available from this context view. In general, this includes Concerto's Clincial Document Viewer.</description>
+	<enable-history>true</enable-history>
+	<enable-privacy-policies>false</enable-privacy-policies>
+	<entity-access-policy>
+		<name>Default</name>
+		<default>true</default>
+		<description>This is the default patient access policy</description>
+		<error>false</error>
+	</entity-access-policy>
+	<entity-access-policy>
+		<name>Error</name>
+		<default>false</default>
+		<description>This is the patient access error policy. If an error occurs when attempting to evaluate the access a user has to a patient then this policy will be applied.&#xD;
+&#xD;
+If an error occurs while evaluating the access level allowed by this policy, an error will be returned to the user and they won't be able to access any patient information. It is recommended that you only reason against data gathered from the preconfigured Concerto data appenders in the rule conditions in this policy.</description>
+		<error>true</error>
+	</entity-access-policy>
+	<entity-policy-selector-configuration>
+		<name>Concerto patient policy selector</name>
+		<index>0</index>
+		<class-name>com.concerto.contextview.EntityPolicySelector</class-name>
+	</entity-policy-selector-configuration>
+	<format>&lt;B&gt;&#xD;
+&lt;%if MRN%&gt;&#xD;
+  &lt;%=(html)MRN%&gt;&#xD;
+&lt;%elseif MPI%&gt;&#xD;
+  &lt;%=(html)MPI%&gt;&#xD;
+&lt;%elseif NationalIdNumber%&gt;&#xD;
+  &lt;%=(html)NationalIdNumber%&gt;&#xD;
+&lt;%elseif Alternate%&gt;&#xD;
+  &lt;%=(html)Alternate%&gt;&#xD;
+&lt;%end if%&gt;&#xD;
+&lt;/B&gt;&#xD;
+&lt;%=(html)PatientName.familyName.toString().toUpperCase()%&gt;,&#xD;
+&lt;%=(html)PatientName.givenName%&gt;&#xD;
+&lt;%=(html)PatientName.middleInitialOrName%&gt;&#xD;
+&lt;small&gt;&#xD;
+&lt;%if Sex &lt;&gt; "" || DateTimeOfBirth &lt;&gt; ""%&gt;&#xD;
+ &lt;%=(html)DateFormat.format(DateTimeOfBirth, "dd/MM/yyyy")%&gt;&#xD;
+(&lt;%=AgeFormat.format(DateTimeOfBirth)%&gt;) &lt;%if Sex%&gt;&lt;%=(html)Sex%&gt; &lt;%end if%&gt;&#xD;
+&lt;%end if%&gt;&#xD;
+&lt;/small&gt;</format>
+	<history-print-disclaimer-enabled>false</history-print-disclaimer-enabled>
+	<history-print-stylesheet />
+	<history-printing-enabled>false</history-printing-enabled>
+	<information-access-policy>
+		<name>Default</name>
+		<default>true</default>
+		<description>This is the default information access policy</description>
+		<error>false</error>
+	</information-access-policy>
+	<information-access-policy>
+		<name>Error</name>
+		<default>false</default>
+		<description>This is the information access error policy. If an error occurs when attempting to evaluate the access a user has to a patient's information then this policy will be applied.&#xD;
+&#xD;
+If an error occurs while evaluating the access level allowed by this policy, an error will be returned to the user and they won't be able to access any patient information. It is recommended that you only reason against data gathered from the preconfigured Concerto data appenders in the rule conditions in this policy.</description>
+		<error>true</error>
+	</information-access-policy>
+	<information-policy-selector-configuration>
+		<name>Concerto information policy selector</name>
+		<index>0</index>
+		<class-name>com.concerto.contextview.InformationPolicySelector</class-name>
+	</information-policy-selector-configuration>
+	<subject-of-interest>
+		<name>Document</name>
+		<required>false</required>
+	</subject-of-interest>
+	<subject-of-interest>
+		<name>Encounter</name>
+		<required>false</required>
+	</subject-of-interest>
+	<subject-of-interest>
+		<name>PCEHR</name>
+		<required>false</required>
+	</subject-of-interest>
+	<subject-of-interest>
+		<name>Patient</name>
+		<required>true</required>
+	</subject-of-interest>
+	<subject-of-interest>
+		<name>[orionhealth.com]ContextSubject</name>
+		<required>false</required>
+	</subject-of-interest>
+	<subject-of-interest>
+		<name>[orionhealth.com]Referral</name>
+		<required>false</required>
+	</subject-of-interest>
+	<subject-of-interest>
+		<name>[orionhealth.com]ReferralRequest</name>
+		<required>false</required>
+	</subject-of-interest>
+	<system-object>false</system-object>
+	<unique-identifier>
+		<name-prefix>MRN</name-prefix>
+		<descriptor>hl7.org</descriptor>
+		<qualified-name>[hl7.org]Patient.Id.[hl7.org]MRN</qualified-name>
+		<role>Id</role>
+		<subject-descriptor>hl7.org</subject-descriptor>
+		<subject-name>Patient</subject-name>
+	</unique-identifier>
+	<use-custom-entity-break-seal-page>false</use-custom-entity-break-seal-page>
+	<work-list-type>
+		<name>Blue</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Blue</display-name>
+		<enabled>true</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Green</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Green</display-name>
+		<enabled>true</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Orange</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Orange</display-name>
+		<enabled>true</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Purple</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Purple</display-name>
+		<enabled>true</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Red</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Red</display-name>
+		<enabled>true</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Yellow</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Yellow</display-name>
+		<enabled>true</enabled>
+	</work-list-type>
+	<worklist-column>
+		<index>0</index>
+		<column-heading>URN</column-heading>
+		<display-format>&lt;%=(html)value%&gt;</display-format>
+		<required>false</required>
+		<subject-item-name>
+			<name-prefix>MRN</name-prefix>
+			<descriptor>hl7.org</descriptor>
+			<qualified-name>[hl7.org]Patient.Id.[hl7.org]MRN</qualified-name>
+			<role>Id</role>
+			<subject-descriptor>hl7.org</subject-descriptor>
+			<subject-name>Patient</subject-name>
+		</subject-item-name>
+	</worklist-column>
+	<worklist-column>
+		<index>1</index>
+		<column-heading>Name</column-heading>
+		<display-format>&lt;%=value.familyName.toString().toUpperCase()%&gt;,&#xD;
+&lt;%=value.givenName%&gt;</display-format>
+		<required>false</required>
+		<subject-item-name>
+			<name-prefix>PatientName</name-prefix>
+			<descriptor>hl7.org</descriptor>
+			<qualified-name>[hl7.org]Patient.Co.[hl7.org]PatientName</qualified-name>
+			<role>Co</role>
+			<subject-descriptor>hl7.org</subject-descriptor>
+			<subject-name>Patient</subject-name>
+		</subject-item-name>
+	</worklist-column>
+	<worklist-column>
+		<index>2</index>
+		<column-heading>Sex</column-heading>
+		<display-format>&lt;%=(html)value%&gt;</display-format>
+		<required>false</required>
+		<subject-item-name>
+			<name-prefix>Sex</name-prefix>
+			<descriptor>hl7.org</descriptor>
+			<qualified-name>[hl7.org]Patient.Co.[hl7.org]Sex</qualified-name>
+			<role>Co</role>
+			<subject-descriptor>hl7.org</subject-descriptor>
+			<subject-name>Patient</subject-name>
+		</subject-item-name>
+	</worklist-column>
+	<worklist-column>
+		<index>3</index>
+		<column-heading>Age</column-heading>
+		<display-format>&lt;%=(html)AgeFormat.format(value)%&gt;</display-format>
+		<required>false</required>
+		<subject-item-name>
+			<name-prefix>DateTimeOfBirth</name-prefix>
+			<descriptor>hl7.org</descriptor>
+			<qualified-name>[hl7.org]Patient.Co.[hl7.org]DateTimeOfBirth</qualified-name>
+			<role>Co</role>
+			<subject-descriptor>hl7.org</subject-descriptor>
+			<subject-name>Patient</subject-name>
+		</subject-item-name>
+	</worklist-column>
+	<worklist-column>
+		<index>4</index>
+		<column-heading>Facility</column-heading>
+		<display-format>&lt;%if value.toString().trim().equals("ACTCC")%&gt;&#xD;
+ACT Health Public&#xD;
+&lt;%elseif value.toString().trim().equals("CHCACT")%&gt;&#xD;
+Calvary Health Care&#xD;
+&lt;%elseif value.toString().trim().equals("DHHCC")%&gt;&#xD;
+ACT Health&#xD;
+&lt;%else%&gt;&#xD;
+&lt;%=value%&gt;&#xD;
+&lt;%end if%&gt;</display-format>
+		<required>false</required>
+		<subject-item-name>
+			<name-prefix>Facility</name-prefix>
+			<descriptor>hl7.org</descriptor>
+			<qualified-name>[hl7.org]Patient.Id.[hl7.org]Facility</qualified-name>
+			<role>Id</role>
+			<subject-descriptor>hl7.org</subject-descriptor>
+			<subject-name>Patient</subject-name>
+		</subject-item-name>
+	</worklist-column>
+	<worklist-print-disclaimer-enabled>false</worklist-print-disclaimer-enabled>
+	<worklist-print-stylesheet />
+	<worklist-printing-enabled>false</worklist-printing-enabled>
+</context-view>
+<context-view>
+	<name>Task</name>
+	<concise-format />
+	<description>::: CCR ::: Displays task information.</description>
+	<enable-history>false</enable-history>
+	<enable-privacy-policies>false</enable-privacy-policies>
+	<format />
+	<history-print-disclaimer-enabled>false</history-print-disclaimer-enabled>
+	<history-print-stylesheet />
+	<history-printing-enabled>false</history-printing-enabled>
+	<subject-of-interest>
+		<name>User</name>
+		<required>false</required>
+	</subject-of-interest>
+	<subject-of-interest>
+		<name>[orionhealth.com]Task</name>
+		<required>true</required>
+	</subject-of-interest>
+	<system-object>false</system-object>
+	<unique-identifier>
+		<name-prefix>TaskId</name-prefix>
+		<descriptor>orionhealth.com</descriptor>
+		<qualified-name>[orionhealth.com]Task.Id.[orionhealth.com]TaskId</qualified-name>
+		<role>Id</role>
+		<subject-descriptor>orionhealth.com</subject-descriptor>
+		<subject-name>Task</subject-name>
+	</unique-identifier>
+	<use-custom-entity-break-seal-page>false</use-custom-entity-break-seal-page>
+	<work-list-type>
+		<name>Blue</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Blue</display-name>
+		<enabled>false</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Green</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Green</display-name>
+		<enabled>false</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Orange</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Orange</display-name>
+		<enabled>false</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Purple</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Purple</display-name>
+		<enabled>false</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Red</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Red</display-name>
+		<enabled>false</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Yellow</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Yellow</display-name>
+		<enabled>false</enabled>
+	</work-list-type>
+	<worklist-print-disclaimer-enabled>false</worklist-print-disclaimer-enabled>
+	<worklist-print-stylesheet />
+	<worklist-printing-enabled>false</worklist-printing-enabled>
+</context-view>
+<context-view>
+	<name>cWhiteboard Site</name>
+	<concise-format />
+	<context-view-entry-point>
+		<index>0</index>
+		<entry-point>
+			<name>Whiteboard</name>
+			<application>
+				<name>cWhiteboard</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>0</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>0</width>
+	</context-view-entry-point>
+	<description>:::WIC::: Displays the site for whiteboard.</description>
+	<enable-history>false</enable-history>
+	<enable-privacy-policies>false</enable-privacy-policies>
+	<format>&lt;%=(html)Context.get("[orionhealth.com]WhiteboardSite.Co.Name")%&gt;</format>
+	<history-print-disclaimer-enabled>false</history-print-disclaimer-enabled>
+	<history-print-stylesheet />
+	<history-printing-enabled>false</history-printing-enabled>
+	<subject-of-interest>
+		<name>[orionhealth.com]WhiteboardSite</name>
+		<required>true</required>
+	</subject-of-interest>
+	<subject-of-interest>
+		<name>cWhiteboard</name>
+		<required>false</required>
+	</subject-of-interest>
+	<system-object>false</system-object>
+	<use-custom-entity-break-seal-page>false</use-custom-entity-break-seal-page>
+	<work-list-type>
+		<name>Blue</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Blue</display-name>
+		<enabled>false</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Green</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Green</display-name>
+		<enabled>false</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Orange</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Orange</display-name>
+		<enabled>false</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Purple</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Purple</display-name>
+		<enabled>false</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Red</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Red</display-name>
+		<enabled>false</enabled>
+	</work-list-type>
+	<work-list-type>
+		<name>Yellow</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Yellow</display-name>
+		<enabled>false</enabled>
+	</work-list-type>
+	<worklist-print-disclaimer-enabled>false</worklist-print-disclaimer-enabled>
+	<worklist-print-stylesheet />
+	<worklist-printing-enabled>false</worklist-printing-enabled>
+</context-view>
+</concerto>

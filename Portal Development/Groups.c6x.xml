@@ -1,0 +1,3027 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concerto version="portal-serialization/2.0">
+<group>
+	<name>Administrator User</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Access to applications and entry points required by the eHealth system administrator</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_Admin_IAM_Health</name>
+		<role-id>79ddda77-dbbb-40e2-bc63-b3361cf06723</role-id>
+	</role>
+	<role>
+		<name>ClPtl_Admin</name>
+		<role-id>61bde4f2-fd13-42a3-95f6-8b94443ea741</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>CCR CHI1</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Created as part of Roles and Groups matrix v0.5</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_Intake_IAM_Health</name>
+		<role-id>98fe6c63-b044-4466-80f4-81902e4636d8</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CHI Level 1</name>
+		<role-id>d320af6f-e94f-458c-9121-7c72b9e520d5</role-id>
+	</role>
+	<role>
+		<name>ClPtl_Intake</name>
+		<role-id>f43366ee-8b1e-41c7-b92f-cda91a1f5cdd</role-id>
+	</role>
+	<role>
+		<name>ClPtl_Intake</name>
+		<role-id>80d6b9cf-9a44-45ee-a20f-3b10d1fef613</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiC_Admin</name>
+		<role-id>cbc88bf9-dde8-4251-a408-7c32b869ef6e</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>CCR CHI2</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Created as part of Roles and Groups matrix v0.5</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_CHILevel2_IAM_Health</name>
+		<role-id>a74d182d-b849-424e-b584-608faa7482b7</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CHILevel2</name>
+		<role-id>9539c3b2-b2c3-4fa0-a8e0-f73ec026e98a</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>CCR Clerical Group</name>
+	<automatic-membership>false</automatic-membership>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>CHHS User</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Applications and entry points unique to Canberra Hospital and Health Services</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_CHHSGeneral_IAM_Health</name>
+		<role-id>df405dca-e74b-439d-a370-0105e0c7aa26</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CHILevel2_IAM_Health</name>
+		<role-id>a74d182d-b849-424e-b584-608faa7482b7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CNTeamleader_IAM_Health</name>
+		<role-id>49be4d54-8073-4469-ad5f-cdce660caa5d</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClericalCHHS_IAM_Health</name>
+		<role-id>ee57ccc7-c0c6-49d2-b54a-cbaa2771c05c</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClinicianCHHS_IAM_Health</name>
+		<role-id>9b3ffdb5-d49e-4cc9-8000-4375f8e68f99</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClnPhrmCHHS_IAM_Health</name>
+		<role-id>1ec6dfda-553a-46fa-88ad-1697f133afdf</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityAlliedHealth_IAM_Health</name>
+		<role-id>62d13684-2570-43ff-b3fe-1e8c0a2db339</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityClinician_IAM_Health</name>
+		<role-id>7c732503-0a9d-491a-a8d1-fed3c5b1275a</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityHealthCentreAdmin_IAM_Health</name>
+		<role-id>3cd85b50-c62d-40f1-975a-8080409757b7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_DrCHHS_IAM_Health</name>
+		<role-id>46bf30ab-b731-4292-aaeb-b0cf8cd11cb7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_Intake_IAM_Health</name>
+		<role-id>98fe6c63-b044-4466-80f4-81902e4636d8</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_MedStudentCHHS_IAM_Health</name>
+		<role-id>9eb903bf-fec7-4734-9cab-7958d2c5a6d3</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_WiCNurse_IAM_Health</name>
+		<role-id>1bb7eabe-630a-498e-9b2c-ba7a19f04501</role-id>
+	</role>
+	<role>
+		<name>CCR_Clerical</name>
+		<role-id>34bf9f65-3406-4fbd-a6fa-e35f79043120</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CHHSGeneral</name>
+		<role-id>0a0f6318-95c0-4394-bfd2-ab35952870e0</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CHILevel2</name>
+		<role-id>9539c3b2-b2c3-4fa0-a8e0-f73ec026e98a</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CNTeamleader</name>
+		<role-id>1f753182-1e64-4892-a760-54afd9501a91</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClericalCHHS</name>
+		<role-id>5e8cff0c-9292-4535-b0e9-83706356011f</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClnPhrmCHHS</name>
+		<role-id>2102d7f7-2ef3-4066-abf6-15b140772919</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityAlliedHealth</name>
+		<role-id>4ef3f6c1-724a-4bd6-948e-260dfb460b69</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityClinician</name>
+		<role-id>6ebe0377-cac8-4436-89f8-1acd9600d780</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityHealthCentreAdmin</name>
+		<role-id>715d1b86-9206-47b5-84a1-669d6c3531ad</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCHHS</name>
+		<role-id>9302b542-405e-4447-9b9d-e13fd6eb91cd</role-id>
+	</role>
+	<role>
+		<name>ClPtl_Intake</name>
+		<role-id>80d6b9cf-9a44-45ee-a20f-3b10d1fef613</role-id>
+	</role>
+	<role>
+		<name>ClPtl_MedStudentCHHS</name>
+		<role-id>4320d602-4357-4b7d-a046-67708905bb4b</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiCNurse</name>
+		<role-id>e5cd0fa7-bdf2-428c-87d4-b5f3b96319d2</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>CHI Referrals</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Group allowed access to Intake</description>
+	<group-attribute>
+		<name>roles</name>
+		<index>0</index>
+		<default-value />
+		<display>true</display>
+		<display-name>roles</display-name>
+		<input-type>SQL List Box</input-type>
+		<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setDataSourceName("jdbc:minerva:sdm##")%&gt;&lt;%exec config.setSQLQuery("SELECT urs.name\r\nFROM [OH_SDM_Workflow].[dbo].[UserRoleSecurity] urs\r\nINNER JOIN [OH_SDM_Workflow].[dbo].[usergroupsecurity] ugs ON urs.userGroupSecurityID = ugs.userGroupSecurityID\r\nWHERE ugs.name = 'CHI Referrals'")%&gt;&lt;%exec config.setOptionColumnName("name")%&gt;&lt;%exec config.setDisplayColumnName("name")%&gt;&lt;%exec config.setIncludeBlankOption("false")%&gt;</parameter-string>
+		<user-editable>false</user-editable>
+	</group-attribute>
+	<group-attribute>
+		<name>CHI Centre</name>
+		<index>1</index>
+		<default-value />
+		<display>true</display>
+		<display-name>CHI Centre</display-name>
+		<input-type>SQL List Box</input-type>
+		<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setDataSourceName("java:comp/env/jdbc/cwsclinical")%&gt;&lt;%exec config.setSQLQuery("select cd.id\r\n      ,cd.code\r\n      ,cd.normalizedCode\r\n      ,cd.description as Description\r\nfrom [CodeSet].[CodeDefinition] cd\r\ninner join [CodeSet].[CodeSet] cs on cd.codeSetId=cs.id\r\nwhere cs.identifier = 'com.orchestral.referrals.codeset.api_2_0.ReferralReceiver'")%&gt;&lt;%exec config.setOptionColumnName("Description")%&gt;&lt;%exec config.setDisplayColumnName("Description")%&gt;&lt;%exec config.setIncludeBlankOption("false")%&gt;</parameter-string>
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Calvary User</name>
+	<automatic-membership>false</automatic-membership>
+	<description>This group should be assigned to Calvary users with a default of Calvary Location.  User Location is a group attribute that can be changed manually by the user.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_CalvaryGeneral_IAM_Health</name>
+		<role-id>448c9d36-7c9b-45b5-9581-d88f2260b575</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClericalCalvary_IAM_Health</name>
+		<role-id>d1161bad-0aaa-4eec-8b7f-a5e0b8900f01</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClinicianCalvary_IAM_Health</name>
+		<role-id>7c58ab5d-d95d-4126-ac3a-fc389625dbe6</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClnPhrmCalvary_IAM_Health</name>
+		<role-id>27b80918-a6aa-469b-855d-8cac578e2317</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_DrCalvary_IAM_Health</name>
+		<role-id>81af8ff8-f9c8-4fb2-a12c-64f317f5864c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CalvaryGeneral</name>
+		<role-id>6efbfefb-713b-46bf-a351-8e062810f638</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClericalCalvary</name>
+		<role-id>209557c3-b018-4e26-9851-3c50ff04b400</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCalvary</name>
+		<role-id>bec0adb9-9923-4650-813e-cb7bc3e1bca6</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClnPhrmCalvary</name>
+		<role-id>0f62c137-a797-4223-95af-f139444b99a3</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCalvary</name>
+		<role-id>a6def1c7-ee0b-4767-9760-0acdf1f9f501</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>CapPathology</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Allows users to access Capital Pathology</description>
+	<group-attribute>
+		<name>CapPathologyUserName</name>
+		<index>0</index>
+		<default-value />
+		<display>true</display>
+		<display-name>User Name</display-name>
+		<input-type>Text Field</input-type>
+		<parameter-string />
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<group-attribute>
+		<name>CapPathologyPassword</name>
+		<index>1</index>
+		<default-value />
+		<display>true</display>
+		<display-name>Password</display-name>
+		<input-type>Password</input-type>
+		<parameter-string />
+		<protected>true</protected>
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_CHILevel2_IAM_Health</name>
+		<role-id>a74d182d-b849-424e-b584-608faa7482b7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CNTeamleader_IAM_Health</name>
+		<role-id>49be4d54-8073-4469-ad5f-cdce660caa5d</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClinicianCHHS_IAM_Health</name>
+		<role-id>9b3ffdb5-d49e-4cc9-8000-4375f8e68f99</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityAlliedHealth_IAM_Health</name>
+		<role-id>62d13684-2570-43ff-b3fe-1e8c0a2db339</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityClinician_IAM_Health</name>
+		<role-id>7c732503-0a9d-491a-a8d1-fed3c5b1275a</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_DrCHHS_IAM_Health</name>
+		<role-id>46bf30ab-b731-4292-aaeb-b0cf8cd11cb7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_WiCNurse_IAM_Health</name>
+		<role-id>1bb7eabe-630a-498e-9b2c-ba7a19f04501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CHILevel2</name>
+		<role-id>9539c3b2-b2c3-4fa0-a8e0-f73ec026e98a</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CNTeamleader</name>
+		<role-id>1f753182-1e64-4892-a760-54afd9501a91</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityAlliedHealth</name>
+		<role-id>4ef3f6c1-724a-4bd6-948e-260dfb460b69</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityClinician</name>
+		<role-id>6ebe0377-cac8-4436-89f8-1acd9600d780</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCHHS</name>
+		<role-id>9302b542-405e-4447-9b9d-e13fd6eb91cd</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiCNurse</name>
+		<role-id>e5cd0fa7-bdf2-428c-87d4-b5f3b96319d2</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Clerical Home Page</name>
+	<automatic-membership>false</automatic-membership>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Clinical User</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Access to patient summary, results and clinical documents</description>
+	<group-attribute>
+		<name>SMT Role</name>
+		<index>0</index>
+		<default-value>N/A</default-value>
+		<display>true</display>
+		<display-name>Designation</display-name>
+		<input-type>Drop Down List</input-type>
+		<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setOption("Intern", "")%&gt;&lt;%exec config.setOption("Registrar", "")%&gt;&lt;%exec config.setOption("A/Professor", "")%&gt;&lt;%exec config.setOption("VMO", "")%&gt;&lt;%exec config.setOption("Professor", "")%&gt;&lt;%exec config.setOption("JMO", "")%&gt;&lt;%exec config.setOption("Nurse", "")%&gt;&lt;%exec config.setOption("Other", "")%&gt;&lt;%exec config.setOption("Consultant", "")%&gt;&lt;%exec config.setOption("Staff Specialist", "")%&gt;&lt;%exec config.setOption("Senior Staff Specialist", "")%&gt;&lt;%exec config.setOption("SRMO", "")%&gt;&lt;%exec config.setOption("Post Grad Fellow", "")%&gt;&lt;%exec config.setOption("RMO", "")%&gt;&lt;%exec config.setOption("Med Student yr 4", "")%&gt;&lt;%exec config.setOption("Clinical Pharmacist", "")%&gt;&lt;%exec config.setOption("Physician", "")%&gt;&lt;%exec config.setOption("N/A", "")%&gt;&lt;%exec config.setOption("Director", "")%&gt;&lt;%exec config.setOption("CMO", "")%&gt;&lt;%exec config.setDefaultValue("N/A")%&gt;</parameter-string>
+		<user-editable>false</user-editable>
+	</group-attribute>
+	<group-attribute>
+		<name>ProviderNumber</name>
+		<index>1</index>
+		<default-value />
+		<display>true</display>
+		<display-name>Provider Number</display-name>
+		<input-type>Text Field</input-type>
+		<parameter-string />
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<group-attribute>
+		<name>Pager</name>
+		<index>2</index>
+		<default-value />
+		<display>true</display>
+		<display-name>Pager</display-name>
+		<input-type>Text Field</input-type>
+		<parameter-string />
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<group-attribute>
+		<name>Phone</name>
+		<index>3</index>
+		<default-value />
+		<display>true</display>
+		<display-name>Phone</display-name>
+		<input-type>Text Field</input-type>
+		<parameter-string />
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<inactivity-timeout>45</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_CHILevel2_IAM_Health</name>
+		<role-id>a74d182d-b849-424e-b584-608faa7482b7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CNTeamleader_IAM_Health</name>
+		<role-id>49be4d54-8073-4469-ad5f-cdce660caa5d</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClinicianCHHS_IAM_Health</name>
+		<role-id>9b3ffdb5-d49e-4cc9-8000-4375f8e68f99</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClinicianCalvary_IAM_Health</name>
+		<role-id>7c58ab5d-d95d-4126-ac3a-fc389625dbe6</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClnPhrmCHHS_IAM_Health</name>
+		<role-id>1ec6dfda-553a-46fa-88ad-1697f133afdf</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClnPhrmCalvary_IAM_Health</name>
+		<role-id>27b80918-a6aa-469b-855d-8cac578e2317</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityAlliedHealth_IAM_Health</name>
+		<role-id>62d13684-2570-43ff-b3fe-1e8c0a2db339</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityClinician_IAM_Health</name>
+		<role-id>7c732503-0a9d-491a-a8d1-fed3c5b1275a</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_DrCHHS_IAM_Health</name>
+		<role-id>46bf30ab-b731-4292-aaeb-b0cf8cd11cb7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_DrCalvary_IAM_Health</name>
+		<role-id>81af8ff8-f9c8-4fb2-a12c-64f317f5864c</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_MedStudentCHHS_IAM_Health</name>
+		<role-id>9eb903bf-fec7-4734-9cab-7958d2c5a6d3</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_WiCNurse_IAM_Health</name>
+		<role-id>1bb7eabe-630a-498e-9b2c-ba7a19f04501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CHILevel2</name>
+		<role-id>9539c3b2-b2c3-4fa0-a8e0-f73ec026e98a</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CNTeamleader</name>
+		<role-id>1f753182-1e64-4892-a760-54afd9501a91</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCalvary</name>
+		<role-id>bec0adb9-9923-4650-813e-cb7bc3e1bca6</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClnPhrmCHHS</name>
+		<role-id>2102d7f7-2ef3-4066-abf6-15b140772919</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClnPhrmCalvary</name>
+		<role-id>0f62c137-a797-4223-95af-f139444b99a3</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityAlliedHealth</name>
+		<role-id>4ef3f6c1-724a-4bd6-948e-260dfb460b69</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityClinician</name>
+		<role-id>6ebe0377-cac8-4436-89f8-1acd9600d780</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCHHS</name>
+		<role-id>9302b542-405e-4447-9b9d-e13fd6eb91cd</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCalvary</name>
+		<role-id>a6def1c7-ee0b-4767-9760-0acdf1f9f501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_MedStudentCHHS</name>
+		<role-id>4320d602-4357-4b7d-a046-67708905bb4b</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiCNurse</name>
+		<role-id>e5cd0fa7-bdf2-428c-87d4-b5f3b96319d2</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Clinician Home Page</name>
+	<automatic-membership>false</automatic-membership>
+	<group-attribute>
+		<name>My Patient List</name>
+		<index>0</index>
+		<default-value />
+		<display>true</display>
+		<display-name>My Patient List</display-name>
+		<input-type>Dynamic List</input-type>
+		<parameter-string />
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<group-attribute>
+		<name>Referals</name>
+		<index>1</index>
+		<default-value />
+		<display>true</display>
+		<display-name>Referals</display-name>
+		<input-type>Dynamic List</input-type>
+		<parameter-string />
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Clinician Homepage</name>
+	<automatic-membership>false</automatic-membership>
+	<group-attribute>
+		<name>My Inpatients</name>
+		<index>0</index>
+		<default-value />
+		<display>true</display>
+		<display-name>Show  my Inpatients</display-name>
+		<input-type>Dynamic List</input-type>
+		<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setApplicationName("Orion - Clinician Homepage")%&gt;&lt;%exec config.setEntryPointName("Homepage Filter Search - Clinician Search")%&gt;&lt;%exec config.setReturnValueName("Provider.Id.ProviderIDAndType")%&gt;&lt;%exec config.setDisplayValueName("Provider.Co.ProviderName")%&gt;&lt;%exec config.setWidth(500)%&gt;&lt;%exec config.setHeight(600)%&gt;&lt;%exec config.setOpenInWindow(false)%&gt;</parameter-string>
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<group-attribute>
+		<name>Homepage Worklist</name>
+		<index>1</index>
+		<default-value />
+		<display>true</display>
+		<display-name>Worklist to show on My Homepage</display-name>
+		<input-type>Popup Search</input-type>
+		<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setApplicationName("Orion - Clinician Homepage")%&gt;&lt;%exec config.setEntryPointName("Homepage Filter Search - My Worklists")%&gt;&lt;%exec config.setReturnValueName("[orionhealth.com]Worklist.Co.WorklistName")%&gt;&lt;%exec config.setDisplayValueName("[orionhealth.com]Worklist.Id.DisplayName")%&gt;&lt;%exec config.setWidth(500)%&gt;&lt;%exec config.setHeight(300)%&gt;&lt;%exec config.setOpenInWindow(false)%&gt;</parameter-string>
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<group-attribute>
+		<name>My Outpatients</name>
+		<index>2</index>
+		<default-value />
+		<display>true</display>
+		<display-name>Show  my Outpatients for Today</display-name>
+		<input-type>Dynamic List</input-type>
+		<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setApplicationName("Orion - Clinician Homepage")%&gt;&lt;%exec config.setEntryPointName("Homepage Filter Search - Outpatient Clinic")%&gt;&lt;%exec config.setReturnValueName("Provider.Co.ClinicID")%&gt;&lt;%exec config.setDisplayValueName("Provider.Co.Clinic")%&gt;&lt;%exec config.setWidth(550)%&gt;&lt;%exec config.setHeight(600)%&gt;&lt;%exec config.setOpenInWindow(false)%&gt;</parameter-string>
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<group-attribute>
+		<name>My Locations</name>
+		<index>3</index>
+		<default-value />
+		<display>true</display>
+		<display-name>Show  my Locations</display-name>
+		<input-type>Dynamic List</input-type>
+		<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setApplicationName("Orion - Clinician Homepage")%&gt;&lt;%exec config.setEntryPointName("Homepage Filter Search - Location")%&gt;&lt;%exec config.setReturnValueName("code")%&gt;&lt;%exec config.setDisplayValueName("Ward/Location")%&gt;&lt;%exec config.setWidth(550)%&gt;&lt;%exec config.setHeight(600)%&gt;&lt;%exec config.setOpenInWindow(false)%&gt;</parameter-string>
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<group-attribute>
+		<name>My Specialties</name>
+		<index>4</index>
+		<default-value />
+		<display>true</display>
+		<display-name>Show my Specialties</display-name>
+		<input-type>Dynamic List</input-type>
+		<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setApplicationName("Orion - Patient Searches &amp; Demographics")%&gt;&lt;%exec config.setEntryPointName("Specialty Search")%&gt;&lt;%exec config.setReturnValueName("code")%&gt;&lt;%exec config.setDisplayValueName("Specialty")%&gt;&lt;%exec config.setWidth(500)%&gt;&lt;%exec config.setHeight(600)%&gt;&lt;%exec config.setOpenInWindow(false)%&gt;</parameter-string>
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_ClericalCHHS_IAM_Health</name>
+		<role-id>ee57ccc7-c0c6-49d2-b54a-cbaa2771c05c</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClericalCalvary_IAM_Health</name>
+		<role-id>d1161bad-0aaa-4eec-8b7f-a5e0b8900f01</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClinicianCHHS_IAM_Health</name>
+		<role-id>9b3ffdb5-d49e-4cc9-8000-4375f8e68f99</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClinicianCalvary_IAM_Health</name>
+		<role-id>7c58ab5d-d95d-4126-ac3a-fc389625dbe6</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClnPhrmCHHS_IAM_Health</name>
+		<role-id>1ec6dfda-553a-46fa-88ad-1697f133afdf</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClnPhrmCalvary_IAM_Health</name>
+		<role-id>27b80918-a6aa-469b-855d-8cac578e2317</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_DrCHHS_IAM_Health</name>
+		<role-id>46bf30ab-b731-4292-aaeb-b0cf8cd11cb7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_DrCalvary_IAM_Health</name>
+		<role-id>81af8ff8-f9c8-4fb2-a12c-64f317f5864c</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_MedStudentCHHS_IAM_Health</name>
+		<role-id>9eb903bf-fec7-4734-9cab-7958d2c5a6d3</role-id>
+	</role>
+	<role>
+		<name>CCR_Clerical</name>
+		<role-id>34bf9f65-3406-4fbd-a6fa-e35f79043120</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClericalCHHS</name>
+		<role-id>5e8cff0c-9292-4535-b0e9-83706356011f</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClericalCalvary</name>
+		<role-id>209557c3-b018-4e26-9851-3c50ff04b400</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCalvary</name>
+		<role-id>bec0adb9-9923-4650-813e-cb7bc3e1bca6</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClnPhrmCHHS</name>
+		<role-id>2102d7f7-2ef3-4066-abf6-15b140772919</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClnPhrmCalvary</name>
+		<role-id>0f62c137-a797-4223-95af-f139444b99a3</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCHHS</name>
+		<role-id>9302b542-405e-4447-9b9d-e13fd6eb91cd</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCalvary</name>
+		<role-id>a6def1c7-ee0b-4767-9760-0acdf1f9f501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_MedStudentCHHS</name>
+		<role-id>4320d602-4357-4b7d-a046-67708905bb4b</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Clinicians</name>
+</group>
+<group>
+	<name>Community</name>
+	<automatic-membership>false</automatic-membership>
+	<description>This group is use to store ACTPAS user information as attributes. These may then be used when integrating with ACTPAS - e.g. to call PAS web services</description>
+	<group-attribute>
+		<name>ACTPAS User Name</name>
+		<index>0</index>
+		<default-value />
+		<display>true</display>
+		<display-name>ACTPAS User Name</display-name>
+		<input-type>Text Field</input-type>
+		<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setSize("20")%&gt;&lt;%exec config.setDefaultValue("")%&gt;</parameter-string>
+		<protected>true</protected>
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<group-attribute>
+		<name>ACTPAS Password</name>
+		<index>1</index>
+		<default-value />
+		<display>true</display>
+		<display-name>ACTPAS Password</display-name>
+		<input-type>Password</input-type>
+		<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setSize("20")%&gt;&lt;%exec config.setDefaultValue("")%&gt;</parameter-string>
+		<protected>true</protected>
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<group-attribute>
+		<name>Blank</name>
+		<index>2</index>
+		<default-value />
+		<display>true</display>
+		<display-name />
+		<input-type>HTML</input-type>
+		<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setHtml("&lt;hr/&gt;&lt;p/&gt;")%&gt;</parameter-string>
+		<user-editable>false</user-editable>
+	</group-attribute>
+	<group-attribute>
+		<name>ACTPAS Speciality</name>
+		<index>3</index>
+		<default-value />
+		<display>true</display>
+		<display-name>Specialty</display-name>
+		<input-type>Dynamic List</input-type>
+		<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setApplicationName("Healthcare pathways - CCR ACTPAS")%&gt;&lt;%exec config.setEntryPointName("CCR Specialty Search")%&gt;&lt;%exec config.setReturnValueName("Code")%&gt;&lt;%exec config.setDisplayValueName("Description")%&gt;&lt;%exec config.setWidth(500)%&gt;&lt;%exec config.setHeight(600)%&gt;&lt;%exec config.setOpenInWindow(false)%&gt;</parameter-string>
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<group-attribute>
+		<name>ACTPAS Clinician ID</name>
+		<index>4</index>
+		<default-value />
+		<display>true</display>
+		<display-name>Referred To Clinician</display-name>
+		<input-type>Popup Search</input-type>
+		<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setApplicationName("Healthcare pathways - CCR ACTPAS")%&gt;&lt;%exec config.setEntryPointName("CCR Clinician Search")%&gt;&lt;%exec config.setReturnValueName("clinicianID")%&gt;&lt;%exec config.setDisplayValueName("Name")%&gt;&lt;%exec config.setWidth(800)%&gt;&lt;%exec config.setHeight(1024)%&gt;&lt;%exec config.setOpenInWindow(true)%&gt;</parameter-string>
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<group-attribute>
+		<name>ACTPAS Clinic ID</name>
+		<index>5</index>
+		<default-value />
+		<display>true</display>
+		<display-name>Clinic</display-name>
+		<input-type>Dynamic List</input-type>
+		<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setApplicationName("Healthcare pathways - CCR ACTPAS")%&gt;&lt;%exec config.setEntryPointName("CCR Community Clinics")%&gt;&lt;%exec config.setReturnValueName("Clinic Code")%&gt;&lt;%exec config.setDisplayValueName("Clinic Name")%&gt;&lt;%exec config.setWidth(500)%&gt;&lt;%exec config.setHeight(600)%&gt;&lt;%exec config.setOpenInWindow(false)%&gt;</parameter-string>
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<group-attribute>
+		<name>ACTPAS Staff Team</name>
+		<index>6</index>
+		<default-value />
+		<display>true</display>
+		<display-name>Staff Team List</display-name>
+		<input-type>Dynamic List</input-type>
+		<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setApplicationName("Healthcare pathways - CCR ACTPAS")%&gt;&lt;%exec config.setEntryPointName("CCR Staff Team")%&gt;&lt;%exec config.setReturnValueName("Staff Code")%&gt;&lt;%exec config.setDisplayValueName("Staff Team")%&gt;&lt;%exec config.setWidth(500)%&gt;&lt;%exec config.setHeight(600)%&gt;&lt;%exec config.setOpenInWindow(false)%&gt;</parameter-string>
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_CHILevel2_IAM_Health</name>
+		<role-id>a74d182d-b849-424e-b584-608faa7482b7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CNTeamleader_IAM_Health</name>
+		<role-id>49be4d54-8073-4469-ad5f-cdce660caa5d</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityAlliedHealth_IAM_Health</name>
+		<role-id>62d13684-2570-43ff-b3fe-1e8c0a2db339</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityClinician_IAM_Health</name>
+		<role-id>7c732503-0a9d-491a-a8d1-fed3c5b1275a</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityHealthCentreAdmin_IAM_Health</name>
+		<role-id>3cd85b50-c62d-40f1-975a-8080409757b7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_Intake_IAM_Health</name>
+		<role-id>98fe6c63-b044-4466-80f4-81902e4636d8</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_WiCNurse_IAM_Health</name>
+		<role-id>1bb7eabe-630a-498e-9b2c-ba7a19f04501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CHI Level 1</name>
+		<role-id>d320af6f-e94f-458c-9121-7c72b9e520d5</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CHILevel2</name>
+		<role-id>9539c3b2-b2c3-4fa0-a8e0-f73ec026e98a</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CNTeamleader</name>
+		<role-id>1f753182-1e64-4892-a760-54afd9501a91</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityAlliedHealth</name>
+		<role-id>4ef3f6c1-724a-4bd6-948e-260dfb460b69</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityClinician</name>
+		<role-id>6ebe0377-cac8-4436-89f8-1acd9600d780</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityHealthCentreAdmin</name>
+		<role-id>715d1b86-9206-47b5-84a1-669d6c3531ad</role-id>
+	</role>
+	<role>
+		<name>ClPtl_Intake</name>
+		<role-id>f43366ee-8b1e-41c7-b92f-cda91a1f5cdd</role-id>
+	</role>
+	<role>
+		<name>ClPtl_Intake</name>
+		<role-id>80d6b9cf-9a44-45ee-a20f-3b10d1fef613</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiCNurse</name>
+		<role-id>e5cd0fa7-bdf2-428c-87d4-b5f3b96319d2</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiC_Admin</name>
+		<role-id>cbc88bf9-dde8-4251-a408-7c32b869ef6e</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Community Care Users</name>
+	<automatic-membership>false</automatic-membership>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Community Home Page</name>
+	<automatic-membership>false</automatic-membership>
+	<group-attribute>
+		<name>My Patient List</name>
+		<index>0</index>
+		<default-value />
+		<display>true</display>
+		<display-name>My Patient List</display-name>
+		<input-type>Dynamic List</input-type>
+		<parameter-string />
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<group-attribute>
+		<name>Referals</name>
+		<index>1</index>
+		<default-value />
+		<display>true</display>
+		<display-name>Referals</display-name>
+		<input-type>Dynamic List</input-type>
+		<parameter-string />
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Community Nurse Practitioner - WiC</name>
+	<automatic-membership>false</automatic-membership>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_WiCNurse_IAM_Health</name>
+		<role-id>1bb7eabe-630a-498e-9b2c-ba7a19f04501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiCNurse</name>
+		<role-id>e5cd0fa7-bdf2-428c-87d4-b5f3b96319d2</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Community Nursing</name>
+	<automatic-membership>false</automatic-membership>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Community Nutrition</name>
+	<automatic-membership>false</automatic-membership>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Community OT</name>
+	<automatic-membership>false</automatic-membership>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Community Physio</name>
+	<automatic-membership>false</automatic-membership>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Community Podiatry</name>
+	<automatic-membership>false</automatic-membership>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Community Service</name>
+	<automatic-membership>false</automatic-membership>
+	<description>The attributes for the community users</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>ClPtl_CommunityAlliedHealth</name>
+		<role-id>4ef3f6c1-724a-4bd6-948e-260dfb460b69</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Community Social Worker</name>
+	<automatic-membership>false</automatic-membership>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Community Teamleader</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Community Teamleaders Clinicians who can assign and triage lists.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_CNTeamleader_IAM_Health</name>
+		<role-id>49be4d54-8073-4469-ad5f-cdce660caa5d</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CNTeamleader</name>
+		<role-id>1f753182-1e64-4892-a760-54afd9501a91</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Communtiy Health Centre Admin</name>
+	<automatic-membership>false</automatic-membership>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_CommunityHealthCentreAdmin_IAM_Health</name>
+		<role-id>3cd85b50-c62d-40f1-975a-8080409757b7</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityHealthCentreAdmin</name>
+		<role-id>715d1b86-9206-47b5-84a1-669d6c3531ad</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Discharge Summary</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Read only access to discharge summary</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_ClericalCHHS_IAM_Health</name>
+		<role-id>ee57ccc7-c0c6-49d2-b54a-cbaa2771c05c</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClericalCalvary_IAM_Health</name>
+		<role-id>d1161bad-0aaa-4eec-8b7f-a5e0b8900f01</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClinicianCHHS_IAM_Health</name>
+		<role-id>9b3ffdb5-d49e-4cc9-8000-4375f8e68f99</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClinicianCalvary_IAM_Health</name>
+		<role-id>7c58ab5d-d95d-4126-ac3a-fc389625dbe6</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClnPhrmCHHS_IAM_Health</name>
+		<role-id>1ec6dfda-553a-46fa-88ad-1697f133afdf</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClnPhrmCalvary_IAM_Health</name>
+		<role-id>27b80918-a6aa-469b-855d-8cac578e2317</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityHealthCentreAdmin_IAM_Health</name>
+		<role-id>3cd85b50-c62d-40f1-975a-8080409757b7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_DrCHHS_IAM_Health</name>
+		<role-id>46bf30ab-b731-4292-aaeb-b0cf8cd11cb7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_DrCalvary_IAM_Health</name>
+		<role-id>81af8ff8-f9c8-4fb2-a12c-64f317f5864c</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_Intake_IAM_Health</name>
+		<role-id>98fe6c63-b044-4466-80f4-81902e4636d8</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_MedStudentCHHS_IAM_Health</name>
+		<role-id>9eb903bf-fec7-4734-9cab-7958d2c5a6d3</role-id>
+	</role>
+	<role>
+		<name>CCR_Clerical</name>
+		<role-id>34bf9f65-3406-4fbd-a6fa-e35f79043120</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClericalCHHS</name>
+		<role-id>5e8cff0c-9292-4535-b0e9-83706356011f</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClericalCalvary</name>
+		<role-id>209557c3-b018-4e26-9851-3c50ff04b400</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCalvary</name>
+		<role-id>bec0adb9-9923-4650-813e-cb7bc3e1bca6</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClnPhrmCHHS</name>
+		<role-id>2102d7f7-2ef3-4066-abf6-15b140772919</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClnPhrmCalvary</name>
+		<role-id>0f62c137-a797-4223-95af-f139444b99a3</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityHealthCentreAdmin</name>
+		<role-id>715d1b86-9206-47b5-84a1-669d6c3531ad</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCHHS</name>
+		<role-id>9302b542-405e-4447-9b9d-e13fd6eb91cd</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCalvary</name>
+		<role-id>a6def1c7-ee0b-4767-9760-0acdf1f9f501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_Intake</name>
+		<role-id>f43366ee-8b1e-41c7-b92f-cda91a1f5cdd</role-id>
+	</role>
+	<role>
+		<name>ClPtl_MedStudentCHHS</name>
+		<role-id>4320d602-4357-4b7d-a046-67708905bb4b</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>DischargeSummaryAudit</name>
+	<automatic-membership>false</automatic-membership>
+	<description>View audit history for discharge summary</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_DrCHHS_IAM_Health</name>
+		<role-id>46bf30ab-b731-4292-aaeb-b0cf8cd11cb7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_DrCalvary_IAM_Health</name>
+		<role-id>81af8ff8-f9c8-4fb2-a12c-64f317f5864c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCHHS</name>
+		<role-id>9302b542-405e-4447-9b9d-e13fd6eb91cd</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCalvary</name>
+		<role-id>a6def1c7-ee0b-4767-9760-0acdf1f9f501</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>DischargeSummaryAuthorisation</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Access to the Discharge Summary Authorisation Search</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_Admin_IAM_Health</name>
+		<role-id>79ddda77-dbbb-40e2-bc63-b3361cf06723</role-id>
+	</role>
+	<role>
+		<name>ClPtl_Admin</name>
+		<role-id>61bde4f2-fd13-42a3-95f6-8b94443ea741</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>DischargeSummaryFinalise</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Finalise a discharge summary.  Doctor only.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_DrCHHS_IAM_Health</name>
+		<role-id>46bf30ab-b731-4292-aaeb-b0cf8cd11cb7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_DrCalvary_IAM_Health</name>
+		<role-id>81af8ff8-f9c8-4fb2-a12c-64f317f5864c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCHHS</name>
+		<role-id>9302b542-405e-4447-9b9d-e13fd6eb91cd</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCalvary</name>
+		<role-id>a6def1c7-ee0b-4767-9760-0acdf1f9f501</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>DischargeSummaryPrint</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Print discharge summary</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_ClericalCHHS_IAM_Health</name>
+		<role-id>ee57ccc7-c0c6-49d2-b54a-cbaa2771c05c</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClinicianCHHS_IAM_Health</name>
+		<role-id>9b3ffdb5-d49e-4cc9-8000-4375f8e68f99</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClinicianCalvary_IAM_Health</name>
+		<role-id>7c58ab5d-d95d-4126-ac3a-fc389625dbe6</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_DrCHHS_IAM_Health</name>
+		<role-id>46bf30ab-b731-4292-aaeb-b0cf8cd11cb7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_DrCalvary_IAM_Health</name>
+		<role-id>81af8ff8-f9c8-4fb2-a12c-64f317f5864c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClericalCHHS</name>
+		<role-id>5e8cff0c-9292-4535-b0e9-83706356011f</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCalvary</name>
+		<role-id>bec0adb9-9923-4650-813e-cb7bc3e1bca6</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCHHS</name>
+		<role-id>9302b542-405e-4447-9b9d-e13fd6eb91cd</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCalvary</name>
+		<role-id>a6def1c7-ee0b-4767-9760-0acdf1f9f501</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>DischargeSummaryScript</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Write discharge script.  Doctor only.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_DrCHHS_IAM_Health</name>
+		<role-id>46bf30ab-b731-4292-aaeb-b0cf8cd11cb7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_DrCalvary_IAM_Health</name>
+		<role-id>81af8ff8-f9c8-4fb2-a12c-64f317f5864c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCHHS</name>
+		<role-id>9302b542-405e-4447-9b9d-e13fd6eb91cd</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCalvary</name>
+		<role-id>a6def1c7-ee0b-4767-9760-0acdf1f9f501</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>DischargeSummaryWrite</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Write discharge summary.  Doctor only.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_DrCHHS_IAM_Health</name>
+		<role-id>46bf30ab-b731-4292-aaeb-b0cf8cd11cb7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_DrCalvary_IAM_Health</name>
+		<role-id>81af8ff8-f9c8-4fb2-a12c-64f317f5864c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCHHS</name>
+		<role-id>9302b542-405e-4447-9b9d-e13fd6eb91cd</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCalvary</name>
+		<role-id>a6def1c7-ee0b-4767-9760-0acdf1f9f501</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Disease Management Administrators</name>
+	<description>Users who can access the administration screens of Soprano Disease Management</description>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Disease Management Data Enterers</name>
+	<description>Users who can enter data into the Soprano Disease Management system on behalf of provider</description>
+	<group-attribute>
+		<name>Provider List</name>
+		<index>0</index>
+		<display-name>Provider List</display-name>
+		<input-type>Dynamic List</input-type>
+		<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setApplicationName("Soprano Disease Management")%&gt;&lt;%exec config.setEntryPointName("DM Overdue Tasks")%&gt;&lt;%exec config.setReturnValueName("Provider.Id.ProviderIDAndType")%&gt;&lt;%exec config.setDisplayValueName("Provider.Id.ProviderIDAndTypeAndName")%&gt;</parameter-string>
+		<protected>false</protected>
+		<user-editable>false</user-editable>
+	</group-attribute>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Disease Management Providers</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Healthcare Providers that can access the Soprano Disease Management provider and user screens</description>
+	<group-attribute>
+		<name>DM Provider ID</name>
+		<index>0</index>
+		<default-value />
+		<display>false</display>
+		<display-name>DM Provider ID</display-name>
+		<input-type>Text Field</input-type>
+		<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setSize("20")%&gt;&lt;%exec config.setDefaultValue("")%&gt;</parameter-string>
+		<protected>false</protected>
+		<user-editable>false</user-editable>
+	</group-attribute>
+	<group-attribute>
+		<name>DM Provider Namespace</name>
+		<index>1</index>
+		<default-value />
+		<display>false</display>
+		<display-name>DM Provider Namespace</display-name>
+		<input-type>Text Field</input-type>
+		<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setSize("20")%&gt;&lt;%exec config.setDefaultValue("")%&gt;</parameter-string>
+		<protected>false</protected>
+		<user-editable>false</user-editable>
+	</group-attribute>
+	<group-attribute>
+		<name>Default Pathway View</name>
+		<index>2</index>
+		<default-value />
+		<display>false</display>
+		<display-name>Default Pathway Name</display-name>
+		<input-type>Text Field</input-type>
+		<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setSize("20")%&gt;&lt;%exec config.setDefaultValue("")%&gt;</parameter-string>
+		<protected>false</protected>
+		<user-editable>false</user-editable>
+	</group-attribute>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Disease Management Users</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Users who can access the Soprano Disease Management user screens</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Doctor CHHS User</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Functionality unique to CHHS doctor users</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_DrCHHS_IAM_Health</name>
+		<role-id>46bf30ab-b731-4292-aaeb-b0cf8cd11cb7</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCHHS</name>
+		<role-id>9302b542-405e-4447-9b9d-e13fd6eb91cd</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Doctor Calvary User</name>
+	<automatic-membership>false</automatic-membership>
+	<description>This group is for Calvary Doctors, it has no attributes or entry points at this stage.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_DrCalvary_IAM_Health</name>
+		<role-id>81af8ff8-f9c8-4fb2-a12c-64f317f5864c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCalvary</name>
+		<role-id>a6def1c7-ee0b-4767-9760-0acdf1f9f501</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Forms Administrators</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Members can access the Forms Administration pages.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Forms Maintainers</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Users that are able to maintain form designs. Members are able to access the form management related entry points. Members are distinct from Administrators in that they still have restricted access to certain functionality when designing forms.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Forms Users</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Users with access to view documents created using the Concerto Forms application.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>General User</name>
+	<automatic-membership>false</automatic-membership>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_CHHSGeneral_IAM_Health</name>
+		<role-id>df405dca-e74b-439d-a370-0105e0c7aa26</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CalvaryGeneral_IAM_Health</name>
+		<role-id>448c9d36-7c9b-45b5-9581-d88f2260b575</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CHHSGeneral</name>
+		<role-id>0a0f6318-95c0-4394-bfd2-ab35952870e0</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CalvaryGeneral</name>
+		<role-id>6efbfefb-713b-46bf-a351-8e062810f638</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Generic Community Clinician</name>
+	<automatic-membership>false</automatic-membership>
+	<description>The attributes for the community users</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_CHILevel2_IAM_Health</name>
+		<role-id>a74d182d-b849-424e-b584-608faa7482b7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CNTeamleader_IAM_Health</name>
+		<role-id>49be4d54-8073-4469-ad5f-cdce660caa5d</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityClinician_IAM_Health</name>
+		<role-id>7c732503-0a9d-491a-a8d1-fed3c5b1275a</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CHILevel2</name>
+		<role-id>9539c3b2-b2c3-4fa0-a8e0-f73ec026e98a</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CNTeamleader</name>
+		<role-id>1f753182-1e64-4892-a760-54afd9501a91</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityClinician</name>
+		<role-id>6ebe0377-cac8-4436-89f8-1acd9600d780</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiCNurse</name>
+		<role-id>e5cd0fa7-bdf2-428c-87d4-b5f3b96319d2</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Generic Community User</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Group allowed access to Community application screens</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_CHILevel2_IAM_Health</name>
+		<role-id>a74d182d-b849-424e-b584-608faa7482b7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CNTeamleader_IAM_Health</name>
+		<role-id>49be4d54-8073-4469-ad5f-cdce660caa5d</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityAlliedHealth_IAM_Health</name>
+		<role-id>62d13684-2570-43ff-b3fe-1e8c0a2db339</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityClinician_IAM_Health</name>
+		<role-id>7c732503-0a9d-491a-a8d1-fed3c5b1275a</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityHealthCentreAdmin_IAM_Health</name>
+		<role-id>3cd85b50-c62d-40f1-975a-8080409757b7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_Intake_IAM_Health</name>
+		<role-id>98fe6c63-b044-4466-80f4-81902e4636d8</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_WiCNurse_IAM_Health</name>
+		<role-id>1bb7eabe-630a-498e-9b2c-ba7a19f04501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CHI Level 1</name>
+		<role-id>d320af6f-e94f-458c-9121-7c72b9e520d5</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CHILevel2</name>
+		<role-id>9539c3b2-b2c3-4fa0-a8e0-f73ec026e98a</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CNTeamleader</name>
+		<role-id>1f753182-1e64-4892-a760-54afd9501a91</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityAlliedHealth</name>
+		<role-id>4ef3f6c1-724a-4bd6-948e-260dfb460b69</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityClinician</name>
+		<role-id>6ebe0377-cac8-4436-89f8-1acd9600d780</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityHealthCentreAdmin</name>
+		<role-id>715d1b86-9206-47b5-84a1-669d6c3531ad</role-id>
+	</role>
+	<role>
+		<name>ClPtl_Intake</name>
+		<role-id>80d6b9cf-9a44-45ee-a20f-3b10d1fef613</role-id>
+	</role>
+	<role>
+		<name>ClPtl_Intake</name>
+		<role-id>f43366ee-8b1e-41c7-b92f-cda91a1f5cdd</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiCNurse</name>
+		<role-id>e5cd0fa7-bdf2-428c-87d4-b5f3b96319d2</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiC_Admin</name>
+		<role-id>cbc88bf9-dde8-4251-a408-7c32b869ef6e</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Generic User</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Access to base Portal functionality.  CHHS and Calvary clinicians, doctors and clerical staff have access to this group.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_Admin_IAM_Health</name>
+		<role-id>79ddda77-dbbb-40e2-bc63-b3361cf06723</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CHILevel2_IAM_Health</name>
+		<role-id>a74d182d-b849-424e-b584-608faa7482b7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CNTeamleader_IAM_Health</name>
+		<role-id>49be4d54-8073-4469-ad5f-cdce660caa5d</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClericalCHHS_IAM_Health</name>
+		<role-id>ee57ccc7-c0c6-49d2-b54a-cbaa2771c05c</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClericalCalvary_IAM_Health</name>
+		<role-id>d1161bad-0aaa-4eec-8b7f-a5e0b8900f01</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClinicianCHHS_IAM_Health</name>
+		<role-id>9b3ffdb5-d49e-4cc9-8000-4375f8e68f99</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClinicianCalvary_IAM_Health</name>
+		<role-id>7c58ab5d-d95d-4126-ac3a-fc389625dbe6</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClnPhrmCHHS_IAM_Health</name>
+		<role-id>1ec6dfda-553a-46fa-88ad-1697f133afdf</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClnPhrmCalvary_IAM_Health</name>
+		<role-id>27b80918-a6aa-469b-855d-8cac578e2317</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityAlliedHealth_IAM_Health</name>
+		<role-id>62d13684-2570-43ff-b3fe-1e8c0a2db339</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityClinician_IAM_Health</name>
+		<role-id>7c732503-0a9d-491a-a8d1-fed3c5b1275a</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityHealthCentreAdmin_IAM_Health</name>
+		<role-id>3cd85b50-c62d-40f1-975a-8080409757b7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_DrCHHS_IAM_Health</name>
+		<role-id>46bf30ab-b731-4292-aaeb-b0cf8cd11cb7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_DrCalvary_IAM_Health</name>
+		<role-id>81af8ff8-f9c8-4fb2-a12c-64f317f5864c</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_Intake_IAM_Health</name>
+		<role-id>98fe6c63-b044-4466-80f4-81902e4636d8</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_MedStudentCHHS_IAM_Health</name>
+		<role-id>9eb903bf-fec7-4734-9cab-7958d2c5a6d3</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_WiCNurse_IAM_Health</name>
+		<role-id>1bb7eabe-630a-498e-9b2c-ba7a19f04501</role-id>
+	</role>
+	<role>
+		<name>CCR_Clerical</name>
+		<role-id>34bf9f65-3406-4fbd-a6fa-e35f79043120</role-id>
+	</role>
+	<role>
+		<name>ClPtl_Admin</name>
+		<role-id>61bde4f2-fd13-42a3-95f6-8b94443ea741</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CHI Level 1</name>
+		<role-id>d320af6f-e94f-458c-9121-7c72b9e520d5</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CHILevel2</name>
+		<role-id>9539c3b2-b2c3-4fa0-a8e0-f73ec026e98a</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CNTeamleader</name>
+		<role-id>1f753182-1e64-4892-a760-54afd9501a91</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClericalCHHS</name>
+		<role-id>5e8cff0c-9292-4535-b0e9-83706356011f</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClericalCalvary</name>
+		<role-id>209557c3-b018-4e26-9851-3c50ff04b400</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCalvary</name>
+		<role-id>bec0adb9-9923-4650-813e-cb7bc3e1bca6</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClnPhrmCHHS</name>
+		<role-id>2102d7f7-2ef3-4066-abf6-15b140772919</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClnPhrmCalvary</name>
+		<role-id>0f62c137-a797-4223-95af-f139444b99a3</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityAlliedHealth</name>
+		<role-id>4ef3f6c1-724a-4bd6-948e-260dfb460b69</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityClinician</name>
+		<role-id>6ebe0377-cac8-4436-89f8-1acd9600d780</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityHealthCentreAdmin</name>
+		<role-id>715d1b86-9206-47b5-84a1-669d6c3531ad</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCHHS</name>
+		<role-id>9302b542-405e-4447-9b9d-e13fd6eb91cd</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCalvary</name>
+		<role-id>a6def1c7-ee0b-4767-9760-0acdf1f9f501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_Intake</name>
+		<role-id>f43366ee-8b1e-41c7-b92f-cda91a1f5cdd</role-id>
+	</role>
+	<role>
+		<name>ClPtl_Intake</name>
+		<role-id>80d6b9cf-9a44-45ee-a20f-3b10d1fef613</role-id>
+	</role>
+	<role>
+		<name>ClPtl_MedStudentCHHS</name>
+		<role-id>4320d602-4357-4b7d-a046-67708905bb4b</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiCNurse</name>
+		<role-id>e5cd0fa7-bdf2-428c-87d4-b5f3b96319d2</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiC_Admin</name>
+		<role-id>cbc88bf9-dde8-4251-a408-7c32b869ef6e</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>MedMan - Complete Full Review</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Users who can complete a draft Full Review and publish it as final.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>MedMan - Create Draft Full Review</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Users who can perform all actions in the Full Review page except completing Full Review.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>MedMan - Create Script</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Users who can update supply and print a prescription.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>MedMan - Update Medication Administration</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Users who can perform updates on medication administrations.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_CHILevel2_IAM_Health</name>
+		<role-id>a74d182d-b849-424e-b584-608faa7482b7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CNTeamleader_IAM_Health</name>
+		<role-id>49be4d54-8073-4469-ad5f-cdce660caa5d</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityClinician_IAM_Health</name>
+		<role-id>7c732503-0a9d-491a-a8d1-fed3c5b1275a</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CHILevel2</name>
+		<role-id>9539c3b2-b2c3-4fa0-a8e0-f73ec026e98a</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CNTeamleader</name>
+		<role-id>1f753182-1e64-4892-a760-54afd9501a91</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityClinician</name>
+		<role-id>6ebe0377-cac8-4436-89f8-1acd9600d780</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiCNurse</name>
+		<role-id>e5cd0fa7-bdf2-428c-87d4-b5f3b96319d2</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>MedMan - Update Medication Record</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Users who can perform ad hoc add, change and stop for the patient's current medication list.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_CHILevel2_IAM_Health</name>
+		<role-id>a74d182d-b849-424e-b584-608faa7482b7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CNTeamleader_IAM_Health</name>
+		<role-id>49be4d54-8073-4469-ad5f-cdce660caa5d</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityClinician_IAM_Health</name>
+		<role-id>7c732503-0a9d-491a-a8d1-fed3c5b1275a</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CHILevel2</name>
+		<role-id>9539c3b2-b2c3-4fa0-a8e0-f73ec026e98a</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CNTeamleader</name>
+		<role-id>1f753182-1e64-4892-a760-54afd9501a91</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityClinician</name>
+		<role-id>6ebe0377-cac8-4436-89f8-1acd9600d780</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiCNurse</name>
+		<role-id>e5cd0fa7-bdf2-428c-87d4-b5f3b96319d2</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>MedMan - View Medication Record</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Users who can view the patient's current medication list.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_CHILevel2_IAM_Health</name>
+		<role-id>a74d182d-b849-424e-b584-608faa7482b7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CNTeamleader_IAM_Health</name>
+		<role-id>49be4d54-8073-4469-ad5f-cdce660caa5d</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityAlliedHealth_IAM_Health</name>
+		<role-id>62d13684-2570-43ff-b3fe-1e8c0a2db339</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityClinician_IAM_Health</name>
+		<role-id>7c732503-0a9d-491a-a8d1-fed3c5b1275a</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityHealthCentreAdmin_IAM_Health</name>
+		<role-id>3cd85b50-c62d-40f1-975a-8080409757b7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_Intake_IAM_Health</name>
+		<role-id>98fe6c63-b044-4466-80f4-81902e4636d8</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_WiCNurse_IAM_Health</name>
+		<role-id>1bb7eabe-630a-498e-9b2c-ba7a19f04501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CHI Level 1</name>
+		<role-id>d320af6f-e94f-458c-9121-7c72b9e520d5</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CHILevel2</name>
+		<role-id>9539c3b2-b2c3-4fa0-a8e0-f73ec026e98a</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CNTeamleader</name>
+		<role-id>1f753182-1e64-4892-a760-54afd9501a91</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityAlliedHealth</name>
+		<role-id>4ef3f6c1-724a-4bd6-948e-260dfb460b69</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityClinician</name>
+		<role-id>6ebe0377-cac8-4436-89f8-1acd9600d780</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityHealthCentreAdmin</name>
+		<role-id>715d1b86-9206-47b5-84a1-669d6c3531ad</role-id>
+	</role>
+	<role>
+		<name>ClPtl_Intake</name>
+		<role-id>80d6b9cf-9a44-45ee-a20f-3b10d1fef613</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiCNurse</name>
+		<role-id>e5cd0fa7-bdf2-428c-87d4-b5f3b96319d2</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiC_Admin</name>
+		<role-id>cbc88bf9-dde8-4251-a408-7c32b869ef6e</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Nursing - WiC</name>
+	<automatic-membership>false</automatic-membership>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_WiCNurse_IAM_Health</name>
+		<role-id>1bb7eabe-630a-498e-9b2c-ba7a19f04501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiC</name>
+		<role-id>ffe9d265-c8c9-401e-9069-6585c5e1a428</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiCNurse</name>
+		<role-id>e5cd0fa7-bdf2-428c-87d4-b5f3b96319d2</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>PACSViewer</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Allows user to access PACSViewer</description>
+	<group-attribute>
+		<name>PACSViewerUserName</name>
+		<index>0</index>
+		<default-value />
+		<display>true</display>
+		<display-name>User Name</display-name>
+		<input-type>Text Field</input-type>
+		<parameter-string />
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<group-attribute>
+		<name>PACSViewerPassword</name>
+		<index>1</index>
+		<default-value />
+		<display>true</display>
+		<display-name>Password</display-name>
+		<input-type>Password</input-type>
+		<parameter-string />
+		<protected>false</protected>
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_CHILevel2_IAM_Health</name>
+		<role-id>a74d182d-b849-424e-b584-608faa7482b7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CNTeamleader_IAM_Health</name>
+		<role-id>49be4d54-8073-4469-ad5f-cdce660caa5d</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClinicianCHHS_IAM_Health</name>
+		<role-id>9b3ffdb5-d49e-4cc9-8000-4375f8e68f99</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClnPhrmCHHS_IAM_Health</name>
+		<role-id>1ec6dfda-553a-46fa-88ad-1697f133afdf</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityAlliedHealth_IAM_Health</name>
+		<role-id>62d13684-2570-43ff-b3fe-1e8c0a2db339</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityClinician_IAM_Health</name>
+		<role-id>7c732503-0a9d-491a-a8d1-fed3c5b1275a</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_DrCHHS_IAM_Health</name>
+		<role-id>46bf30ab-b731-4292-aaeb-b0cf8cd11cb7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_DrCalvary_IAM_Health</name>
+		<role-id>81af8ff8-f9c8-4fb2-a12c-64f317f5864c</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_MedStudentCHHS_IAM_Health</name>
+		<role-id>9eb903bf-fec7-4734-9cab-7958d2c5a6d3</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_WiCNurse_IAM_Health</name>
+		<role-id>1bb7eabe-630a-498e-9b2c-ba7a19f04501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CHILevel2</name>
+		<role-id>9539c3b2-b2c3-4fa0-a8e0-f73ec026e98a</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CNTeamleader</name>
+		<role-id>1f753182-1e64-4892-a760-54afd9501a91</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClnPhrmCHHS</name>
+		<role-id>2102d7f7-2ef3-4066-abf6-15b140772919</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityAlliedHealth</name>
+		<role-id>4ef3f6c1-724a-4bd6-948e-260dfb460b69</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityClinician</name>
+		<role-id>6ebe0377-cac8-4436-89f8-1acd9600d780</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCHHS</name>
+		<role-id>9302b542-405e-4447-9b9d-e13fd6eb91cd</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCalvary</name>
+		<role-id>a6def1c7-ee0b-4767-9760-0acdf1f9f501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_MedStudentCHHS</name>
+		<role-id>4320d602-4357-4b7d-a046-67708905bb4b</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiCNurse</name>
+		<role-id>e5cd0fa7-bdf2-428c-87d4-b5f3b96319d2</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>PCEHR View</name>
+	<role>
+		<name>Apps_ClPtl_CHILevel2_IAM_Health</name>
+		<role-id>a74d182d-b849-424e-b584-608faa7482b7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CNTeamleader_IAM_Health</name>
+		<role-id>49be4d54-8073-4469-ad5f-cdce660caa5d</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityAlliedHealth_IAM_Health</name>
+		<role-id>62d13684-2570-43ff-b3fe-1e8c0a2db339</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityClinician_IAM_Health</name>
+		<role-id>7c732503-0a9d-491a-a8d1-fed3c5b1275a</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_DrCHHS_IAM_Health</name>
+		<role-id>46bf30ab-b731-4292-aaeb-b0cf8cd11cb7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_WiCNurse_IAM_Health</name>
+		<role-id>1bb7eabe-630a-498e-9b2c-ba7a19f04501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CHILevel2</name>
+		<role-id>9539c3b2-b2c3-4fa0-a8e0-f73ec026e98a</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CNTeamleader</name>
+		<role-id>1f753182-1e64-4892-a760-54afd9501a91</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityAlliedHealth</name>
+		<role-id>4ef3f6c1-724a-4bd6-948e-260dfb460b69</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityClinician</name>
+		<role-id>6ebe0377-cac8-4436-89f8-1acd9600d780</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiCNurse</name>
+		<role-id>e5cd0fa7-bdf2-428c-87d4-b5f3b96319d2</role-id>
+	</role>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>PRISM Administrators</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Allows users to access PRISM application as PRISM Admin user</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_Admin_IAM_Health</name>
+		<role-id>79ddda77-dbbb-40e2-bc63-b3361cf06723</role-id>
+	</role>
+	<role>
+		<name>ClPtl_Admin</name>
+		<role-id>61bde4f2-fd13-42a3-95f6-8b94443ea741</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>PRISM Users</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Allows users to access PRISM application.</description>
+	<group-attribute>
+		<name>PRISMUserName</name>
+		<index>0</index>
+		<default-value />
+		<display>true</display>
+		<display-name>User Name</display-name>
+		<input-type>Text Field</input-type>
+		<parameter-string />
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<group-attribute>
+		<name>PRISMPassword</name>
+		<index>1</index>
+		<default-value />
+		<display>true</display>
+		<display-name>Password</display-name>
+		<input-type>Password</input-type>
+		<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setSize("20")%&gt;&lt;%exec config.setDefaultValue("")%&gt;</parameter-string>
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Patient Portal Provider</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Patient Portal invitation and management. Must be specifically requested by user to be applied as an adhoc group</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Patient Search</name>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Pharmacy Homepage</name>
+	<automatic-membership>false</automatic-membership>
+	<description>The home page for the pharmacists consist of the following windowlets:&#xD;
+	My Inpatients&#xD;
+	Hospital-wide Patients with No MRF</description>
+	<group-attribute>
+		<name>My Wards</name>
+		<index>0</index>
+		<default-value />
+		<display>true</display>
+		<display-name>My Wards</display-name>
+		<input-type>Dynamic List</input-type>
+		<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setApplicationName("Orion - Patient Searches &amp; Demographics")%&gt;&lt;%exec config.setEntryPointName("Unit Search")%&gt;&lt;%exec config.setReturnValueName("Code")%&gt;&lt;%exec config.setDisplayValueName("Location")%&gt;&lt;%exec config.setWidth(500)%&gt;&lt;%exec config.setHeight(600)%&gt;&lt;%exec config.setOpenInWindow(false)%&gt;</parameter-string>
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<group-attribute>
+		<name>My Medical Team</name>
+		<index>1</index>
+		<default-value />
+		<display>true</display>
+		<display-name>My Medical Team</display-name>
+		<input-type>Dynamic List</input-type>
+		<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setApplicationName("Orion - Patient Searches &amp; Demographics")%&gt;&lt;%exec config.setEntryPointName("Clinician Search")%&gt;&lt;%exec config.setReturnValueName("Provider.Id.ProviderIDAndType")%&gt;&lt;%exec config.setDisplayValueName("Provider.Co.ProviderName")%&gt;&lt;%exec config.setWidth(500)%&gt;&lt;%exec config.setHeight(600)%&gt;&lt;%exec config.setOpenInWindow(false)%&gt;</parameter-string>
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_ClnPhrmCHHS_IAM_Health</name>
+		<role-id>1ec6dfda-553a-46fa-88ad-1697f133afdf</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClnPhrmCHHS</name>
+		<role-id>2102d7f7-2ef3-4066-abf6-15b140772919</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Restricted Administrator User</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Access required by approved Clinical Records and GP Liaison staff to audit and report on discharge summaries.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_ClericalCHHS_IAM_Health</name>
+		<role-id>ee57ccc7-c0c6-49d2-b54a-cbaa2771c05c</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Riskman</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Allows users to access Riskman (ACT Health Incident Management System).</description>
+	<group-attribute>
+		<name>RiskmanUserName</name>
+		<index>0</index>
+		<default-value />
+		<display>true</display>
+		<display-name>User Name</display-name>
+		<input-type>Text Field</input-type>
+		<parameter-string />
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<group-attribute>
+		<name>RiskmanPassword</name>
+		<index>1</index>
+		<default-value />
+		<display>true</display>
+		<display-name>Password</display-name>
+		<input-type>Password</input-type>
+		<parameter-string />
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_CHILevel2_IAM_Health</name>
+		<role-id>a74d182d-b849-424e-b584-608faa7482b7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CNTeamleader_IAM_Health</name>
+		<role-id>49be4d54-8073-4469-ad5f-cdce660caa5d</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClinicianCHHS_IAM_Health</name>
+		<role-id>9b3ffdb5-d49e-4cc9-8000-4375f8e68f99</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClnPhrmCHHS_IAM_Health</name>
+		<role-id>1ec6dfda-553a-46fa-88ad-1697f133afdf</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityAlliedHealth_IAM_Health</name>
+		<role-id>62d13684-2570-43ff-b3fe-1e8c0a2db339</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityClinician_IAM_Health</name>
+		<role-id>7c732503-0a9d-491a-a8d1-fed3c5b1275a</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityHealthCentreAdmin_IAM_Health</name>
+		<role-id>3cd85b50-c62d-40f1-975a-8080409757b7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_DrCHHS_IAM_Health</name>
+		<role-id>46bf30ab-b731-4292-aaeb-b0cf8cd11cb7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_Intake_IAM_Health</name>
+		<role-id>98fe6c63-b044-4466-80f4-81902e4636d8</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_MedStudentCHHS_IAM_Health</name>
+		<role-id>9eb903bf-fec7-4734-9cab-7958d2c5a6d3</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_WiCNurse_IAM_Health</name>
+		<role-id>1bb7eabe-630a-498e-9b2c-ba7a19f04501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CHILevel2</name>
+		<role-id>9539c3b2-b2c3-4fa0-a8e0-f73ec026e98a</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CNTeamleader</name>
+		<role-id>1f753182-1e64-4892-a760-54afd9501a91</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClnPhrmCHHS</name>
+		<role-id>2102d7f7-2ef3-4066-abf6-15b140772919</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityAlliedHealth</name>
+		<role-id>4ef3f6c1-724a-4bd6-948e-260dfb460b69</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityClinician</name>
+		<role-id>6ebe0377-cac8-4436-89f8-1acd9600d780</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityHealthCentreAdmin</name>
+		<role-id>715d1b86-9206-47b5-84a1-669d6c3531ad</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCHHS</name>
+		<role-id>9302b542-405e-4447-9b9d-e13fd6eb91cd</role-id>
+	</role>
+	<role>
+		<name>ClPtl_Intake</name>
+		<role-id>80d6b9cf-9a44-45ee-a20f-3b10d1fef613</role-id>
+	</role>
+	<role>
+		<name>ClPtl_MedStudentCHHS</name>
+		<role-id>4320d602-4357-4b7d-a046-67708905bb4b</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiCNurse</name>
+		<role-id>e5cd0fa7-bdf2-428c-87d4-b5f3b96319d2</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Task List Users</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Users who are able to view/modify tasks</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_CHILevel2_IAM_Health</name>
+		<role-id>a74d182d-b849-424e-b584-608faa7482b7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_CommunityClinician_IAM_Health</name>
+		<role-id>7c732503-0a9d-491a-a8d1-fed3c5b1275a</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_WiCNurse_IAM_Health</name>
+		<role-id>1bb7eabe-630a-498e-9b2c-ba7a19f04501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CHILevel2</name>
+		<role-id>9539c3b2-b2c3-4fa0-a8e0-f73ec026e98a</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityClinician</name>
+		<role-id>6ebe0377-cac8-4436-89f8-1acd9600d780</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiCNurse</name>
+		<role-id>e5cd0fa7-bdf2-428c-87d4-b5f3b96319d2</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>Team Leader - CN</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Community Teamleaders Clinicians who can assign and triage lists.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>WiC Admin Home Page</name>
+	<automatic-membership>false</automatic-membership>
+	<group-attribute>
+		<name>Referals</name>
+		<index>0</index>
+		<default-value />
+		<display>true</display>
+		<display-name>Referals</display-name>
+		<input-type>Dynamic List</input-type>
+		<parameter-string />
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<group-attribute>
+		<name>Whiteboard</name>
+		<index>1</index>
+		<default-value />
+		<display>true</display>
+		<display-name>Whiteboard</display-name>
+		<input-type>Dynamic List</input-type>
+		<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setApplicationName("cWhiteboard")%&gt;&lt;%exec config.setEntryPointName("Whiteboard")%&gt;&lt;%exec config.setReturnValueName("")%&gt;&lt;%exec config.setDisplayValueName("")%&gt;&lt;%exec config.setWidth(500)%&gt;&lt;%exec config.setHeight(600)%&gt;&lt;%exec config.setOpenInWindow(false)%&gt;</parameter-string>
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>WiC Nursing</name>
+	<automatic-membership>false</automatic-membership>
+	<inactivity-timeout>15</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>WiC Nursing Home Page</name>
+	<automatic-membership>false</automatic-membership>
+	<group-attribute>
+		<name>My Patient List</name>
+		<index>0</index>
+		<default-value />
+		<display>true</display>
+		<display-name>My Patient List</display-name>
+		<input-type>Dynamic List</input-type>
+		<parameter-string />
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<group-attribute>
+		<name>Referals</name>
+		<index>1</index>
+		<default-value />
+		<display>true</display>
+		<display-name>Referals</display-name>
+		<input-type>Dynamic List</input-type>
+		<parameter-string />
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cOrders - Add Alerts and Diagnosis</name>
+	<automatic-membership>false</automatic-membership>
+	<description />
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cOrders - Administer Medication</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Provides user with ability to record medicaiton administration events.
+Usually provided to nurses and doctors.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cOrders - Administration</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Allows access to administration tasks such as configuration screens for Concerto Orders.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_Admin_IAM_Health</name>
+		<role-id>79ddda77-dbbb-40e2-bc63-b3361cf06723</role-id>
+	</role>
+	<role>
+		<name>ClPtl_Admin</name>
+		<role-id>61bde4f2-fd13-42a3-95f6-8b94443ea741</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cOrders - Alerts and Diagnosis</name>
+	<automatic-membership>false</automatic-membership>
+	<description />
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cOrders - Create Prescription</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Provides the user ability to place orders for Medications.
+Usually provided to doctors and nurses with prescribing abilities.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cOrders - Diagnostics Proxy Orderer</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Allows the user to place orders on behalf of one or more diagnostics orderers.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cOrders - Doctor</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Allows access to orderable items for Doctors</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_DrCHHS_IAM_Health</name>
+		<role-id>46bf30ab-b731-4292-aaeb-b0cf8cd11cb7</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCHHS</name>
+		<role-id>9302b542-405e-4447-9b9d-e13fd6eb91cd</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cOrders - NIX OPD/ED</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Allows access to orderable items for NIX OPD/ED</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cOrders - NIX Thoracic/CCU</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Allows access to orderable items for NIX Thoracic/CCU</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cOrders - NIX WIC</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Allows access to orderable items for NIX WIC</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cOrders - Order Laboratory</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Allows the user to place orders for Laboratory. 
+Usually assigned to doctors and limited nurses.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cOrders - Order Medications</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Provides the user ability to place orders for Medications.
+Usually provided to doctors and nurses with prescribing abilities.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cOrders - Order Radiology</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Allows the user to place orders for Radiology. 
+Usually assigned to doctors and limited nurses.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_DrCHHS_IAM_Health</name>
+		<role-id>46bf30ab-b731-4292-aaeb-b0cf8cd11cb7</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCHHS</name>
+		<role-id>9302b542-405e-4447-9b9d-e13fd6eb91cd</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cOrders - Patient Plan</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Used to control who has access to the patient plan screen.
+This allows to the user to place laboratory/radiology and medication orders from a single screen.
+Usually assigned to all roles that have the ability to order laboratory/radiology and medication orders.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cOrders - Phlebotomy</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Allows users to perform phlebotomy tasks.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cOrders - View Laboratory</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Allows the user to review Laboratory orders that have been placed.
+Usually assigned to all doctors and nurses.
+This group may also be used to control who can view laboratory results as usually the permission to view laboratory orders is linked with permission to view results.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cOrders - View Medications</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Allows the user to view the medications the patient is on.
+Usually assigned to Doctors and Nurses.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cOrders - View Patient Record</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Allows the user to view the Dynamic patient summary and document tree.
+Usually assigned to Nurses, Doctors and some clerks.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cOrders - View Prescription</name>
+	<automatic-membership>false</automatic-membership>
+	<description />
+	<inactivity-timeout>0</inactivity-timeout>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cOrders - View Radiology</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Allows the user to review Radiology orders that have been placed.
+Usually assigned to all doctors and nurses.
+This group may also be used to control who can view radiology results as usually the permission to view radiology orders is linked with permission to view results.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_ClinicianCHHS_IAM_Health</name>
+		<role-id>9b3ffdb5-d49e-4cc9-8000-4375f8e68f99</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClinicianCalvary_IAM_Health</name>
+		<role-id>7c58ab5d-d95d-4126-ac3a-fc389625dbe6</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClnPhrmCHHS_IAM_Health</name>
+		<role-id>1ec6dfda-553a-46fa-88ad-1697f133afdf</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClnPhrmCalvary_IAM_Health</name>
+		<role-id>27b80918-a6aa-469b-855d-8cac578e2317</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_DrCalvary_IAM_Health</name>
+		<role-id>81af8ff8-f9c8-4fb2-a12c-64f317f5864c</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_MedStudentCHHS_IAM_Health</name>
+		<role-id>9eb903bf-fec7-4734-9cab-7958d2c5a6d3</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCalvary</name>
+		<role-id>bec0adb9-9923-4650-813e-cb7bc3e1bca6</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClnPhrmCHHS</name>
+		<role-id>2102d7f7-2ef3-4066-abf6-15b140772919</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClnPhrmCalvary</name>
+		<role-id>0f62c137-a797-4223-95af-f139444b99a3</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCalvary</name>
+		<role-id>a6def1c7-ee0b-4767-9760-0acdf1f9f501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_MedStudentCHHS</name>
+		<role-id>4320d602-4357-4b7d-a046-67708905bb4b</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cWhiteboard Doctor</name>
+	<automatic-membership>false</automatic-membership>
+	<description />
+	<group-attribute>
+		<name>MyWard</name>
+		<index>0</index>
+		<default-value />
+		<display>true</display>
+		<display-name>My Ward</display-name>
+		<input-type>Popup Search</input-type>
+		<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setApplicationName("cWhiteboard")%&gt;&lt;%exec config.setEntryPointName("Popup Site Search")%&gt;&lt;%exec config.setReturnValueName("[orionhealth.com]WhiteboardSite.Id.SiteId")%&gt;&lt;%exec config.setDisplayValueName("[orionhealth.com]WhiteboardSite.Co.Name")%&gt;&lt;%exec config.setWidth(500)%&gt;&lt;%exec config.setHeight(600)%&gt;</parameter-string>
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiC_Whitboard</name>
+		<role-id>a494ce6a-18b6-44ea-ba59-61ce3f6e6f37</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cWhiteboard Doctor Handover</name>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiC_Whitboard</name>
+		<role-id>a494ce6a-18b6-44ea-ba59-61ce3f6e6f37</role-id>
+	</role>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cWhiteboard Doctor Seenby</name>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiC_Whitboard</name>
+		<role-id>a494ce6a-18b6-44ea-ba59-61ce3f6e6f37</role-id>
+	</role>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cWhiteboard Edit Location</name>
+	<role>
+		<name>Apps_ClPtl_WiCNurse_IAM_Health</name>
+		<role-id>1bb7eabe-630a-498e-9b2c-ba7a19f04501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiCNurse</name>
+		<role-id>e5cd0fa7-bdf2-428c-87d4-b5f3b96319d2</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiC_Whitboard</name>
+		<role-id>a494ce6a-18b6-44ea-ba59-61ce3f6e6f37</role-id>
+	</role>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cWhiteboard Medical Discharge</name>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiC_Whitboard</name>
+		<role-id>a494ce6a-18b6-44ea-ba59-61ce3f6e6f37</role-id>
+	</role>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cWhiteboard Nurse</name>
+	<automatic-membership>false</automatic-membership>
+	<description />
+	<group-attribute>
+		<name>MyWard</name>
+		<index>0</index>
+		<default-value />
+		<display>true</display>
+		<display-name>My Ward</display-name>
+		<input-type>Popup Search</input-type>
+		<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setApplicationName("cWhiteboard")%&gt;&lt;%exec config.setEntryPointName("Popup Site Search")%&gt;&lt;%exec config.setReturnValueName("[orionhealth.com]WhiteboardSite.Id.SiteId")%&gt;&lt;%exec config.setDisplayValueName("[orionhealth.com]WhiteboardSite.Co.Name")%&gt;&lt;%exec config.setWidth(500)%&gt;&lt;%exec config.setHeight(600)%&gt;</parameter-string>
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_WiCNurse_IAM_Health</name>
+		<role-id>1bb7eabe-630a-498e-9b2c-ba7a19f04501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiCNurse</name>
+		<role-id>e5cd0fa7-bdf2-428c-87d4-b5f3b96319d2</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiC_Whitboard</name>
+		<role-id>a494ce6a-18b6-44ea-ba59-61ce3f6e6f37</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cWhiteboard Nurse Handover</name>
+	<role>
+		<name>Apps_ClPtl_WiCNurse_IAM_Health</name>
+		<role-id>1bb7eabe-630a-498e-9b2c-ba7a19f04501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiCNurse</name>
+		<role-id>e5cd0fa7-bdf2-428c-87d4-b5f3b96319d2</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiC_Whitboard</name>
+		<role-id>a494ce6a-18b6-44ea-ba59-61ce3f6e6f37</role-id>
+	</role>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cWhiteboard Nurse Seenby</name>
+	<role>
+		<name>Apps_ClPtl_WiCNurse_IAM_Health</name>
+		<role-id>1bb7eabe-630a-498e-9b2c-ba7a19f04501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiC_Whitboard</name>
+		<role-id>a494ce6a-18b6-44ea-ba59-61ce3f6e6f37</role-id>
+	</role>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cWhiteboard Physical Discharge</name>
+	<role>
+		<name>Apps_ClPtl_WiCNurse_IAM_Health</name>
+		<role-id>1bb7eabe-630a-498e-9b2c-ba7a19f04501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiCNurse</name>
+		<role-id>e5cd0fa7-bdf2-428c-87d4-b5f3b96319d2</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiC_Whitboard</name>
+		<role-id>a494ce6a-18b6-44ea-ba59-61ce3f6e6f37</role-id>
+	</role>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cWhiteboard Remove Physical Discharge</name>
+	<role>
+		<name>Apps_ClPtl_WiCNurse_IAM_Health</name>
+		<role-id>1bb7eabe-630a-498e-9b2c-ba7a19f04501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiCNurse</name>
+		<role-id>e5cd0fa7-bdf2-428c-87d4-b5f3b96319d2</role-id>
+	</role>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cWhiteboard Update Note</name>
+	<role>
+		<name>Apps_ClPtl_WiCNurse_IAM_Health</name>
+		<role-id>1bb7eabe-630a-498e-9b2c-ba7a19f04501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiCNurse</name>
+		<role-id>e5cd0fa7-bdf2-428c-87d4-b5f3b96319d2</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiC_Whitboard</name>
+		<role-id>a494ce6a-18b6-44ea-ba59-61ce3f6e6f37</role-id>
+	</role>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cWhiteboard Update Triage Category</name>
+	<role>
+		<name>Apps_ClPtl_WiCNurse_IAM_Health</name>
+		<role-id>1bb7eabe-630a-498e-9b2c-ba7a19f04501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiCNurse</name>
+		<role-id>e5cd0fa7-bdf2-428c-87d4-b5f3b96319d2</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiC_Whitboard</name>
+		<role-id>a494ce6a-18b6-44ea-ba59-61ce3f6e6f37</role-id>
+	</role>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cWhiteboard View</name>
+	<role>
+		<name>Apps_ClPtl_CommunityHealthCentreAdmin_IAM_Health</name>
+		<role-id>3cd85b50-c62d-40f1-975a-8080409757b7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_WiCNurse_IAM_Health</name>
+		<role-id>1bb7eabe-630a-498e-9b2c-ba7a19f04501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_CommunityHealthCentreAdmin</name>
+		<role-id>715d1b86-9206-47b5-84a1-669d6c3531ad</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiCNurse</name>
+		<role-id>e5cd0fa7-bdf2-428c-87d4-b5f3b96319d2</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiC_Whitboard</name>
+		<role-id>a494ce6a-18b6-44ea-ba59-61ce3f6e6f37</role-id>
+	</role>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>cWhiteboard View Patient Summary</name>
+	<role>
+		<name>Apps_ClPtl_WiCNurse_IAM_Health</name>
+		<role-id>1bb7eabe-630a-498e-9b2c-ba7a19f04501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiCNurse</name>
+		<role-id>e5cd0fa7-bdf2-428c-87d4-b5f3b96319d2</role-id>
+	</role>
+	<role>
+		<name>ClPtl_WiC_Whitboard</name>
+		<role-id>a494ce6a-18b6-44ea-ba59-61ce3f6e6f37</role-id>
+	</role>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>canViewBreastScreeningAuditLog</name>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>eReferral Administrator</name>
+	<automatic-membership>false</automatic-membership>
+	<description>eReferral Administrator entrypoints, Must be specifically requested by user to be applied as an adhoc group</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_Admin_IAM_Health</name>
+		<role-id>79ddda77-dbbb-40e2-bc63-b3361cf06723</role-id>
+	</role>
+	<role>
+		<name>ClPtl_Admin</name>
+		<role-id>61bde4f2-fd13-42a3-95f6-8b94443ea741</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>eReferral Amend</name>
+	<automatic-membership>false</automatic-membership>
+	<description>Access to view, manage and amend eReferrals.  CHHS doctors only.</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_DrCHHS_IAM_Health</name>
+		<role-id>46bf30ab-b731-4292-aaeb-b0cf8cd11cb7</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCHHS</name>
+		<role-id>9302b542-405e-4447-9b9d-e13fd6eb91cd</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>eReferral User</name>
+	<automatic-membership>false</automatic-membership>
+	<group-attribute>
+		<name>Specialty</name>
+		<index>0</index>
+		<default-value />
+		<display>true</display>
+		<display-name>Specialty</display-name>
+		<input-type>Dynamic List</input-type>
+		<parameter-string>&lt;%exec config.setAdvanced( false )%&gt;&lt;%exec config.setApplicationName("Soprano Referrals")%&gt;&lt;%exec config.setEntryPointName("Specialty Search")%&gt;&lt;%exec config.setReturnValueName("Specialty")%&gt;&lt;%exec config.setDisplayValueName("Specialty")%&gt;&lt;%exec config.setWidth(500)%&gt;&lt;%exec config.setHeight(600)%&gt;&lt;%exec config.setOpenInWindow(false)%&gt;</parameter-string>
+		<user-editable>true</user-editable>
+	</group-attribute>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_ClericalCHHS_IAM_Health</name>
+		<role-id>ee57ccc7-c0c6-49d2-b54a-cbaa2771c05c</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClinicianCHHS_IAM_Health</name>
+		<role-id>9b3ffdb5-d49e-4cc9-8000-4375f8e68f99</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClinicianCalvary_IAM_Health</name>
+		<role-id>7c58ab5d-d95d-4126-ac3a-fc389625dbe6</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_DrCHHS_IAM_Health</name>
+		<role-id>46bf30ab-b731-4292-aaeb-b0cf8cd11cb7</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_DrCalvary_IAM_Health</name>
+		<role-id>81af8ff8-f9c8-4fb2-a12c-64f317f5864c</role-id>
+	</role>
+	<role>
+		<name>CCR_Clerical</name>
+		<role-id>34bf9f65-3406-4fbd-a6fa-e35f79043120</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClericalCHHS</name>
+		<role-id>5e8cff0c-9292-4535-b0e9-83706356011f</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCalvary</name>
+		<role-id>bec0adb9-9923-4650-813e-cb7bc3e1bca6</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCHHS</name>
+		<role-id>9302b542-405e-4447-9b9d-e13fd6eb91cd</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCalvary</name>
+		<role-id>a6def1c7-ee0b-4767-9760-0acdf1f9f501</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+<group>
+	<name>eReferral View</name>
+	<automatic-membership>false</automatic-membership>
+	<description>View only access to eReferrals.  CHHS and Calvary clinicians and doctors</description>
+	<inactivity-timeout>0</inactivity-timeout>
+	<role>
+		<name>Apps_ClPtl_ClericalCHHS_IAM_Health</name>
+		<role-id>ee57ccc7-c0c6-49d2-b54a-cbaa2771c05c</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClericalCalvary_IAM_Health</name>
+		<role-id>d1161bad-0aaa-4eec-8b7f-a5e0b8900f01</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClinicianCHHS_IAM_Health</name>
+		<role-id>9b3ffdb5-d49e-4cc9-8000-4375f8e68f99</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClinicianCalvary_IAM_Health</name>
+		<role-id>7c58ab5d-d95d-4126-ac3a-fc389625dbe6</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClnPhrmCHHS_IAM_Health</name>
+		<role-id>1ec6dfda-553a-46fa-88ad-1697f133afdf</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_ClnPhrmCalvary_IAM_Health</name>
+		<role-id>27b80918-a6aa-469b-855d-8cac578e2317</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_DrCalvary_IAM_Health</name>
+		<role-id>81af8ff8-f9c8-4fb2-a12c-64f317f5864c</role-id>
+	</role>
+	<role>
+		<name>Apps_ClPtl_MedStudentCHHS_IAM_Health</name>
+		<role-id>9eb903bf-fec7-4734-9cab-7958d2c5a6d3</role-id>
+	</role>
+	<role>
+		<name>CCR_Clerical</name>
+		<role-id>34bf9f65-3406-4fbd-a6fa-e35f79043120</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClericalCHHS</name>
+		<role-id>5e8cff0c-9292-4535-b0e9-83706356011f</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClericalCalvary</name>
+		<role-id>209557c3-b018-4e26-9851-3c50ff04b400</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCalvary</name>
+		<role-id>bec0adb9-9923-4650-813e-cb7bc3e1bca6</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClnPhrmCHHS</name>
+		<role-id>2102d7f7-2ef3-4066-abf6-15b140772919</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClnPhrmCalvary</name>
+		<role-id>0f62c137-a797-4223-95af-f139444b99a3</role-id>
+	</role>
+	<role>
+		<name>ClPtl_DrCalvary</name>
+		<role-id>a6def1c7-ee0b-4767-9760-0acdf1f9f501</role-id>
+	</role>
+	<role>
+		<name>ClPtl_MedStudentCHHS</name>
+		<role-id>4320d602-4357-4b7d-a046-67708905bb4b</role-id>
+	</role>
+	<synchronise-ldap-membership>false</synchronise-ldap-membership>
+	<system-object>false</system-object>
+</group>
+</concerto>
