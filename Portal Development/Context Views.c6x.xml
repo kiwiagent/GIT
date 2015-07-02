@@ -846,6 +846,31 @@
 <context-view>
 	<name>Patient</name>
 	<concise-format>&lt;%if MRN%&gt;&lt;%=MRN%&gt;&lt;%end if%&gt;&lt;%=PatientName.familyName.toString().toUpperCase()%&gt;, &lt;%=PatientName.givenName%&gt; &lt;%=PatientName.middleInitialOrName%&gt;</concise-format>
+	<context-appender-configuration>
+		<name>Context Appender</name>
+		<class-name>com.concerto.contextview.SqlContextAppender</class-name>
+		<context-appender-parameter>
+			<name>column.1.contextItemName</name>
+			<value>Patient.Id.MRN</value>
+		</context-appender-parameter>
+		<context-appender-parameter>
+			<name>column.1.selector</name>
+			<value>true</value>
+		</context-appender-parameter>
+		<context-appender-parameter>
+			<name>column.2.contextItemName</name>
+			<value>Patient.Co.PatientDeathIndicator</value>
+		</context-appender-parameter>
+		<context-appender-parameter>
+			<name>dataSourceName</name>
+			<value>java:comp/env/jdbc/actpas_cdr_views</value>
+		</context-appender-parameter>
+		<context-appender-parameter>
+			<name>sql</name>
+			<value>select patientID, patientdeathindicator from orion_patientDemographicsMini&#xD;
+where patientID in (&lt;%var index=0%&gt;&lt;%for each context in contextList%&gt;'&lt;%="".valueOf(context.mrn).replace("'","''")%&gt;'&lt;%if index!=(contextList.size - 1)%&gt;,&lt;%end if%&gt;&lt;%var index=index+1%&gt;&lt;%end for%&gt;)</value>
+		</context-appender-parameter>
+	</context-appender-configuration>
 	<context-view-entry-point>
 		<index>0</index>
 		<entry-point>
@@ -954,21 +979,6 @@
 	<context-view-entry-point>
 		<index>7</index>
 		<entry-point>
-			<name>Episode List</name>
-			<application>
-				<name>Soprano Workflow Medical Templates</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>400</height>
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>600</width>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>8</index>
-		<entry-point>
 			<name>Orders Summary</name>
 			<application>
 				<name>Concerto Orders</name>
@@ -982,7 +992,52 @@
 		<width>600</width>
 	</context-view-entry-point>
 	<context-view-entry-point>
+		<index>8</index>
+		<entry-point>
+			<name>View Referrals</name>
+			<application>
+				<name>Soprano Clinical Documentation</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
 		<index>9</index>
+		<entry-point>
+			<name>Episode List</name>
+			<application>
+				<name>Soprano Workflow Medical Templates</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>10</index>
+		<entry-point>
+			<name>Amend Referrals</name>
+			<application>
+				<name>Soprano Clinical Documentation</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>11</index>
 		<entry-point>
 			<name>Manage Circle of Care Relationships</name>
 			<application>
@@ -997,7 +1052,7 @@
 		<width>600</width>
 	</context-view-entry-point>
 	<context-view-entry-point>
-		<index>10</index>
+		<index>12</index>
 		<entry-point>
 			<name>Invite User</name>
 			<application>
@@ -1012,7 +1067,7 @@
 		<width>600</width>
 	</context-view-entry-point>
 	<context-view-entry-point>
-		<index>11</index>
+		<index>13</index>
 		<entry-point>
 			<name>PCEHR Document View</name>
 			<application>
@@ -1147,7 +1202,12 @@ If an error occurs while evaluating the access level allowed by this policy, an 
  &lt;%=(html)DateFormat.format(DateTimeOfBirth, "dd/MM/yyyy")%&gt;&#xD;
 (&lt;%=AgeFormat.format(DateTimeOfBirth)%&gt;) &lt;%if Sex%&gt;&lt;%=(html)Sex%&gt; &lt;%end if%&gt;&#xD;
 &lt;%end if%&gt;&#xD;
-&lt;/small&gt;</format>
+&lt;/small&gt;&#xD;
+&lt;b style="color:#F20505"&gt; &#xD;
+&lt;%if PatientDeathIndicator %&gt;&#xD;
+  &lt;%=(html) PatientDeathIndicator %&gt;&#xD;
+&lt;%end if%&gt;&#xD;
+&lt;/b&gt;</format>
 	<history-print-disclaimer-enabled>false</history-print-disclaimer-enabled>
 	<history-print-stylesheet />
 	<history-printing-enabled>false</history-printing-enabled>
@@ -1318,6 +1378,20 @@ ACT Health&#xD;
 			<descriptor>hl7.org</descriptor>
 			<qualified-name>[hl7.org]Patient.Id.[hl7.org]Facility</qualified-name>
 			<role>Id</role>
+			<subject-descriptor>hl7.org</subject-descriptor>
+			<subject-name>Patient</subject-name>
+		</subject-item-name>
+	</worklist-column>
+	<worklist-column>
+		<index>5</index>
+		<column-heading>Mortality Status</column-heading>
+		<display-format />
+		<required>false</required>
+		<subject-item-name>
+			<name-prefix>PatientDeathIndicator</name-prefix>
+			<descriptor>hl7.org</descriptor>
+			<qualified-name>[hl7.org]Patient.Co.[hl7.org]PatientDeathIndicator</qualified-name>
+			<role>Co</role>
 			<subject-descriptor>hl7.org</subject-descriptor>
 			<subject-name>Patient</subject-name>
 		</subject-item-name>

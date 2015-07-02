@@ -1170,12 +1170,20 @@
 	<description>Write discharge script.  Doctor only.</description>
 	<inactivity-timeout>0</inactivity-timeout>
 	<role>
+		<name>Apps_ClPtl_ClnPhrmCHHS_IAM_Health</name>
+		<role-id>1ec6dfda-553a-46fa-88ad-1697f133afdf</role-id>
+	</role>
+	<role>
 		<name>Apps_ClPtl_DrCHHS_IAM_Health</name>
 		<role-id>46bf30ab-b731-4292-aaeb-b0cf8cd11cb7</role-id>
 	</role>
 	<role>
 		<name>Apps_ClPtl_DrCalvary_IAM_Health</name>
 		<role-id>81af8ff8-f9c8-4fb2-a12c-64f317f5864c</role-id>
+	</role>
+	<role>
+		<name>ClPtl_ClinicianCHHS</name>
+		<role-id>b0e466cf-1415-465f-b209-03582fcc7e3c</role-id>
 	</role>
 	<role>
 		<name>ClPtl_DrCHHS</name>

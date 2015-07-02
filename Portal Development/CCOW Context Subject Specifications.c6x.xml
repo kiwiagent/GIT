@@ -442,6 +442,14 @@
 		<suffix-allowed>false</suffix-allowed>
 	</subject-item>
 	<subject-item>
+		<name-prefix>PatientDeathIndicator</name-prefix>
+		<case-sensitive>false</case-sensitive>
+		<data-type>ST</data-type>
+		<multi-valued>false</multi-valued>
+		<role>Co</role>
+		<suffix-allowed>false</suffix-allowed>
+	</subject-item>
+	<subject-item>
 		<name-prefix>PatientName</name-prefix>
 		<case-sensitive>false</case-sensitive>
 		<data-type>XPN</data-type>

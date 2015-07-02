@@ -1199,14 +1199,6 @@
 	<user-configurable>false</user-configurable>
 </portal-page>
 <portal-page>
-	<name>Community Clinician Homepage</name>
-	<description>REMOVE</description>
-	<node>
-		<terminal>true</terminal>
-	</node>
-	<user-configurable>false</user-configurable>
-</portal-page>
-<portal-page>
 	<name>Community Correspondence</name>
 	<description>:::: CCR :::: Correspondence</description>
 	<node>
@@ -1886,7 +1878,7 @@
 						<name>Community Patient Summary</name>
 					</portal-page>
 					<windowlet>
-						<name>My Appointments Booked (ACTPAS)</name>
+						<name>Appointments Booked (ACTPAS)</name>
 						<application>
 							<name>Healthcare pathways - CCR ACTPAS</name>
 						</application>
@@ -1897,18 +1889,38 @@
 			<layout>horizontal</layout>
 			<second-node>
 				<first>false</first>
-				<portal-page-windowlet>
-					<portal-page>
-						<name>Community Patient Summary</name>
-					</portal-page>
-					<windowlet>
-						<name>My Contacts (ACTPAS)</name>
-						<application>
-							<name>Healthcare pathways - CCR ACTPAS</name>
-						</application>
-					</windowlet>
-				</portal-page-windowlet>
-				<terminal>true</terminal>
+				<first-node>
+					<first>true</first>
+					<portal-page-windowlet>
+						<portal-page>
+							<name>Community Patient Summary</name>
+						</portal-page>
+						<windowlet>
+							<name>Contacts (ACTPAS)</name>
+							<application>
+								<name>Healthcare pathways - CCR ACTPAS</name>
+							</application>
+						</windowlet>
+					</portal-page-windowlet>
+					<terminal>true</terminal>
+				</first-node>
+				<layout>horizontal</layout>
+				<second-node>
+					<first>false</first>
+					<portal-page-windowlet>
+						<portal-page>
+							<name>Community Patient Summary</name>
+						</portal-page>
+						<windowlet>
+							<name>Allergies &amp; Alerts</name>
+							<application>
+								<name>Orion - Dynamic Patient Summary</name>
+							</application>
+						</windowlet>
+					</portal-page-windowlet>
+					<terminal>true</terminal>
+				</second-node>
+				<terminal>false</terminal>
 			</second-node>
 			<terminal>false</terminal>
 		</second-node>
@@ -1932,6 +1944,22 @@
 	</portal-page-windowlet>
 	<portal-page-windowlet>
 		<windowlet>
+			<name>Appointments Booked (ACTPAS)</name>
+			<application>
+				<name>Healthcare pathways - CCR ACTPAS</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Contacts (ACTPAS)</name>
+			<application>
+				<name>Healthcare pathways - CCR ACTPAS</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
 			<name>Encounter History</name>
 			<application>
 				<name>Orion - Dynamic Patient Summary</name>
@@ -1943,22 +1971,6 @@
 			<name>Future Appointments</name>
 			<application>
 				<name>Orion - Dynamic Patient Summary</name>
-			</application>
-		</windowlet>
-	</portal-page-windowlet>
-	<portal-page-windowlet>
-		<windowlet>
-			<name>My Appointments Booked (ACTPAS)</name>
-			<application>
-				<name>Healthcare pathways - CCR ACTPAS</name>
-			</application>
-		</windowlet>
-	</portal-page-windowlet>
-	<portal-page-windowlet>
-		<windowlet>
-			<name>My Contacts (ACTPAS)</name>
-			<application>
-				<name>Healthcare pathways - CCR ACTPAS</name>
 			</application>
 		</windowlet>
 	</portal-page-windowlet>

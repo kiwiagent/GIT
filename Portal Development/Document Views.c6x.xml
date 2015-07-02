@@ -54,13 +54,6 @@
 			<name>Document Capture</name>
 		</application>
 	</document-repository>
-	<document-repository>
-		<name>Prescription</name>
-		<access-controller />
-		<application>
-			<name>Medication Management</name>
-		</application>
-	</document-repository>
 	<summary-entry-point>
 		<index>0</index>
 		<entry-point>
