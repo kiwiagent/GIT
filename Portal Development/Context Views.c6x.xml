@@ -1,221 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <concerto version="portal-serialization/2.0">
 <context-view>
-	<name>Assessment</name>
-	<concise-format />
-	<context-view-entry-point>
-		<index>0</index>
-		<entry-point>
-			<name>Assessment Details</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>1</index>
-		<entry-point>
-			<name>Notes</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>2</index>
-		<entry-point>
-			<name>Symptoms and History</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-	</context-view-entry-point>
-	<description />
-	<enable-history>false</enable-history>
-	<enable-privacy-policies>false</enable-privacy-policies>
-	<format>&lt;B&gt;
-&lt;%if MRN%&gt;
-  &lt;%=(html)MRN%&gt;
-&lt;%elseif MPI%&gt;
-  &lt;%=(html)MPI%&gt;
-&lt;%elseif NationalIdNumber%&gt;
-  &lt;%=(html)NationalIdNumber%&gt;
-&lt;%elseif Alternate%&gt;
-  &lt;%=(html)Alternate%&gt;
-&lt;%end if%&gt;
-&lt;/B&gt;
-&lt;%=(html)Name.familyName.toString().toUpperCase()%&gt;
-&lt;%=(html)Name.givenName%&gt;
-&lt;%if DateTimeOfBirth &lt;&gt; ""%&gt;
-	(&lt;%end if%&gt;&lt;%=AgeFormat.format(DateTimeOfBirth.toString())%&gt;)
-&lt;%end if%&gt;
-&lt;B&gt;
-&lt;%if Exclusion%&gt;
-	&lt;%=(html)Exclusion%&gt;
-&lt;%end if%&gt;
-&lt;/B&gt;</format>
-	<subject-of-interest>
-		<name>[orionhealth.com]Assessment</name>
-		<required>true</required>
-	</subject-of-interest>
-	<subject-of-interest>
-		<name>[orionhealth.com]ScreeningCandidate</name>
-		<required>true</required>
-	</subject-of-interest>
-	<system-object>false</system-object>
-	<work-list-type>
-		<name>Blue</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Blue</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Green</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Green</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Orange</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Orange</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Purple</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Purple</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Red</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Red</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Yellow</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Yellow</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-</context-view>
-<context-view>
-	<name>CHI Referrals</name>
-	<concise-format />
-	<description>For Managing Referrals</description>
-	<enable-history>false</enable-history>
-	<enable-privacy-policies>false</enable-privacy-policies>
-	<format>CHI Referral Request Management</format>
-	<history-print-disclaimer-enabled>false</history-print-disclaimer-enabled>
-	<history-print-stylesheet />
-	<history-printing-enabled>false</history-printing-enabled>
-	<subject-of-interest>
-		<name>Patient</name>
-		<required>false</required>
-	</subject-of-interest>
-	<system-object>false</system-object>
-	<use-custom-entity-break-seal-page>false</use-custom-entity-break-seal-page>
-	<work-list-type>
-		<name>Blue</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Blue</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Green</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Green</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Orange</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Orange</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Purple</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Purple</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Red</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Red</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Yellow</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Yellow</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<worklist-print-disclaimer-enabled>false</worklist-print-disclaimer-enabled>
-	<worklist-print-stylesheet />
-	<worklist-printing-enabled>false</worklist-printing-enabled>
-</context-view>
-<context-view>
-	<name>Coding</name>
-	<concise-format />
-	<description />
-	<enable-history>false</enable-history>
-	<enable-privacy-policies>false</enable-privacy-policies>
-	<format />
-	<history-print-disclaimer-enabled>false</history-print-disclaimer-enabled>
-	<history-print-stylesheet />
-	<history-printing-enabled>false</history-printing-enabled>
-	<subject-of-interest>
-		<name>Coding</name>
-		<required>false</required>
-	</subject-of-interest>
-	<system-object>false</system-object>
-	<use-custom-entity-break-seal-page>false</use-custom-entity-break-seal-page>
-	<work-list-type>
-		<name>Blue</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Blue</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Green</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Green</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Orange</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Orange</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Purple</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Purple</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Red</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Red</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Yellow</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Yellow</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<worklist-print-disclaimer-enabled>false</worklist-print-disclaimer-enabled>
-	<worklist-print-stylesheet />
-	<worklist-printing-enabled>false</worklist-printing-enabled>
-</context-view>
-<context-view>
 	<name>Concerto Worklist</name>
 	<concise-format />
 	<description>Worklist</description>
@@ -270,167 +55,6 @@
 	<worklist-print-disclaimer-enabled>false</worklist-print-disclaimer-enabled>
 	<worklist-print-stylesheet />
 	<worklist-printing-enabled>false</worklist-printing-enabled>
-</context-view>
-<context-view>
-	<name>Contact</name>
-	<concise-format />
-	<description />
-	<enable-history>false</enable-history>
-	<enable-privacy-policies>false</enable-privacy-policies>
-	<format />
-	<history-print-disclaimer-enabled>false</history-print-disclaimer-enabled>
-	<history-print-stylesheet />
-	<history-printing-enabled>false</history-printing-enabled>
-	<subject-of-interest>
-		<name>Contact</name>
-		<required>false</required>
-	</subject-of-interest>
-	<system-object>false</system-object>
-	<use-custom-entity-break-seal-page>false</use-custom-entity-break-seal-page>
-	<work-list-type>
-		<name>Blue</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Blue</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Green</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Green</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Orange</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Orange</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Purple</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Purple</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Red</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Red</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Yellow</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Yellow</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<worklist-print-disclaimer-enabled>false</worklist-print-disclaimer-enabled>
-	<worklist-print-stylesheet />
-	<worklist-printing-enabled>false</worklist-printing-enabled>
-</context-view>
-<context-view>
-	<name>DocumentType</name>
-	<concise-format />
-	<description />
-	<enable-history>false</enable-history>
-	<enable-privacy-policies>false</enable-privacy-policies>
-	<format />
-	<history-print-disclaimer-enabled>false</history-print-disclaimer-enabled>
-	<history-print-stylesheet />
-	<history-printing-enabled>false</history-printing-enabled>
-	<subject-of-interest>
-		<name>DocumentType</name>
-		<required>false</required>
-	</subject-of-interest>
-	<system-object>false</system-object>
-	<use-custom-entity-break-seal-page>false</use-custom-entity-break-seal-page>
-	<work-list-type>
-		<name>Blue</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Blue</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Green</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Green</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Orange</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Orange</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Purple</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Purple</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Red</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Red</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Yellow</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Yellow</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<worklist-print-disclaimer-enabled>false</worklist-print-disclaimer-enabled>
-	<worklist-print-stylesheet />
-	<worklist-printing-enabled>false</worklist-printing-enabled>
-</context-view>
-<context-view>
-	<name>Edit Read History</name>
-	<concise-format />
-	<context-view-entry-point>
-		<index>0</index>
-		<entry-point>
-			<name>Read History Detail</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-	</context-view-entry-point>
-	<description>Edit Radiologist ID</description>
-	<format>&lt;B&gt;
-&lt;%if MRN%&gt;
-  &lt;%=(html)MRN%&gt;
-&lt;%elseif MPI%&gt;
-  &lt;%=(html)MPI%&gt;
-&lt;%elseif NationalIdNumber%&gt;
-  &lt;%=(html)NationalIdNumber%&gt;
-&lt;%elseif Alternate%&gt;
-  &lt;%=(html)Alternate%&gt;
-&lt;%end if%&gt;
-&lt;/B&gt;
-&lt;%=(html)Name.familyName.toString().toUpperCase()%&gt;
-&lt;%=(html)Name.givenName%&gt;
-&lt;%if DateTimeOfBirth &lt;&gt; ""%&gt;
-	(&lt;%end if%&gt;&lt;%=AgeFormat.format(DateTimeOfBirth.toString())%&gt;)
-&lt;%end if%&gt;
-&lt;B&gt;
-&lt;%if Exclusion%&gt;
-	&lt;%=(html)Exclusion%&gt;
-&lt;%end if%&gt;
-&lt;/B&gt;</format>
-	<subject-of-interest>
-		<name>[orionhealth.com]RadiologyReading</name>
-		<required>true</required>
-	</subject-of-interest>
-	<subject-of-interest>
-		<name>[orionhealth.com]Screening</name>
-		<required>true</required>
-	</subject-of-interest>
-	<subject-of-interest>
-		<name>[orionhealth.com]ScreeningCandidate</name>
-		<required>true</required>
-	</subject-of-interest>
-	<system-object>false</system-object>
 </context-view>
 <context-view>
 	<name>Form</name>
@@ -864,6 +488,12 @@
 	<history-print-stylesheet />
 	<history-printing-enabled>false</history-printing-enabled>
 	<information-access-policy>
+		<name>Access Code</name>
+		<default>false</default>
+		<description />
+		<error>false</error>
+	</information-access-policy>
+	<information-access-policy>
 		<name>Default</name>
 		<default>true</default>
 		<description>The default container that is used for configuring both Document and Form level security.</description>
@@ -1136,6 +766,14 @@
 			<rule-id>28c73f48-2861-11b2-83b6-47867cdd3fd7</rule-id>
 		</information-access-rule>
 	</information-access-policy>
+	<information-policy-selector-configuration>
+		<name>Forms</name>
+		<index>0</index>
+		<class-name>com.concerto.contextview.InformationPolicySelector</class-name>
+	</information-policy-selector-configuration>
+	<relationship-type>
+		<name>Document Administrator</name>
+	</relationship-type>
 	<relationship-type>
 		<name>Document Reader</name>
 	</relationship-type>
@@ -1204,137 +842,6 @@
 	<worklist-print-disclaimer-enabled>false</worklist-print-disclaimer-enabled>
 	<worklist-print-stylesheet />
 	<worklist-printing-enabled>false</worklist-printing-enabled>
-</context-view>
-<context-view>
-	<name>Item</name>
-	<system-object>false</system-object>
-	<work-list-type>
-		<name>Blue</name>
-	</work-list-type>
-	<work-list-type>
-		<name>Green</name>
-	</work-list-type>
-	<work-list-type>
-		<name>Orange</name>
-	</work-list-type>
-	<work-list-type>
-		<name>Purple</name>
-	</work-list-type>
-	<work-list-type>
-		<name>Red</name>
-	</work-list-type>
-	<work-list-type>
-		<name>Yellow</name>
-	</work-list-type>
-</context-view>
-<context-view>
-	<name>Notification Date Adjustment</name>
-	<concise-format />
-	<context-view-entry-point>
-		<index>0</index>
-		<entry-point>
-			<name>Notification Date Adjustment</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>600</width>
-	</context-view-entry-point>
-	<description />
-	<enable-history>false</enable-history>
-	<enable-privacy-policies>false</enable-privacy-policies>
-	<format>&lt;B&gt;
-&lt;%if MRN%&gt;
-  &lt;%=(html)MRN%&gt;
-&lt;%elseif MPI%&gt;
-  &lt;%=(html)MPI%&gt;
-&lt;%elseif NationalIdNumber%&gt;
-  &lt;%=(html)NationalIdNumber%&gt;
-&lt;%elseif Alternate%&gt;
-  &lt;%=(html)Alternate%&gt;
-&lt;%end if%&gt;
-&lt;/B&gt;
-&lt;%=(html)Name.familyName.toString().toUpperCase()%&gt;
-&lt;%=(html)Name.givenName%&gt;
-&lt;%if DateTimeOfBirth &lt;&gt; ""%&gt;
-	(&lt;%end if%&gt;&lt;%=AgeFormat.format(DateTimeOfBirth.toString())%&gt;)
-&lt;%end if%&gt;
-&lt;B&gt;
-&lt;%if Exclusion%&gt;
-	&lt;%=(html)Exclusion%&gt;
-&lt;%end if%&gt;
-&lt;/B&gt;</format>
-	<subject-of-interest>
-		<name>[orionhealth.com]CandidateNotification</name>
-		<required>true</required>
-	</subject-of-interest>
-	<subject-of-interest>
-		<name>[orionhealth.com]ScreeningCandidate</name>
-		<required>true</required>
-	</subject-of-interest>
-	<system-object>false</system-object>
-	<work-list-type>
-		<name>Blue</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Blue</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Green</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Green</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Orange</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Orange</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Purple</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Purple</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Red</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Red</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Yellow</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Yellow</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-</context-view>
-<context-view>
-	<name>Order</name>
-	<system-object>false</system-object>
-	<work-list-type>
-		<name>Blue</name>
-	</work-list-type>
-	<work-list-type>
-		<name>Green</name>
-	</work-list-type>
-	<work-list-type>
-		<name>Orange</name>
-	</work-list-type>
-	<work-list-type>
-		<name>Purple</name>
-	</work-list-type>
-	<work-list-type>
-		<name>Red</name>
-	</work-list-type>
-	<work-list-type>
-		<name>Yellow</name>
-	</work-list-type>
 </context-view>
 <context-view>
 	<name>Patient</name>
@@ -1472,9 +979,9 @@ where patientID in (&lt;%var index=0%&gt;&lt;%for each context in contextList%&g
 	<context-view-entry-point>
 		<index>7</index>
 		<entry-point>
-			<name>Privacy Details</name>
+			<name>Orders Summary</name>
 			<application>
-				<name>Concerto</name>
+				<name>Concerto Orders</name>
 			</application>
 			<secure-enabled>false</secure-enabled>
 		</entry-point>
@@ -1486,6 +993,21 @@ where patientID in (&lt;%var index=0%&gt;&lt;%for each context in contextList%&g
 	</context-view-entry-point>
 	<context-view-entry-point>
 		<index>8</index>
+		<entry-point>
+			<name>View Referrals</name>
+			<application>
+				<name>Soprano Clinical Documentation</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>9</index>
 		<entry-point>
 			<name>Episode List</name>
 			<application>
@@ -1500,26 +1022,11 @@ where patientID in (&lt;%var index=0%&gt;&lt;%for each context in contextList%&g
 		<width>600</width>
 	</context-view-entry-point>
 	<context-view-entry-point>
-		<index>9</index>
-		<entry-point>
-			<name>Orders Summary</name>
-			<application>
-				<name>Concerto Orders</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>400</height>
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>600</width>
-	</context-view-entry-point>
-	<context-view-entry-point>
 		<index>10</index>
 		<entry-point>
-			<name>Manage Circle of Care Relationships</name>
+			<name>Amend Referrals</name>
 			<application>
-				<name>Patient Portal for Providers</name>
+				<name>Soprano Clinical Documentation</name>
 			</application>
 			<secure-enabled>false</secure-enabled>
 		</entry-point>
@@ -1532,9 +1039,9 @@ where patientID in (&lt;%var index=0%&gt;&lt;%for each context in contextList%&g
 	<context-view-entry-point>
 		<index>11</index>
 		<entry-point>
-			<name>Relationship Details</name>
+			<name>Manage Circle of Care Relationships</name>
 			<application>
-				<name>Concerto</name>
+				<name>Patient Portal for Providers</name>
 			</application>
 			<secure-enabled>false</secure-enabled>
 		</entry-point>
@@ -1565,51 +1072,6 @@ where patientID in (&lt;%var index=0%&gt;&lt;%for each context in contextList%&g
 			<name>PCEHR Document View</name>
 			<application>
 				<name>PCEHR</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>400</height>
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>600</width>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>14</index>
-		<entry-point>
-			<name>Privacy Log</name>
-			<application>
-				<name>Concerto</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>400</height>
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>600</width>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>15</index>
-		<entry-point>
-			<name>View Referrals</name>
-			<application>
-				<name>Soprano Clinical Documentation</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>400</height>
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>600</width>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>16</index>
-		<entry-point>
-			<name>Amend Referrals</name>
-			<application>
-				<name>Soprano Clinical Documentation</name>
 			</application>
 			<secure-enabled>false</secure-enabled>
 		</entry-point>
@@ -1796,7 +1258,6 @@ If an error occurs while evaluating the access level allowed by this policy, an 
 		<name>[orionhealth.com]ReferralRequest</name>
 		<required>false</required>
 	</subject-of-interest>
-	<system-object>false</system-object>
 	<unique-identifier>
 		<name-prefix>MRN</name-prefix>
 		<descriptor>hl7.org</descriptor>
@@ -1940,30 +1401,17 @@ ACT Health&#xD;
 	<worklist-printing-enabled>false</worklist-printing-enabled>
 </context-view>
 <context-view>
-	<name>Practice</name>
-	<concise-format />
+	<name>Provider</name>
 	<context-view-entry-point>
 		<index>0</index>
 		<entry-point>
-			<name>Practice Details</name>
+			<name>Provider Details</name>
 			<application>
-				<name>cBreastScreening</name>
+				<name>Soprano Disease Management</name>
 			</application>
 			<secure-enabled>false</secure-enabled>
 		</entry-point>
 	</context-view-entry-point>
-	<description>Practice details.</description>
-	<enable-history>false</enable-history>
-	<enable-privacy-policies>false</enable-privacy-policies>
-	<format>&lt;%=(html)Name%&gt;</format>
-	<subject-of-interest>
-		<name>[orionhealth.com]Practice</name>
-		<required>true</required>
-	</subject-of-interest>
-	<system-object>false</system-object>
-</context-view>
-<context-view>
-	<name>Provider</name>
 	<subject-of-interest>
 		<name>Provider</name>
 		<required>true</required>
@@ -1986,157 +1434,6 @@ ACT Health&#xD;
 	<work-list-type>
 		<name>Yellow</name>
 	</work-list-type>
-</context-view>
-<context-view>
-	<name>Radiology Reading</name>
-	<concise-format />
-	<context-view-entry-point>
-		<index>0</index>
-		<entry-point>
-			<name>Edit Details</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>1</index>
-		<entry-point>
-			<name>Episode History</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>2</index>
-		<entry-point>
-			<name>Read Films Details</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>3</index>
-		<entry-point>
-			<name>Notes</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-	</context-view-entry-point>
-	<description>This context is used to enable radiologist to easily access patient related data.</description>
-	<format>&lt;SPAN style="width: 50%"&gt;
-&lt;B&gt;
-&lt;%if MRN%&gt;
-  &lt;%=(html)MRN%&gt;
-&lt;%elseif MPI%&gt;
-  &lt;%=(html)MPI%&gt;
-&lt;%elseif NationalIdNumber%&gt;
-  &lt;%=(html)NationalIdNumber%&gt;
-&lt;%elseif Alternate%&gt;
-  &lt;%=(html)Alternate%&gt;
-&lt;%end if%&gt;
-&lt;/B&gt;
-&lt;%=(html)Name.familyName.toString().toUpperCase()%&gt;
-&lt;%=(html)Name.givenName%&gt;
-&lt;%if DateTimeOfBirth &lt;&gt; ""%&gt;
-	(&lt;%end if%&gt;&lt;%=AgeFormat.format(DateTimeOfBirth.toString())%&gt;)
-&lt;%end if%&gt;
-&lt;B&gt;
-&lt;%if Exclusion%&gt;
-	&lt;%=(html)Exclusion%&gt;
-&lt;%end if%&gt;
-&lt;/B&gt;&lt;/SPAN&gt;</format>
-	<subject-of-interest>
-		<name>[orionhealth.com]ScreeningCandidate</name>
-		<required>true</required>
-	</subject-of-interest>
-	<system-object>false</system-object>
-</context-view>
-<context-view>
-	<name>Radiology Reading (Admin)</name>
-	<context-view-entry-point>
-		<index>0</index>
-		<entry-point>
-			<name>Edit Details</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>1</index>
-		<entry-point>
-			<name>Episode History</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>2</index>
-		<entry-point>
-			<name>Notes</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>3</index>
-		<entry-point>
-			<name>Read Films Details (Admin)</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-	</context-view-entry-point>
-	<format>&lt;SPAN style="width: 50%"&gt;
-&lt;B&gt;
-&lt;%if MRN%&gt;
-  &lt;%=(html)MRN%&gt;
-&lt;%elseif MPI%&gt;
-  &lt;%=(html)MPI%&gt;
-&lt;%elseif NationalIdNumber%&gt;
-  &lt;%=(html)NationalIdNumber%&gt;
-&lt;%elseif Alternate%&gt;
-  &lt;%=(html)Alternate%&gt;
-&lt;%end if%&gt;
-&lt;/B&gt;
-&lt;%=(html)Name.familyName.toString().toUpperCase()%&gt;
-&lt;%=(html)Name.givenName%&gt;
-&lt;%if DateTimeOfBirth &lt;&gt; ""%&gt;
-	(&lt;%end if%&gt;&lt;%=AgeFormat.format(DateTimeOfBirth.toString())%&gt;)
-&lt;%end if%&gt;
-&lt;B&gt;
-&lt;%if Exclusion%&gt;
-	&lt;%=(html)Exclusion%&gt;
-&lt;%end if%&gt;
-&lt;/B&gt;
-&lt;/SPAN&gt;</format>
-	<subject-of-interest>
-		<name>[orionhealth.com]RadiologyReading</name>
-		<required>true</required>
-	</subject-of-interest>
-	<subject-of-interest>
-		<name>[orionhealth.com]Screening</name>
-		<required>true</required>
-	</subject-of-interest>
-	<subject-of-interest>
-		<name>[orionhealth.com]ScreeningCandidate</name>
-		<required>true</required>
-	</subject-of-interest>
-	<system-object>false</system-object>
 </context-view>
 <context-view>
 	<name>Referral</name>
@@ -2401,9 +1698,24 @@ ACT Health&#xD;
 </context-view>
 <context-view>
 	<name>ReviewEDS Patient</name>
-	<concise-format>&lt;%=MPI%&gt; &lt;%=PatientName.familyName.toString().toUpperCase()%&gt;, &lt;%=PatientName.givenName%&gt; &lt;%=PatientName.middleInitialOrName%&gt;</concise-format>
+	<concise-format>&lt;%if MRN%&gt;&lt;%=MRN%&gt;&lt;%end if%&gt;&lt;%=PatientName.familyName.toString().toUpperCase()%&gt;, &lt;%=PatientName.givenName%&gt; &lt;%=PatientName.middleInitialOrName%&gt;</concise-format>
 	<context-view-entry-point>
 		<index>0</index>
+		<entry-point>
+			<name>CCR DR Dynamic Patient Summary (Admin View)</name>
+			<application>
+				<name>Healthcare pathways - CCR</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>1</index>
 		<entry-point>
 			<name>Dynamic Patient Summary</name>
 			<application>
@@ -2420,9 +1732,9 @@ ACT Health&#xD;
 	<context-view-entry-point>
 		<index>2</index>
 		<entry-point>
-			<name>Privacy Details</name>
+			<name>CCR Patient Profile</name>
 			<application>
-				<name>Concerto</name>
+				<name>Healthcare pathways - CCR</name>
 			</application>
 			<secure-enabled>false</secure-enabled>
 		</entry-point>
@@ -2435,9 +1747,9 @@ ACT Health&#xD;
 	<context-view-entry-point>
 		<index>3</index>
 		<entry-point>
-			<name>Relationship Details</name>
+			<name>Patient Task List</name>
 			<application>
-				<name>Concerto</name>
+				<name>Task List</name>
 			</application>
 			<secure-enabled>false</secure-enabled>
 		</entry-point>
@@ -2450,9 +1762,9 @@ ACT Health&#xD;
 	<context-view-entry-point>
 		<index>4</index>
 		<entry-point>
-			<name>Privacy Log</name>
+			<name>New Internal Referral Request</name>
 			<application>
-				<name>Concerto</name>
+				<name>Referral Request</name>
 			</application>
 			<secure-enabled>false</secure-enabled>
 		</entry-point>
@@ -2478,7 +1790,7 @@ ACT Health&#xD;
 		<width>600</width>
 	</context-view-entry-point>
 	<context-view-entry-point>
-		<index>7</index>
+		<index>6</index>
 		<entry-point>
 			<name>Place Diagnostics Order</name>
 			<application>
@@ -2493,52 +1805,7 @@ ACT Health&#xD;
 		<width>600</width>
 	</context-view-entry-point>
 	<context-view-entry-point>
-		<index>8</index>
-		<entry-point>
-			<name>Create Discharge Summary</name>
-			<application>
-				<name>ReviewEDS</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>400</height>
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>600</width>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>10</index>
-		<entry-point>
-			<name>Orders Summary</name>
-			<application>
-				<name>Concerto Orders</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>400</height>
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>600</width>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>20</index>
-		<entry-point>
-			<name>View Referrals</name>
-			<application>
-				<name>Soprano Clinical Documentation</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>400</height>
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>600</width>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>21</index>
+		<index>7</index>
 		<entry-point>
 			<name>Episode List</name>
 			<application>
@@ -2553,7 +1820,22 @@ ACT Health&#xD;
 		<width>600</width>
 	</context-view-entry-point>
 	<context-view-entry-point>
-		<index>22</index>
+		<index>8</index>
+		<entry-point>
+			<name>Orders Summary</name>
+			<application>
+				<name>Concerto Orders</name>
+			</application>
+			<secure-enabled>false</secure-enabled>
+		</entry-point>
+		<features />
+		<height>400</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>600</width>
+	</context-view-entry-point>
+	<context-view-entry-point>
+		<index>9</index>
 		<entry-point>
 			<name>Manage Circle of Care Relationships</name>
 			<application>
@@ -2568,7 +1850,7 @@ ACT Health&#xD;
 		<width>600</width>
 	</context-view-entry-point>
 	<context-view-entry-point>
-		<index>23</index>
+		<index>10</index>
 		<entry-point>
 			<name>Invite User</name>
 			<application>
@@ -2583,22 +1865,7 @@ ACT Health&#xD;
 		<width>600</width>
 	</context-view-entry-point>
 	<context-view-entry-point>
-		<index>24</index>
-		<entry-point>
-			<name>Amend Referrals</name>
-			<application>
-				<name>Soprano Clinical Documentation</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>400</height>
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>600</width>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>25</index>
+		<index>11</index>
 		<entry-point>
 			<name>PCEHR Document View</name>
 			<application>
@@ -2772,6 +2039,18 @@ If an error occurs while evaluating the access level allowed by this policy, an 
 		<name>Patient</name>
 		<required>true</required>
 	</subject-of-interest>
+	<subject-of-interest>
+		<name>[orionhealth.com]ContextSubject</name>
+		<required>false</required>
+	</subject-of-interest>
+	<subject-of-interest>
+		<name>[orionhealth.com]Referral</name>
+		<required>false</required>
+	</subject-of-interest>
+	<subject-of-interest>
+		<name>[orionhealth.com]ReferralRequest</name>
+		<required>false</required>
+	</subject-of-interest>
 	<system-object>false</system-object>
 	<unique-identifier>
 		<name-prefix>MRN</name-prefix>
@@ -2820,9 +2099,9 @@ If an error occurs while evaluating the access level allowed by this policy, an 
 	</work-list-type>
 	<worklist-column>
 		<index>0</index>
-		<column-heading>MRN</column-heading>
+		<column-heading>URN</column-heading>
 		<display-format>&lt;%=(html)value%&gt;</display-format>
-		<required>true</required>
+		<required>false</required>
 		<subject-item-name>
 			<name-prefix>MRN</name-prefix>
 			<descriptor>hl7.org</descriptor>
@@ -2837,7 +2116,7 @@ If an error occurs while evaluating the access level allowed by this policy, an 
 		<column-heading>Name</column-heading>
 		<display-format>&lt;%=value.familyName.toString().toUpperCase()%&gt;,&#xD;
 &lt;%=value.givenName%&gt;</display-format>
-		<required>true</required>
+		<required>false</required>
 		<subject-item-name>
 			<name-prefix>PatientName</name-prefix>
 			<descriptor>hl7.org</descriptor>
@@ -2887,7 +2166,7 @@ ACT Health&#xD;
 &lt;%else%&gt;&#xD;
 &lt;%=value%&gt;&#xD;
 &lt;%end if%&gt;</display-format>
-		<required>true</required>
+		<required>false</required>
 		<subject-item-name>
 			<name-prefix>Facility</name-prefix>
 			<descriptor>hl7.org</descriptor>
@@ -2902,442 +2181,15 @@ ACT Health&#xD;
 	<worklist-printing-enabled>false</worklist-printing-enabled>
 </context-view>
 <context-view>
-	<name>Screening</name>
-	<concise-format />
-	<context-view-entry-point>
-		<index>0</index>
-		<entry-point>
-			<name>Mammogram Details</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>0</height>
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>0</width>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>1</index>
-		<entry-point>
-			<name>Symptoms and History</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>0</height>
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>0</width>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>2</index>
-		<entry-point>
-			<name>Read Films Details</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>0</height>
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>0</width>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>3</index>
-		<entry-point>
-			<name>Notes</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>0</height>
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>0</width>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>4</index>
-		<entry-point>
-			<name>Edit Details</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<height>400</height>
-		<open-type>normal</open-type>
-		<width>600</width>
-	</context-view-entry-point>
-	<description />
-	<enable-history>false</enable-history>
-	<enable-privacy-policies>false</enable-privacy-policies>
-	<format>&lt;SPAN style="width: 50%"&gt;&#xD;
-&lt;B&gt;&#xD;
-&lt;%if MRN%&gt;&#xD;
-  &lt;%=(html)MRN%&gt;&#xD;
-&lt;%elseif MPI%&gt;&#xD;
-  &lt;%=(html)MPI%&gt;&#xD;
-&lt;%elseif NationalIdNumber%&gt;&#xD;
-  &lt;%=(html)NationalIdNumber%&gt;&#xD;
-&lt;%elseif Alternate%&gt;&#xD;
-  &lt;%=(html)Alternate%&gt;&#xD;
-&lt;%end if%&gt;&#xD;
-&lt;/B&gt;&#xD;
-&lt;%=(html)Name.familyName.toString().toUpperCase()%&gt;&#xD;
-&lt;%=(html)Name.givenName%&gt;&#xD;
-&lt;%if DateTimeOfBirth &lt;&gt; ""%&gt;&#xD;
-	(&lt;%end if%&gt;&lt;%=AgeFormat.format(DateTimeOfBirth.toString())%&gt;)&#xD;
-&lt;%end if%&gt;&#xD;
-&lt;B&gt;&#xD;
-&lt;%if Exclusion%&gt;&#xD;
-	&lt;%=(html)Exclusion%&gt;&#xD;
-&lt;%end if%&gt;&#xD;
-&lt;/B&gt;&#xD;
-&lt;/SPAN&gt;</format>
-	<history-print-disclaimer-enabled>false</history-print-disclaimer-enabled>
-	<history-print-stylesheet />
-	<history-printing-enabled>false</history-printing-enabled>
-	<subject-of-interest>
-		<name>[orionhealth.com]Screening</name>
-		<required>true</required>
-	</subject-of-interest>
-	<subject-of-interest>
-		<name>[orionhealth.com]ScreeningCandidate</name>
-		<required>true</required>
-	</subject-of-interest>
-	<system-object>false</system-object>
-	<use-custom-entity-break-seal-page>false</use-custom-entity-break-seal-page>
-	<work-list-type>
-		<name>Blue</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Blue</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Green</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Green</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Orange</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Orange</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Purple</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Purple</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Red</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Red</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Yellow</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Yellow</display-name>
-		<enabled>false</enabled>
-	</work-list-type>
-	<worklist-print-disclaimer-enabled>false</worklist-print-disclaimer-enabled>
-	<worklist-print-stylesheet />
-	<worklist-printing-enabled>false</worklist-printing-enabled>
-</context-view>
-<context-view>
-	<name>Screening Candidate</name>
-	<concise-format />
-	<context-view-entry-point>
-		<index>0</index>
-		<entry-point>
-			<name>Dynamic Patient Summary</name>
-			<application>
-				<name>Orion - Dynamic Patient Summary</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>400</height>
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>600</width>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>1</index>
-		<entry-point>
-			<name>Edit Details</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>0</height>
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>0</width>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>2</index>
-		<entry-point>
-			<name>Episode History</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>0</height>
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>0</width>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>3</index>
-		<entry-point>
-			<name>Interval Cancer List</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>0</height>
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>0</width>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>4</index>
-		<entry-point>
-			<name>Exclusion History</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>0</height>
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>600</width>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>5</index>
-		<entry-point>
-			<name>Address History</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>0</height>
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>600</width>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>6</index>
-		<entry-point>
-			<name>Name History</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>0</height>
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>600</width>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>7</index>
-		<entry-point>
-			<name>Documents</name>
-			<application>
-				<name>cBS Clinical Documents</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>0</height>
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>600</width>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>8</index>
-		<entry-point>
-			<name>Notes</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>0</height>
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>600</width>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>9</index>
-		<entry-point>
-			<name>Candidate Audit Log</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>0</height>
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>600</width>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>10</index>
-		<entry-point>
-			<name>Symptoms and History</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>0</height>
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>0</width>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>11</index>
-		<entry-point>
-			<name>Short Candidate Summary</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>0</height>
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>0</width>
-	</context-view-entry-point>
-	<context-view-entry-point>
-		<index>12</index>
-		<entry-point>
-			<name>File Location History</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-			<secure-enabled>false</secure-enabled>
-		</entry-point>
-		<features />
-		<height>0</height>
-		<open-type>normal</open-type>
-		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
-		<width>0</width>
-	</context-view-entry-point>
-	<description>Candidate within the HWL Breast Screening programme.</description>
-	<enable-history>false</enable-history>
-	<enable-privacy-policies>false</enable-privacy-policies>
-	<format>&lt;B&gt;&#xD;
-&lt;%if MRN%&gt;&#xD;
-  &lt;%=(html)MRN%&gt;&#xD;
-&lt;%elseif MPI%&gt;&#xD;
-  &lt;%=(html)MPI%&gt;&#xD;
-&lt;%elseif NationalIdNumber%&gt;&#xD;
-  &lt;%=(html)NationalIdNumber%&gt;&#xD;
-&lt;%elseif Alternate%&gt;&#xD;
-  &lt;%=(html)Alternate%&gt;&#xD;
-&lt;%end if%&gt;&#xD;
-&lt;/B&gt;&#xD;
-&lt;%=(html)Name.familyName.toString().toUpperCase()%&gt;&#xD;
-&lt;%=(html)Name.givenName%&gt;&#xD;
-&lt;%if DateTimeOfBirth &lt;&gt; ""%&gt;&#xD;
-	(&lt;%end if%&gt;&lt;%=AgeFormat.format(DateTimeOfBirth.toString())%&gt;)&#xD;
-&lt;%end if%&gt;&#xD;
-&lt;B&gt;&#xD;
-&lt;%if Exclusion%&gt;&#xD;
-	&lt;%=(html)Exclusion%&gt;&#xD;
-&lt;%end if%&gt;&#xD;
-&lt;/B&gt;</format>
-	<history-print-disclaimer-enabled>false</history-print-disclaimer-enabled>
-	<history-print-stylesheet />
-	<history-printing-enabled>false</history-printing-enabled>
-	<subject-of-interest>
-		<name>Patient</name>
-		<required>false</required>
-	</subject-of-interest>
-	<subject-of-interest>
-		<name>[orionhealth.com]ScreeningCandidate</name>
-		<required>true</required>
-	</subject-of-interest>
-	<system-object>false</system-object>
-	<use-custom-entity-break-seal-page>false</use-custom-entity-break-seal-page>
-	<work-list-type>
-		<name>Blue</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Blue</display-name>
-		<enabled>true</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Green</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Green</display-name>
-		<enabled>true</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Orange</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Orange</display-name>
-		<enabled>true</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Purple</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Purple</display-name>
-		<enabled>true</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Red</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Red</display-name>
-		<enabled>true</enabled>
-	</work-list-type>
-	<work-list-type>
-		<name>Yellow</name>
-		<auto-populated>false</auto-populated>
-		<display-name>Yellow</display-name>
-		<enabled>true</enabled>
-	</work-list-type>
-	<worklist-print-disclaimer-enabled>false</worklist-print-disclaimer-enabled>
-	<worklist-print-stylesheet />
-	<worklist-printing-enabled>false</worklist-printing-enabled>
-</context-view>
-<context-view>
 	<name>Task</name>
 	<concise-format />
-	<description />
+	<description>::: CCR ::: Displays task information.</description>
 	<enable-history>false</enable-history>
 	<enable-privacy-policies>false</enable-privacy-policies>
 	<format />
+	<history-print-disclaimer-enabled>false</history-print-disclaimer-enabled>
+	<history-print-stylesheet />
+	<history-printing-enabled>false</history-printing-enabled>
 	<subject-of-interest>
 		<name>User</name>
 		<required>false</required>
@@ -3358,21 +2210,39 @@ ACT Health&#xD;
 	<use-custom-entity-break-seal-page>false</use-custom-entity-break-seal-page>
 	<work-list-type>
 		<name>Blue</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Blue</display-name>
+		<enabled>false</enabled>
 	</work-list-type>
 	<work-list-type>
 		<name>Green</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Green</display-name>
+		<enabled>false</enabled>
 	</work-list-type>
 	<work-list-type>
 		<name>Orange</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Orange</display-name>
+		<enabled>false</enabled>
 	</work-list-type>
 	<work-list-type>
 		<name>Purple</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Purple</display-name>
+		<enabled>false</enabled>
 	</work-list-type>
 	<work-list-type>
 		<name>Red</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Red</display-name>
+		<enabled>false</enabled>
 	</work-list-type>
 	<work-list-type>
 		<name>Yellow</name>
+		<auto-populated>false</auto-populated>
+		<display-name>Yellow</display-name>
+		<enabled>false</enabled>
 	</work-list-type>
 	<worklist-print-disclaimer-enabled>false</worklist-print-disclaimer-enabled>
 	<worklist-print-stylesheet />
@@ -3390,8 +2260,13 @@ ACT Health&#xD;
 			</application>
 			<secure-enabled>false</secure-enabled>
 		</entry-point>
+		<features />
+		<height>0</height>
+		<open-type>normal</open-type>
+		<shortcut-displayed-in-worklist>false</shortcut-displayed-in-worklist>
+		<width>0</width>
 	</context-view-entry-point>
-	<description />
+	<description>:::WIC::: Displays the site for whiteboard.</description>
 	<enable-history>false</enable-history>
 	<enable-privacy-policies>false</enable-privacy-policies>
 	<format>&lt;%=(html)Context.get("[orionhealth.com]WhiteboardSite.Co.Name")%&gt;</format>

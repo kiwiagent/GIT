@@ -57,62 +57,6 @@
 	<user-configurable>false</user-configurable>
 </portal-page>
 <portal-page>
-	<name>BIS Radiographer Homepage</name>
-	<description />
-	<node>
-		<first>false</first>
-		<first-node>
-			<first>true</first>
-			<portal-page-windowlet>
-				<portal-page>
-					<name>BIS Radiographer Homepage</name>
-				</portal-page>
-				<windowlet>
-					<name>My Clients For Today</name>
-					<application>
-						<name>BreastScreening ACT</name>
-					</application>
-				</windowlet>
-			</portal-page-windowlet>
-			<terminal>true</terminal>
-		</first-node>
-		<layout>horizontal</layout>
-		<second-node>
-			<first>false</first>
-			<portal-page-windowlet>
-				<portal-page>
-					<name>BIS Radiographer Homepage</name>
-				</portal-page>
-				<windowlet>
-					<name>My Worklists</name>
-					<application>
-						<name>BreastScreening ACT</name>
-					</application>
-				</windowlet>
-			</portal-page-windowlet>
-			<terminal>true</terminal>
-		</second-node>
-		<terminal>false</terminal>
-	</node>
-	<portal-page-windowlet>
-		<windowlet>
-			<name>My Clients For Today</name>
-			<application>
-				<name>BreastScreening ACT</name>
-			</application>
-		</windowlet>
-	</portal-page-windowlet>
-	<portal-page-windowlet>
-		<windowlet>
-			<name>My Worklists</name>
-			<application>
-				<name>BreastScreening ACT</name>
-			</application>
-		</windowlet>
-	</portal-page-windowlet>
-	<user-configurable>false</user-configurable>
-</portal-page>
-<portal-page>
 	<name>CCR CHI1 Home Page</name>
 	<description>:::: CHI Level 1 :::: Homepage - for final layout</description>
 	<node>
@@ -1059,149 +1003,12 @@
 	<user-configurable>false</user-configurable>
 </portal-page>
 <portal-page>
-	<name>Client Reconciliation</name>
-	<description />
-	<node>
-		<first>false</first>
-		<layout>horizontal</layout>
-		<terminal>true</terminal>
-	</node>
-	<portal-page-windowlet>
-		<windowlet>
-			<name>Client Search</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-		</windowlet>
-	</portal-page-windowlet>
-	<portal-page-windowlet>
-		<windowlet>
-			<name>Unchecked Provisional Clients</name>
-			<application>
-				<name>cBreastScreening</name>
-			</application>
-		</windowlet>
-	</portal-page-windowlet>
-	<user-configurable>false</user-configurable>
-</portal-page>
-<portal-page>
-	<name>Clinician Home Page</name>
-	<description />
-	<node>
-		<portal-page-windowlet>
-			<portal-page>
-				<name>Clinician Home Page</name>
-			</portal-page>
-			<windowlet>
-				<name>Clinician Home Page Welcome</name>
-				<application>
-					<name>Medical Applications Portal</name>
-				</application>
-			</windowlet>
-		</portal-page-windowlet>
-		<terminal>true</terminal>
-	</node>
-	<portal-page-windowlet>
-		<windowlet>
-			<name>Blue</name>
-			<application>
-				<name>Medical Applications Portal</name>
-			</application>
-		</windowlet>
-	</portal-page-windowlet>
-	<portal-page-windowlet>
-		<windowlet>
-			<name>Clinician Home Page Welcome</name>
-			<application>
-				<name>Medical Applications Portal</name>
-			</application>
-		</windowlet>
-	</portal-page-windowlet>
-	<portal-page-windowlet>
-		<windowlet>
-			<name>Green</name>
-			<application>
-				<name>Medical Applications Portal</name>
-			</application>
-		</windowlet>
-	</portal-page-windowlet>
-	<portal-page-windowlet>
-		<windowlet>
-			<name>Orange</name>
-			<application>
-				<name>Medical Applications Portal</name>
-			</application>
-		</windowlet>
-	</portal-page-windowlet>
-	<portal-page-windowlet>
-		<windowlet>
-			<name>Purple</name>
-			<application>
-				<name>Medical Applications Portal</name>
-			</application>
-		</windowlet>
-	</portal-page-windowlet>
-	<portal-page-windowlet>
-		<windowlet>
-			<name>Red</name>
-			<application>
-				<name>Medical Applications Portal</name>
-			</application>
-		</windowlet>
-	</portal-page-windowlet>
-	<portal-page-windowlet>
-		<windowlet>
-			<name>Yellow</name>
-			<application>
-				<name>Medical Applications Portal</name>
-			</application>
-		</windowlet>
-	</portal-page-windowlet>
-	<user-configurable>true</user-configurable>
-</portal-page>
-<portal-page>
 	<name>Clinician Homepage</name>
 	<description />
 	<node>
 		<first>false</first>
 		<first-node>
 			<first>true</first>
-			<first-node>
-				<first>true</first>
-				<portal-page-windowlet>
-					<portal-page>
-						<name>Clinician Homepage</name>
-					</portal-page>
-					<windowlet>
-						<name>My Inpatients</name>
-						<application>
-							<name>Orion - Clinician Homepage</name>
-						</application>
-					</windowlet>
-				</portal-page-windowlet>
-				<terminal>true</terminal>
-			</first-node>
-			<layout>horizontal</layout>
-			<second-node>
-				<first>false</first>
-				<portal-page-windowlet>
-					<portal-page>
-						<name>Clinician Homepage</name>
-					</portal-page>
-					<windowlet>
-						<name>My Outpatients for  Today</name>
-						<application>
-							<name>Orion - Clinician Homepage</name>
-						</application>
-					</windowlet>
-				</portal-page-windowlet>
-				<terminal>true</terminal>
-			</second-node>
-			<terminal>false</terminal>
-		</first-node>
-		<layout>horizontal</layout>
-		<second-node>
-			<first>false</first>
 			<first-node>
 				<first>true</first>
 				<first-node>
@@ -1211,7 +1018,7 @@
 							<name>Clinician Homepage</name>
 						</portal-page>
 						<windowlet>
-							<name>My Worklist</name>
+							<name>My Inpatients</name>
 							<application>
 								<name>Orion - Clinician Homepage</name>
 							</application>
@@ -1219,7 +1026,7 @@
 					</portal-page-windowlet>
 					<terminal>true</terminal>
 				</first-node>
-				<layout>vertical</layout>
+				<layout>horizontal</layout>
 				<second-node>
 					<first>false</first>
 					<portal-page-windowlet>
@@ -1227,7 +1034,7 @@
 							<name>Clinician Homepage</name>
 						</portal-page>
 						<windowlet>
-							<name>Orange</name>
+							<name>My Worklist</name>
 							<application>
 								<name>Orion - Clinician Homepage</name>
 							</application>
@@ -1245,7 +1052,7 @@
 						<name>Clinician Homepage</name>
 					</portal-page>
 					<windowlet>
-						<name>Recent Patients</name>
+						<name>Received Messages</name>
 						<application>
 							<name>Orion - Clinician Homepage</name>
 						</application>
@@ -1254,6 +1061,22 @@
 				<terminal>true</terminal>
 			</second-node>
 			<terminal>false</terminal>
+		</first-node>
+		<layout>horizontal</layout>
+		<second-node>
+			<first>false</first>
+			<portal-page-windowlet>
+				<portal-page>
+					<name>Clinician Homepage</name>
+				</portal-page>
+				<windowlet>
+					<name>Recent Patients</name>
+					<application>
+						<name>Orion - Clinician Homepage</name>
+					</application>
+				</windowlet>
+			</portal-page-windowlet>
+			<terminal>true</terminal>
 		</second-node>
 		<terminal>false</terminal>
 	</node>
@@ -1267,23 +1090,7 @@
 	</portal-page-windowlet>
 	<portal-page-windowlet>
 		<windowlet>
-			<name>My Outpatients for  Today</name>
-			<application>
-				<name>Orion - Clinician Homepage</name>
-			</application>
-		</windowlet>
-	</portal-page-windowlet>
-	<portal-page-windowlet>
-		<windowlet>
 			<name>My Worklist</name>
-			<application>
-				<name>Orion - Clinician Homepage</name>
-			</application>
-		</windowlet>
-	</portal-page-windowlet>
-	<portal-page-windowlet>
-		<windowlet>
-			<name>Orange</name>
 			<application>
 				<name>Orion - Clinician Homepage</name>
 			</application>
@@ -1521,70 +1328,6 @@
 		</windowlet>
 	</portal-page-windowlet>
 	<user-configurable>false</user-configurable>
-</portal-page>
-<portal-page>
-	<name>Community Home Page</name>
-	<description />
-	<node>
-		<first>false</first>
-		<first-node>
-			<first>true</first>
-			<first-node>
-				<first>true</first>
-				<terminal>true</terminal>
-			</first-node>
-			<layout>horizontal</layout>
-			<second-node>
-				<first>false</first>
-				<first-node>
-					<first>true</first>
-					<terminal>true</terminal>
-				</first-node>
-				<layout>horizontal</layout>
-				<second-node>
-					<first>false</first>
-					<terminal>true</terminal>
-				</second-node>
-				<terminal>false</terminal>
-			</second-node>
-			<terminal>false</terminal>
-		</first-node>
-		<layout>horizontal</layout>
-		<second-node>
-			<first>false</first>
-			<first-node>
-				<first>true</first>
-				<terminal>true</terminal>
-			</first-node>
-			<layout>vertical</layout>
-			<second-node>
-				<first>false</first>
-				<portal-page-windowlet>
-					<portal-page>
-						<name>Community Home Page</name>
-					</portal-page>
-					<windowlet>
-						<name>Recent Patients</name>
-						<application>
-							<name>Medical Applications Portal</name>
-						</application>
-					</windowlet>
-				</portal-page-windowlet>
-				<terminal>true</terminal>
-			</second-node>
-			<terminal>false</terminal>
-		</second-node>
-		<terminal>false</terminal>
-	</node>
-	<portal-page-windowlet>
-		<windowlet>
-			<name>Recent Patients</name>
-			<application>
-				<name>Medical Applications Portal</name>
-			</application>
-		</windowlet>
-	</portal-page-windowlet>
-	<user-configurable>true</user-configurable>
 </portal-page>
 <portal-page>
 	<name>Community Patient Overview</name>
@@ -2135,7 +1878,7 @@
 						<name>Community Patient Summary</name>
 					</portal-page>
 					<windowlet>
-						<name>My Appointments Booked (ACTPAS)</name>
+						<name>Appointments Booked (ACTPAS)</name>
 						<application>
 							<name>Healthcare pathways - CCR ACTPAS</name>
 						</application>
@@ -2146,18 +1889,38 @@
 			<layout>horizontal</layout>
 			<second-node>
 				<first>false</first>
-				<portal-page-windowlet>
-					<portal-page>
-						<name>Community Patient Summary</name>
-					</portal-page>
-					<windowlet>
-						<name>My Contacts (ACTPAS)</name>
-						<application>
-							<name>Healthcare pathways - CCR ACTPAS</name>
-						</application>
-					</windowlet>
-				</portal-page-windowlet>
-				<terminal>true</terminal>
+				<first-node>
+					<first>true</first>
+					<portal-page-windowlet>
+						<portal-page>
+							<name>Community Patient Summary</name>
+						</portal-page>
+						<windowlet>
+							<name>Contacts (ACTPAS)</name>
+							<application>
+								<name>Healthcare pathways - CCR ACTPAS</name>
+							</application>
+						</windowlet>
+					</portal-page-windowlet>
+					<terminal>true</terminal>
+				</first-node>
+				<layout>horizontal</layout>
+				<second-node>
+					<first>false</first>
+					<portal-page-windowlet>
+						<portal-page>
+							<name>Community Patient Summary</name>
+						</portal-page>
+						<windowlet>
+							<name>Allergies &amp; Alerts</name>
+							<application>
+								<name>Orion - Dynamic Patient Summary</name>
+							</application>
+						</windowlet>
+					</portal-page-windowlet>
+					<terminal>true</terminal>
+				</second-node>
+				<terminal>false</terminal>
 			</second-node>
 			<terminal>false</terminal>
 		</second-node>
@@ -2181,6 +1944,22 @@
 	</portal-page-windowlet>
 	<portal-page-windowlet>
 		<windowlet>
+			<name>Appointments Booked (ACTPAS)</name>
+			<application>
+				<name>Healthcare pathways - CCR ACTPAS</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Contacts (ACTPAS)</name>
+			<application>
+				<name>Healthcare pathways - CCR ACTPAS</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
+	<portal-page-windowlet>
+		<windowlet>
 			<name>Encounter History</name>
 			<application>
 				<name>Orion - Dynamic Patient Summary</name>
@@ -2192,22 +1971,6 @@
 			<name>Future Appointments</name>
 			<application>
 				<name>Orion - Dynamic Patient Summary</name>
-			</application>
-		</windowlet>
-	</portal-page-windowlet>
-	<portal-page-windowlet>
-		<windowlet>
-			<name>My Appointments Booked (ACTPAS)</name>
-			<application>
-				<name>Healthcare pathways - CCR ACTPAS</name>
-			</application>
-		</windowlet>
-	</portal-page-windowlet>
-	<portal-page-windowlet>
-		<windowlet>
-			<name>My Contacts (ACTPAS)</name>
-			<application>
-				<name>Healthcare pathways - CCR ACTPAS</name>
 			</application>
 		</windowlet>
 	</portal-page-windowlet>
@@ -2351,6 +2114,17 @@
 			<layout>horizontal</layout>
 			<second-node>
 				<first>false</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>Community Team Lead Home Page</name>
+					</portal-page>
+					<windowlet>
+						<name>Current Task List</name>
+						<application>
+							<name>Soprano Disease Management</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
 				<terminal>true</terminal>
 			</second-node>
 			<terminal>false</terminal>
@@ -2373,6 +2147,14 @@
 		</second-node>
 		<terminal>false</terminal>
 	</node>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Current Task List</name>
+			<application>
+				<name>Soprano Disease Management</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
 	<portal-page-windowlet>
 		<windowlet>
 			<name>Received Messages</name>
@@ -2501,18 +2283,38 @@
 		<first>false</first>
 		<first-node>
 			<first>true</first>
-			<portal-page-windowlet>
-				<portal-page>
-					<name>Dynamic Patient Summary</name>
-				</portal-page>
-				<windowlet>
-					<name>Demographics</name>
-					<application>
-						<name>Orion - Dynamic Patient Summary</name>
-					</application>
-				</windowlet>
-			</portal-page-windowlet>
-			<terminal>true</terminal>
+			<first-node>
+				<first>true</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>Dynamic Patient Summary</name>
+					</portal-page>
+					<windowlet>
+						<name>Demographics</name>
+						<application>
+							<name>Orion - Dynamic Patient Summary</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</first-node>
+			<layout>horizontal</layout>
+			<second-node>
+				<first>false</first>
+				<portal-page-windowlet>
+					<portal-page>
+						<name>Dynamic Patient Summary</name>
+					</portal-page>
+					<windowlet>
+						<name>Allergies &amp; Alerts</name>
+						<application>
+							<name>Orion - Dynamic Patient Summary</name>
+						</application>
+					</windowlet>
+				</portal-page-windowlet>
+				<terminal>true</terminal>
+			</second-node>
+			<terminal>false</terminal>
 		</first-node>
 		<layout>horizontal</layout>
 		<second-node>
@@ -2524,7 +2326,7 @@
 						<name>Dynamic Patient Summary</name>
 					</portal-page>
 					<windowlet>
-						<name>Allergies &amp; Alerts</name>
+						<name>Encounter History</name>
 						<application>
 							<name>Orion - Dynamic Patient Summary</name>
 						</application>
@@ -2542,7 +2344,7 @@
 							<name>Dynamic Patient Summary</name>
 						</portal-page>
 						<windowlet>
-							<name>Encounter History</name>
+							<name>Emergency Encounter History</name>
 							<application>
 								<name>Orion - Dynamic Patient Summary</name>
 							</application>
@@ -2553,38 +2355,18 @@
 				<layout>horizontal</layout>
 				<second-node>
 					<first>false</first>
-					<first-node>
-						<first>true</first>
-						<portal-page-windowlet>
-							<portal-page>
-								<name>Dynamic Patient Summary</name>
-							</portal-page>
-							<windowlet>
-								<name>Emergency Encounter History</name>
-								<application>
-									<name>Orion - Dynamic Patient Summary</name>
-								</application>
-							</windowlet>
-						</portal-page-windowlet>
-						<terminal>true</terminal>
-					</first-node>
-					<layout>horizontal</layout>
-					<second-node>
-						<first>false</first>
-						<portal-page-windowlet>
-							<portal-page>
-								<name>Dynamic Patient Summary</name>
-							</portal-page>
-							<windowlet>
-								<name>Future Appointments</name>
-								<application>
-									<name>Orion - Dynamic Patient Summary</name>
-								</application>
-							</windowlet>
-						</portal-page-windowlet>
-						<terminal>true</terminal>
-					</second-node>
-					<terminal>false</terminal>
+					<portal-page-windowlet>
+						<portal-page>
+							<name>Dynamic Patient Summary</name>
+						</portal-page>
+						<windowlet>
+							<name>Future Appointments</name>
+							<application>
+								<name>Orion - Dynamic Patient Summary</name>
+							</application>
+						</windowlet>
+					</portal-page-windowlet>
+					<terminal>true</terminal>
 				</second-node>
 				<terminal>false</terminal>
 			</second-node>
@@ -2903,17 +2685,6 @@
 			<first>false</first>
 			<first-node>
 				<first>true</first>
-				<portal-page-windowlet>
-					<portal-page>
-						<name>Orders Patient Summary</name>
-					</portal-page>
-					<windowlet>
-						<name>Outstanding Orders</name>
-						<application>
-							<name>Concerto Orders</name>
-						</application>
-					</windowlet>
-				</portal-page-windowlet>
 				<terminal>true</terminal>
 			</first-node>
 			<layout>horizontal</layout>
@@ -2921,17 +2692,6 @@
 				<first>false</first>
 				<first-node>
 					<first>true</first>
-					<portal-page-windowlet>
-						<portal-page>
-							<name>Orders Patient Summary</name>
-						</portal-page>
-						<windowlet>
-							<name>Radiology Scheduled Procedures</name>
-							<application>
-								<name>Concerto Orders</name>
-							</application>
-						</windowlet>
-					</portal-page-windowlet>
 					<terminal>true</terminal>
 				</first-node>
 				<layout>horizontal</layout>
@@ -2939,33 +2699,11 @@
 					<first>false</first>
 					<first-node>
 						<first>true</first>
-						<portal-page-windowlet>
-							<portal-page>
-								<name>Orders Patient Summary</name>
-							</portal-page>
-							<windowlet>
-								<name>Radiology Completed Procedures</name>
-								<application>
-									<name>Concerto Orders</name>
-								</application>
-							</windowlet>
-						</portal-page-windowlet>
 						<terminal>true</terminal>
 					</first-node>
 					<layout>horizontal</layout>
 					<second-node>
 						<first>false</first>
-						<portal-page-windowlet>
-							<portal-page>
-								<name>Orders Patient Summary</name>
-							</portal-page>
-							<windowlet>
-								<name>Radiology Cancelled Procedures</name>
-								<application>
-									<name>Concerto Orders</name>
-								</application>
-							</windowlet>
-						</portal-page-windowlet>
 						<terminal>true</terminal>
 					</second-node>
 					<terminal>false</terminal>
@@ -3039,20 +2777,47 @@
 	<description />
 	<node>
 		<first>false</first>
+		<first-node>
+			<first>true</first>
+			<portal-page-windowlet>
+				<portal-page>
+					<name>Pharmacy Homepage</name>
+				</portal-page>
+				<windowlet>
+					<name>My Inpatients</name>
+					<application>
+						<name>Orion - Pharmacy Homepage</name>
+					</application>
+				</windowlet>
+			</portal-page-windowlet>
+			<terminal>true</terminal>
+		</first-node>
 		<layout>horizontal</layout>
-		<portal-page-windowlet>
-			<portal-page>
-				<name>Pharmacy Homepage</name>
-			</portal-page>
-			<windowlet>
-				<name>My Inpatients</name>
-				<application>
-					<name>Orion - Pharmacy Homepage</name>
-				</application>
-			</windowlet>
-		</portal-page-windowlet>
-		<terminal>true</terminal>
+		<second-node>
+			<first>false</first>
+			<portal-page-windowlet>
+				<portal-page>
+					<name>Pharmacy Homepage</name>
+				</portal-page>
+				<windowlet>
+					<name>Hospital-wide Patients with No MRF</name>
+					<application>
+						<name>Orion - Pharmacy Homepage</name>
+					</application>
+				</windowlet>
+			</portal-page-windowlet>
+			<terminal>true</terminal>
+		</second-node>
+		<terminal>false</terminal>
 	</node>
+	<portal-page-windowlet>
+		<windowlet>
+			<name>Hospital-wide Patients with No MRF</name>
+			<application>
+				<name>Orion - Pharmacy Homepage</name>
+			</application>
+		</windowlet>
+	</portal-page-windowlet>
 	<portal-page-windowlet>
 		<windowlet>
 			<name>My Inpatients</name>
@@ -3079,7 +2844,7 @@
 							<name>Schedule Summary</name>
 						</portal-page>
 						<windowlet>
-							<name>Outpatient Appointments</name>
+							<name>Medical Imaging Appointments</name>
 							<application>
 								<name>Schedule Summary</name>
 							</application>
@@ -3113,7 +2878,7 @@
 						<name>Schedule Summary</name>
 					</portal-page>
 					<windowlet>
-						<name>Surgical Waitlist</name>
+						<name>Outpatient Appointments</name>
 						<application>
 							<name>Schedule Summary</name>
 						</application>
@@ -3131,7 +2896,7 @@
 					<name>Schedule Summary</name>
 				</portal-page>
 				<windowlet>
-					<name>Medical Imaging Appointments</name>
+					<name>Surgical Waitlist</name>
 					<application>
 						<name>Schedule Summary</name>
 					</application>
